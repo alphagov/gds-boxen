@@ -9,6 +9,8 @@ sudo chown $USER:admin /opt/boxen
 git clone git@github.com:alphagov/gds-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 script/boxen
+# If you project directory is not /Users/$USER/govuk/ then use
+# script/boxen --srcdir=/path/to/project/directory
 
 # add boxen to your shell config, at the end, eg.
 echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh'
