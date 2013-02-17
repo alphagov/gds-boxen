@@ -78,4 +78,9 @@ node default {
     ]:
   }
 
+  file { "${boxen::config::srcdir}/gds-boxen":
+    ensure => link,
+    target => $boxen::config::repodir
+  }
+
 }
