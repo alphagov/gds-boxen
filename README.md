@@ -1,55 +1,12 @@
-# Our Boxen
+## Getting started with Boxen
 
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
-
-## Getting Started
-
-1. Install Xcode Command Line Tools and/or full Xcode.
-  * If using full Xcode, you'll need to agree to the license by running: `xcodebuild -license`
-1. Create a new repository on GitHub as your user for your Boxen. (eg.
-`wfarr/my-boxen`). **Make sure it is a private repository!**
-1. Use your install of [boxen-web](https://github.com/boxen/boxen-web) or get running manually like so:
-  ```
-  sudo mkdir -p /opt/boxen
-  sudo chown $USER:admin /opt/boxen
-  mkdir -p ~/src/my-boxen
-  cd ~/src/my-boxen
-  git init
-  git remote add upstream https://github.com/boxen/our-boxen
-  git fetch upstream
-  git checkout -b master upstream/master
-  git remote add origin https://github.com/wfarr/my-boxen
-  git push origin master
-  
-  script/boxen
-  ```
-  
-1. Close and reopen your Terminal. If you have a shell config file
-(eg. `~/.bashrc`) you'll need to add this at the very end:
-`[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh`, and reload
-your shell.
-1. Confirm the Boxen env has loaded: `boxen --env`
-
-Now you have your own my-boxen repo that you can hack on.
-You may have noticed we didn't ask you to fork the repo.
-This is because when our-boxen goes open source that'd have some
-implications about your fork also potentially being public.
-That's obviously quite bad, so that's why we strongly suggest you
-create an entirely separate repo and simply pull the code in, as shown above.
-
-## Getting your users started _after_ your "fork" exists
-
-1. Install the Xcode Command Line Tools (full Xcode install optional).
-1. Point them at your private install of [boxen-web](https://github.com/boxen/boxen-web), **OR** have them run the following:
+- Install the Xcode Command Line Tools (full Xcode install optional).
+- Run the following:
 
 ```
 sudo mkdir -p /opt/boxen
 sudo chown $USER:admin /opt/boxen
-git clone https://github.com/yourorg/yourreponame.git /opt/boxen/repo
+git clone git@github.com/alphagov/gds-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 script/boxen
 
@@ -58,6 +15,11 @@ echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh'
 ```
 
 Open a new terminal, `boxen --env` to confirm.
+
+- Create a personal module to define what you want on your Mac
+See [the documentation in the `modules/people`](modules/people/README.md)
+directory for creating per-user modules that don't need to be applied
+globally to everyone.
 
 ## What You Get
 
