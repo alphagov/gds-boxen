@@ -1,10 +1,8 @@
 class people::samjsharpe {
   include adium
   include alfred
-  include caffeine
   include chicken
   include chrome
-  include colloquy
   include dropbox
   include firefox
   include git-pulls
@@ -17,12 +15,9 @@ class people::samjsharpe {
   include screen
   include skype
   include slate
-  include sparrow
-  include sublime_text_2
   include turn-off-dashboard
   include theunarchiver
   include virtualbox
-  include xquartz
   include zsh
 
   include teams::infrastructure
