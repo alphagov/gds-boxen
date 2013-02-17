@@ -31,7 +31,7 @@ class people::samjsharpe {
       'autoconf', 'autojump', 'automake', 'bdw-gc', 'boost', 'brew-pip',
       'cabextract', 'coreutils', 'ctags', 'encfs', 'fdupes', 'fuse4x',
       'fuse4x-kext', 'gdbm', 'gettext', 'git', 'git-extras', 'git-flow',
-      'git-utils', 'gnupg', 'go', 'jasper', 'jpeg', 'legit', 'libicns',
+      'gnupg', 'go', 'jasper', 'jpeg', 'legit', 'libicns',
       'libpng', 'libpst', 'libtool', 'libyaml', 'nmap', 'ntfs-3g', 'openssl',
       'parallel', 'pcre', 'pkg-config', 'rdesktop', 'readline', 'rename',
       'renameutils', 'rlog', 's3cmd', 'sslscan', 'unrar', 'w3m', 'wget', 'xz',
