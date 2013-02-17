@@ -10,6 +10,7 @@ class people::samjsharpe {
   include googledrive
   include iterm2::stable
   include macvim
+  include mailplane::beta
   include mplayerx
   include onepassword
   include screen
