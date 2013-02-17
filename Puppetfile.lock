@@ -1,12 +1,37 @@
 GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-colloquy
+  specs:
+    colloquy (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -29,6 +54,16 @@ GITHUBTARBALL
     hub (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-macvim
+  specs:
+    macvim (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.0.0)
@@ -44,14 +79,54 @@ GITHUBTARBALL
     nvm (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-onepassword
+  specs:
+    onepassword (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
     ruby (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-screen
+  specs:
+    screen (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-skype
+  specs:
+    skype (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sparrow
+  specs:
+    sparrow (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-xquartz
+  specs:
+    xquartz (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
@@ -64,17 +139,32 @@ GITHUBTARBALL
     stdlib (3.0.0)
 
 DEPENDENCIES
+  alfred (= 1.0.1)
   boxen (= 1.0.2)
+  caffeine (= 1.0.0)
+  chrome (= 1.0.0)
+  colloquy (= 1.0.0)
   dnsmasq (= 1.0.0)
+  dropbox (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.0.0)
   homebrew (= 1.0.0)
   hub (= 1.0.0)
   inifile (= 0.9.0)
+  iterm2 (= 1.0.0)
+  macvim (= 1.0.0)
   nginx (= 1.0.0)
   nodejs (= 1.0.0)
   nvm (= 1.0.0)
+  onepassword (= 1.0.0)
+  osx (= 1.0.0)
   ruby (= 1.0.0)
+  screen (= 1.0.0)
+  skype (= 1.0.0)
+  sparrow (= 1.0.0)
   stdlib (= 3.0.0)
+  sublime_text_2 (= 1.0.0)
   sudo (= 1.0.0)
+  xquartz (= 1.0.0)
+  zsh (= 1.0.0)
 

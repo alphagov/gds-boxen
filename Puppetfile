@@ -36,3 +36,19 @@ github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "alfred",         "1.0.1"
+github "caffeine",       "1.0.0"
+github "chrome",         "1.0.0"
+github "colloquy",       "1.0.0"
+github "dropbox",        "1.0.0"
+github "iterm2",         "1.0.0"
+github "macvim",         "1.0.0"
+github "onepassword",    "1.0.0"
+github "osx",            "1.0.0"
+github "screen",         "1.0.0"
+github "skype",          "1.0.0"
+github "sparrow",        "1.0.0"
+github "sublime_text_2", "1.0.0"
+github "xquartz",        "1.0.0"
+github "zsh",            "1.0.0"
