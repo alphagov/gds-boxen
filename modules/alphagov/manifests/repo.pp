@@ -7,6 +7,6 @@ define alphagov::repo {
     # starting my repo with a ' ' it is still valid for the git clone but
     # fails the regex. I hate myself.
     # https://github.com/boxen/puppet-repository/blob/master/lib/puppet/provider/repository/git.rb#LC55
-    source   => ' git@github.com:alphagov/${title}',
+    source   => " git@github.com:alphagov/${title}",
   }
 }
