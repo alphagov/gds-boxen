@@ -25,6 +25,9 @@ class people::samjsharpe {
   include xquartz
   include zsh
 
+  include projects::development
+  include projects::puppet
+
   # These are all Homebrew packages
   package {
     [
