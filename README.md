@@ -6,7 +6,7 @@
 ```
 sudo mkdir -p /opt/boxen
 sudo chown $USER:admin /opt/boxen
-git clone git@github.com/alphagov/gds-boxen.git /opt/boxen/repo
+git clone git@github.com:alphagov/gds-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
 script/boxen
 
