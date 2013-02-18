@@ -1,5 +1,6 @@
 class people::dcarley {
   include adium
+  include caffeine
   include chrome
   include git
   include iterm2::stable
@@ -15,7 +16,7 @@ class people::dcarley {
   # These are all Homebrew packages
   package {
     [
-      'bash-completion', 'gnupg', 'go'
+      'bash-completion', 'gnupg', 'go', 'tmux'
     ]:
     ensure => present,
   }
