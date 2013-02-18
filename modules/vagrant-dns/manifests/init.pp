@@ -1,9 +1,4 @@
 class vagrant-dns {
-  package { 'vagrant-dns':
-    provider => gem,
-    ensure   => '0.2.4',
-  }
-
   ruby::gem {'vagrant-dns-1.8.7':
     gem     => 'vagrant-dns',
     ruby    => '1.8.7',
@@ -22,5 +17,4 @@ class vagrant-dns {
     require => Class['ruby::1-9-3'],
     version => '0.2.4',
   }
-
 }
