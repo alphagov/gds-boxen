@@ -13,8 +13,19 @@ class people::dcarley {
   # These are all Homebrew packages
   package {
     [
-      'git', 'gnupg', 'go', 'wget'
+      'bash-completion', 'gnupg', 'go', 'wget'
     ]:
     ensure => present,
+  }
+
+  $home = "/Users/${::luser}"
+  $bash_profile = '[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
+alias b="bundle exec"
+'
+
+  file { "${home}/.bash_profile":
+    ensure  => present,
+    content => $bash_profile,
   }
 }
