@@ -4,6 +4,7 @@ class people::dcarley {
   include git
   include iterm2::stable
   include virtualbox
+  include wget
 
   # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
@@ -14,7 +15,7 @@ class people::dcarley {
   # These are all Homebrew packages
   package {
     [
-      'bash-completion', 'gnupg', 'go', 'wget'
+      'bash-completion', 'gnupg', 'go'
     ]:
     ensure => present,
   }

@@ -129,6 +129,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.0.0)
@@ -177,6 +182,7 @@ DEPENDENCIES
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.0.0)
   sudo (= 1.0.0)
+  wget (= 1.0.0)
   xquartz (= 1.0.0)
   zsh (= 1.0.0)
 
