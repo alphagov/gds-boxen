@@ -19,6 +19,7 @@ class people::bradleywright {
   include projects::frontend
   include projects::private-utils
   include projects::puppet
+  include projects::redirector
   include projects::rummager
   include projects::static
   include projects::whitehall
@@ -48,14 +49,14 @@ class people::bradleywright {
     mode    => '0644',
     content => "cdpath=(~/src ~/Projects ~)
 
-alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev govuk_puppet; vagrant provision; ssh dev 'cd ~/src/dotfiles && make'; ssh dev\"",
 export govuk_dev_dist='lucid'
 
+alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev govuk_puppet; vagrant provision; ssh dev 'cd ~/src/dotfiles && make'; ssh dev\"",
   }
 
   file { "${home}/.localgitconfig":
-    mode    => '0644',
     content => '[user]
+    mode    => '0644',
     email = bradley.wright@digital.cabinet-office.gov.uk
 [credential]
     helper = osxkeychain',
