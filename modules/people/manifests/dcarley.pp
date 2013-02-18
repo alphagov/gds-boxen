@@ -1,6 +1,7 @@
 class people::dcarley {
   include adium
   include chrome
+  include git
   include iterm2::stable
   include virtualbox
 
