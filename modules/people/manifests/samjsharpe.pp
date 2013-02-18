@@ -21,7 +21,10 @@ class people::samjsharpe {
   include virtualbox
   include zsh
 
+  # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
+  # Projects only accessible to certain staff
+  include projects::deployment
 
   # These are all Homebrew packages
   package {
