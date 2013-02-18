@@ -5,10 +5,10 @@
 
 ```
 sudo mkdir -p /opt/boxen
-sudo chown $USER:admin /opt/boxen
+sudo chown ${USER}:admin /opt/boxen
 git clone git@github.com:alphagov/gds-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
-script/boxen --srcdir=/Users/$USER/govuk
+script/boxen --srcdir=/Users/${USER}/govuk
 # If you project directory is not /Users/$USER/govuk/ then use
 # script/boxen --srcdir=/path/to/project/directory
 
