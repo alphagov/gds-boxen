@@ -49,6 +49,8 @@ class people::bradleywright {
     content => "cdpath=(~/src ~/Projects ~)
 
 alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev govuk_puppet; vagrant provision; ssh dev 'cd ~/src/dotfiles && make'; ssh dev\"",
+export govuk_dev_dist='lucid'
+
   }
 
   file { "${home}/.localgitconfig":
