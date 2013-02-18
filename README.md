@@ -13,7 +13,9 @@ PATH=/usr/bin:/bin:/usr/sbin:/sbin script/boxen --srcdir=/Users/${USER}/govuk
 # script/boxen --srcdir=/path/to/project/directory
 
 # add boxen to your shell config, at the end, eg.
-echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh'
+echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.bashrc
+# or if you use ZSH
+echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.zshrc
 ```
 
 Open a new terminal, `boxen --env` to confirm.
