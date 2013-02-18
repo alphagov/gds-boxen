@@ -25,6 +25,7 @@ class people::samjsharpe {
   include teams::infrastructure
   # Projects only accessible to certain staff
   include projects::deployment
+  include projects::vcloud-templates
 
   # These are all Homebrew packages
   package {
