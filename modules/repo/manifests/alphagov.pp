@@ -1,4 +1,4 @@
-define alphagov::repo {
+define repo::alphagov {
   repository { "${boxen::config::srcdir}/${title}":
     # this is a nasty nasty hack around the puppet-repository defined
     # type. The regex used to detect whether the repo needs to be qualified
