@@ -28,6 +28,23 @@ globally to everyone. You will probably want to:
  - `include projects::someproject` - for the projects you will work on
  - if `modules/teams/manifests/yourteam.pp` exists, you should `include teams::yourteam` to get shared team config
 
+## Removing install of Homebrew in /usr/local/bin
+
+- Boxen installs it's own version of Homebrew in `/opt/boxen/homebrew` which may conflict with a previous version installed in `/usr/local/bin`.
+- You can list the brews installed in your previous version with:
+```
+/usr/local/bin/brew list
+```
+- You can list the brews installed by Boxen with:
+```
+/opt/boxen/homebrew/bin/brew list
+```
+- To generate a list of previous homebrew builds (to add to `modules/people/manifests/yourgithubuser.pp`) you can do:
+```
+/usr/local/bin/brew list | ( echo "package { [" ; while read line; do echo "           '$line',"; done ; echo "          ]:"; echo "          ensure => 'present',"; echo "}" )
+```
+- One you have installed your previous brews with Boxen (run the `boxen` command after adding the resource generated above) you can [delete the previous homebrew](https://gist.github.com/mxcl/1173223)
+
 ## What You Get by default
 
 The following are provided by default:
