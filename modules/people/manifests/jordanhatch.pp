@@ -2,6 +2,7 @@ class people::jordanhatch {
   include adium
   include alfred
   include chrome
+  include gitx
   include iterm2::stable
   include spotify
   include theunarchiver
