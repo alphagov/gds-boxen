@@ -16,7 +16,11 @@ class people::bradleywright {
 
   include projects::alphagov-deployment
   include projects::development
+  include projects::frontend
+  include projects::private-utils
   include projects::puppet
+  include projects::rummager
+  include projects::static
   include projects::whitehall
 
   $home     = "/Users/${::luser}"
