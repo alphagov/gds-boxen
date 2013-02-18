@@ -8,7 +8,7 @@ class people::jordanhatch {
   include theunarchiver
   include virtualbox
 
-  include projects::development
+  include teams::mainstream
 
   $home = "/Users/${::luser}"
   $dev = "${home}/dev"
