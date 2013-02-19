@@ -81,4 +81,23 @@ alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant de
      'zsh-lovers',
      ]:
   }
+  file {"${boxen::config::srcdir}/development/Vagrantfile.local":
+    content => '# Predefined IP address, randomly assigned when I ran ./install.sh
+config.vm.network :hostonly, "10.244.2.189"
+# Give it 4GB of RAM so I can run all the things
+config.vm.customize ["modifyvm", :id, "--memory", 4096]
+# Give it 2 CPUs because I have 4
+config.vm.customize ["modifyvm", :id, "--cpus", "2"]
+
+# My puppet configuration
+config.vm.provision :puppet do |puppet|
+  puppet.manifests_path = "~/Projects/puppet/manifests"
+  puppet.manifest_file = "govuk_dev.pp"
+  puppet.module_path = "~/Projects/puppet/modules"
+end
+',
+    require => Class['Projects::Development']
+  }
+
+
 }
