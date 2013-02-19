@@ -32,6 +32,22 @@ class people::samjsharpe {
 
   repository { "${boxen::config::srcdir}/dotfiles":
     source  => 'samjsharpe/dotfiles',
+    notify  => Exec['samjsharpe-link-my-dotfiles'],
+  }
+
+  exec {'samjsharpe-link-my-dotfiles':
+    command     => "${boxen::config::srcdir}/dotfiles/link.sh",
+    refreshonly => true,
+  }
+
+  file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
+    content => 'ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}:%{$fg[green]%}"
+PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
+',
+    require => Class['oh-my-zsh']
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
