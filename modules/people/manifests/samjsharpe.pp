@@ -34,6 +34,16 @@ class people::samjsharpe {
     source  => 'samjsharpe/dotfiles',
   }
 
+  file {"${boxen::config::srcdir}/development/Vagrantfile.local":
+    content => "
+        config.vm.network :hostonly, '10.23.45.67'
+        config.vm.customize ['modifyvm', :id, '--memory', 1024]
+        config.vm.customize ['modifyvm', :id, '--cpus', 2]
+        config.vm.customize ['modifyvm', :id, '--name', 'lucid_dev_vm']
+",
+    require => Class['Projects::Development']
+  }
+
   # These are all Homebrew packages
   package {
     [
