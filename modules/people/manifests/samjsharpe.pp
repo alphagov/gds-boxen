@@ -20,6 +20,8 @@ class people::samjsharpe {
   include spf13-vim-3
   include turn-off-dashboard
   include theunarchiver
+  include vagrant
+  include vagrant-dns
   include virtualbox
   include zsh
 
