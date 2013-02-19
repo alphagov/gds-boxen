@@ -1,7 +1,8 @@
 # Pulls the https://github.com/alphagov/vagrant-govuk repository
-include projects::vcloud-templates
-include projects::puppet
-include projects::deployment
 class projects::vagrant-govuk {
+  include projects::vcloud-templates
+  include projects::puppet
+  include projects::deployment
+
   repo::alphagov { 'vagrant-govuk': }
 }
