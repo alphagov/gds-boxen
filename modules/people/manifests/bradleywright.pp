@@ -42,14 +42,26 @@ class people::bradleywright {
 
   repository { $dotfiles:
     source  => 'bradleywright/dotfiles',
-    require => File[$home_projects]
+    require => File[$home_projects],
+    notify  => Exec['bradleywright-make-dotfiles'],
+  }
+
+  exec { 'bradleywright-make-dotfiles':
+    command     => "cd ${dotfiles} && make",
+    refreshonly => true,
   }
 
   $emacs = "${home_projects}/emacs-d"
 
   repository { $emacs:
     source  => 'bradleywright/emacs-d',
-    require => File[$home_projects]
+    require => File[$home_projects],
+    notify  => Exec['bradleywright-make-emacs-d'],
+  }
+
+  exec { 'bradleywright-make-emacs-d':
+    command     => "cd ${emacs} && make",
+    refreshonly => true,
   }
 
   file { "${home}/.local_zshrc":
@@ -69,18 +81,6 @@ alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant de
     helper = osxkeychain',
   }
 
-  package {
-    [
-     'bash-completion',
-     'parallel',
-     'reattach-to-user-namespace',
-     'tmux',
-     'tree',
-     'wget',
-     'zsh-completions',
-     'zsh-lovers',
-     ]:
-  }
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
     content => '# Predefined IP address, randomly assigned when I ran ./install.sh
 config.vm.network :hostonly, "10.244.2.189"
@@ -100,4 +100,16 @@ end
   }
 
 
+  package {
+    [
+     'bash-completion',
+     'parallel',
+     'reattach-to-user-namespace',
+     'tmux',
+     'tree',
+     'wget',
+     'zsh-completions',
+     'zsh-lovers',
+     ]:
+  }
 }
