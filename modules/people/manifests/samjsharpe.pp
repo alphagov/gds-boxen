@@ -16,6 +16,7 @@ class people::samjsharpe {
   include screen
   include skype
   include slate
+  include spf13-vim-3
   include turn-off-dashboard
   include theunarchiver
   include virtualbox
