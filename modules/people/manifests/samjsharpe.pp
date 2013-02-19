@@ -30,6 +30,10 @@ class people::samjsharpe {
   # Projects only accessible to certain staff
   include projects::deployment
 
+  repository { "${boxen::config::srcdir}/dotfiles":
+    source  => 'samjsharpe/dotfiles',
+  }
+
   # These are all Homebrew packages
   package {
     [
