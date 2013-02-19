@@ -11,5 +11,6 @@ class teams::infrastructure {
   include projects::smokey
   include projects::vagrant-govuk
   include projects::vcloud-provisioner
+  include projects::vcloud-templates
   include projects::vcloudtools
 }

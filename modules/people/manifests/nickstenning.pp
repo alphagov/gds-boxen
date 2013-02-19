@@ -18,7 +18,6 @@ class people::nickstenning {
   include teams::infrastructure
 
   include projects::deployment
-  include projects::vcloud-templates
 
   $home = "/Users/${::luser}"
   $code = "${home}/code"
