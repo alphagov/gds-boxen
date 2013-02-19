@@ -12,6 +12,7 @@ class people::samjsharpe {
   include macvim
   include mailplane::beta
   include mplayerx
+  include oh-my-zsh
   include onepassword
   include screen
   include skype
