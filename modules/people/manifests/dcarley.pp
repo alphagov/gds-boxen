@@ -21,13 +21,31 @@ class people::dcarley {
   }
 
   $home = "/Users/${::luser}"
-  $bash_profile = '[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
-[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
-alias b="bundle exec"
-'
+  $projects = "${home}/projects"
+  $projects_personal = "${projects}/personal"
+
+  file { [$projects, $projects_personal]:
+    ensure  => directory,
+  }
+
+  $dotfiles = "${projects_personal}/dotfiles"
+
+  repository { $dotfiles:
+    source  => 'dcarley/dotfiles',
+    require => File[$projects_personal],
+  }
+
+  exec { 'install dotfiles':
+    command     => 'rake',
+    cwd         => $dotfiles,
+    logoutput   => true,
+  }
 
   file { "${home}/.bash_profile":
     ensure  => present,
-    content => $bash_profile,
+    content => '[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
+alias b="bundle exec"
+'
   }
 }
