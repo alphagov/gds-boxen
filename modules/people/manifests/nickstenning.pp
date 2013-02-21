@@ -7,6 +7,7 @@ class people::nickstenning {
   include iterm2::dev
   include macvim
   include mailplane::beta
+  include nvm
   include onepassword
   include turn-off-dashboard
   include theunarchiver
