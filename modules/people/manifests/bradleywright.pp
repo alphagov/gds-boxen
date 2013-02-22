@@ -66,11 +66,14 @@ class people::bradleywright {
 
   file { "${home}/.local_zshrc":
     mode    => '0644',
-    content => "cdpath=(~/src ~/Projects ~)
+    content => 'cdpath=(~/src ~/Projects ~)
 
-export govuk_dev_dist='lucid'
+export govuk_dev_dist="lucid"
 
-alias vup=\"cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev 'sudo apt-get -y install libxml2-dev libxslt-dev && govuk_puppet'; vagrant provision; ssh dev 'cd ~/src/dotfiles && make'; ssh dev\"",
+alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev \'sudo apt-get -y install libxml2-dev libxslt-dev && govuk_puppet\'; vagrant provision; ssh dev \'cd ~/src/dotfiles && make\'; ssh dev"
+
+[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+',
   }
 
   file { "${home}/.localgitconfig":
