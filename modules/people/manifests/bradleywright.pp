@@ -75,6 +75,8 @@ export govuk_dev_dist="lucid"
 alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev \'sudo apt-get -y install libxml2-dev libxslt-dev && govuk_puppet\'; vagrant provision; ssh dev \'cd ~/src/dotfiles && make\'; ssh dev"
 
 [[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+
+[[ -f /Applications/Emacs.app/Contents/MacOS/bin/emacsclient ]] && export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 ',
   }
 
