@@ -6,6 +6,8 @@ class people::bradleywright {
   include emacs::pretest
   include iterm2::dev
   include mailplane::beta
+  include mysql
+  include qt
   include remove-spotlight
   include slate
   include turn-off-dashboard
