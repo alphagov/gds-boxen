@@ -1,0 +1,13 @@
+#!/bin/sh
+cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/Library/Extensions/tap.kext /Library/Extensions/
+cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/Library/Extensions/tun.kext /Library/Extensions/
+chown -R root:wheel /Library/Extensions/tap.kext
+chown -R root:wheel /Library/Extensions/tun.kext
+touch /Library/Extensions/
+cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tun /Library/StartupItems/
+cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tap /Library/StartupItems/
+cd /Library/Extensions
+kextunload -v tap.kext
+kextunload -v tun.kext
+kextload -v tun.kext
+kextload -v tap.kext
