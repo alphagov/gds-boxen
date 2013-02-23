@@ -14,6 +14,7 @@ class people::samjsharpe {
   include mplayerx
   include oh-my-zsh
   include onepassword
+  include openconnect
   include screen
   include skype
   include slate
@@ -63,14 +64,65 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
   # These are all Homebrew packages
   package {
     [
-      'autoconf', 'autojump', 'automake', 'bdw-gc', 'boost', 'brew-pip',
-      'cabextract', 'coreutils', 'ctags', 'encfs', 'fdupes', 'fuse4x',
-      'fuse4x-kext', 'gdbm', 'gettext', 'git', 'git-extras', 'git-flow',
-      'gnupg', 'go', 'jasper', 'jpeg', 'legit', 'libicns',
-      'libpng', 'libpst', 'libtool', 'libyaml', 'nmap', 'ntfs-3g', 'openssl',
-      'parallel', 'pcre', 'pkg-config', 'rdesktop', 'readline', 'rename',
-      'renameutils', 'rlog', 's3cmd', 'sslscan', 'unrar', 'w3m', 'wget', 'xz',
-      'youtube-dl', 'zsh-completions', 'zsh-lovers'
+      'autoconf',
+      'autojump',
+      'automake',
+      'bdw-gc',
+      'boost',
+      'brew-pip',
+      'brew-gem',
+      'cabextract',
+      'colordiff',
+      'coreutils',
+      'ctags',
+      'curl',
+      'curl-ca-bundle',
+      'dos2unix',
+      'encfs',
+      'fdupes',
+      'fping',
+      'fuse4x',
+      'fuse4x-kext',
+      'gdbm',
+      'gettext',
+      'git',
+      'git-extras',
+      'git-flow',
+      'gnupg',
+      'go',
+      'heroku-toolbelt',
+      'jasper',
+      'jpeg',
+      'legit',
+      'libicns',
+      'libpng',
+      'libpst',
+      'libtool',
+      'libyaml',
+      # 'metasploit', # Yeah, probably not
+      'nmap',
+      'ntfs-3g',
+      'openssl',
+      'osxutils',
+      'parallel',
+      'pcre',
+      'pkg-config',
+      'rdesktop',
+      'readline',
+      'rename',
+      'renameutils',
+      'rlog',
+      's3cmd',
+      'siege',
+      'ssh-copy-id',
+      'sslscan',
+      'unrar',
+      'w3m',
+      'wget',
+      'xz',
+      'youtube-dl',
+      'zsh-completions',
+      'zsh-lovers'
     ]:
     ensure => present,
   }
