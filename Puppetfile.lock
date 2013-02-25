@@ -19,6 +19,11 @@ GITHUBTARBALL
     chrome (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-clojure
+  specs:
+    clojure (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-colloquy
   specs:
     colloquy (1.0.0)
@@ -183,6 +188,7 @@ DEPENDENCIES
   boxen (= 1.0.2)
   caffeine (= 1.0.0)
   chrome (= 1.0.0)
+  clojure (= 1.0.0)
   colloquy (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.0.0)
