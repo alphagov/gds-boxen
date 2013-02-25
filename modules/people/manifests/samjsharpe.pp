@@ -8,6 +8,7 @@ class people::samjsharpe {
   include git-pulls
   include git-remote-branch
   include googledrive
+  include hub
   include iterm2::stable
   include macvim
   include mailplane::beta
