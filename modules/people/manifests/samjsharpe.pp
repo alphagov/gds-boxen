@@ -75,8 +75,6 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'colordiff',
       'coreutils',
       'ctags',
-      'curl',
-      'curl-ca-bundle',
       'dos2unix',
       'encfs',
       'fdupes',
