@@ -13,6 +13,7 @@ class openconnect {
     file {'/usr/bin/tuntap-installer':
       source => 'puppet:///modules/openconnect/tuntap-installer',
       ensure => present,
+      mode   => '0755',
     }
 
     exec {'install-tuntap':
