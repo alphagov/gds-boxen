@@ -106,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (1.0.0)
+    ruby (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-screen
@@ -186,7 +186,7 @@ DEPENDENCIES
   onepassword (= 1.0.0)
   osx (= 1.0.0)
   qt (= 1.0.0)
-  ruby (= 1.0.0)
+  ruby (= 2.0.0)
   screen (= 1.0.0)
   skype (= 1.0.0)
   sparrow (= 1.0.0)
