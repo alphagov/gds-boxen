@@ -66,17 +66,21 @@ class people::bradleywright {
     refreshonly => true,
   }
 
+  file { "${home}/.local_zshenv":
+    mode    => '0644',
+    content => 'export govuk_dev_dist="lucid"
+
+[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+
+[[ -f /Applications/Emacs.app/Contents/MacOS/bin/emacsclient ]] && path=(/Applications/Emacs.app/Contents/MacOS/bin $path)
+'
+  }
+
   file { "${home}/.local_zshrc":
     mode    => '0644',
     content => 'cdpath=(~/src ~/Projects ~)
 
-export govuk_dev_dist="lucid"
-
 alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev \'govuk_puppet\'; vagrant provision; ssh dev \'cd ~/src/dotfiles && make\'; ssh dev \'sudo rm /etc/tmux.conf\'; ssh dev"
-
-[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
-
-[[ -f /Applications/Emacs.app/Contents/MacOS/bin/emacsclient ]] && export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 ',
   }
 
