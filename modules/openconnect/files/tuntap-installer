@@ -7,7 +7,7 @@ touch /Library/Extensions/
 cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tun /Library/StartupItems/
 cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tap /Library/StartupItems/
 cd /Library/Extensions
-kextunload -v tap.kext
-kextunload -v tun.kext
-kextload -v tun.kext
-kextload -v tap.kext
+kextunload -v tap.kext 2>/dev/null
+kextunload -v tun.kext 2>/dev/null
+kextload -v tun.kext 2>/dev/null
+kextload -v tap.kext 2>/dev/null
