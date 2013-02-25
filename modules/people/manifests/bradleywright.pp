@@ -66,6 +66,14 @@ class people::bradleywright {
     refreshonly => true,
   }
 
+  file { "${home}/.emacs.d/local/${::hostname}.el":
+    mode    => '0644',
+    content => "(exec-path-from-shell-copy-env \"BOXEN_NVM_DIR\")
+(exec-path-from-shell-copy-env \"BOXEN_NVM_DEFAULT_VERSION\")
+",
+    require => Repository[$emacs],
+  }
+
   file { "${home}/.local_zshenv":
     mode    => '0644',
     content => 'export govuk_dev_dist="lucid"
