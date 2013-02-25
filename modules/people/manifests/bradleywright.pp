@@ -91,10 +91,8 @@ alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant des
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
     content => '# Predefined IP address, randomly assigned when I ran ./install.sh
 config.vm.network :hostonly, "10.244.2.189"
-# Give it 4GB of RAM so I can run all the things
-config.vm.customize ["modifyvm", :id, "--memory", 4096]
-# Give it 2 CPUs because I have 4
-config.vm.customize ["modifyvm", :id, "--cpus", "2"]
+# Give it 2GB of RAM so I can run all the things
+config.vm.customize ["modifyvm", :id, "--memory", 2048]
 
 # My puppet configuration
 config.vm.provision :puppet do |puppet|
