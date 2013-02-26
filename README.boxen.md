@@ -86,7 +86,7 @@ everyone by default. An example of this might look like so:
  class github::environment {
    include github::apps::mac
 
-   include ruby::1-8-7
+   include ruby::1_8_7
 
    include projects::super-top-secret-project
  }
