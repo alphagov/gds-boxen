@@ -53,6 +53,18 @@ class people::nickstenning {
     host = github.gds'
   }
 
+  repository { "${code}/vim":
+    source  => 'nickstenning/dotvim',
+    require => File[$code],
+    notify  => Exec['install-dotvim'],
+  }
+
+  exec { 'install-dotvim':
+    cwd         => "${code}/vim",
+    command     => 'sh install',
+    refreshonly => true,
+  }
+
   package {
     [
       'autoenv',
