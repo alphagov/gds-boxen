@@ -65,6 +65,10 @@ class people::nickstenning {
     refreshonly => true,
   }
 
+  repository { "${home}/.virtualenvs":
+    source  => 'nickstenning/dotvirtualenvs',
+  }
+
   package {
     [
       'autoenv',
