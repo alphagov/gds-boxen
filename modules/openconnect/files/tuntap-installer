@@ -6,6 +6,7 @@ chown -R root:wheel /Library/Extensions/tun.kext
 touch /Library/Extensions/
 cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tun /Library/StartupItems/
 cp -pR /opt/boxen/homebrew/Cellar/tuntap/20111101/tap /Library/StartupItems/
+chown root /Library/StartupItems/tun /Library/StartupItems/tap
 cd /Library/Extensions
 kextunload -v tap.kext 2>/dev/null
 kextunload -v tun.kext 2>/dev/null
