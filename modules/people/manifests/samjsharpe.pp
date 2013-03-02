@@ -86,7 +86,7 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'gettext',
       'git',
       'git-extras',
-      'git-flow',
+      'git-flow-avh',
       'gnupg',
       'go',
       'heroku-toolbelt',
