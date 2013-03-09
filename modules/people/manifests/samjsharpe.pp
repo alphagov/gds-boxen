@@ -11,8 +11,9 @@ class people::samjsharpe {
   include hub
   include iterm2::stable
   include macvim
+  include mou
   include mplayerx
-  include nvalt::beta
+  include notational_velocity::nvalt
   include oh-my-zsh
   include onepassword
   include openconnect
