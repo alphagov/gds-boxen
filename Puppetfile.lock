@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/dttocs/puppet-nvalt.git
+  ref: master
+  sha: 2671b01aa932aec82a3b6ecc596c038d7a8a55be
+  specs:
+    nvalt (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
@@ -211,6 +218,7 @@ DEPENDENCIES
   mysql (= 1.0.0)
   nginx (= 1.0.0)
   nodejs (= 1.0.0)
+  nvalt (>= 0)
   nvm (= 1.0.0)
   onepassword (= 1.0.0)
   osx (= 1.0.0)

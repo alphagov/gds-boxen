@@ -63,3 +63,5 @@ github "things",         "1.0.0"
 github "wget",           "1.0.0"
 github "xquartz",        "1.0.0"
 github "zsh",            "1.0.0"
+
+mod    "nvalt", :git => "https://github.com/dttocs/puppet-nvalt.git"
