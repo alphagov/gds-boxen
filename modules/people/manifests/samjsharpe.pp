@@ -13,6 +13,7 @@ class people::samjsharpe {
   include macvim
   include mailplane::beta
   include mplayerx
+  include nvalt::beta
   include oh-my-zsh
   include onepassword
   include openconnect
