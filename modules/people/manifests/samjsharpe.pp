@@ -11,7 +11,6 @@ class people::samjsharpe {
   include hub
   include iterm2::stable
   include macvim
-  include mailplane::beta
   include mplayerx
   include nvalt::beta
   include oh-my-zsh
