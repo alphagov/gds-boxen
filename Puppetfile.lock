@@ -29,6 +29,11 @@ GITHUBTARBALL
     colloquy (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-cord
+  specs:
+    cord (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -205,6 +210,7 @@ DEPENDENCIES
   chrome (= 1.0.0)
   clojure (= 1.0.0)
   colloquy (= 1.0.0)
+  cord (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.0.0)
   fitbit (= 1.0.0)
