@@ -3,6 +3,7 @@ class people::samjsharpe {
   include alfred
   include chicken
   include chrome
+  include cord
   include dropbox
   include firefox
   include git-pulls
