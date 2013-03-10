@@ -22,6 +22,7 @@ class people::samjsharpe {
   include skype
   include slate
   include spf13-vim-3
+  include transmission
   include turn-off-dashboard
   include theunarchiver
   include vagrant
