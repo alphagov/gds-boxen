@@ -4,6 +4,7 @@ class people::dcarley {
   include chrome
   include git
   include iterm2::stable
+  include turn-off-dashboard
   include virtualbox
   include wget
 
