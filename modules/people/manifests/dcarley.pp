@@ -20,6 +20,20 @@ class people::dcarley {
     ensure => present,
   }
 
+  exec { 'restart_dock':
+    command     => 'killall -1 Dock',
+    refreshonly => true,
+  }
+
+  boxen::osx_defaults { 'dock size':
+    domain  => 'com.apple.dock',
+    key     => 'tilesize',
+    value   => 50,
+    type    => 'int',
+    user    => $::luser,
+    notify  => Exec['restart_dock'],
+  }
+
   $home = "/Users/${::luser}"
   $projects = "${home}/projects"
   $projects_personal = "${projects}/personal"
