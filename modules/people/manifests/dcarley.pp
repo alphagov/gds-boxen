@@ -8,6 +8,8 @@ class people::dcarley {
   include virtualbox
   include wget
 
+  dock::size { 50: }
+
   # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
   # Projects only accessible to certain staff
@@ -19,20 +21,6 @@ class people::dcarley {
       'bash-completion', 'gnupg', 'go', 'tmux'
     ]:
     ensure => present,
-  }
-
-  exec { 'restart_dock':
-    command     => 'killall -1 Dock',
-    refreshonly => true,
-  }
-
-  boxen::osx_defaults { 'dock size':
-    domain  => 'com.apple.dock',
-    key     => 'tilesize',
-    value   => 50,
-    type    => 'int',
-    user    => $::luser,
-    notify  => Exec['restart_dock'],
   }
 
   $home = "/Users/${::luser}"
