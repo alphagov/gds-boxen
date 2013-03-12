@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.1.0)
+    homebrew (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -224,7 +224,7 @@ DEPENDENCIES
   git (= 1.0.0)
   gitx (= 1.1.0)
   heroku (= 1.0.0)
-  homebrew (= 1.1.0)
+  homebrew (= 1.1.2)
   hub (= 1.0.0)
   hub (= 1.0.0)
   inifile (= 0.9.0)
