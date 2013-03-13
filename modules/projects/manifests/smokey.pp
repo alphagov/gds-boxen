@@ -1,4 +1,4 @@
-# Pulls the https://github.com/alphagov/puppet repository
+# Pulls the https://github.com/alphagov/smokey repository
 class projects::smokey {
   repo::alphagov { 'smokey': }
 }
