@@ -11,7 +11,6 @@ class people::jabley {
   include vagrant
   include vagrant-dns
   include virtualbox
-  include wget
 
   # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
