@@ -4,6 +4,7 @@ class people::bradleywright {
   include chrome
   include dropbox
   include emacs::pretest
+  include gds-resolver
   include iterm2::dev
   include mailplane::beta
   include mysql
