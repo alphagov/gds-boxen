@@ -8,6 +8,7 @@ class people::samjsharpe {
   include firefox
   include git-pulls
   include git-remote-branch
+  include gnupg
   include googledrive
   include hub
   include iterm2::stable
@@ -90,7 +91,6 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'git',
       'git-extras',
       'git-flow-avh',
-      'gnupg',
       'go',
       'heroku-toolbelt',
       'jasper',

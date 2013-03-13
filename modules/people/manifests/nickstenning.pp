@@ -4,6 +4,7 @@ class people::nickstenning {
   include chrome
   include dropbox
   include dnsmasq
+  include gnupg
   include iterm2::dev
   include macvim
   include mailplane::beta
@@ -82,7 +83,6 @@ class people::nickstenning {
       'fuse4x',
       'fuse4x-kext',
       'git',
-      'gnupg',
       'go',
       'gpg-agent',
       'graphviz',

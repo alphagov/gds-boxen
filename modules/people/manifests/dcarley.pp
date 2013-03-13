@@ -18,7 +18,7 @@ class people::dcarley {
   # These are all Homebrew packages
   package {
     [
-      'bash-completion', 'gnupg', 'go', 'tmux'
+      'bash-completion', 'go', 'tmux'
     ]:
     ensure => present,
   }
