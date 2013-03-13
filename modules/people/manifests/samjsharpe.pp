@@ -8,6 +8,7 @@ class people::samjsharpe {
   include firefox
   include git-pulls
   include git-remote-branch
+  include gnupg
   include googledrive
   include hub
   include iterm2::stable
@@ -34,6 +35,7 @@ class people::samjsharpe {
   include teams::infrastructure
   # Projects only accessible to certain staff
   include projects::deployment
+  include projects::deployment::creds
 
   repository { "${boxen::config::srcdir}/dotfiles":
     source  => 'samjsharpe/dotfiles',
@@ -80,17 +82,13 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'coreutils',
       'ctags',
       'dos2unix',
-      'encfs',
       'fdupes',
       'fping',
-      'fuse4x',
-      'fuse4x-kext',
       'gdbm',
       'gettext',
       'git',
       'git-extras',
       'git-flow-avh',
-      'gnupg',
       'go',
       'heroku-toolbelt',
       'jasper',

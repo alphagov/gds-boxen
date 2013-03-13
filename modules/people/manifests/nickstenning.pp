@@ -4,6 +4,7 @@ class people::nickstenning {
   include chrome
   include dropbox
   include dnsmasq
+  include gnupg
   include iterm2::dev
   include macvim
   include mailplane::beta
@@ -19,6 +20,7 @@ class people::nickstenning {
   include teams::infrastructure
 
   include projects::deployment
+  include projects::deployment::creds
 
   $home = "/Users/${::luser}"
   $code = "${home}/code"
@@ -78,11 +80,7 @@ class people::nickstenning {
       'daemontools',
       'dash',
       'elasticsearch',
-      'encfs',
-      'fuse4x',
-      'fuse4x-kext',
       'git',
-      'gnupg',
       'go',
       'gpg-agent',
       'graphviz',

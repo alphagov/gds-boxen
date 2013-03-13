@@ -6,6 +6,7 @@ class people::jabley {
   include dropbox
   include firefox
   include git
+  include gnupg
   include turn-off-dashboard
   include vagrant
   include vagrant-dns
@@ -38,7 +39,6 @@ class people::jabley {
       'glm',
       'gmp',
       'gnu-typist',
-      'gnupg',
       'gource',
       'groovy',
       'httperf',
