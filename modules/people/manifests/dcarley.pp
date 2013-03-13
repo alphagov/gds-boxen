@@ -35,6 +35,7 @@ class people::dcarley {
 
   repository { $dotfiles:
     source  => 'dcarley/dotfiles',
+    notify  => Exec['install dotfiles'],
     require => File[$projects_personal],
   }
 
@@ -42,6 +43,7 @@ class people::dcarley {
     command     => 'rake',
     cwd         => $dotfiles,
     logoutput   => true,
+    refreshonly => true,
   }
 
   file { "${home}/.bash_profile":
