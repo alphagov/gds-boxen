@@ -57,6 +57,10 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
     require => Class['oh-my-zsh']
   }
 
+  osx_resolver::domain { 'gds':
+    content => 'nameserver 192.168.19.254',
+  }
+
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
     content => "
         config.vm.network :hostonly, '10.23.45.67'
