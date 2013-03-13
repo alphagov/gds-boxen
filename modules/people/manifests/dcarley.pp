@@ -32,26 +32,5 @@ class people::dcarley {
     ensure  => directory,
   }
 
-  $dotfiles = "${projects_personal}/dotfiles"
-
-  repository { $dotfiles:
-    source  => 'dcarley/dotfiles',
-    notify  => Exec['install dotfiles'],
-    require => File[$projects_personal],
-  }
-
-  exec { 'install dotfiles':
-    command     => 'rake',
-    cwd         => $dotfiles,
-    logoutput   => true,
-    refreshonly => true,
-  }
-
-  file { "${home}/.bash_profile":
-    ensure  => present,
-    content => '[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
-[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
-alias b="bundle exec"
-'
-  }
+  include people::dcarley::dotfiles
 }
