@@ -63,7 +63,6 @@ class people::jabley {
       'proctools',
       'protobuf',
       'pv',
-      'rbenv',
       'redis',
       'redo',
       'ruby-build',
