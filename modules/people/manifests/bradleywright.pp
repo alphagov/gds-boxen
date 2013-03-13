@@ -7,7 +7,6 @@ class people::bradleywright {
   include gds-resolver
   include iterm2::dev
   include mailplane::beta
-  include mysql
   include qt
   include remove-spotlight
   include slate
@@ -20,10 +19,12 @@ class people::bradleywright {
   include projects::alphagov-deployment
   include projects::development
   include projects::frontend
+  include projects::govuk_frontend_toolkit
   include projects::private-utils
   include projects::puppet
   include projects::redirector
   include projects::rummager
+  include projects::smokey
   include projects::static
   include projects::whitehall
 
@@ -121,13 +122,49 @@ end
   package {
     [
      'bash-completion',
+     'ghostscript',
+     'imagemagick',
+     'mysql',
      'parallel',
      'reattach-to-user-namespace',
      'tmux',
      'tree',
      'wget',
+     'xpdf',
      'zsh-completions',
      'zsh-lovers',
      ]:
   }
+
+  file { '/usr/local/bin/pdfinfo':
+    ensure  => link,
+    target  => '/opt/boxen/homebrew/bin/pdfinfo',
+    require => Package['xpdf'],
+    owner   => root,
+  }
+
+  file { "${home}/Library/LaunchAgents/homebrew.mxcl.mysql.plist":
+    ensure  => link,
+    target  => '/opt/boxen/homebrew/opt/mysql/homebrew.mxcl.mysql.plist',
+    require => Package['mysql'],
+  }
+
+  service { 'homebrew.mxcl.mysql':
+    ensure    => running,
+    enable    => true,
+    require   => File["${home}/Library/LaunchAgents/homebrew.mxcl.mysql.plist"],
+    notify    => Exec['setup.mysql'],
+  }
+
+  exec { 'setup.mysql':
+    refreshonly => true,
+    command     => 'unset TMPDIR; mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/opt/boxen/homebrew/var/mysql --tmpdir=/tmp',
+  }
+
+  # set up Sass source maps correctly
+  file { '/var/govuk':
+    ensure => link,
+    target => "${boxen::config::srcdir}"
+  }
+
 }
