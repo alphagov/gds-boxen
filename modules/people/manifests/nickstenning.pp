@@ -20,6 +20,7 @@ class people::nickstenning {
   include teams::infrastructure
 
   include projects::deployment
+  include projects::deployment::creds
 
   $home = "/Users/${::luser}"
   $code = "${home}/code"
@@ -79,9 +80,6 @@ class people::nickstenning {
       'daemontools',
       'dash',
       'elasticsearch',
-      'encfs',
-      'fuse4x',
-      'fuse4x-kext',
       'git',
       'go',
       'gpg-agent',

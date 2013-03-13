@@ -14,6 +14,7 @@ class people::dcarley {
   include teams::infrastructure
   # Projects only accessible to certain staff
   include projects::deployment
+  include projects::deployment::creds
 
   # These are all Homebrew packages
   package {

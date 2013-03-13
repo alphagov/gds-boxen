@@ -35,6 +35,7 @@ class people::samjsharpe {
   include teams::infrastructure
   # Projects only accessible to certain staff
   include projects::deployment
+  include projects::deployment::creds
 
   repository { "${boxen::config::srcdir}/dotfiles":
     source  => 'samjsharpe/dotfiles',
@@ -81,11 +82,8 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'coreutils',
       'ctags',
       'dos2unix',
-      'encfs',
       'fdupes',
       'fping',
-      'fuse4x',
-      'fuse4x-kext',
       'gdbm',
       'gettext',
       'git',
