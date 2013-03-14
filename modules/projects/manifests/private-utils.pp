@@ -1,4 +1,4 @@
-# Pulls the https://github.com/alphagov/private-utils repository
+# Pulls the https://github.gds/gds/private-utils repository
 class projects::private-utils {
-  repo::alphagov { 'private-utils': }
+  repo::gds { 'private-utils': }
 }
