@@ -3,7 +3,9 @@
 - Have OSX 10.8 Mountain Lion installed
 - Install the Xcode Command Line Tools (full Xcode install optional).
  - https://developer.apple.com/downloads/index.action
-- Run the following:
+- Running Boxen:
+ - Option 1: Easy setup... https://gds-boxen.herokuapp.com/
+ - Option 2: Manual setup... 
 
 ```
 sudo mkdir -p /opt/boxen
