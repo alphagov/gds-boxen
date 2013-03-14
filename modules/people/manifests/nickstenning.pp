@@ -95,7 +95,6 @@ class people::nickstenning {
       'pstree',
       'pv',
       'pwgen',
-      'pypy',
       'python',
       'python3',
       'reattach-to-user-namespace',
