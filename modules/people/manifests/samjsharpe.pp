@@ -6,6 +6,7 @@ class people::samjsharpe {
   include cord
   include dropbox
   include firefox
+  include gds-resolver
   include git-pulls
   include git-remote-branch
   include gnupg
@@ -55,10 +56,6 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}:%{$fg[green]%}"
 PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
 ',
     require => Class['oh-my-zsh']
-  }
-
-  osx_resolver::domain { 'gds':
-    content => 'nameserver 192.168.19.254',
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":

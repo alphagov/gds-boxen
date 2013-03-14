@@ -2,6 +2,7 @@ class people::dcarley {
   include adium
   include caffeine
   include chrome
+  include gds-resolver
   include git
   include iterm2::stable
   include turn-off-dashboard
@@ -36,8 +37,4 @@ class people::dcarley {
   }
 
   include people::dcarley::dotfiles
-
-  osx_resolver::domain { 'gds':
-    content => 'nameserver 192.168.19.254',
-  }
 }
