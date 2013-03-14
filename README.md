@@ -34,7 +34,7 @@ globally to everyone. You will probably want to:
 
 ## Removing install of Homebrew in /usr/local/bin
 
-- Boxen installs it's own version of Homebrew in `/opt/boxen/homebrew` which may conflict with a previous version installed in `/usr/local/bin`.
+- Boxen installs its own version of Homebrew in `/opt/boxen/homebrew` which may conflict with a previous version installed in `/usr/local/bin`.
 - You can list the brews installed in your previous version with:
 ```
 /usr/local/bin/brew list
