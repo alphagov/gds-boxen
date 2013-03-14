@@ -20,7 +20,6 @@ class people::jabley {
   # These are all Homebrew packages
   package {
     [
-      'ack',
       'ascii',
       'bash-completion',
       'boost',
@@ -65,7 +64,6 @@ class people::jabley {
       'pv',
       'redis',
       'redo',
-      'ruby-build',
       'sbt',
       'scala',
       'sdl',
