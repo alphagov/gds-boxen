@@ -14,6 +14,7 @@ class people::bradleywright {
   include vagrant
   include vagrant-dns
   include virtualbox
+  include zeus
   include zsh
 
   include projects::alphagov-deployment
