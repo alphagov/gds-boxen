@@ -12,11 +12,6 @@ class people::jabley {
   include vagrant-dns
   include virtualbox
 
-  # Projects accessible to everyone in Infrastructure
-  include teams::infrastructure
-  # Projects only accessible to certain staff
-  include projects::deployment
-
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
 
