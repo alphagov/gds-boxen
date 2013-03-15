@@ -31,7 +31,7 @@ http://gds-boxen.herokuapp.com/.
 
 Open a new terminal, `boxen --env` to confirm.
 
-- Create a personal module to define what you want on your Mac See [the
+- Create a personal module to define what you want on your Mac. See [the
   documentation in the `modules/people`](modules/people/README.md) directory for
   creating per-user modules that don't need to be applied globally to everyone.
   You will probably want to:
