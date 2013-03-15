@@ -6,7 +6,6 @@ class people::nickstenning {
   include dnsmasq
   include gnupg
   include iterm2::dev
-  include macvim
   include mailplane::beta
   include nvm
   include onepassword
@@ -87,6 +86,7 @@ class people::nickstenning {
       'heroku-toolbelt',
       'htop-osx',
       'keychain',
+      'mercurial',
       'mobile-shell',
       'mtr',
       'multimarkdown',
@@ -107,6 +107,7 @@ class people::nickstenning {
       'tree',
       'watch',
       'wget',
+      'vim',
       'xz',
       'z'
     ]:

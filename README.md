@@ -46,24 +46,24 @@ Open a new terminal, `boxen --env` to confirm.
   conflict with a previous version installed in `/usr/local/bin`.
 - You can list the brews installed in your previous version with:
 
-      /usr/local/bin/brew list
+        /usr/local/bin/brew list
 
 - You can list the brews installed by Boxen with:
 
-      /opt/boxen/homebrew/bin/brew list
+        /opt/boxen/homebrew/bin/brew list
 
 - To generate a list of previous homebrew builds (to add to
   `modules/people/manifests/yourgithubuser.pp`) you can do:
 
-      /usr/local/bin/brew list | (
-          echo "package { ["
-          while read line; do
-              echo "           '$line',"
-          done
-          echo "          ]:"
-          echo "          ensure => 'present',"
-          echo "}"
-      )
+        /usr/local/bin/brew list | (
+            echo "package { ["
+            while read line; do
+                echo "           '$line',"
+            done
+            echo "          ]:"
+            echo "          ensure => 'present',"
+            echo "}"
+        )
 
 - One you have installed your previous brews with Boxen (run the `boxen` command
   after adding the resource generated above) you can [delete the previous
