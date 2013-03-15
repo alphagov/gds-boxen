@@ -12,6 +12,10 @@ class people::jabley {
   include vagrant-dns
   include virtualbox
 
+  include teams::performance-platform
+  include teams::efg
+  include teams::trade-tariff
+  
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
 
