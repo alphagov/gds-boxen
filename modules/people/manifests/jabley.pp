@@ -6,7 +6,9 @@ class people::jabley {
   include dropbox
   include firefox
   include git
+  include gitx::l
   include gnupg
+  include transmission
   include turn-off-dashboard
   include vagrant
   include vagrant-dns
