@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.0.0)
+    git (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -221,7 +221,7 @@ DEPENDENCIES
   firefox (= 1.0.3)
   fitbit (= 1.0.0)
   gcc (= 1.0.0)
-  git (= 1.0.0)
+  git (= 1.1.0)
   gitx (= 1.1.0)
   heroku (= 1.0.0)
   homebrew (= 1.1.2)
