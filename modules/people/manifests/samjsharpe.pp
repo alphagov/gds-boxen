@@ -13,6 +13,7 @@ class people::samjsharpe {
   include googledrive
   include hub
   include iterm2::stable
+  include jumpcut
   include macvim
   include mou
   include mplayerx
