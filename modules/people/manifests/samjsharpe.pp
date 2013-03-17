@@ -24,6 +24,7 @@ class people::samjsharpe {
   include screen
   include skype
   include slate
+  include sourcetree
   include spf13-vim-3
   include transmission
   include turn-off-dashboard
