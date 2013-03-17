@@ -231,7 +231,6 @@ DEPENDENCIES
   heroku (= 1.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
-  hub (= 1.0.0)
   inifile (= 0.9.0)
   iterm2 (= 1.0.1)
   jumpcut (= 1.0.0)
