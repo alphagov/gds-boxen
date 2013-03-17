@@ -30,7 +30,7 @@ class people::samjsharpe {
   include theunarchiver
   include vagrant
   include vagrant-dns
-  include virtualbox
+  include virtualbox::latest
   include zsh
 
   # Projects accessible to everyone in Infrastructure
