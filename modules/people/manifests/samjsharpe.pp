@@ -86,13 +86,10 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'osxutils',
       'parallel',
       's3cmd',
-      'siege',
       'ssh-copy-id',
       'sslscan',
       'unrar',
-      'w3m',
       'wget',
-      'xz',
       'zsh-completions',
       'zsh-lovers'
     ]:
