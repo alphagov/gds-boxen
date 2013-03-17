@@ -22,7 +22,6 @@ class people::samjsharpe {
   include onepassword
   include openconnect
   include screen
-  include skype
   include slate
   include sourcetree
   include spf13-vim-3
