@@ -5,7 +5,7 @@ class teams::performance-platform {
   include projects::alphagov-deployment
   include projects::puppet
 
-  repo::gds { 'backdrop': }
+  repo::gds      { 'backdrop': }
   repo::alphagov { 'datainsight': }
   repo::alphagov { 'datainsight-akamai-scanner': }
   repo::alphagov { 'datainsight-collectors': }
