@@ -33,7 +33,6 @@ class people::jabley {
       'faac',
       'ffmpeg',
       'gettext',
-      'git',
       'glew',
       'glm',
       'gmp',
@@ -74,6 +73,7 @@ class people::jabley {
       'x264',
       'xvid',
       'yasm',
+      'youtube-dl',
     ]:
     ensure => 'present',
   }
