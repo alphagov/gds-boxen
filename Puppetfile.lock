@@ -156,7 +156,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
-    skype (1.0.0)
+    skype (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sparrow
@@ -246,7 +246,7 @@ DEPENDENCIES
   qt (= 1.0.0)
   ruby (= 3.0.0)
   screen (= 1.0.0)
-  skype (= 1.0.0)
+  skype (= 1.0.1)
   sparrow (= 1.0.0)
   spotify (= 1.0.0)
   stdlib (= 3.0.0)
