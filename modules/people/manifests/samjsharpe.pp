@@ -1,6 +1,7 @@
 class people::samjsharpe {
   include adium
   include alfred
+  include calibre
   include chicken
   include chrome
   include cord
