@@ -25,6 +25,7 @@ class people::jabley {
       'bash-completion',
       'boost',
       'bsdmake',
+      'cdrtools',
       'cloc',
       'cmake',
       'dos2unix',
