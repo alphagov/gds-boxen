@@ -11,7 +11,7 @@ class emacs::stable {
     notify   => 'fix-emacs-termcap',
   }
 
-  # So ansi-term behaves itself
+  # So ansi-term behaves itself: http://stackoverflow.com/a/8920373
   exec { 'fix-emacs-termcap':
     command     => 'tic -o ~/.terminfo /Applications/Emacs.app/Contents/Resources/etc/e/eterm-color.ti',
     refreshonly => true,
