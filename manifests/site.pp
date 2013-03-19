@@ -48,6 +48,29 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
+define ruby::all::gem (
+    $version = undef
+  ){
+  ruby::gem {"${name}-1.8.7":
+    gem     => $name,
+    ruby    => '1.8.7',
+    require => Class['ruby::1_8_7'],
+    version => $version,
+  }
+  ruby::gem {"${name}-1.9.2":
+    gem     => $name,
+    ruby    => '1.9.2',
+    require => Class['ruby::1_9_2'],
+    version => $version,
+  }
+  ruby::gem {"${name}-1.9.3":
+    gem     => $name,
+    ruby    => '1.9.3',
+    require => Class['ruby::1_9_3'],
+    version => $version,
+  }
+}
+
 node default {
   # core modules, needed for most things
   include git
