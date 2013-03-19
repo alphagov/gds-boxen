@@ -31,6 +31,7 @@ class people::samjsharpe {
   include theunarchiver
   include vagrant
   include vagrant-dns
+  include vagrant-vbguest
   include virtualbox::latest
   include zsh
 
