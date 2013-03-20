@@ -143,25 +143,6 @@ end
     require => Package['xpdf'],
     owner   => root,
   }
-
-  file { "${home}/Library/LaunchAgents/homebrew.mxcl.mysql.plist":
-    ensure  => link,
-    target  => '/opt/boxen/homebrew/opt/mysql/homebrew.mxcl.mysql.plist',
-    require => Package['mysql'],
-  }
-
-  service { 'homebrew.mxcl.mysql':
-    ensure    => running,
-    enable    => true,
-    require   => File["${home}/Library/LaunchAgents/homebrew.mxcl.mysql.plist"],
-    notify    => Exec['setup.mysql'],
-  }
-
-  exec { 'setup.mysql':
-    refreshonly => true,
-    command     => 'unset TMPDIR; mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/opt/boxen/homebrew/var/mysql --tmpdir=/tmp',
-  }
-
   # set up Sass source maps correctly
   file { '/var/govuk':
     ensure => link,
