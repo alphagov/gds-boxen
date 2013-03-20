@@ -1,6 +1,10 @@
 class people::benilovj {
   ## Remove the # from any of the below to install that software
   include virtualbox
+
+  class { 'intellij':
+      edition => 'community',
+  }
   #include nvm
   #include alfred
   #include caffeine
@@ -42,12 +46,13 @@ class people::benilovj {
   ## This is how to install Homebrew packages
   ## You can get a list of your current packages with
   ## `brew list`
-  #package {
-  #  [
+  package {
+    [
   #    'autoconf',
   #    'autojump',
   #    'automake',
-  #  ]:
-  #  ensure => present,
-  #}
+      'gradle',
+    ]:
+    ensure => present,
+  }
 }
