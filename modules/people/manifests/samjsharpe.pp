@@ -1,6 +1,6 @@
 class people::samjsharpe {
   include adium
-  include alfred
+  include alfred::two
   include calibre
   include chicken
   include chrome
