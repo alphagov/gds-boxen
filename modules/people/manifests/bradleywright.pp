@@ -1,6 +1,6 @@
 class people::bradleywright {
   include adium
-  include alfred
+  include alfred::two
   include chrome
   include dropbox
   include emacs::pretest
