@@ -204,6 +204,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: bradleywright/puppet-emacs
+  specs:
+    emacs (1.1.4)
+
+GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
   specs:
     inifile (0.9.0)
@@ -222,6 +227,7 @@ DEPENDENCIES
   cord (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
+  emacs (= 1.1.4)
   firefox (= 1.0.3)
   fitbit (= 1.0.0)
   gcc (= 1.0.0)
