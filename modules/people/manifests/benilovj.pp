@@ -5,32 +5,18 @@ class people::benilovj {
   class { 'intellij':
       edition => 'community',
   }
-  #include nvm
-  #include alfred
-  #include caffeine
-  #include chrome
-  #include clojure
-  #include colloquy
-  #include dropbox
-  #include fitbit
-  #include gitx
-  #include hub
+  include alfred::two
+  include chrome
+  include dropbox
+  include spotify
+  include sublime_text_2
+  include wget
   #include iterm2
-  #include macvim
-  #include mysql
   #include onepassword
   #include osx
   #include qt
-  #include screen
   #include skype
-  #include sparrow
-  #include spotify
-  #include sublime_text_2
-  #include textmate
-  #include things
-  #include wget
   #include xquartz
-  #include zsh)
 
   ## See modules/teams/manifests for things you can include here
   #include teams::infrastructure
