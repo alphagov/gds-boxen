@@ -10,6 +10,7 @@ class people::samjsharpe {
   include gds-resolver
   include git-pulls
   include git-remote-branch
+  include gitx::dev
   include gnupg
   include googledrive
   include hub
