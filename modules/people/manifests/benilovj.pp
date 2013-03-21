@@ -1,6 +1,6 @@
 class people::benilovj {
   ## Remove the # from any of the below to install that software
-  include virtualbox
+  include virtualbox::latest
 
   class { 'intellij':
       edition => 'community',
