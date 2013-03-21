@@ -5,6 +5,7 @@ class teams::performance-platform {
   include projects::alphagov-deployment
   include projects::puppet
 
+  repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
   repo::alphagov { 'datainsight': }
   repo::alphagov { 'datainsight-akamai-scanner': }
