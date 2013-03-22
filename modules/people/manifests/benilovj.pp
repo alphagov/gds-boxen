@@ -8,6 +8,7 @@ class people::benilovj {
   include alfred::two
   include chrome
   include dropbox
+  include libreoffice
   include spotify
   include sublime_text_2
   include wget
