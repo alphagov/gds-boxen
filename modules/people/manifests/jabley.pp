@@ -57,6 +57,7 @@ class people::jabley {
       'pcre',
       'pidof',
       'pigz',
+      'play',
       'pkg-config',
       'pngcrush',
       'proctools',
