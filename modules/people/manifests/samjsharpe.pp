@@ -4,6 +4,7 @@ class people::samjsharpe {
   include calibre
   include chicken
   include chrome
+  include clipmenu
   include cord
   include dropbox
   include firefox
@@ -15,7 +16,6 @@ class people::samjsharpe {
   include googledrive
   include hub
   include iterm2::stable
-  include jumpcut
   include macvim
   include mou
   include mplayerx
