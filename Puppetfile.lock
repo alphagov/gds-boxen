@@ -219,6 +219,11 @@ GITHUBTARBALL
     libreoffice (1.0.0)
 
 GITHUBTARBALL
+  remote: jhubert/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
@@ -227,6 +232,7 @@ DEPENDENCIES
   boxen (= 1.1.1)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
+  clipmenu (= 1.0.0)
   clojure (= 1.2.0)
   colloquy (= 1.0.0)
   cord (= 1.0.0)

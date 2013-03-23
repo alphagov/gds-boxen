@@ -39,6 +39,7 @@ github "sudo",     "1.0.0"
 
 github "caffeine",       "1.0.0"
 github "chrome",         "1.1.0"
+github "clipmenu",       "1.0.0", :repo => "jhubert/puppet-clipmenu"
 github "clojure",        "1.2.0"
 github "colloquy",       "1.0.0"
 github "cord",           "1.0.0"
