@@ -6,7 +6,7 @@ class people::jabley {
   include dropbox
   include firefox
   include git
-  include gitx::l
+  include gitx::dev
   include gnupg
   include openconnect
   include transmission
