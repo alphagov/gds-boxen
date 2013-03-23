@@ -8,6 +8,7 @@ class people::jabley {
   include git
   include gitx::l
   include gnupg
+  include openconnect
   include transmission
   include turn-off-dashboard
   include vagrant
