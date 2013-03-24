@@ -5,6 +5,7 @@ class people::jabley {
   include chrome
   include dropbox
   include firefox
+  include googledrive
   include git
   include gitx::dev
   include gnupg
