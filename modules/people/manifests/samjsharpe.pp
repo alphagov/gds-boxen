@@ -42,6 +42,10 @@ class people::samjsharpe {
   include projects::deployment
   include projects::deployment::creds
 
+  repository { "${boxen::config::srcdir}/ubuntu-1204-dev":
+    source  => 'samjsharpe/ubuntu-1204-dev',
+  }
+
   repository { "${boxen::config::srcdir}/dotfiles":
     source  => 'samjsharpe/dotfiles',
     notify  => Exec['samjsharpe-link-my-dotfiles'],
