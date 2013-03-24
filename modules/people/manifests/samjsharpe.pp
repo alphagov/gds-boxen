@@ -21,7 +21,6 @@ class people::samjsharpe {
   include mplayerx
   include notational_velocity::nvalt
   include oh-my-zsh
-  include onepassword
   include openconnect
   include screen
   include slate
