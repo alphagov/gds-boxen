@@ -1,4 +1,4 @@
-# Pulls the https://github.com/alphagov/alphagov-deployment repository
+# Pulls the https://github.gds/gds/alphagov-deployment repository
 class projects::alphagov-deployment {
-  repo::alphagov { 'alphagov-deployment': }
+  repo::gds { 'alphagov-deployment': }
 }
