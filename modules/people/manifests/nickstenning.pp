@@ -8,6 +8,7 @@ class people::nickstenning {
   include iterm2::dev
   include mailplane::beta
   include nvm
+  include notational_velocity::nvalt
   include onepassword
   include turn-off-dashboard
   include theunarchiver
