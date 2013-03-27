@@ -107,4 +107,8 @@ node default {
     target => $boxen::config::repodir
   }
 
+  git::config::global { 'hub.host':
+    value => 'github.gds',
+  }
+
 }
