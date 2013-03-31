@@ -42,7 +42,7 @@ class people::samjsharpe {
   include projects::deployment::creds
 
   repository { "${boxen::config::srcdir}/ubuntu-1204-dev":
-    source  => 'samjsharpe/ubuntu-1204-dev',
+    source  => 'alphagov/ubuntu-1204-dev',
   }
 
   repository { "${boxen::config::srcdir}/dotfiles":
