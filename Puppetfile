@@ -16,7 +16,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.3.0"
+github "boxen", "2.0.0"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -31,6 +31,7 @@ github "nginx",    "1.1.0"
 github "nodejs",   "1.0.0"
 github "nvm",      "1.0.0"
 github "ruby",     "3.0.0"
+github "repository", "2.0.0"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
