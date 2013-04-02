@@ -91,7 +91,7 @@ class people::bradleywright {
     mode    => '0644',
     content => 'cdpath=(~/src ~/Projects ~)
 
-alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh dev \'govuk_puppet\'; vagrant provision; ssh dev \'cd ~/src/dotfiles && make\'; ssh dev \'sudo rm /etc/tmux.conf\'; ssh dev"
+alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh -A dev \'govuk_puppet\'; vagrant provision; ssh -A dev \'cd ~/src/dotfiles && make\'; ssh dev -A \'sudo rm /etc/tmux.conf\'; ssh dev -A"
 ',
   }
 
