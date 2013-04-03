@@ -7,9 +7,8 @@ class teams::performance-platform {
 
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
-  repo::alphagov { 'datainsight': }
-  repo::alphagov { 'datainsight-akamai-scanner': }
-  repo::alphagov { 'datainsight-collectors': }
+  repo::gds      { 'datainsight': }
+  repo::gds      { 'datainsight-akamai-scanner': }
   repo::alphagov { 'datainsight-everything-recorder': }
   repo::alphagov { 'datainsight-format-success-recorder': }
   repo::alphagov { 'datainsight-frontend': }
@@ -20,7 +19,7 @@ class teams::performance-platform {
   repo::alphagov { 'datainsight-insidegov-recorder': }
   repo::alphagov { 'datainsight-narrative-recorder': }
   repo::alphagov { 'datainsight-nongovuk-reach-collector': }
-  repo::alphagov { 'datainsight-release-info': }
+  repo::gds      { 'datainsight-release-info': }
   repo::alphagov { 'datainsight-todays-activity-recorder': }
   repo::alphagov { 'datainsight-weekly-reach-recorder': }
   repo::alphagov { 'datainsight_collector': }
