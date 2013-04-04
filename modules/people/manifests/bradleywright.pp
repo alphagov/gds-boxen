@@ -92,6 +92,8 @@ class people::bradleywright {
     content => 'cdpath=(~/src ~/Projects ~)
 
 alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh -A dev \'govuk_puppet\'; vagrant provision; ssh -A dev \'cd ~/src/dotfiles && make\'; ssh dev -A \'sudo rm /etc/tmux.conf\'; ssh dev -A"
+
+alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9200" && open http://localhost:9200/_plugin/head/
 ',
   }
 
