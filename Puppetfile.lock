@@ -229,6 +229,11 @@ GITHUBTARBALL
     googledrive (1.0.1)
 
 GITHUBTARBALL
+  remote: geetarista/puppet-mplayerx
+  specs:
+    mplayerx (1.0.0)
+
+GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -281,6 +286,7 @@ DEPENDENCIES
   jumpcut (= 1.0.0)
   macvim (= 1.0.0)
   mou (= 1.0.0)
+  mplayerx (= 1.0.0)
   mysql (= 1.0.0)
   nginx (= 1.1.0)
   nodejs (= 1.0.0)
