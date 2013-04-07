@@ -21,7 +21,7 @@ class people::samjsharpe {
   include mou
   include mplayerx
   include notational_velocity::nvalt
-  include oh-my-zsh
+  include ohmyzsh
   include openconnect
   include screen
   include slate
@@ -63,7 +63,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}●%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}:%{$fg[green]%}"
 PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
 ',
-    require => Class['oh-my-zsh']
+    require => Class['ohmyzsh']
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":

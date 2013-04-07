@@ -229,6 +229,11 @@ GITHUBTARBALL
     stdlib (3.0.0)
 
 GITHUBTARBALL
+  remote: samjsharpe/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
+GITHUBTARBALL
   remote: samjsharpe/puppet-spf13vim3
   specs:
     spf13vim3 (1.0.0)
@@ -270,6 +275,7 @@ DEPENDENCIES
   nodejs (= 1.0.0)
   notational_velocity (= 1.1.0)
   nvm (= 1.0.0)
+  ohmyzsh (= 1.0.0)
   onepassword (= 1.0.0)
   osx (= 1.0.0)
   qt (= 1.0.0)
