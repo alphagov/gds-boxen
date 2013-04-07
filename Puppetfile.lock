@@ -219,6 +219,11 @@ GITHUBTARBALL
     adium (1.1.0)
 
 GITHUBTARBALL
+  remote: fromonesrc/puppet-slate
+  specs:
+    slate (1.0.1)
+
+GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -282,6 +287,7 @@ DEPENDENCIES
   ruby (= 3.0.0)
   screen (= 1.0.0)
   skype (= 1.0.2)
+  slate (= 1.0.1)
   sparrow (= 1.0.0)
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
