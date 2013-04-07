@@ -25,7 +25,6 @@ class people::samjsharpe {
   include openconnect
   include screen
   include slate
-  include sourcetree
   include spf13vim3
   include transmission
   include turn-off-dashboard
