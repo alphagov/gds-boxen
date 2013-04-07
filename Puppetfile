@@ -39,6 +39,7 @@ github "sudo",     "1.0.0"
 
 github "adium",          "1.1.0", :repo => "dieterdemeyer/puppet-adium"
 github "caffeine",       "1.0.0"
+github "calibre",        "1.0.0", :repo => "samjsharpe/puppet-calibre"
 github "chrome",         "1.1.0"
 github "clipmenu",       "1.0.0", :repo => "jhubert/puppet-clipmenu"
 github "clojure",        "1.2.0"
