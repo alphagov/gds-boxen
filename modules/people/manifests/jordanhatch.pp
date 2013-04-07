@@ -5,7 +5,7 @@ class people::jordanhatch {
   include gitx
   include iterm2::stable
   include spotify
-  include theunarchiver
+  include unarchiver
   include virtualbox
 
   include teams::mainstream

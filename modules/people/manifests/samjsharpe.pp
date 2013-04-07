@@ -28,7 +28,7 @@ class people::samjsharpe {
   include spf13vim3
   include transmission
   include turn-off-dashboard
-  include theunarchiver
+  include unarchiver
   include vagrant
   include vagrant-dns
   include vagrant-vbguest

@@ -219,6 +219,11 @@ GITHUBTARBALL
     adium (1.1.0)
 
 GITHUBTARBALL
+  remote: dieterdemeyer/puppet-unarchiver
+  specs:
+    unarchiver (1.0.0)
+
+GITHUBTARBALL
   remote: fromonesrc/puppet-slate
   specs:
     slate (1.0.1)
@@ -308,6 +313,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.0)
+  unarchiver (= 1.0.0)
   wget (= 1.0.0)
   xquartz (= 1.0.0)
   zsh (= 1.0.0)

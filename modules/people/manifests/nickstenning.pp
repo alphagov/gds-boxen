@@ -11,7 +11,7 @@ class people::nickstenning {
   include notational_velocity::nvalt
   include onepassword
   include turn-off-dashboard
-  include theunarchiver
+  include unarchiver
   include vagrant
   include vagrant-dns
   include virtualbox
