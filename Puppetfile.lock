@@ -224,6 +224,11 @@ GITHUBTARBALL
     slate (1.0.1)
 
 GITHUBTARBALL
+  remote: gblair/puppet-googledrive
+  specs:
+    googledrive (1.0.1)
+
+GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -266,6 +271,7 @@ DEPENDENCIES
   gcc (= 1.0.0)
   git (= 1.2.2)
   gitx (= 1.2.0)
+  googledrive (= 1.0.1)
   heroku (= 2.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
