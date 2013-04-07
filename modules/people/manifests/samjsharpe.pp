@@ -8,6 +8,7 @@ class people::samjsharpe {
   include cord
   include dropbox
   include firefox
+  include flux
   include gds-resolver
   include git-pulls
   include git-remote-branch
