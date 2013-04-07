@@ -229,6 +229,11 @@ GITHUBTARBALL
     stdlib (3.0.0)
 
 GITHUBTARBALL
+  remote: samjsharpe/puppet-spf13vim3
+  specs:
+    spf13vim3 (1.0.0)
+
+GITHUBTARBALL
   remote: technicalpickles/puppet-flux
   specs:
     flux (0.0.1)
@@ -272,6 +277,7 @@ DEPENDENCIES
   screen (= 1.0.0)
   skype (= 1.0.2)
   sparrow (= 1.0.0)
+  spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
