@@ -23,6 +23,7 @@ class people::samjsharpe {
   include notational_velocity::nvalt
   include ohmyzsh
   include openconnect
+  include propane
   include screen
   include slate
   include spf13vim3
