@@ -189,6 +189,11 @@ GITHUBTARBALL
     things (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
@@ -326,6 +331,7 @@ DEPENDENCIES
   textmate (= 1.1.0)
   things (= 1.0.0)
   unarchiver (= 1.0.0)
+  vim (= 1.0.3)
   wget (= 1.0.0)
   xquartz (= 1.0.0)
   zsh (= 1.0.0)

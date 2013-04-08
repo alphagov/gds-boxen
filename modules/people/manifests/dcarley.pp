@@ -7,6 +7,7 @@ class people::dcarley {
   include iterm2::stable
   include turn-off-dashboard
   include vagrant::11x
+  include vim
   include virtualbox
   include wget
 
@@ -38,4 +39,13 @@ class people::dcarley {
   }
 
   include people::dcarley::dotfiles
+
+  # Dependency for puppet-vim
+  file { "${home}/.vimrc":
+    ensure  => link,
+    target  => "dotfiles/.vimrc",
+    require => Class['people::dcarley::dotfiles'],
+  }
+
+  vim::bundle { 'rodjek/vim-puppet': }
 }
