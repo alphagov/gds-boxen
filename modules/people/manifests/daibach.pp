@@ -5,7 +5,6 @@ class people::daibach {
   include chrome
   include dropbox
   include gitx
-  include iterm2
   include mysql
   include onepassword
   include openconnect
