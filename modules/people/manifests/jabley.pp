@@ -19,6 +19,7 @@ class people::jabley {
   include teams::performance-platform
   include teams::efg
   include teams::trade-tariff
+  repo::gds      { 'govuk_delivery': }
   
   # These are all Homebrew packages
   package {
