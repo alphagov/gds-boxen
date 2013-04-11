@@ -231,7 +231,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-magican
   specs:
-    magician (1.0.2)
+    magican (1.0.2)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-unarchiver
@@ -317,7 +317,7 @@ DEPENDENCIES
   iterm2 (= 1.0.2)
   jumpcut (= 1.0.0)
   macvim (= 1.0.0)
-  magician (= 1.0.2)
+  magican (= 1.0.2)
   mou (= 1.0.0)
   mplayerx (= 1.0.0)
   mysql (= 1.0.0)

@@ -12,12 +12,14 @@ class people::samjsharpe {
   include gds-resolver
   include git-pulls
   include git-remote-branch
+  include github_for_mac
   include gitx::dev
   include gnupg
   include googledrive
   include hub
   include iterm2::stable
   include macvim
+  include magican
   include mou
   include mplayerx
   include notational_velocity::nvalt
