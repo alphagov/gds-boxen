@@ -20,6 +20,7 @@ class people::jabley {
   include teams::efg
   include teams::trade-tariff
   repo::gds      { 'govuk_delivery': }
+  repo::gds      { 'transactions-visualisation': }
   
   # These are all Homebrew packages
   package {
