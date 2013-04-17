@@ -7,7 +7,7 @@
 
 [xcode-cli]: https://developer.apple.com/downloads/index.action
 
-### 1. If you have a have clean build of Mac OS X
+### 1. If you have a clean build of Mac OS X
 
 If (and only if) you haven't installed Homebrew or Git or any other tools on
 your Mac, then the easiest option will be to follow the instructions at
