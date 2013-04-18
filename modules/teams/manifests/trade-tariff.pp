@@ -5,6 +5,7 @@ class teams::trade-tariff {
   include projects::alphagov-deployment
   include projects::puppet
 
+  repo::alphagov { 'trade-tariff-admin': }
   include projects::trade-tariff-frontend
   include projects::trade-tariff-backend
   include projects::trade-tariff-suite
