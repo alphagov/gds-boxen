@@ -12,7 +12,7 @@ class people::jabley {
   include openconnect
   include transmission
   include turn-off-dashboard
-  include vagrant
+  include vagrant_gem
   include vagrant-dns
   include virtualbox
 

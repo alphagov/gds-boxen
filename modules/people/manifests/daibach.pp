@@ -13,7 +13,7 @@ class people::daibach {
   include spotify
   include textmate
   include turn-off-dashboard
-  include vagrant
+  include vagrant_gem
   include vagrant-dns
   include virtualbox
   include wget

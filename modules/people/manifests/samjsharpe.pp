@@ -32,7 +32,7 @@ class people::samjsharpe {
   include transmission
   include turn-off-dashboard
   include unarchiver
-  include vagrant
+  include vagrant_gem
   include vagrant-dns
   include vagrant-vbguest
   include virtualbox::latest

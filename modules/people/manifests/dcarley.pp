@@ -6,7 +6,7 @@ class people::dcarley {
   include git
   include iterm2::stable
   include turn-off-dashboard
-  include vagrant::11x
+  include vagrant
   include vim
   include virtualbox
   include wget
