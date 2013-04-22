@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/bradleywright/puppet-git
+  ref: fix-git-options
+  sha: 8fda879326e251ecc148267b61d13ed2b2af6852
+  specs:
+    git (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -52,11 +59,6 @@ GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-git
-  specs:
-    git (1.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -305,7 +307,7 @@ DEPENDENCIES
   fitbit (= 1.0.0)
   flux (= 0.0.1)
   gcc (= 1.0.0)
-  git (= 1.2.2)
+  git (>= 0)
   github_for_mac (= 1.2.0)
   gitx (= 1.2.0)
   googledrive (= 1.0.1)
