@@ -2,6 +2,11 @@ require boxen::environment
 require homebrew
 require gcc
 
+file { '/tmp/boxen/puppet/conf/hiera.yaml':
+  ensure  => present,
+  content => '',
+}
+
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
