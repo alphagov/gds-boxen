@@ -1,6 +1,7 @@
 class people::norm {
   # softwares
   include adium
+  include antirsi
   include camino
   include chrome
   include dropbox
