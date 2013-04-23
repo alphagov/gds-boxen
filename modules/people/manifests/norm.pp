@@ -30,4 +30,7 @@ class people::norm {
 
   # preferenceses
   include turn-off-dashboard
+  include osx::finder::show_all_on_desktop
+  include osx::finder::unhide_library
+  include osx::disable_app_quarantine
 }
