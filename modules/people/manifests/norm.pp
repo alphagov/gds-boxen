@@ -1,6 +1,7 @@
 class people::norm {
   include chrome
   include dropbox
+  include launchbar
   include macvim
   include onepassword
   include textmate
