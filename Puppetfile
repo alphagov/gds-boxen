@@ -38,6 +38,7 @@ github "sudo",     "1.0.0"
 # https://github.com/boxen.
 
 github "adium",          "1.1.0", :repo => "dieterdemeyer/puppet-adium"
+github "antirsi",        "1.0.1", :repo => "norm/puppet-antirsi"
 github "caffeine",       "1.0.0"
 github "calibre",        "1.0.0", :repo => "samjsharpe/puppet-calibre"
 github "camino",         "1.0.1", :repo => "norm/puppet-camino"

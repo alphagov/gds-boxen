@@ -276,6 +276,11 @@ GITHUBTARBALL
     clipmenu (1.0.0)
 
 GITHUBTARBALL
+  remote: norm/puppet-antirsi
+  specs:
+    antirsi (1.0.1)
+
+GITHUBTARBALL
   remote: norm/puppet-camino
   specs:
     camino (1.0.1)
@@ -317,6 +322,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.0)
+  antirsi (= 1.0.1)
   boxen (= 1.3.0)
   caffeine (= 1.0.0)
   calibre (= 1.0.0)
