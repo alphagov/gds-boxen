@@ -276,6 +276,11 @@ GITHUBTARBALL
     clipmenu (1.0.0)
 
 GITHUBTARBALL
+  remote: norm/puppet-monocle
+  specs:
+    monocle (0.0.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
@@ -336,6 +341,7 @@ DEPENDENCIES
   launchbar (= 1.1.0)
   macvim (= 1.0.0)
   magican (= 1.0.2)
+  monocle (= 0.0.2)
   mou (= 1.0.0)
   mplayerx (= 1.0.0)
   mysql (= 1.0.0)
