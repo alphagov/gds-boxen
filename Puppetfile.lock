@@ -261,6 +261,11 @@ GITHUBTARBALL
     mplayerx (1.0.0)
 
 GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
+
+GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -336,6 +341,7 @@ DEPENDENCIES
   onepassword (= 1.0.0)
   osx (= 1.1.0)
   propane (= 0.0.1)
+  property_list_key (= 0.1.0)
   qt (= 1.0.0)
   ruby (= 3.0.0)
   screen (= 1.0.0)
