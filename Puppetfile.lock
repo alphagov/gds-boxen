@@ -251,6 +251,11 @@ GITHUBTARBALL
     unarchiver (1.0.0)
 
 GITHUBTARBALL
+  remote: dieterdemeyer/puppet-xtrafinder
+  specs:
+    xtrafinder (1.0.1)
+
+GITHUBTARBALL
   remote: fromonesrc/puppet-slate
   specs:
     slate (1.0.1)
@@ -384,5 +389,6 @@ DEPENDENCIES
   vim (= 1.0.3)
   wget (= 1.0.0)
   xquartz (= 1.0.0)
+  xtrafinder (= 1.0.1)
   zsh (= 1.0.0)
 
