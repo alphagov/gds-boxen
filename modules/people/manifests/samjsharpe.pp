@@ -103,4 +103,16 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
     ]:
     ensure => present,
   }
+
+  # Settings from puppet-osx
+  include osx::disable_app_quarantine
+  include osx::dock::2d
+  include osx::finder::empty_trash_securely
+  include osx::finder::show_all_on_desktop
+  include osx::finder::unhide_library
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
+  include osx::no_network_dsstores
+  osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
+
 }
