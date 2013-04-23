@@ -36,6 +36,7 @@ class people::samjsharpe {
   include vagrant-dns
   include vagrant-vbguest
   include virtualbox::latest
+  include xtrafinder
   include zsh
 
   # Projects accessible to everyone in Infrastructure
