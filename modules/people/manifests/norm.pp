@@ -3,6 +3,7 @@ class people::norm {
   include dropbox
   include launchbar
   include macvim
+  include monocle
   include onepassword
   include textmate
   include things
