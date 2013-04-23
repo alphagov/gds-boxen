@@ -1,4 +1,5 @@
 class people::norm {
+  # softwares
   include camino
   include chrome
   include dropbox
@@ -9,14 +10,18 @@ class people::norm {
   include textmate
   include things
   include wget
-
-  include teams::performance-platform
-
   package {
     [
       'bash-completion',
       'redis',
+      'the_silver_searcher',
     ]:
     ensure => present,
   }
+
+  # repos
+  include teams::performance-platform
+
+  # preferenceses
+  include turn-off-dashboard
 }
