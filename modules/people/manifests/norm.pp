@@ -1,4 +1,5 @@
 class people::norm {
+  include camino
   include chrome
   include dropbox
   include launchbar
