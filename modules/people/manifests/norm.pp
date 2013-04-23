@@ -1,12 +1,17 @@
 class people::norm {
   # softwares
+  include adium
   include camino
   include chrome
   include dropbox
+  include firefox
+  include gitx::dev
   include launchbar
   include macvim
   include monocle
+  include notational_velocity::nvalt
   include onepassword
+  include screen
   include textmate
   include things
   include wget
