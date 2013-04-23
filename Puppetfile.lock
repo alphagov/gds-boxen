@@ -138,7 +138,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.0.0)
+    osx (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-qt
@@ -334,7 +334,7 @@ DEPENDENCIES
   nvm (= 1.0.0)
   ohmyzsh (= 1.0.0)
   onepassword (= 1.0.0)
-  osx (= 1.0.0)
+  osx (= 1.1.0)
   propane (= 0.0.1)
   qt (= 1.0.0)
   ruby (= 3.0.0)
