@@ -2,9 +2,9 @@
 
 - Make sure you are running Mac OS X 10.8 (Mountain Lion)
 - Either install the [Xcode Command Line Tools][xcode-cli] or install the full Xcode from the Mac App Store. If you do the latter, you also need to explicitly install the Command Line Tools (Open Xcode -> Preferences -> Downloads -> Install Command Line Tools).
-- The following instructions will work for a fresh build or for an already set-up Mac.  
-
 [xcode-cli]: https://developer.apple.com/downloads/index.action
+
+### The following instructions will work for a fresh build or for an already set-up Mac.  
 
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:admin /opt/boxen
@@ -22,6 +22,7 @@
     echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.zshrc
 
 Open a new terminal, `boxen --env` to confirm.
+
 
 - Create a personal module to define what you want on your Mac. See [the
   documentation in the `modules/people`](modules/people/README.md) directory for
