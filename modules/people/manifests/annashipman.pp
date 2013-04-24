@@ -17,4 +17,16 @@ class people::annashipman {
   file { $projects:
     ensure  => directory,
   }
+  
+  Boxen::Osx_defaults {
+    user => $::luser,
+  }
+
+  boxen::osx_defaults { "Disable 'natural scrolling'":
+    key    => 'com.apple.swipescrolldirection',
+    domain => 'NSGlobalDomain',
+    value  => 'false',
+    type   => 'bool',
+  }
+
 }
