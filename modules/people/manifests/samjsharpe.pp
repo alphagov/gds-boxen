@@ -102,6 +102,10 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
     ensure => present,
   }
 
+  Boxen::Osx_defaults {
+    user => $::luser,
+  }
+
   # Settings from puppet-osx
   include osx::disable_app_quarantine
   include osx::dock::2d
@@ -112,5 +116,22 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
   include osx::global::expand_save_dialog
   include osx::no_network_dsstores
   osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
+
+  boxen::osx_defaults { 'Put my Dock on the left':
+    key    => 'orientation',
+    domain => 'com.apple.dock',
+    value  => 'left',
+  }
+
+  boxen::osx_defaults { 'Disable reopen windows when logging back in':
+    key    => 'TALLogoutSavesState',
+    domain => 'com.apple.loginwindow',
+    value  => 'false',
+  }
+
+  exec { 'Disable Gatekeeper':
+    command => 'spctl --master-disable',
+    unless  => 'spctl --status | grep disabled',
+  }
 
 }
