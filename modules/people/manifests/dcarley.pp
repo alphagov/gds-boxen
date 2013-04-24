@@ -24,6 +24,7 @@ class people::dcarley {
     [
       'apg',
       'bash-completion',
+      'gnu-sed',
       'go',
       'tmux'
     ]:
