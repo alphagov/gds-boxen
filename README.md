@@ -1,29 +1,21 @@
 ## Getting started with Boxen
 
 - Make sure you are running Mac OS X 10.8 (Mountain Lion)
-- Install the [Xcode Command Line Tools][xcode-cli] (or install the full Xcode
-  from the Mac App Store).
-- Install and run Boxen using option 1 or 2 below.
+- Either install the [Xcode Command Line Tools][xcode-cli] or install the full Xcode from the Mac App Store. If you do the latter, you also need to explicitly install the Command Line Tools (Open Xcode -> Preferences -> Downloads -> Install Command Line Tools).
+- The following instructions will work for a fresh build or for an already set-up Mac.  
 
 [xcode-cli]: https://developer.apple.com/downloads/index.action
 
-### 1. If you have a clean build of Mac OS X
-
-If (and only if) you haven't installed Homebrew or Git or any other tools on
-your Mac, then the easiest option will be to follow the instructions at
-http://gds-boxen.herokuapp.com/.
-
-### 2. If you are attempting to Boxen-ise an already-setup Mac
-
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:admin /opt/boxen
+    # For a fresh build you will need to add your ssh config
     git clone git@github.com:alphagov/gds-boxen.git /opt/boxen/repo
     cd /opt/boxen/repo
 
-    PATH=/usr/bin:/bin:/usr/sbin:/sbin script/boxen --srcdir=/Users/${USER}/govuk
     # If your project directory is not /Users/$USER/govuk/ then use
     # PATH=... script/boxen --srcdir=/path/to/project/directory
-
+    # For a fresh build, you will need to create /project/directory
+    PATH=/usr/bin:/bin:/usr/sbin:/sbin script/boxen --srcdir=/Users/${USER}/govuk
     # add boxen to your shell config, at the end, eg.
     echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.bashrc
     # or if you use ZSH
@@ -35,12 +27,13 @@ Open a new terminal, `boxen --env` to confirm.
   documentation in the `modules/people`](modules/people/README.md) directory for
   creating per-user modules that don't need to be applied globally to everyone.
   You will probably want to:
-  - `include somepackage` - see other users for details
+  - `include somepackage` - see other users' personal modules for details
   - `include projects::someproject` - for the projects you will work on
   - if `modules/teams/manifests/yourteam.pp` exists, you should `include
     teams::yourteam` to get shared team config
+  - After you have created your module, run `boxen`. This will set your Mac up as requested. (You do not need to have pushed to GitHub for this to work.)
 
-## Removing install of Homebrew in /usr/local/bin
+## Removing install of Homebrew in /usr/local/bin for an already set-up Mac.
 
 - Boxen installs its own version of Homebrew in `/opt/boxen/homebrew` which may
   conflict with a previous version installed in `/usr/local/bin`.
