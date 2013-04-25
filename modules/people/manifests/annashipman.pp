@@ -1,6 +1,7 @@
 class people::annashipman {
   include chrome
   include git
+  include iterm2::stable
   include turn-off-dashboard
   include vagrant
   include virtualbox
@@ -29,4 +30,10 @@ class people::annashipman {
     type   => 'bool',
   }
 
+package {
+    [
+      'python',
+    ]:
+    ensure => present,
+  }
 }
