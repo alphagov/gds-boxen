@@ -1,7 +1,6 @@
 class people::samjsharpe {
   include adium
   include alfred::two
-  include calibre
   include chicken
   include chrome
   include clipmenu
@@ -22,10 +21,8 @@ class people::samjsharpe {
   include magican
   include mou
   include mplayerx
-  include notational_velocity::nvalt
   include ohmyzsh
   include openconnect
-  include propane
   include screen
   include slate
   include spf13vim3
