@@ -303,7 +303,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    std/ib (3.0.0)
+    stdlib (3.0.0)
 
 GITHUBTARBALL
   remote: samjsharpe/puppet-calibre
@@ -385,7 +385,7 @@ DEPENDENCIES
   sparrow (= 1.0.0)
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
-  std/ib (= 3.0.0)
+  stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   textmate (= 1.1.0)
