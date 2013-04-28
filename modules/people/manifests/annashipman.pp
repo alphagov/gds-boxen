@@ -2,6 +2,7 @@ class people::annashipman {
   include chrome
   include git
   include iterm2::stable
+  include libreoffice
   include turn-off-dashboard
   include vagrant
   include virtualbox
