@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/annashipman/puppet-libreoffice
+  ref: master
+  sha: 07c4a66519b2f8c40cf2158e86db06d0397e2b7e
+  specs:
+    libreoffice (0.0.1)
+
+GIT
   remote: https://github.com/bradleywright/puppet-git
   ref: fix-git-options
   sha: 8fda879326e251ecc148267b61d13ed2b2af6852
@@ -276,11 +283,6 @@ GITHUBTARBALL
     property_list_key (0.1.0)
 
 GITHUBTARBALL
-  remote: jasonamyers/puppet-libreoffice
-  specs:
-    libreoffice (1.0.0)
-
-GITHUBTARBALL
   remote: jhubert/puppet-clipmenu
   specs:
     clipmenu (1.0.0)
@@ -361,7 +363,7 @@ DEPENDENCIES
   iterm2 (= 1.0.2)
   jumpcut (= 1.0.0)
   launchbar (= 1.1.0)
-  libreoffice (= 1.0.0)
+  libreoffice (>= 0)
   macvim (= 1.0.0)
   magican (= 1.0.2)
   monocle (= 0.0.2)
