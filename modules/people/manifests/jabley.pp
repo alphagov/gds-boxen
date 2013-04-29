@@ -76,6 +76,7 @@ class people::jabley {
       'tmux',
       'wget',
       'wrk',
+      'unrar',
       'x264',
       'xvid',
       'yasm',
