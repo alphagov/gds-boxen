@@ -12,8 +12,6 @@ class people::nickstenning {
   include onepassword
   include turn-off-dashboard
   include unarchiver
-  include vagrant_gem
-  include vagrant-dns
   include virtualbox
   include zsh
 
