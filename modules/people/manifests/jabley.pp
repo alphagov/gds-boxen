@@ -42,6 +42,7 @@ class people::jabley {
       'glm',
       'gmp',
       'gnu-typist',
+      'go',
       'groovy',
       'httperf',
       'id3tool',
