@@ -126,6 +126,7 @@ end
     [
      'bash-completion',
      'ghostscript',
+     'go',
      'imagemagick',
      'mysql',
      'parallel',
