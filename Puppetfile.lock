@@ -148,7 +148,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (3.0.0)
+    ruby (4.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-screen
@@ -303,7 +303,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (3.0.0)
+    stdlib (4.0.0)
 
 GITHUBTARBALL
   remote: samjsharpe/puppet-calibre
@@ -378,14 +378,14 @@ DEPENDENCIES
   propane (= 0.0.1)
   property_list_key (= 0.1.0)
   qt (= 1.0.0)
-  ruby (= 3.0.0)
+  ruby (= 4.1.0)
   screen (= 1.0.0)
   skype (= 1.0.2)
   slate (= 1.0.1)
   sparrow (= 1.0.0)
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
-  stdlib (= 3.0.0)
+  stdlib (= 4.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   textmate (= 1.1.0)
