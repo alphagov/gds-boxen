@@ -129,6 +129,7 @@ end
      'imagemagick',
      'mysql',
      'parallel',
+     'python',
      'reattach-to-user-namespace',
      'tmux',
      'tree',
