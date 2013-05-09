@@ -23,6 +23,7 @@ class people::jabley {
   include teams::trade-tariff
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'transactions-visualisation': }
+  repo::alphagov { 'passphrase_entropy': }
   
   # These are all Homebrew packages
   package {
