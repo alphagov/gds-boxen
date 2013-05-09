@@ -27,6 +27,7 @@ mod    "git",      :ref => "fix-git-options", :git => "https://github.com/bradle
 github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
+github "java",     "1.1.0"
 github "nginx",    "1.1.0"
 github "nodejs",   "1.0.0"
 github "nvm",      "1.0.0"

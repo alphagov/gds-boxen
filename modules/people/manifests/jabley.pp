@@ -2,6 +2,7 @@ class people::jabley {
   include adium
   include alfred
   include caffeine
+  include clojure
   include chrome
   include dropbox
   include firefox
@@ -9,6 +10,7 @@ class people::jabley {
   include git
   include gitx::dev
   include gnupg
+  include java
   include openconnect
   include transmission
   include turn-off-dashboard
