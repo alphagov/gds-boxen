@@ -28,6 +28,7 @@ class teams::performance-platform {
   # New World Order
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
+  repo::alphagov { 'backdrop-ga-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'stageprompt': }
 }
