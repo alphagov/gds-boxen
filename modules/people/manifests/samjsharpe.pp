@@ -3,7 +3,6 @@ class people::samjsharpe {
   include alfred::two
   include chicken
   include chrome
-  include clipmenu
   include cord
   include dropbox
   include firefox
