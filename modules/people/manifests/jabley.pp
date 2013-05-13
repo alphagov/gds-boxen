@@ -105,7 +105,7 @@ class people::jabley {
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::no_network_dsstores
-  osx::recovery_message { 'If found, please call +44 (0) 7447 907 231': }
+  osx::recovery_message { 'If found, please call +447827 880 857': }
 
   class security inherits boxen::security {
     Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
