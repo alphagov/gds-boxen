@@ -90,6 +90,7 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'ntfs-3g',
       'osxutils',
       'parallel',
+      'rbenv-bundler',
       's3cmd',
       'ssh-copy-id',
       'sslscan',
