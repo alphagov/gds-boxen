@@ -20,7 +20,21 @@ class people::annashipman {
   file { $projects:
     ensure  => directory,
   }
-  
+
+  $dotfiles = "${projects}/dotfiles"
+
+  repository { $dotfiles:
+    source  => 'annashipman/dotfiles',
+    require => File[$projects],
+    notify  => Exec['make-dotfiles'],
+  }
+
+  exec { 'make-dotfiles':
+    cwd         => $dotfiles,
+    command     => "make",
+    refreshonly => true,
+  }
+
   Boxen::Osx_defaults {
     user => $::luser,
   }
