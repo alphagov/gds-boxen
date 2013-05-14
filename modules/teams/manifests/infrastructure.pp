@@ -5,6 +5,7 @@ class teams::infrastructure {
   include projects::env-sync-and-backup
   include projects::fabric-scripts
   include projects::ghtools
+  include projects::machine-bootstrap
   include projects::packages
   include projects::private-utils
   include projects::puppet
