@@ -146,6 +146,11 @@ GITHUBTARBALL
     osx (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-pycharm
   specs:
     pycharm (1.0.1)
@@ -194,6 +199,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-textmate
@@ -391,6 +401,7 @@ DEPENDENCIES
   ohmyzsh (= 1.0.0)
   onepassword (= 1.0.0)
   osx (= 1.1.0)
+  postgresql (= 1.0.0)
   propane (= 0.0.1)
   property_list_key (= 0.1.0)
   pycharm (= 1.0.1)
@@ -406,6 +417,7 @@ DEPENDENCIES
   stdlib (= 4.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
+  sysctl (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.0)
   unarchiver (= 1.0.0)
