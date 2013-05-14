@@ -46,10 +46,21 @@ class people::annashipman {
     type   => 'bool',
   }
 
+  boxen::osx_defaults { 'Do not create .DS_Store':
+    key    => 'DSDontWriteNetworkStores',
+    domain => 'com.apple.dashboard',
+    value  => 'true',
+  }
+
 package {
     [
       'python',
     ]:
     ensure => present,
   }
+
+  include osx::dock::clear_dock
+  include osx::dock::autohide
+  include osx::disable_app_quarantine
 }
+
