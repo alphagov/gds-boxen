@@ -55,11 +55,12 @@ class people::annashipman {
 package {
     [
       'python',
+      'pwgen',
+      'tmux',
     ]:
     ensure => present,
   }
 
-  include osx::dock::clear_dock
   include osx::dock::autohide
   include osx::disable_app_quarantine
 }
