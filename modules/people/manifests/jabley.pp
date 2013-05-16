@@ -18,6 +18,18 @@ class people::jabley {
   include vagrant-dns
   include virtualbox
 
+  include projects::alphagov-deployment
+  include projects::development
+  include projects::frontend
+  include projects::govuk_frontend_toolkit
+  include projects::private-utils
+  include projects::puppet
+  include projects::redirector
+  include projects::rummager
+  include projects::smokey
+  include projects::static
+  include projects::whitehall
+
   include teams::performance-platform
   include teams::efg
   include teams::trade-tariff
