@@ -37,6 +37,10 @@ class people::jabley {
   repo::gds      { 'transactions-visualisation': }
   repo::alphagov { 'passphrase_entropy': }
   
+  class { 'intellij':
+      edition => 'community',
+  }
+
   # These are all Homebrew packages
   package {
     [
