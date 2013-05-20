@@ -32,6 +32,7 @@ class people::robyoung {
       'bash-completion',
       'htop-osx',
       'go',
+      'mercurial',
       'mongodb',
       'mysql',
       'python',
