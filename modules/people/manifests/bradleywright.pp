@@ -7,6 +7,7 @@ class people::bradleywright {
   include gds-resolver
   include iterm2::dev
   include mailplane::beta
+  include omnifocus
   include qt
   include remove-spotlight
   include slate
