@@ -161,6 +161,11 @@ GITHUBTARBALL
     qt (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-repository
+  specs:
+    repository (2.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
     ruby (4.1.0)
@@ -406,6 +411,7 @@ DEPENDENCIES
   property_list_key (= 0.1.0)
   pycharm (= 1.0.1)
   qt (= 1.0.0)
+  repository (= 2.2.0)
   ruby (= 4.1.0)
   rubymine (= 1.0.1)
   screen (= 1.0.0)
@@ -427,3 +433,4 @@ DEPENDENCIES
   xquartz (= 1.0.0)
   xtrafinder (= 1.0.1)
   zsh (= 1.0.0)
+

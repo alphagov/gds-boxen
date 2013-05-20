@@ -21,19 +21,20 @@ github "boxen", "2.3.1"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "dnsmasq",  "1.0.0"
-github "gcc",      "1.0.0"
-mod    "git",      :ref => "fix-git-options", :git => "https://github.com/bradleywright/puppet-git"
-github "homebrew", "1.1.2"
-github "hub",      "1.0.0"
-github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
-github "java",     "1.1.0"
-github "nginx",    "1.1.0"
-github "nodejs",   "1.0.0"
-github "nvm",      "1.0.0"
-github "ruby",     "4.1.0"
-github "stdlib",   "4.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",     "1.0.0"
+github "dnsmasq",    "1.0.0"
+github "gcc",        "1.0.0"
+mod    "git",        :ref => "fix-git-options", :git => "https://github.com/bradleywright/puppet-git"
+github "homebrew",   "1.1.2"
+github "hub",        "1.0.0"
+github "inifile",    "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
+github "java",       "1.1.0"
+github "nginx",      "1.1.0"
+github "nodejs",     "1.0.0"
+github "nvm",        "1.0.0"
+github "repository", "2.2.0"
+github "ruby",       "4.1.0"
+github "stdlib",     "4.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
+github "sudo",       "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
