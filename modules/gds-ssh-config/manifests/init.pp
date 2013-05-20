@@ -2,11 +2,14 @@
 #
 # Example
 #
-#    include gds-ssh-config
-class gds-ssh-config($filename='config') {
+#    class { 'gds-ssh-config': extra => template("people/<user>/ssh_config_extras") }
+class gds-ssh-config(
+	$filename='config',
+	$extra='',
+) {
 	file { "/Users/${::luser}/.ssh/${filename}":
-		source => 'puppet:///modules/gds-ssh-config/config',
+		content => template('gds-ssh-config/config.erb'),
 		ensure => present,
 		mode   => '0644',
-	}	
+	}
 }

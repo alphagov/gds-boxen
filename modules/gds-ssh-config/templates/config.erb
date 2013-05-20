@@ -41,3 +41,5 @@ Host jumpbox-2.management.production
 
 Host *.production
   ProxyCommand ssh -e none %r@jumpbox-1.management.production exec nc %h %p
+
+<%= extra %>
