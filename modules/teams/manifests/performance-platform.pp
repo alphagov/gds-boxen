@@ -26,6 +26,7 @@ class teams::performance-platform {
   repo::alphagov { 'datainsight_recorder': }
 
   # New World Order
+  repo::alphagov { 'performance-platform': }
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
   repo::alphagov { 'backdrop-ga-collector': }
