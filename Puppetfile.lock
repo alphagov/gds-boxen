@@ -96,11 +96,6 @@ GITHUBTARBALL
     java (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-jumpcut
-  specs:
-    jumpcut (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -271,19 +266,9 @@ GITHUBTARBALL
     launchbar (1.1.0)
 
 GITHUBTARBALL
-  remote: dieterdemeyer/puppet-magican
-  specs:
-    magican (1.0.2)
-
-GITHUBTARBALL
   remote: dieterdemeyer/puppet-unarchiver
   specs:
     unarchiver (1.0.0)
-
-GITHUBTARBALL
-  remote: dieterdemeyer/puppet-xtrafinder
-  specs:
-    xtrafinder (1.0.1)
 
 GITHUBTARBALL
   remote: fromonesrc/puppet-slate
@@ -311,11 +296,6 @@ GITHUBTARBALL
     libreoffice (1.0.0)
 
 GITHUBTARBALL
-  remote: jhubert/puppet-clipmenu
-  specs:
-    clipmenu (1.0.0)
-
-GITHUBTARBALL
   remote: norm/puppet-antirsi
   specs:
     antirsi (1.0.1)
@@ -336,11 +316,6 @@ GITHUBTARBALL
     stdlib (4.0.0)
 
 GITHUBTARBALL
-  remote: samjsharpe/puppet-calibre
-  specs:
-    calibre (1.0.0)
-
-GITHUBTARBALL
   remote: samjsharpe/puppet-ohmyzsh
   specs:
     ohmyzsh (1.0.0)
@@ -349,11 +324,6 @@ GITHUBTARBALL
   remote: samjsharpe/puppet-spf13vim3
   specs:
     spf13vim3 (1.0.0)
-
-GITHUBTARBALL
-  remote: technicalpickles/puppet-flux
-  specs:
-    flux (0.0.1)
 
 GITHUBTARBALL
   remote: technicalpickles/puppet-propane
@@ -365,10 +335,8 @@ DEPENDENCIES
   antirsi (= 1.0.1)
   boxen (= 2.3.1)
   caffeine (= 1.0.0)
-  calibre (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.1.0)
-  clipmenu (= 1.0.0)
   clojure (= 1.2.0)
   colloquy (= 1.0.0)
   cord (= 1.0.0)
@@ -377,7 +345,6 @@ DEPENDENCIES
   emacs (= 1.1.4)
   firefox (= 1.0.5)
   fitbit (= 1.0.0)
-  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (>= 0)
   github_for_mac (= 1.2.0)
@@ -390,11 +357,9 @@ DEPENDENCIES
   intellij (= 1.1.2)
   iterm2 (= 1.0.2)
   java (= 1.1.0)
-  jumpcut (= 1.0.0)
   launchbar (= 1.1.0)
   libreoffice (= 1.0.0)
   macvim (= 1.0.0)
-  magican (= 1.0.2)
   monocle (= 0.0.2)
   mou (= 1.0.0)
   mplayerx (= 1.0.0)
@@ -431,6 +396,5 @@ DEPENDENCIES
   vim (= 1.0.3)
   wget (= 1.0.0)
   xquartz (= 1.0.0)
-  xtrafinder (= 1.0.1)
   zsh (= 1.0.0)
 

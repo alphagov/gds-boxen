@@ -6,18 +6,14 @@ class people::samjsharpe {
   include cord
   include dropbox
   include firefox
-  include flux
   include gds-resolver
   include git-pulls
   include git-remote-branch
-  include github_for_mac
-  include gitx::dev
   include gnupg
   include googledrive
   include hub
   include iterm2::stable
   include macvim
-  include magican
   include mou
   include mplayerx
   include ohmyzsh
@@ -25,14 +21,12 @@ class people::samjsharpe {
   include screen
   include slate
   include spf13vim3
-  include transmission
   include turn-off-dashboard
   include unarchiver
   include vagrant_gem
   include vagrant-dns
   include vagrant-vbguest
   include virtualbox::latest
-  include xtrafinder
   include zsh
 
   # Projects accessible to everyone in Infrastructure
@@ -97,7 +91,6 @@ PROMPT=\'[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
       'unrar',
       'wget',
       'zsh-completions',
-      'zsh-lovers'
     ]:
     ensure => present,
   }
