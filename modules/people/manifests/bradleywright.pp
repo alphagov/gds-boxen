@@ -12,8 +12,7 @@ class people::bradleywright {
   include remove-spotlight
   include slate
   include turn-off-dashboard
-  include vagrant_gem
-  include vagrant-dns
+  include vagrant
   include virtualbox
   include zeus
   include zsh
@@ -92,7 +91,7 @@ class people::bradleywright {
     mode    => '0644',
     content => 'cdpath=(~/src ~/Projects ~)
 
-alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;vagrant destroy; govuk_dev_dist=lucid vagrant up; ssh -A dev \'govuk_puppet\'; vagrant provision; ssh -A dev \'cd ~/src/dotfiles && make\'; ssh dev -A \'sudo rm /etc/tmux.conf\'; ssh dev -A"
+alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;/usr/bin/vagrant destroy; govuk_dev_dist=lucid /usr/bin/vagrant up --provider=vmware_fusion; ssh -A dev \'/var/govuk/puppet/tools/puppet-apply-dev\'; ssh dev -A \'sudo gem install bowler && sudo rm /etc/tmux.conf && sudo puppet apply /var/my-puppet/manifests/govuk_dev.pp --modulepath=/var/my-puppet/modules/\'; ssh dev -A"
 
 alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9200 && open http://localhost:9200/_plugin/head/"
 ',
@@ -107,17 +106,21 @@ alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
-    content => '# Predefined IP address, randomly assigned when I ran ./install.sh
-config.vm.network :hostonly, "10.244.2.189"
-# Give it 2GB of RAM so I can run all the things
-config.vm.customize ["modifyvm", :id, "--memory", 2048]
+    content => '# -*- mode: ruby; -*-
+# Predefined IP address, randomly assigned when I ran ./install.sh
+config.vm.network :private_network, ip: "10.1.2.190"
 
-# My puppet configuration
-config.vm.provision :puppet do |puppet|
-  puppet.manifests_path = "~/Projects/puppet/manifests"
-  puppet.manifest_file = "govuk_dev.pp"
-  puppet.module_path = "~/Projects/puppet/modules"
+# Give it 2GB of RAM so I can run all the things
+config.vm.provider :virtualbox do |vb|
+  vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
 end
+
+config.vm.provider :vmware_fusion do |v|
+  v.vmx["memsize"] = "2048"
+  v.vmx["numvcpus"] = "2"
+end
+
+config.vm.synced_folder "~/Projects/puppet", "/var/my-puppet"
 ',
     require => Class['Projects::Development']
   }
