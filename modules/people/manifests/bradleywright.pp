@@ -17,6 +17,18 @@ class people::bradleywright {
   include zeus
   include zsh
 
+  class { 'gds-ssh-config': extra => 'Host dev
+  User vagrant
+  ForwardAgent yes
+  IdentityFile ~/.vagrant.d/insecure_private_key
+  HostName 10.1.2.190
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+Host *
+  User bradleyw'}
+
+
   include projects::alphagov-deployment
   include projects::development
   include projects::frontend
