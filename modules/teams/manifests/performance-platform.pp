@@ -6,7 +6,7 @@ class teams::performance-platform {
   include projects::puppet
 
   # New Devops™ !!!!11!one!!!!
-  include projects::performance-platform::puppet
+  include teams::performance-platform::puppet
 
   # Old World Order
   repo::gds      { 'datainsight': }
