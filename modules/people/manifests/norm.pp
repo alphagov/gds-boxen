@@ -27,6 +27,7 @@ class people::norm {
 
   # repos
   include teams::performance-platform
+  repo::alphagov { 'government-service-design-manual': }
 
   # preferenceses
   include turn-off-dashboard
