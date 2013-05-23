@@ -32,6 +32,7 @@ class people::jabley {
 
   include teams::performance-platform
   include teams::efg
+  include teams::hmrc
   include teams::trade-tariff
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'transactions-visualisation': }
