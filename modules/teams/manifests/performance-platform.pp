@@ -5,6 +5,9 @@ class teams::performance-platform {
   include projects::alphagov-deployment
   include projects::puppet
 
+  # New Devops™ !!!!11!one!!!!
+  include projects::performance-platform::puppet
+
   # Old World Order
   repo::gds      { 'datainsight': }
   repo::gds      { 'datainsight-akamai-scanner': }
