@@ -34,6 +34,7 @@ class people::samjsharpe {
   # Projects only accessible to certain staff
   include projects::deployment
   include projects::deployment::creds
+  include projects::performance-platform::puppet
 
   repository { "${boxen::config::srcdir}/ubuntu-1204-dev":
     source  => 'alphagov/ubuntu-1204-dev',
