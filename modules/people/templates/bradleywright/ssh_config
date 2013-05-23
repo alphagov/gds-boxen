@@ -1,0 +1,11 @@
+# -*- mode: conf; -*-
+Host dev
+  User vagrant
+  ForwardAgent yes
+  IdentityFile ~/.vagrant.d/insecure_private_key
+  HostName <%= vagrant_ip %>
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+Host *
+  User bradleyw

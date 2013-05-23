@@ -17,17 +17,9 @@ class people::bradleywright {
   include zeus
   include zsh
 
-  class { 'gds-ssh-config': extra => 'Host dev
-  User vagrant
-  ForwardAgent yes
-  IdentityFile ~/.vagrant.d/insecure_private_key
-  HostName 10.1.2.190
-  StrictHostKeyChecking no
-  UserKnownHostsFile=/dev/null
+  $vagrant_ip = '10.1.2.190'
 
-Host *
-  User bradleyw'}
-
+  class { 'gds-ssh-config': extra => template('people/bradleywright/ssh_config')}
 
   include projects::alphagov-deployment
   include projects::development
@@ -50,8 +42,7 @@ Host *
 
   # Emacs overrides for Rails projects
   file { "${boxen::config::srcdir}/.dir-locals.el":
-    content => "((js2-mode . ((js2-basic-offset . 2)))
- (scss-mode . ((css-indent-offset . 2))))",
+    source  => 'puppet:///modules/people/bradleywright/govuk-dir-locals.el',
     require => File["${boxen::config::srcdir}"],
   }
 
@@ -83,30 +74,18 @@ Host *
 
   file { "${home}/.emacs.d/local/${::hostname}.el":
     mode    => '0644',
-    content => "(exec-path-from-shell-copy-env \"BOXEN_NVM_DIR\")
-(exec-path-from-shell-copy-env \"BOXEN_NVM_DEFAULT_VERSION\")
-",
+    source  => 'puppet:///modules/people/bradleywright/emacs-host-local.el',
     require => Repository[$emacs],
   }
 
   file { "${home}/.local_zshenv":
-    mode    => '0644',
-    content => 'export govuk_dev_dist="lucid"
-
-[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
-
-[[ -f /Applications/Emacs.app/Contents/MacOS/bin/emacsclient ]] && path=(/Applications/Emacs.app/Contents/MacOS/bin $path)
-'
+    mode   => '0644',
+    source => 'puppet:///modules/people/bradleywright/local_zshenv',
   }
 
   file { "${home}/.local_zshrc":
-    mode    => '0644',
-    content => 'cdpath=(~/src ~/Projects ~)
-
-alias vup="cd ~/src/puppet; git pull; cd ~/src/development; git pull;/usr/bin/vagrant destroy; govuk_dev_dist=lucid /usr/bin/vagrant up --provider=vmware_fusion; ssh -A dev \'/var/govuk/puppet/tools/puppet-apply-dev\'; ssh dev -A \'sudo gem install bowler && sudo rm /etc/tmux.conf && sudo puppet apply /var/my-puppet/manifests/govuk_dev.pp --modulepath=/var/my-puppet/modules/\'; ssh dev -A"
-
-alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9200 && open http://localhost:9200/_plugin/head/"
-',
+    mode   => '0644',
+    source => 'puppet:///modules/people/bradleywright/local_zshrc',
   }
 
   file { "${home}/.localgitconfig":
@@ -118,25 +97,9 @@ alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
-    content => '# -*- mode: ruby; -*-
-# Predefined IP address, randomly assigned when I ran ./install.sh
-config.vm.network :private_network, ip: "10.1.2.190"
-
-# Give it 2GB of RAM so I can run all the things
-config.vm.provider :virtualbox do |vb|
-  vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
-end
-
-config.vm.provider :vmware_fusion do |v|
-  v.vmx["memsize"] = "2048"
-  v.vmx["numvcpus"] = "2"
-end
-
-config.vm.synced_folder "~/Projects/puppet", "/var/my-puppet"
-',
+    content => template('people/bradleywright/Vagrantfile.local'),
     require => Class['Projects::Development']
   }
-
 
   package {
     [

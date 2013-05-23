@@ -1,0 +1,22 @@
+# -*- mode: sh; -*-
+cdpath=(~/src ~/Projects ~)
+
+vup() {
+    cd ~/src/puppet;
+    git pull;
+    cd ~/src/development;
+    git pull;
+    vagrant destroy
+    vagrant up --provider=vmware_fusion
+    ssh -A dev 'echo -e "Host github.gds\n\tStrictHostKeyChecking no\n" > ~/.ssh/config' &&
+    vprovision
+    ssh -A dev
+}
+
+vprovision() {
+    ssh -A dev '/var/govuk/puppet/tools/puppet-apply-dev' &&
+    ssh -A dev 'sudo rm /etc/tmux.conf' &&
+    ssh -A dev 'sudo puppet apply /var/my-puppet/manifests/govuk_dev.pp --modulepath=/var/my-puppet/modules/'
+}
+
+alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9200 && open http://localhost:9200/_plugin/head/"
