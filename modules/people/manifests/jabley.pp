@@ -32,6 +32,7 @@ class people::jabley {
 
   include teams::performance-platform
   include teams::efg
+  include teams::hmrc
   include teams::trade-tariff
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
