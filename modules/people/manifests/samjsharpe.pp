@@ -1,14 +1,38 @@
 class people::samjsharpe {
+
+  $home              = "/Users/${::luser}"
+  $home_projects     = "${home}/Projects"
+  $govuk_projects    = "${home_projects}/govuk"
+  $gds_projects      = "${home_projects}/gds"
+  $personal_projects = "${home_projects}/personal"
+
+  file {[ $home_projects,
+          $govuk_projects,
+          $gds_projects,
+          $personal_projects]:
+    ensure => directory,
+  }
+  class { 'people::samjsharpe::gds_repos':
+    project_home => $gds_projects,
+    require      => File[$gds_projects],
+  }
+  class { 'people::samjsharpe::govuk_repos':
+    project_home => $govuk_projects,
+    require      => File[$govuk_projects],
+  }
+  class { 'people::samjsharpe::personal_repos':
+    project_home => $personal_projects,
+    require      => File[$personal_projects],
+  }
+
   include adium
   include alfred::two
   include chicken
   include chrome
-  include cord
   include dropbox
+  include encfs
   include firefox
   include gds-resolver
-  include git-pulls
-  include git-remote-branch
   include gnupg
   include googledrive
   include hub
@@ -29,27 +53,6 @@ class people::samjsharpe {
   include virtualbox::latest
   include zsh
 
-  # Projects accessible to everyone in Infrastructure
-  include teams::infrastructure
-  # Projects only accessible to certain staff
-  include projects::deployment
-  include projects::deployment::creds
-  include teams::performance-platform::puppet
-
-  repository { "${boxen::config::srcdir}/ubuntu-1204-dev":
-    source  => 'alphagov/ubuntu-1204-dev',
-  }
-
-  repository { "${boxen::config::srcdir}/dotfiles":
-    source  => 'samjsharpe/dotfiles',
-    notify  => Exec['samjsharpe-link-my-dotfiles'],
-  }
-
-  exec {'samjsharpe-link-my-dotfiles':
-    command     => "${boxen::config::srcdir}/dotfiles/link.sh",
-    refreshonly => true,
-  }
-
   file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
     content => 'ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}●%{$reset_color%}"
@@ -58,16 +61,6 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}:%{$fg[green]%}"
 PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_info)%{$reset_color%}]$ \'
 ',
     require => Class['ohmyzsh']
-  }
-
-  file {"${boxen::config::srcdir}/development/Vagrantfile.local":
-    content => "
-        config.vm.network :hostonly, '10.23.45.67'
-        config.vm.customize ['modifyvm', :id, '--memory', 1024]
-        config.vm.customize ['modifyvm', :id, '--cpus', 2]
-        config.vm.customize ['modifyvm', :id, '--name', 'lucid_dev_vm']
-",
-    require => Class['Projects::Development']
   }
 
   # These are all Homebrew packages
