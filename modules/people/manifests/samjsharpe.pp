@@ -6,8 +6,7 @@ class people::samjsharpe {
   $gds_projects      = "${home_projects}/gds"
   $personal_projects = "${home_projects}/personal"
 
-  file {[ $home_projects,
-          $govuk_projects,
+  file {[ $govuk_projects,
           $gds_projects,
           $personal_projects]:
     ensure => directory,

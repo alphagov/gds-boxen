@@ -12,6 +12,9 @@ class people::samjsharpe::govuk_repos ($project_home){
   repository { "${project_home}/fabric-scripts":
       source   => 'alphagov/fabric-scripts'
   }
+  repository { "${project_home}/ops-manual":
+      source   => "git@github.gds:gds/opsmanual"
+  }
   repository { "${project_home}/puppet":
       source   => "git@github.gds:gds/puppet"
   }
