@@ -36,6 +36,7 @@ class people::jabley {
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'transactions-visualisation': }
   repo::alphagov { 'passphrase_entropy': }
+  repo::alphagov { 'government-service-design-manual': }
   
   class { 'intellij':
       edition => 'community',
