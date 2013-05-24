@@ -6,6 +6,7 @@ class people::jabley {
   include chrome
   include dropbox
   include firefox
+  include freeplane
   include googledrive
   include git
   include gitx::dev
