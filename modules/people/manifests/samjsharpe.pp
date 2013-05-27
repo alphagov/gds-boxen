@@ -7,6 +7,7 @@ class people::samjsharpe {
   $personal_projects = "${home_projects}/personal"
 
   if $::hostname != 'Sams-MacBook-Air' {
+    # Things to install on my work machine
     class { 'people::samjsharpe::gds_repos':
       project_home => $gds_projects,
     }
@@ -16,21 +17,26 @@ class people::samjsharpe {
     class { 'people::samjsharpe::personal_repos':
       project_home => $personal_projects,
     }
+    include chrome
+    include encfs
+    include gds-resolver
+    include gnupg
+    include vagrant_gem
+    include vagrant-dns
+    include vagrant-vbguest
+    include virtualbox::latest
   } else {
+    # Things to install on my home machine
     class { 'people::samjsharpe::personal_repos':
       project_home => $personal_projects,
     }
+    include chicken
   }
-
+  # Things to install everywhere
   include adium
   include alfred::two
-  include chicken
-  include chrome
   include dropbox
-  include encfs
   include firefox
-  include gds-resolver
-  include gnupg
   include googledrive
   include hub
   include iterm2::stable
@@ -44,10 +50,6 @@ class people::samjsharpe {
   include spf13vim3
   include turn-off-dashboard
   include unarchiver
-  include vagrant_gem
-  include vagrant-dns
-  include vagrant-vbguest
-  include virtualbox::latest
   include zsh
 
   file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
