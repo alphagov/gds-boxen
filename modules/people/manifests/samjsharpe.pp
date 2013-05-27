@@ -5,23 +5,16 @@ class people::samjsharpe {
   $govuk_projects    = "${home_projects}/govuk"
   $gds_projects      = "${home_projects}/gds"
   $personal_projects = "${home_projects}/personal"
-
-  file {[ $govuk_projects,
-          $gds_projects,
-          $personal_projects]:
-    ensure => directory,
-  }
-  class { 'people::samjsharpe::gds_repos':
-    project_home => $gds_projects,
-    require      => File[$gds_projects],
-  }
-  class { 'people::samjsharpe::govuk_repos':
-    project_home => $govuk_projects,
-    require      => File[$govuk_projects],
+  if $::hostname != 'Sams-MacBook-Air' {
+    class { 'people::samjsharpe::gds_repos':
+      project_home => $gds_projects,
+    }
+    class { 'people::samjsharpe::govuk_repos':
+      project_home => $govuk_projects,
+    }
   }
   class { 'people::samjsharpe::personal_repos':
     project_home => $personal_projects,
-    require      => File[$personal_projects],
   }
 
   include adium
