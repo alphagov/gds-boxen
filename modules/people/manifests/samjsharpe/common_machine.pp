@@ -62,7 +62,6 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
   # Settings from puppet-osx
   include osx::disable_app_quarantine
   include osx::dock::2d
-  include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
   include osx::global::expand_print_dialog

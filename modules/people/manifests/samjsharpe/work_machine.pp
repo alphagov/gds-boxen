@@ -19,6 +19,7 @@ class people::samjsharpe::work_machine {
     include encfs
     include gds-resolver
     include gnupg
+    include osx::finder::empty_trash_securely
     include vagrant_gem
     include vagrant-dns
     include vagrant-vbguest
