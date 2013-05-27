@@ -9,6 +9,10 @@ class people::samjsharpe::personal_repos ($project_home){
     source => 'samjsharpe/rackspace',
     require  => File[$project_home],
   }
+  repository { "${project_home}/ubuntu-1204-vmware":
+    source => 'samjsharpe/ubuntu-1204-vmware',
+    require  => File[$project_home],
+  }
   repository { "${project_home}/dotfiles":
     source  => 'samjsharpe/dotfiles',
     notify  => Exec['samjsharpe-link-my-dotfiles'],
