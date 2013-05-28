@@ -31,6 +31,7 @@ class people::robyoung {
   package {
     [
       'bash-completion',
+      'bazaar',
       'htop-osx',
       'go',
       'mercurial',
