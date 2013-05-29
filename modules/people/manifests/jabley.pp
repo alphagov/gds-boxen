@@ -12,6 +12,7 @@ class people::jabley {
   include gitx::dev
   include gnupg
   include java
+  include onepassword
   include openconnect
   include transmission
   include turn-off-dashboard
