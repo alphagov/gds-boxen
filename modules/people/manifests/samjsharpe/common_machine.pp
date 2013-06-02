@@ -17,7 +17,12 @@ class people::samjsharpe::common_machine {
   include spf13vim3
   include turn-off-dashboard
   include unarchiver
+  include vagrant
+  include vmware_fusion
   include zsh
+
+  vagrant::plugin { 'vagrant-cachier': }
+  vagrant::plugin { 'vagrant-vmware-fusion': }
 
   file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
     content => 'ZSH_THEME_GIT_PROMPT_SUFFIX=""
