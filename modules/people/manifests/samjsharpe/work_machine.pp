@@ -20,9 +20,5 @@ class people::samjsharpe::work_machine {
     include gds-resolver
     include gnupg
     include osx::finder::empty_trash_securely
-    include vagrant_gem
-    include vagrant-dns
-    include vagrant-vbguest
-    include virtualbox::latest
     osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
 }
