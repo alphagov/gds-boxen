@@ -5,12 +5,16 @@ class people::samjsharpe::personal_repos ($project_home){
     source => 'samjsharpe/samjsharpe.github.com',
     require  => File[$project_home],
   }
-  repository { "${project_home}/rackspace":
-    source => 'samjsharpe/rackspace',
+  repository { "${project_home}/vagrant-centos":
+    source => 'samjsharpe/vagrant-centos',
     require  => File[$project_home],
   }
-  repository { "${project_home}/ubuntu-1204-vmware":
-    source => 'samjsharpe/ubuntu-1204-vmware',
+  repository { "${project_home}/vagrant-rackspace":
+    source => 'samjsharpe/vagrant-rackspace',
+    require  => File[$project_home],
+  }
+  repository { "${project_home}/vagrant-ubuntu":
+    source => 'samjsharpe/vagrant-ubuntu',
     require  => File[$project_home],
   }
   repository { "${project_home}/dotfiles":
