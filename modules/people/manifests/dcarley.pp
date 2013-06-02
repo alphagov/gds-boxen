@@ -14,6 +14,8 @@ class people::dcarley {
   include zsh
   include ohmyzsh
 
+  vagrant::plugin { 'vagrant-cachier': }
+
   dock::size { 50: }
 
   # Projects accessible to everyone in Infrastructure
