@@ -68,6 +68,7 @@ class people::jabley {
       'gnu-typist',
       'go',
       'groovy',
+      'heroku-toolbelt',
       'httperf',
       'id3tool',
       'jpeg',
