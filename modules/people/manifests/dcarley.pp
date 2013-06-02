@@ -11,6 +11,9 @@ class people::dcarley {
   include virtualbox
   include wget
 
+  include zsh
+  include ohmyzsh
+
   dock::size { 50: }
 
   # Projects accessible to everyone in Infrastructure
