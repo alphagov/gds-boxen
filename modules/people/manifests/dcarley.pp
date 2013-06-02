@@ -16,7 +16,7 @@ class people::dcarley {
 
   vagrant::plugin { 'vagrant-cachier': }
 
-  dock::size { 50: }
+  dock::size { 40: }
 
   # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
