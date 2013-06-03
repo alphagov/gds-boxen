@@ -14,6 +14,7 @@ class people::bradleywright {
   include turn-off-dashboard
   include vagrant
   include virtualbox
+  include vmware_fusion
   include zeus
   include zsh
 
@@ -32,6 +33,8 @@ class people::bradleywright {
   include projects::smokey
   include projects::static
   include projects::whitehall
+
+  vagrant::plugin { 'vagrant-vmware-fusion': }
 
   $home     = "/Users/${::luser}"
   $home_projects = "${home}/Projects"
