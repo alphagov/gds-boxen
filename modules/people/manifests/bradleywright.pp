@@ -24,6 +24,7 @@ class people::bradleywright {
 
   include projects::alphagov-deployment
   include projects::development
+  include projects::fabric-scripts
   include projects::frontend
   include projects::govuk_frontend_toolkit
   include projects::private-utils
