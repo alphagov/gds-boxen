@@ -6,6 +6,7 @@ class teams::infrastructure {
   include projects::fabric-scripts
   include projects::ghtools
   include projects::machine-bootstrap
+  include projects::opsmanual
   include projects::packages
   include projects::private-utils
   include projects::puppet
