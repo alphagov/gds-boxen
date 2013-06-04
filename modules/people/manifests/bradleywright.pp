@@ -5,6 +5,7 @@ class people::bradleywright {
   include dropbox
   include emacs::formacosx
   include gds-resolver
+  include flux
   include iterm2::dev
   include mailplane::beta
   include omnifocus

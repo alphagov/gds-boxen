@@ -49,6 +49,11 @@ GITHUBTARBALL
     fitbit (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-flux
+  specs:
+    flux (0.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -348,6 +353,7 @@ DEPENDENCIES
   emacs (= 1.1.4)
   firefox (= 1.0.5)
   fitbit (= 1.0.0)
+  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.2.4)
   github_for_mac (= 1.2.0)
