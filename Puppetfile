@@ -23,7 +23,7 @@ github "boxen", "2.3.1"
 
 github "dnsmasq",    "1.0.0"
 github "gcc",        "1.0.0"
-github "git",        "1.2.3"
+github "git",        "1.2.4"
 github "homebrew",   "1.1.2"
 github "hub",        "1.0.0"
 github "inifile",    "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
