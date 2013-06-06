@@ -36,6 +36,11 @@ class people::dcarley {
     ensure => present,
   }
 
+  package { 'lice':
+    ensure   => present,
+    provider => 'pip',
+  }
+
   $home = "/Users/${::luser}"
   $projects = "${home}/projects"
   $projects_personal = "${projects}/personal"
