@@ -74,6 +74,7 @@ class people::jabley {
       'id3tool',
       'jpeg',
       'lame',
+      'logstalgia',
       'lynx',
       'maven',
       'md5sha1sum',
