@@ -19,8 +19,8 @@ class people::samjsharpe::gds_repos ($project_home){
     source  => 'alphagov/pp-puppet',
     require      => File[$project_home],
   }
-  repository { "${project_home}/pp-puppet-secrets":
-    source   => "git@github.gds:gds/pp-puppet-secrets",
+  repository { "${project_home}/pp-deployment":
+    source   => "git@github.gds:gds/pp-deployment",
     require      => File[$project_home],
   }
 }
