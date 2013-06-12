@@ -23,4 +23,8 @@ class people::samjsharpe::gds_repos ($project_home){
     source   => "git@github.gds:gds/pp-deployment",
     require      => File[$project_home],
   }
+  repository { "${project_home}/pp-puppet-varnish":
+    source  => 'alphagov/puppet-pp-varnish',
+    require      => File[$project_home],
+  }
 }
