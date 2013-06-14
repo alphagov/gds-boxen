@@ -87,6 +87,7 @@ class people::jabley {
       'p7zip',
       'parallel',
       'pcre',
+      'phantomjs',
       'pidof',
       'pigz',
       'play',
