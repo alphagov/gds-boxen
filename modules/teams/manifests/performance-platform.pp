@@ -1,3 +1,8 @@
+# Boxen team definition for the Performance Platform
+#
+# If you add a repo into here, you might want to consider adding the
+# repo to our pull request monitor (currently named pulls.html) in
+# https://github.com/alphagov/performance-platform/tree/gh-pages
 class teams::performance-platform {
   include projects::development
 
