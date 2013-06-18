@@ -15,6 +15,7 @@ class people::dcarley {
   include ohmyzsh
 
   vagrant::plugin { 'vagrant-cachier': }
+  vagrant::plugin { 'vagrant-zz-multiprovider-snap': }
 
   dock::size { 40: }
 
