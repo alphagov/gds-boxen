@@ -1,6 +1,8 @@
 class people::annashipman {
   include chrome
+  include encfs
   include git
+  include gnupg
   include iterm2::stable
   include libreoffice
   include postgresql
