@@ -16,9 +16,11 @@ class people::norm {
   include textmate
   include things
   include wget
+  include xquartz
   package {
     [
       'bash-completion',
+      'py2cairo',
       'redis',
       'the_silver_searcher',
     ]:
