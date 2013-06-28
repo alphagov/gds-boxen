@@ -30,6 +30,7 @@ class people::dcarley {
     [
       'apg',
       'bash-completion',
+      'graphviz',
       'gnu-sed',
       'go',
       'tmux'
