@@ -54,6 +54,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       's3cmd',
       'ssh-copy-id',
       'sslscan',
+      'tmux',
       'unrar',
       'wget',
       'zsh-completions',
