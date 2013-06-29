@@ -4,6 +4,7 @@ class people::samjsharpe::common_machine {
   include alfred::two
   include dropbox
   include firefox
+  include github_gem
   include googledrive
   include hub
   include iterm2::stable
