@@ -38,6 +38,7 @@ class teams::performance-platform {
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
   repo::alphagov { 'backdrop-ga-collector': }
+  repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'stageprompt': }
 }
