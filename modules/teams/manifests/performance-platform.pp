@@ -34,11 +34,15 @@ class teams::performance-platform {
   repo::alphagov { 'datainsight_recorder': }
 
   # New World Order
-  repo::alphagov { 'performance-platform': }
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
   repo::alphagov { 'backdrop-ga-collector': }
+  repo::alphagov { 'backdrop-ga-realtime-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'stageprompt': }
+
+  # Documentation
+  repo::alphagov { 'performance-platform': }
+  repo::alphagov { 'libretto': }
 }
