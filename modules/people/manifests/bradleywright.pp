@@ -93,12 +93,12 @@ class people::bradleywright {
     source => 'puppet:///modules/people/bradleywright/local_zshrc',
   }
 
-  file { "${home}/.localgitconfig":
-    mode    => '0644',
-    content => '[user]
-    email = bradley.wright@digital.cabinet-office.gov.uk
-[credential]
-    helper = osxkeychain',
+  git::config::global { 'user.email':
+    value => 'bradley.wright@digital.cabinet-office.gov.uk'
+  }
+
+  git::config::global { 'include.path':
+    value => "${home}/.local_gitconfig",
   }
 
   file {"${boxen::config::srcdir}/development/Vagrantfile.local":
