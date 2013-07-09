@@ -14,6 +14,10 @@ class people::samjsharpe::gds_repos ($project_home){
     require      => File[$project_home],
   }
 
+  repository { "${project_home}/ci-puppet":
+    source  => 'alphagov/ci-puppet',
+    require      => File[$project_home],
+  }
   # Performance Platform
   repository { "${project_home}/pp-puppet":
     source  => 'alphagov/pp-puppet',
