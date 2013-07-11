@@ -12,6 +12,7 @@ class people::bradleywright {
   include qt
   include remove-spotlight
   include slate
+  include stay
   include turn-off-dashboard
   include vagrant
   include virtualbox
