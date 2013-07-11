@@ -254,6 +254,11 @@ GITHUBTARBALL
     emacs (1.1.4)
 
 GITHUBTARBALL
+  remote: bradleywright/puppet-stay
+  specs:
+    stay (1.0.0)
+
+GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
   specs:
     inifile (0.9.0)
@@ -394,6 +399,7 @@ DEPENDENCIES
   sparrow (= 1.0.0)
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
+  stay (= 1.0.0)
   stdlib (= 4.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
