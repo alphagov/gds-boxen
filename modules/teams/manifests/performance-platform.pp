@@ -36,6 +36,7 @@ class teams::performance-platform {
   # New World Order
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
+  repo::alphagov { 'backdrop-send': }
   repo::alphagov { 'backdrop-ga-collector': }
   repo::alphagov { 'backdrop-ga-realtime-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
