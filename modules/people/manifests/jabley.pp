@@ -16,8 +16,7 @@ class people::jabley {
   include openconnect
   include transmission
   include turn-off-dashboard
-  include vagrant_gem
-  include vagrant-dns
+  include vagrant
   include virtualbox
 
   include projects::alphagov-deployment
@@ -43,6 +42,9 @@ class people::jabley {
   repo::gds      { 'opsmanual': }
   repo::gds      { 'transactions-visualisation': }
   
+  vagrant::plugin { 'vagrant-vmware-fusion': }
+  vagrant::plugin { 'vagrant-dns': }
+
   class { 'intellij':
       edition => 'community',
   }
