@@ -38,6 +38,7 @@ class people::bradleywright {
   include projects::whitehall
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
+  vagrant::plugin { 'vagrant-dns': }
 
   $home     = "/Users/${::luser}"
   $home_projects = "${home}/Projects"
