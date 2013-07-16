@@ -9,4 +9,14 @@ class people::philandstuff {
     ]:
     ensure => present,
   }
+
+  $home = "/Users/${::luser}"
+
+  file {"${home}/.emacs.d":
+    ensure => directory,
+  }
+  file {"${home}/.emacs.d/init.el":
+    ensure => present,
+    source => 'puppet:///modules/people/philandstuff/init.el',
+  }
 }
