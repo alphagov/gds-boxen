@@ -10,6 +10,10 @@ class people::philandstuff {
     ensure => present,
   }
 
+  git::config::global {
+    'push.default': value => "simple";
+  }
+
   $home = "/Users/${::luser}"
 
   file {"${home}/.emacs.d":
