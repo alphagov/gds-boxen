@@ -14,6 +14,7 @@ class people::jabley {
   include java
   include onepassword
   include openconnect
+  include travis
   include transmission
   include turn-off-dashboard
   include vagrant
