@@ -9,4 +9,7 @@
   (when (fboundp mode) (funcall mode -1)))
 
 
-;;TODO: install packages
+;;TODO: don't refresh packages on every startup
+(package-refresh-contents)
+(when (not (package-installed-p 'magit))
+  (package-install 'magit))
