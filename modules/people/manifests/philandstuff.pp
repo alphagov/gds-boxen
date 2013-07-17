@@ -1,6 +1,7 @@
 class people::philandstuff {
   include caffeine
   include emacs::formacosx
+  include iterm2::stable
   include sizeup
 
   include teams::infrastructure
