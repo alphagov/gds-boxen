@@ -179,6 +179,11 @@ GITHUBTARBALL
     screen (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sizeup
+  specs:
+    sizeup (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
     skype (1.0.2)
@@ -394,6 +399,7 @@ DEPENDENCIES
   ruby (= 4.1.0)
   rubymine (= 1.0.1)
   screen (= 1.0.0)
+  sizeup (= 1.0.0)
   skype (= 1.0.2)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
