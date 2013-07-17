@@ -1,4 +1,5 @@
 class people::philandstuff {
+  include caffeine
   include emacs::formacosx
 
   include teams::infrastructure
