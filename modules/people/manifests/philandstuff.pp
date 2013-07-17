@@ -13,8 +13,8 @@ class people::philandstuff {
   }
 
   git::config::global {
-    'push.default': value => "simple";
     'color.ui':     value => "true";
+    'push.default': value => "simple";
   }
 
   class { 'gds-ssh-config': extra => '
