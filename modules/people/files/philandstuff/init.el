@@ -11,5 +11,11 @@
 
 ;;TODO: don't refresh packages on every startup
 (package-refresh-contents)
-(when (not (package-installed-p 'magit))
-  (package-install 'magit))
+
+(defconst important-packages
+  '(magit paredit puppet-mode)
+  "packages to ensure are always present on startup")
+
+(dolist (pkg important-packages)
+  (when (not (package-installed-p pkg))
+    (package-install pkg)))
