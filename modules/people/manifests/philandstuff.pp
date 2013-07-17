@@ -13,6 +13,7 @@ class people::philandstuff {
   }
 
   git::config::global {
+    'alias.st':     value => "status -bs";
     'color.ui':     value => "true";
     'push.default': value => "simple";
   }
