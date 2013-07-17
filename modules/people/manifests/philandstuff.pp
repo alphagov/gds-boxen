@@ -16,6 +16,11 @@ class people::philandstuff {
     'color.ui':     value => "true";
   }
 
+  class { 'gds-ssh-config': extra => '
+Host *
+  User ppotter
+'}
+
   $home = "/Users/${::luser}"
 
   file {"${home}/.emacs.d":
