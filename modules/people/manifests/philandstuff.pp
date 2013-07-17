@@ -13,6 +13,7 @@ class people::philandstuff {
 
   git::config::global {
     'push.default': value => "simple";
+    'color.ui':     value => "true";
   }
 
   $home = "/Users/${::luser}"
