@@ -4,6 +4,7 @@ class people::philandstuff {
   include iterm2::stable
   include openconnect
   include sizeup
+  include vagrant
 
   include teams::infrastructure
 
@@ -19,6 +20,8 @@ class people::philandstuff {
     'color.ui':     value => "true";
     'push.default': value => "simple";
   }
+
+  vagrant::plugin { 'vagrant-dns': }
 
   class { 'gds-ssh-config': extra => '
 Host *
