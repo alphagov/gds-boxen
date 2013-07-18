@@ -40,6 +40,7 @@ class people::jabley {
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'transition-stats': }
+  repo::alphagov { 'transformation-dashboard': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'opsmanual': }
   repo::gds      { 'transactions-visualisation': }
