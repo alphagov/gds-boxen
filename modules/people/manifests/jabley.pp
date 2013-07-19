@@ -5,6 +5,7 @@ class people::jabley {
   include clojure
   include chrome
   include dropbox
+  include evernote
   include firefox
   include freeplane
   include googledrive
