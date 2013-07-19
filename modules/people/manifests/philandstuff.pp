@@ -11,8 +11,15 @@ class people::philandstuff {
   package {
     [
       'gnupg',
+      'python',
     ]:
     ensure => present,
+  }
+
+  package {
+    ['virtualenv','virtualenvwrapper']:
+    ensure => present,
+    provider => pip,
   }
 
   git::config::global {
