@@ -7,13 +7,13 @@ class people::philandstuff {
   include vagrant
 
   include projects::deployment
+  include projects::deployment::creds
 
   include teams::infrastructure
 
   package {
     [
       'bash-completion',
-      'gnupg',
       'markdown',
       'python',
     ]:
