@@ -10,6 +10,7 @@ class people::philandstuff {
 
   package {
     [
+      'bash-completion',
       'gnupg',
       'python',
     ]:
@@ -37,6 +38,15 @@ Host *
 
   $home = "/Users/${::luser}"
 
+  file {"${home}/.bashrc":
+    content => '[[ -f /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
+
+[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/govuk
+source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
+',
+  }
   file {"${home}/.emacs.d":
     ensure => directory,
   }
