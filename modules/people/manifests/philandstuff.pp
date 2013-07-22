@@ -6,6 +6,8 @@ class people::philandstuff {
   include sizeup
   include vagrant
 
+  include projects::deployment
+
   include teams::infrastructure
 
   package {
