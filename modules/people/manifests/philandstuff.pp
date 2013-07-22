@@ -14,6 +14,7 @@ class people::philandstuff {
     [
       'bash-completion',
       'gnupg',
+      'markdown',
       'python',
     ]:
     ensure => present,
