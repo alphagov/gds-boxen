@@ -16,7 +16,15 @@
       backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
 
 (defconst important-packages
-  '(ido-ubiquitous magit markdown-mode org paredit puppet-mode smex)
+  '(
+    exec-path-from-shell
+    ido-ubiquitous
+    magit
+    markdown-mode
+    org
+    paredit
+    puppet-mode
+    smex)
   "packages to ensure are always present on startup")
 
 (require 'cl-lib)
@@ -36,4 +44,5 @@
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 
-
+;; set up path
+(exec-path-from-shell-initialize)
