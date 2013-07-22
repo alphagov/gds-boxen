@@ -18,4 +18,8 @@ class teams::infrastructure {
   include projects::vcloud-provisioner
   include projects::vcloud-templates
   include projects::vcloudtools
+
+  git::config::global {
+    'alias.st':     value => "status -bs";
+  }
 }
