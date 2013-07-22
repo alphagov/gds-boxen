@@ -10,7 +10,7 @@ Host jumpbox-2.management.preview
   ProxyCommand none
 
 Host *.preview
-  ProxyCommand ssh -e none %r@jumpbox-1.management.preview exec nc $(echo %h | sed 's/\.preview$/\.production/') %p
+  ProxyCommand ssh -e none jumpbox-1.management.preview exec nc $(echo %h | sed 's/\.preview$/\.production/') %p
 
 
 # Staging
@@ -25,7 +25,7 @@ Host jumpbox-2.management.staging
   ProxyCommand none
 
 Host *.staging
-  ProxyCommand ssh -e none %r@jumpbox-1.management.staging exec nc $(echo %h | sed 's/\.staging$/\.production/') %p
+  ProxyCommand ssh -e none jumpbox-1.management.staging exec nc $(echo %h | sed 's/\.staging$/\.production/') %p
 
 
 # Production
@@ -40,6 +40,6 @@ Host jumpbox-2.management.production
   ProxyCommand none
 
 Host *.production
-  ProxyCommand ssh -e none %r@jumpbox-1.management.production exec nc %h %p
+  ProxyCommand ssh -e none jumpbox-1.management.production exec nc %h %p
 
 <%= extra %>
