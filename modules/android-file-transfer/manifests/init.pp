@@ -2,7 +2,7 @@
 #
 # Sample Usage:
 #
-#  include android_file_transfer
+#  include android-file-transfer
 #
 class android-file-transfer {
   package { 'AndroidFileTransfer':
