@@ -1,4 +1,4 @@
-class teams::infrastructure {
+class teams::infrastructure ($manage_gitconfig = true) {
   include projects::alphagov-deployment
   include projects::box-templates
   include projects::boxes
@@ -19,7 +19,9 @@ class teams::infrastructure {
   include projects::vcloud-templates
   include projects::vcloudtools
 
-  git::config::global {
-    'alias.st':     value => "status -bs";
+  if $manage_gitconfig {
+    git::config::global {
+      'alias.st':     value => "status -bs";
+    }
   }
 }
