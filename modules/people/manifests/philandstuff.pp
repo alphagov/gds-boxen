@@ -14,6 +14,7 @@ class people::philandstuff {
   package {
     [
       'bash-completion',
+      'leiningen',
       'markdown',
       'python',
     ]:
