@@ -17,6 +17,7 @@
 
 (defconst important-packages
   '(
+    clojure-mode
     exec-path-from-shell
     ido-ubiquitous
     magit
