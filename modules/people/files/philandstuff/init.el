@@ -22,6 +22,7 @@
     ido-ubiquitous
     magit
     markdown-mode
+    nrepl
     org
     paredit
     puppet-mode
