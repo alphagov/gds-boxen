@@ -39,6 +39,8 @@
 (set-default 'indent-tabs-mode nil)
 (set-default 'indicate-empty-lines t)
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; enable ido
 (require 'ido)
 (ido-mode t)
