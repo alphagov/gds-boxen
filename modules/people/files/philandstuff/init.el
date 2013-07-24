@@ -36,6 +36,9 @@
     (when (not (package-installed-p pkg))
       (package-install pkg))))
 
+(set-default 'indent-tabs-mode nil)
+(set-default 'indicate-empty-lines t)
+
 ;; enable ido
 (require 'ido)
 (ido-mode t)
