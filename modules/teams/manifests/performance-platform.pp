@@ -42,6 +42,7 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'pp-development': }
+  repo::alphagov { 'showtime': }
   repo::alphagov { 'stageprompt': }
 
   # Documentation
