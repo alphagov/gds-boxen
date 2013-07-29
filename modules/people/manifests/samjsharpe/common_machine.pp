@@ -2,9 +2,9 @@ class people::samjsharpe::common_machine {
 
   include adium
   include alfred::two
+  include controlplane
   include dropbox
   include firefox
-  include github_gem
   include googledrive
   include hub
   include iterm2::stable
@@ -14,7 +14,7 @@ class people::samjsharpe::common_machine {
   include ohmyzsh
   include openconnect
   include screen
-  include slate
+  include spectacle
   include spf13vim3
   include turn-off-dashboard
   include unarchiver
