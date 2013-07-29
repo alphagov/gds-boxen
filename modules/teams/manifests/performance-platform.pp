@@ -44,6 +44,7 @@ class teams::performance-platform {
   repo::alphagov { 'limelight': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'showtime': }
+  repo::alphagov { 'signonotron2': }
   repo::alphagov { 'stageprompt': }
 
   # Documentation
