@@ -204,6 +204,11 @@ GITHUBTARBALL
     sparrow (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-spectacle
+  specs:
+    spectacle (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-spotify
   specs:
     spotify (1.0.0)
@@ -284,6 +289,11 @@ GITHUBTARBALL
     adium (1.1.0)
 
 GITHUBTARBALL
+  remote: dieterdemeyer/puppet-controlplane
+  specs:
+    controlplane (1.0.1)
+
+GITHUBTARBALL
   remote: dieterdemeyer/puppet-github_for_mac
   specs:
     github_for_mac (1.2.0)
@@ -362,6 +372,7 @@ DEPENDENCIES
   chrome (= 1.1.0)
   clojure (= 1.2.0)
   colloquy (= 1.0.0)
+  controlplane (= 1.0.1)
   cord (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
@@ -409,6 +420,7 @@ DEPENDENCIES
   skype (= 1.0.2)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
+  spectacle (= 1.0.0)
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.0)
   stay (= 1.0.0)
