@@ -39,13 +39,14 @@ class people::jabley {
   include teams::performance-platform
   include teams::efg
   include teams::hmrc
+  include teams::infrastructure
   include teams::trade-tariff
+
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::gds      { 'govuk_delivery': }
-  repo::gds      { 'opsmanual': }
   repo::gds      { 'transactions-visualisation': }
   
   vagrant::plugin { 'vagrant-vmware-fusion': }
