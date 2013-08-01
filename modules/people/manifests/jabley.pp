@@ -47,6 +47,7 @@ class people::jabley {
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::gds      { 'govuk_delivery': }
+  repo::gds      { 'licensify': }
   repo::gds      { 'transactions-visualisation': }
   
   vagrant::plugin { 'vagrant-vmware-fusion': }
