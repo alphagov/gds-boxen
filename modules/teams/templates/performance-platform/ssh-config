@@ -18,7 +18,7 @@ Host jumpbox.staging.performance.service.gov.uk
   ProxyCommand none
 
 Host *.pp-staging
-  ProxyCommand ssh -e none %r@jumpbox.preview.performance.service.gov.uk exec nc $(echo %h | sed 's/\.pp-staging$//') %p
+  ProxyCommand ssh -e none %r@jumpbox.staging.performance.service.gov.uk exec nc $(echo %h | sed 's/\.pp-staging$//') %p
 
 #
 # Performance Platform Production
@@ -29,4 +29,4 @@ Host jumpbox.production.performance.service.gov.uk
   ProxyCommand none
 
 Host *.pp-production
-  ProxyCommand ssh -e none %r@jumpbox.preview.performance.service.gov.uk exec nc $(echo %h | sed 's/\.pp-production$//') %p
+  ProxyCommand ssh -e none %r@jumpbox.production.performance.service.gov.uk exec nc $(echo %h | sed 's/\.pp-production$//') %p
