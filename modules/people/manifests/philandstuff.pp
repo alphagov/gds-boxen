@@ -17,6 +17,7 @@ class people::philandstuff {
       'leiningen',
       'markdown',
       'python',
+      'tmux',
     ]:
     ensure => present,
   }
