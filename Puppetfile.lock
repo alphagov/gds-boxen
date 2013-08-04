@@ -324,6 +324,11 @@ GITHUBTARBALL
     property_list_key (0.1.0)
 
 GITHUBTARBALL
+  remote: jabley/puppet-banshee
+  specs:
+    banshee (1.1.0)
+
+GITHUBTARBALL
   remote: jasonamyers/puppet-libreoffice
   specs:
     libreoffice (1.0.0)
@@ -366,6 +371,7 @@ GITHUBTARBALL
 DEPENDENCIES
   adium (= 1.1.0)
   antirsi (= 1.0.1)
+  banshee (= 1.1.0)
   boxen (= 2.3.1)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
