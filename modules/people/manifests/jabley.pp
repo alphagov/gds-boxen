@@ -2,6 +2,7 @@ class people::jabley {
   include adium
   include alfred
   include android-file-transfer
+  include banshee
   include caffeine
   include clojure
   include chrome
