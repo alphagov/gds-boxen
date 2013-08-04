@@ -16,6 +16,7 @@ class people::samjsharpe::common_machine {
   include screen
   include spectacle
   include spf13vim3
+  include stay
   include turn-off-dashboard
   include unarchiver
   include vagrant
