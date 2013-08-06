@@ -20,7 +20,7 @@ class people::bradleywright {
   include zeus
   include zsh
 
-  $vagrant_ip = '10.1.2.190'
+  $vagrant_ip = '10.1.1.254'
 
   class { 'gds-ssh-config': extra => template('people/bradleywright/ssh_config')}
 
@@ -103,8 +103,8 @@ class people::bradleywright {
     value => "${home}/.local_gitconfig",
   }
 
-  file {"${boxen::config::srcdir}/development/Vagrantfile.local":
-    content => template('people/bradleywright/Vagrantfile.local'),
+  file {"${boxen::config::srcdir}/puppet/development/Vagrantfile.localconfig":
+    source => 'puppet:///modules/people/bradleywright/Vagrantfile.localconfig',
     require => Class['Projects::Development']
   }
 

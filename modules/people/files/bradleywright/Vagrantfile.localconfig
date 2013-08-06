@@ -1,7 +1,4 @@
 # -*- mode: ruby; -*-
-# Predefined IP address, randomly assigned when I ran ./install.sh
-config.vm.network :private_network, ip: "<%= vagrant_ip %>"
-
 # Give it 2GB of RAM so I can run all the things
 config.vm.provider :virtualbox do |vb|
   vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
@@ -13,3 +10,5 @@ config.vm.provider :vmware_fusion do |v|
 end
 
 config.vm.synced_folder "~/Projects/puppet", "/var/my-puppet"
+
+config.vm.provision :shell, :inline => "sudo puppet apply /var/my-puppet/manifests/govuk_dev.pp --modulepath=/var/my-puppet/modules/"
