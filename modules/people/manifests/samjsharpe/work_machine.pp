@@ -1,5 +1,6 @@
 class people::samjsharpe::work_machine {
 
+
     $home              = "/Users/${::luser}"
     $home_projects     = "${home}/Projects"
     $govuk_projects    = "${home_projects}/govuk"
@@ -20,5 +21,7 @@ class people::samjsharpe::work_machine {
     include gds-resolver
     include gnupg
     include osx::finder::empty_trash_securely
+    include stay
+    include vagrant_no_vbox
     osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
 }
