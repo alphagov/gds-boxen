@@ -108,22 +108,29 @@ class people::bradleywright {
     require => Class['Projects::Development']
   }
 
+  # Want latest versions
   package {
     [
      'bash-completion',
-     'ghostscript',
      'go',
-     'imagemagick',
-     'mysql',
      'parallel',
      'python',
      'reattach-to-user-namespace',
      'tmux',
      'tree',
      'wget',
-     'xpdf',
      'zsh-completions',
      'zsh-lovers',
+     ]:
+       ensure => latest
+  }
+  # Don't need latest versions
+  package {
+    [
+     'ghostscript',
+     'imagemagick',
+     'mysql',
+     'xpdf'
      ]:
   }
 
