@@ -16,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
-    chrome (1.1.0)
+    chrome (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-clojure
@@ -41,17 +41,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
-    dropbox (1.1.0)
+    dropbox (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-evernote
   specs:
-    evernote (2.0.3)
+    evernote (2.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.0.5)
+    firefox (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-fitbit
@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-flux
   specs:
-    flux (0.0.1)
+    flux (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -101,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.2)
+    iterm2 (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
@@ -116,12 +116,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-mou
   specs:
-    mou (1.0.0)
+    mou (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
-    mysql (1.0.0)
+    mysql (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -136,12 +136,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-notational_velocity
   specs:
-    notational_velocity (1.1.0)
+    notational_velocity (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.0.0)
+    onepassword (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -151,17 +151,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.1.0)
+    osx (1.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
-    postgresql (1.0.0)
+    postgresql (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pycharm
   specs:
-    pycharm (1.0.1)
+    pycharm (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-qt
@@ -181,7 +181,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-rubymine
   specs:
-    rubymine (1.0.1)
+    rubymine (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-screen
@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
-    skype (1.0.2)
+    skype (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-slate
@@ -216,7 +216,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-spotify
   specs:
-    spotify (1.0.0)
+    spotify (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
@@ -241,17 +241,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-things
   specs:
-    things (1.0.0)
+    things (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.7)
+    vagrant (2.0.10)
 
 GITHUBTARBALL
   remote: boxen/puppet-vim
   specs:
-    vim (1.0.3)
+    vim (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-vmware_fusion
@@ -286,7 +286,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-adium
   specs:
-    adium (1.1.0)
+    adium (1.1.1)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-controlplane
@@ -306,12 +306,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-unarchiver
   specs:
-    unarchiver (1.0.0)
+    unarchiver (1.1.0)
 
 GITHUBTARBALL
   remote: gblair/puppet-googledrive
   specs:
-    googledrive (1.0.1)
+    googledrive (1.0.2)
 
 GITHUBTARBALL
   remote: geetarista/puppet-mplayerx
@@ -374,77 +374,77 @@ GITHUBTARBALL
     propane (0.0.1)
 
 DEPENDENCIES
-  adium (= 1.1.0)
+  adium (= 1.1.1)
   antirsi (= 1.0.1)
   autoconf (= 1.0.0)
   banshee (= 1.1.0)
   boxen (= 3.0.1)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
-  chrome (= 1.1.0)
+  chrome (= 1.1.1)
   clojure (= 1.2.0)
   colloquy (= 1.0.0)
   controlplane (= 1.0.1)
   cord (= 1.0.0)
   dnsmasq (= 1.0.0)
-  dropbox (= 1.1.0)
+  dropbox (= 1.1.1)
   emacs (= 1.1.4)
-  evernote (= 2.0.3)
-  firefox (= 1.0.5)
+  evernote (= 2.0.4)
+  firefox (= 1.1.1)
   fitbit (= 1.0.0)
-  flux (= 0.0.1)
+  flux (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
   github_for_mac (= 1.2.0)
   gitx (= 1.2.0)
-  googledrive (= 1.0.1)
+  googledrive (= 1.0.2)
   heroku (= 2.0.0)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
   inifile (= 1.0.0)
   intellij (= 1.3.0)
-  iterm2 (= 1.0.2)
+  iterm2 (= 1.0.3)
   java (= 1.1.0)
   launchbar (= 1.1.0)
   libreoffice (= 1.0.0)
   macvim (= 1.0.0)
   monocle (= 0.0.2)
-  mou (= 1.0.0)
+  mou (= 1.1)
   mplayerx (= 1.0.0)
-  mysql (= 1.0.0)
+  mysql (= 1.1.0)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
-  notational_velocity (= 1.1.0)
+  notational_velocity (= 1.1.1)
   ohmyzsh (= 1.0.0)
-  onepassword (= 1.0.0)
+  onepassword (= 1.0.2)
   openssl (= 1.0.0)
-  osx (= 1.1.0)
-  postgresql (= 1.0.0)
+  osx (= 1.6.0)
+  postgresql (= 2.0.0)
   propane (= 0.0.1)
   property_list_key (= 0.1.0)
-  pycharm (= 1.0.1)
+  pycharm (= 1.0.3)
   qt (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.3.0)
-  rubymine (= 1.0.1)
+  rubymine (= 1.0.2)
   screen (= 1.0.0)
   sizeup (= 1.0.0)
-  skype (= 1.0.2)
+  skype (= 1.0.3)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
   spectacle (= 1.0.0)
   spf13vim3 (= 1.0.0)
-  spotify (= 1.0.0)
+  spotify (= 1.0.1)
   stay (= 1.0.0)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   textmate (= 1.1.0)
-  things (= 1.0.0)
-  unarchiver (= 1.0.0)
-  vagrant (= 2.0.7)
-  vim (= 1.0.3)
+  things (= 1.0.1)
+  unarchiver (= 1.1.0)
+  vagrant (= 2.0.10)
+  vim (= 1.0.5)
   vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
   xquartz (= 1.1.0)
