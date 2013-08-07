@@ -13,7 +13,7 @@ class people::annashipman {
 
   include teams::infrastructure
 
-  include projects::deployment
+  include projects::deployment::creds
   include projects::redirector
 
   $home = "/Users/${::luser}"
