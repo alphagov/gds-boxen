@@ -21,7 +21,20 @@
     # or if you use ZSH
     echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.zshrc
 
-Open a new terminal, `boxen --env` to confirm.
+It should run successfully, and should tell you to source a shell script
+in your environment.
+For users without a bash or zsh config or a `~/.profile` file,
+Boxen will create a shim for you that will work correctly.
+If you do have a `~/.bashrc` or `~/.zshrc`, your shell will not use
+`~/.profile` so you'll need to add a line like so at _the end of your config_:
+
+``` sh
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+```
+
+Once your shell is ready, open a new tab/window in your Terminal
+and you should be able to successfully run `boxen --env`.
+If that runs cleanly, you're in good shape.
 
 
 - Create a personal module to define what you want on your Mac. See [the
@@ -70,13 +83,14 @@ The following are provided by default:
 * Homebrew
 * Git
 * Hub
-* Rbenv
+* rbenv
+* Full Disk Encryption requirement
 * Ruby 1.8.7
 * Ruby 1.9.2
 * Ruby 1.9.3
-* Ack
+* ack
 * Findutils
-* GNU-Tar
+* GNU tar
 
 ## Further information about boxen
 
