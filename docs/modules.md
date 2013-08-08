@@ -100,12 +100,12 @@ by other shell scripts.
 
 ## Facts and variables
 
-The core boxen module provides [a number of variables to use](https://github.com/boxen/puppet-boxen/blob/master/manifests/config.pp#L2-L14).
+The core boxen module provides [a number of variables to use](https://github.com/boxen/puppet-boxen/blob/master/manifests/config.pp#L8-L21).
 
 In addition to these, you may always assume the presence of a `boxen_user` fact,
 which is the local user running Boxen.
 
-Other modules may provider their own globally available variables.
+Other modules may provide their own globally available variables.
 The recommendation is to put any variables that might be consumed by
-multiple classes/manifests should be in a scoped config class
+multiple classes/manifests in a scoped config class
 (e.g. `modules/boxen/manifests/config.pp`).
