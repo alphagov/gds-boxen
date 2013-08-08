@@ -10,7 +10,7 @@ file { '/tmp/boxen/puppet/conf/hiera.yaml':
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
-  user        => $luser,
+  user        => $boxen_user,
 
   path => [
     "${boxen::config::home}/rbenv/shims",
@@ -25,13 +25,13 @@ Exec {
 
   environment => [
     "HOMEBREW_CACHE=${homebrew::config::cachedir}",
-    "HOME=/Users/${::luser}"
+    "HOME=/Users/${::boxen_user}"
   ]
 }
 
 File {
   group => 'staff',
-  owner => $luser
+  owner => $boxen_user
 }
 
 Package {
@@ -44,7 +44,10 @@ Repository {
   extra    => [
     '--recurse-submodules'
   ],
-  require  => Class['git']
+  require  => File["${boxen::config::bindir}/boxen-git-credential"],
+  config   => {
+    'credential.helper' => "${boxen::config::bindir}/boxen-git-credential"
+  }
 }
 
 Service {
@@ -86,11 +89,6 @@ node default {
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
-  # node versions
-  include nodejs::0-4
-  include nodejs::0-6
-  include nodejs::0-8
 
   # default ruby versions
   include ruby::1_8_7

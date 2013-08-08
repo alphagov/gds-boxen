@@ -10,6 +10,7 @@ class people::samjsharpe::common_machine {
   include iterm2::stable
   include macvim
   include mou
+  include mou::themes
   include mplayerx
   include ohmyzsh
   include openconnect
