@@ -10,10 +10,11 @@ class people::jabley {
   include evernote
   include firefox
   include freeplane
-  include googledrive
+  include gds-development
   include git
   include gitx::dev
   include gnupg
+  include googledrive
   include java
   include onepassword
   include openconnect
@@ -21,8 +22,6 @@ class people::jabley {
   include travis
   include transmission
   include turn-off-dashboard
-  include vagrant
-  include virtualbox
 
   include projects::alphagov-deployment
   include projects::development
@@ -30,7 +29,6 @@ class people::jabley {
   include projects::frontend
   include projects::govuk_frontend_toolkit
   include projects::private-utils
-  include projects::puppet
   include projects::redirector
   include projects::rummager
   include projects::smokey
@@ -52,7 +50,6 @@ class people::jabley {
   repo::gds      { 'transactions-visualisation': }
   
   vagrant::plugin { 'vagrant-vmware-fusion': }
-  vagrant::plugin { 'vagrant-dns': }
 
   class { 'intellij':
       edition => 'community',
