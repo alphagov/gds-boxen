@@ -34,6 +34,7 @@ class people::philandstuff {
     'push.default': value => "simple";
   }
 
+  vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-dns': }
 
   class { 'gds-ssh-config': extra => '
