@@ -3,7 +3,6 @@ class people::robyoung {
   include chrome
   include dropbox
   include firefox
-  include gds-ssh-config
   include gds-resolver
   include git
   include iterm2::stable
@@ -19,6 +18,9 @@ class people::robyoung {
   include teams::performance-platform
   include projects::deployment
   include projects::vcloud-templates
+
+
+  class { 'gds-ssh-config': extra => template('people/robyoung/ssh_config') }
 
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
