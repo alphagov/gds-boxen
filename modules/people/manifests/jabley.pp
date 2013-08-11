@@ -112,6 +112,7 @@ class people::jabley {
       'sdl_image',
       'sloccount',
       'ssh-copy-id',
+      'the_silver_searcher',
       'tmux',
       'wget',
       'wrk',
