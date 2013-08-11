@@ -115,6 +115,7 @@ class people::bradleywright {
      'parallel',
      'python',
      'reattach-to-user-namespace',
+     'the_silver_searcher',
      'tmux',
      'tree',
      'wget',
