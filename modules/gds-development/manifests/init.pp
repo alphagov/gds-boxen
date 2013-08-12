@@ -12,6 +12,8 @@ class gds-development {
   include vagrant
   include virtualbox
 
+  # Use the vagrant cachier plugin to cache apt downloads
+  vagrant::plugin { 'vagrant-cachier': }
   # Dev uses the vagrant-dns plugin
   vagrant::plugin { 'vagrant-dns': }
 
