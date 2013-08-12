@@ -1,9 +1,8 @@
 class people::edwardhorsford{
-  include vagrant_gem
-  include vagrant-dns
-  include vagrant-vbguest
+  include gds-development
 
   include teams::performance-platform
   repo::alphagov { 'static': }
+
 
 }
