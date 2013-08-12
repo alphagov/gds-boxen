@@ -49,7 +49,6 @@ class people::jabley {
   repo::gds      { 'licensify': }
   repo::gds      { 'transactions-visualisation': }
   
-  vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
   class { 'intellij':
