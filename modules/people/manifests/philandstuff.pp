@@ -1,6 +1,7 @@
 class people::philandstuff {
   include caffeine
   include emacs::formacosx
+  include emacs-keybindings
   include iterm2::stable
   include openconnect
   include sizeup
@@ -14,6 +15,7 @@ class people::philandstuff {
   package {
     [
       'bash-completion',
+      'fakeroot',
       'leiningen',
       'markdown',
       'python',

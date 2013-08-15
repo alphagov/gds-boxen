@@ -57,21 +57,25 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 define ruby::all::gem (
-    $version = undef
+    $version = undef,
+    $ensure = present
   ){
   ruby::gem {"${name}-1.8.7":
+    ensure => $ensure,
     gem     => $name,
     ruby    => '1.8.7',
     require => Class['ruby::1_8_7'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.2":
+    ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.2',
     require => Class['ruby::1_9_2'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.3":
+    ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.3',
     require => Class['ruby::1_9_3'],

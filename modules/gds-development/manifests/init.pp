@@ -15,4 +15,8 @@ class gds-development {
   # Dev uses the vagrant-dns plugin
   vagrant::plugin { 'vagrant-dns': }
 
+  # Make sure we remove the old gems
+  ruby::all::gem {'vagrant':
+    ensure => absent,
+  }
 }

@@ -4,12 +4,20 @@ class people::alexmuller {
   include firefox
   include spotify
   include sublime_text_2
-  include vagrant_gem
-  include vagrant-dns
-  include vagrant-vbguest
+
+  # Dev VM
+  include vagrant
   include virtualbox
+  vagrant::plugin { 'vagrant-dns': }
+  include projects::puppet
 
   include teams::performance-platform
+
+  include projects::deployment
+  include projects::vagrant-govuk
+  include projects::vcloud-templates
+
+  class { 'gds-ssh-config': extra => template('teams/performance-platform/ssh-config') }
 
   #include osx::dock::2d
   #include osx::dock::autohide
@@ -17,6 +25,8 @@ class people::alexmuller {
   package {
     [
       'autojump',
+      'tree',
+      'wget',
     ]:
     ensure => present,
   }
