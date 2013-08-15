@@ -4,6 +4,7 @@ class people::bradleywright {
   include chrome
   include dropbox
   include emacs::formacosx
+  include emacs-keybindings
   include gds-resolver
   include flux
   include iterm2::dev
