@@ -46,6 +46,7 @@ github "camino",         "1.0.1", :repo => "norm/puppet-camino"
 github "chrome",         "1.1.1"
 github "clojure",        "1.2.0"
 github "colloquy",       "1.0.0"
+mod    "concat",         "1.0.0", :git => "git://github.com/puppetlabs/puppetlabs-concat.git", :ref => '1.0.0'
 github "controlplane",   "1.0.1", :repo => "dieterdemeyer/puppet-controlplane"
 github "cord",           "1.0.0"
 github "dropbox",        "1.1.1"

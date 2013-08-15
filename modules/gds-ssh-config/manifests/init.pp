@@ -7,9 +7,21 @@ class gds-ssh-config(
 	$filename='config',
 	$extra='',
 ) {
-	file { "/Users/${::luser}/.ssh/${filename}":
-		content => template('gds-ssh-config/config.erb'),
-		ensure => present,
-		mode   => '0644',
-	}
+    include concat::setup
+    $path = "/Users/${::luser}/.ssh/${filename}"
+    concat { $path:
+      mode    => '0644',
+      owner   => $::luser,
+      group   => 'staff',
+    }
+    concat::fragment {"govuk_ssh":
+      target => $path,
+      source => 'puppet:///modules/gds-ssh-config/gds_ssh_config',
+      order  => '10',
+    }
+    concat::fragment {"extra":
+      target  => $path,
+      content => $extra,
+      order   => '20',
+    }
 }
