@@ -21,6 +21,9 @@ class people::alexmuller {
   ssh_config::fragment{'performance-platform':
     content => template('teams/performance-platform/ssh-config'),
   }
+  ssh_config::fragment{'alexmuller':
+    content => template('people/alexmuller/ssh-config'),
+  }
 
   #include osx::dock::2d
   #include osx::dock::autohide
