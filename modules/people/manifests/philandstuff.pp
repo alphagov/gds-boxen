@@ -1,6 +1,7 @@
 class people::philandstuff {
   include caffeine
   include emacs::formacosx
+  include emacs-keybindings
   include iterm2::stable
   include openconnect
   include sizeup
