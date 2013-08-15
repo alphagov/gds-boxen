@@ -16,6 +16,7 @@ class people::philandstuff {
     [
       'bash-completion',
       'fakeroot',
+      'fpm',
       'leiningen',
       'markdown',
       'python',
