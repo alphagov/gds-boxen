@@ -17,7 +17,10 @@ class people::alexmuller {
   include projects::vagrant-govuk
   include projects::vcloud-templates
 
-  class { 'gds-ssh-config': extra => template('teams/performance-platform/ssh-config') }
+  class { 'gds-ssh-config': }
+  ssh_config::fragment{'performance-platform':
+    content => template('teams/performance-platform/ssh-config'),
+  }
 
   #include osx::dock::2d
   #include osx::dock::autohide

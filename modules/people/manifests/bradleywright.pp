@@ -21,7 +21,10 @@ class people::bradleywright {
 
   $vagrant_ip = '10.1.1.254'
 
-  class { 'gds-ssh-config': extra => template('people/bradleywright/ssh_config')}
+  class { 'gds-ssh-config': }
+  ssh_config::fragment{'user':
+    content => template('people/bradleywright/ssh_config'),
+  }
 
   include projects::alphagov-deployment
   include projects::development

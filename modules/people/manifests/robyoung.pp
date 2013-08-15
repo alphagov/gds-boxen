@@ -20,7 +20,10 @@ class people::robyoung {
   include projects::vcloud-templates
 
 
-  class { 'gds-ssh-config': extra => template('teams/performance-platform/ssh-config') }
+  class { 'gds-ssh-config': }
+  ssh_config::fragment{'performance-platform':
+    content => template('teams/performance-platform/ssh-config'),
+  }
 
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
