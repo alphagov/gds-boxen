@@ -279,6 +279,11 @@ GITHUBTARBALL
     emacs (1.1.4)
 
 GITHUBTARBALL
+  remote: bradleywright/puppet-emacs-keybindings
+  specs:
+    emacs-keybindings (1.0.0)
+
+GITHUBTARBALL
   remote: bradleywright/puppet-stay
   specs:
     stay (1.0.0)
@@ -389,6 +394,7 @@ DEPENDENCIES
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
   emacs (= 1.1.4)
+  emacs-keybindings (= 1.0.0)
   evernote (= 2.0.4)
   firefox (= 1.1.1)
   fitbit (= 1.0.0)
