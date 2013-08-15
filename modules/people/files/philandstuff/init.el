@@ -1,7 +1,9 @@
 (require 'package)
 (add-to-list 'package-archives 
     '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
+      "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 ;; disable ui frills
@@ -50,6 +52,16 @@
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
+
+;; set up various mode hooks
+;; *.pp -> puppet-mode
+;; *.cljs -> clojure-mode
+;; clojure-mode -> paredit
+(add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\.pp$" . puppet-mode))
+(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+(add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
+(add-hook 'clojure-mode-hook #'enable-paredit-mode)
 
 ;; set up path
 (exec-path-from-shell-initialize)
