@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-concat.git
+  ref: 1.0.0
+  sha: 04356974f72b90a1d0f57346a00e95a717924e43
+  specs:
+    concat (1.0.0)
+
 GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
@@ -389,6 +396,7 @@ DEPENDENCIES
   chrome (= 1.1.1)
   clojure (= 1.2.0)
   colloquy (= 1.0.0)
+  concat (= 1.0.0)
   controlplane (= 1.0.1)
   cord (= 1.0.0)
   dnsmasq (= 1.0.0)
