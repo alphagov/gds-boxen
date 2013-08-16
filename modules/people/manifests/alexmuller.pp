@@ -22,7 +22,7 @@ class people::alexmuller {
     content => template('teams/performance-platform/ssh-config'),
   }
   ssh_config::fragment{'alexmuller':
-    content => template('people/alexmuller/ssh-config'),
+    source => 'puppet:///modules/people/alexmuller/ssh-config',
   }
 
   #include osx::dock::2d
