@@ -57,11 +57,8 @@ export PROJECT_HOME=$HOME/govuk
 source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 ',
   }
-  file {"${home}/.emacs.d":
-    ensure => directory,
-  }
-  file {"${home}/.emacs.d/init.el":
-    ensure => present,
-    source => 'puppet:///modules/people/philandstuff/init.el',
+
+  repository { "${home}/.emacs.d":
+    source => 'git@github.com:philandstuff/dot-emacs.git',
   }
 }
