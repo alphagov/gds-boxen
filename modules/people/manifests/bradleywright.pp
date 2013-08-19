@@ -9,6 +9,7 @@ class people::bradleywright {
   include flux
   include iterm2::dev
   include mailplane::beta
+  include nginx
   include omnifocus
   include qt
   include remove-spotlight
