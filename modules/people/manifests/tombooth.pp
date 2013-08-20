@@ -11,4 +11,5 @@ class people::tombooth {
   include teams::infrastructure
   
   include gds-development
+  include ssh_config
 }
