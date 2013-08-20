@@ -2,7 +2,6 @@
 class people::tombooth {
   include iterm2::stable
   include vagrant
-  include dropbox
   include chrome
   include emacs::formacosx
   include flux
@@ -10,7 +9,8 @@ class people::tombooth {
   
   include projects::puppet
   include projects::alphagov-deployment
+  include projects::fabric-scripts
+  include projects::opsmanual
   
   include gds-development
-
 }
