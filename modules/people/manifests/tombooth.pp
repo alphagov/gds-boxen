@@ -8,10 +8,7 @@ class people::tombooth {
   include gds-resolver
   
   include teams::performance-platform
-  include projects::puppet
-  include projects::alphagov-deployment
-  include projects::fabric-scripts
-  include projects::opsmanual
+  include teams::infrastructure
   
   include gds-development
 }
