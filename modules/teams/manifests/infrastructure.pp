@@ -8,6 +8,7 @@ class teams::infrastructure {
   include projects::env-sync-and-backup
   include projects::fabric-scripts
   include projects::ghtools
+  include projects::govuk_mirror
   include projects::machine-bootstrap
   include projects::opsmanual
   include projects::packages
