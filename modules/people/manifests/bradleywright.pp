@@ -3,7 +3,7 @@ class people::bradleywright {
   include alfred::two
   include chrome
   include dropbox
-  include emacs::formacosx
+  include emacs
   include emacs-keybindings
   include gds-resolver
   include flux
