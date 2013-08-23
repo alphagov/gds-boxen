@@ -40,6 +40,14 @@ class people::bradleywright {
   include projects::static
   include projects::whitehall
 
+  class { 'osx::global::key_repeat_delay':
+    delay => 200
+  }
+
+  class { 'osx::global::key_repeat_rate':
+    rate => 400
+  }
+
   include gds-development
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
