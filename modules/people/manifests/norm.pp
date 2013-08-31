@@ -7,6 +7,7 @@ class people::norm {
   include dropbox
   include firefox
   include gitx::dev
+  include istatmenus4
   include launchbar
   include macvim
   include monocle
