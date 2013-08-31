@@ -14,11 +14,23 @@ class people::bradleywright {
   include qt
   include remove-spotlight
   include slate
-  include stay
   include turn-off-dashboard
   include vmware_fusion
   include zeus
   include zsh
+
+  osx_login_item { 'OmniFocus':
+    name    => 'OmniFocus',
+    path    => '/Applications/OmniFocus.app',
+    require => Class['OmniFocus']
+  }
+
+  osx_login_item { 'Slate':
+     name    => 'Slate',
+     path    => '/Applications/Slate.app',
+     hidden  => true,
+     require => Class['Slate'],
+  }
 
   $vagrant_ip = '10.1.1.254'
 
