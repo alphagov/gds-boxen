@@ -2,26 +2,34 @@ class people::jordanhatch {
   include adium
   include alfred
   include chrome
+  include dropbox
   include gitx
   include iterm2::stable
   include spotify
   include unarchiver
   include virtualbox
+  include virtualbox
+  vagrant::plugin { 'vagrant-dns': }
+  include projects::puppet
 
   include teams::mainstream
 
   $home = "/Users/${::luser}"
-  $dev = "${home}/dev"
+  $src = "${home}/src"
 
-  file { $dev:
+  file { $src:
     ensure => directory,
   }
+  file { "${home}/dev":
+    ensure => link,
+    target => "${home}/Dropbox/dev",
+  }
 
-  $dotfiles = "${dev}/dotfiles"
+  $dotfiles = "${src}/dotfiles"
 
   repository { $dotfiles:
     source  => 'JordanHatch/dotfiles',
-    require => File[$dev],
+    require => File[$src],
     notify  => Exec['install-dotfiles'],
   }
 
