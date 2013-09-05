@@ -43,7 +43,6 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'pp-development': }
-  repo::alphagov { 'showtime': }
   repo::alphagov { 'signonotron2': }
   repo::alphagov { 'stageprompt': }
   repo::alphagov { 'transactions-explorer': }
@@ -51,4 +50,8 @@ class teams::performance-platform {
   # Documentation
   repo::alphagov { 'performance-platform': }
   repo::alphagov { 'libretto': }
+  
+  # Office-y things
+  repo::alphagov { 'fourth-wall': }
+  repo::alphagov { 'showtime': }
 }
