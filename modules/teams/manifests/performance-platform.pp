@@ -12,6 +12,7 @@ class teams::performance-platform {
 
   # New Devops™ !!!!11!one!!!!
   include teams::performance-platform::puppet
+  repo::alphagov { 'puppet-google_credentials': }
 
   # Old World Order
   repo::gds      { 'datainsight': }
@@ -36,7 +37,7 @@ class teams::performance-platform {
   # New World Order
   repo::gds      { 'google-dev-credentials': }
   repo::alphagov { 'backdrop': }
-  repo::alphagov { 'backdrop-send': }
+  repo::alphagov { 'backdropsend': }
   repo::alphagov { 'backdrop-ga-collector': }
   repo::alphagov { 'backdrop-ga-realtime-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
@@ -48,8 +49,8 @@ class teams::performance-platform {
   repo::alphagov { 'transactions-explorer': }
 
   # Documentation
-  repo::alphagov { 'performance-platform': }
   repo::alphagov { 'libretto': }
+  repo::alphagov { 'performance-platform': }
   
   # Office-y things
   repo::alphagov { 'fourth-wall': }
