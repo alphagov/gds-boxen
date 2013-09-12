@@ -19,13 +19,22 @@ class people::jennyd {
     value  => 'true',
   }
 
-package {
+  package {
     [
       'python',
       'pwgen',
       'tmux',
     ]:
     ensure => present,
+  }
+
+  package {
+    [
+      'virtualenv',
+      'virtualenvwrapper'
+    ]:
+    ensure => present,
+    provider => pip,
   }
 
   include osx::dock::autohide
