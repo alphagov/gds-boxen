@@ -4,7 +4,7 @@
 - Either install the [Xcode Command Line Tools][xcode-cli] or install the full Xcode from the Mac App Store. If you do the latter, you also need to explicitly install the Command Line Tools (Open Xcode -> Preferences -> Downloads -> Install Command Line Tools).
 [xcode-cli]: https://developer.apple.com/downloads/index.action
 
-### The following instructions will work for a fresh build or for an already set-up Mac.  
+### The following instructions will work for a fresh build or for an already set-up Mac.
 
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:admin /opt/boxen
