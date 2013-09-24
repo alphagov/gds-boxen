@@ -3,6 +3,7 @@ class people::dcarley {
   include caffeine
   include chrome
   include gds-resolver
+  include gds_vpn_profiles
   include git
   include iterm2::stable
   include turn-off-dashboard
