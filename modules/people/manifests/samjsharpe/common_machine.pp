@@ -5,6 +5,7 @@ class people::samjsharpe::common_machine {
   include controlplane
   include dropbox
   include firefox
+  include gds_vpn_profiles
   include googledrive
   include hub
   include iterm2::stable
