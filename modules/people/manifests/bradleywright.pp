@@ -178,7 +178,7 @@ class people::bradleywright {
 
   # Clobber boxen version of Git to use stock homebrew
   Package <| title == "boxen/brews/git" |> {
-    ensure => "1.8.3.4"
+    ensure => "1.8.4"
   }
 
   # Use my own Git config, thanks.
