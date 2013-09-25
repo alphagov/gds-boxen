@@ -143,6 +143,8 @@ class people::bradleywright {
      'parallel',
      'python',
      'reattach-to-user-namespace',
+     'sbt',
+     'scala',
      'the_silver_searcher',
      'tmux',
      'tree',
