@@ -5,12 +5,14 @@ class people::bradleywright {
   include dropbox
   include emacs
   include emacs-keybindings
+  include gds_vpn_profiles
   include gds-resolver
   include flux
   include iterm2::dev
   include mailplane::beta
   include nginx
   include omnifocus
+  include openconnect
   include qt
   include remove-spotlight
   include slate
