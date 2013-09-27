@@ -57,6 +57,8 @@ class people::jabley {
       edition => 'community',
   }
 
+  homebrew::tap { 'homebrew/science': }
+
   # These are all Homebrew packages
   package {
     [
@@ -106,6 +108,7 @@ class people::jabley {
       'proctools',
       'protobuf',
       'pv',
+      'R',
       'redis',
       'sbt',
       'scala',
