@@ -29,7 +29,7 @@ class people::norm {
   }
 
   # repos
-  include teams::performance-platform
+  include teams::mainstream
   repo::alphagov { 'government-service-design-manual': }
 
   # preferenceses
