@@ -19,6 +19,7 @@ class people::jabley {
   include java
   include onepassword
   include openconnect
+  include r-studio
   include sublime_text_2
   include travis
   include transmission
