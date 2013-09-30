@@ -11,6 +11,7 @@ class people::jabley {
   include firefox
   include freeplane
   include gds-development
+  include gds-resolver
   include gds_vpn_profiles
   include git
   include gitx::dev
