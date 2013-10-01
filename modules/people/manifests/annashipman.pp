@@ -1,11 +1,11 @@
 class people::annashipman {
   include chrome
   include encfs
+  include gds_vpn_profiles
   include git
   include gnupg
   include iterm2::stable
   include libreoffice
-  include postgresql
   include turn-off-dashboard
   include vagrant
   include virtualbox
