@@ -19,6 +19,7 @@ class people::jabley {
   include googledrive
   include java
   include onepassword
+  include onepassword::chrome
   include openconnect
   include r-studio
   include sublime_text_2
