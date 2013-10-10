@@ -41,7 +41,6 @@ class people::jabley {
 
   include teams::performance-platform
   include teams::efg
-  include teams::hmrc
   include teams::infrastructure
   include teams::trade-tariff
 
