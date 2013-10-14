@@ -48,6 +48,7 @@ class people::jabley {
 
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
+  repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-nginx': }
   repo::alphagov { 'router': }
   repo::alphagov { 'transition-stats': }
