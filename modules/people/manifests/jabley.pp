@@ -65,6 +65,13 @@ class people::jabley {
 
   homebrew::tap { 'homebrew/science': }
 
+  # version control this file, since it's in another repo and I don't really
+  # want to delete it by accident.
+  file {"${boxen::config::srcdir}/puppet/development/Vagrantfile.localconfig":
+    source => 'puppet:///modules/people/jabley/Vagrantfile.localconfig',
+    require => Class['Projects::Development']
+  }
+
   # These are all Homebrew packages
   package {
     [
