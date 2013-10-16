@@ -35,10 +35,14 @@ class people::dcarley {
       'bash-completion',
       'graphviz',
       'gnu-sed',
-      'go',
       'tmux'
     ]:
     ensure => present,
+  }
+
+  package { 'go':
+    ensure          => present,
+    install_options => '--cross-compile-common',
   }
 
   package { 'lice':
