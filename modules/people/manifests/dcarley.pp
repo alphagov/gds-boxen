@@ -22,6 +22,8 @@ class people::dcarley {
 
   # Projects accessible to everyone in Infrastructure
   include teams::infrastructure
+  include projects::router
+
   # Projects only accessible to certain staff
   include projects::deployment
   include projects::deployment::creds

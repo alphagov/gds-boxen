@@ -36,6 +36,7 @@ class people::jabley {
   include projects::govuk_frontend_toolkit
   include projects::private-utils
   include projects::redirector
+  include projects::router
   include projects::rummager
   include projects::smokey
   include projects::static
@@ -50,7 +51,6 @@ class people::jabley {
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-nginx': }
-  repo::alphagov { 'router': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::gds      { 'govuk_delivery': }
