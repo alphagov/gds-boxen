@@ -46,21 +46,32 @@ class people::dcarley {
     provider => 'pip',
   }
 
-  $home = "/Users/${::luser}"
-  $projects = "${home}/projects"
+  $home              = "/Users/${::luser}"
+  $projects          = "${home}/projects"
   $projects_personal = "${projects}/personal"
+  $dotfiles          = "/Users/${::luser}/dotfiles"
 
   file { [$projects, $projects_personal]:
     ensure  => directory,
   }
 
-  include people::dcarley::dotfiles
+  repository { $dotfiles:
+    source  => 'dcarley/dotfiles',
+    notify  => Exec['install dotfiles'],
+  }
+
+  exec { 'install dotfiles':
+    command     => 'rake',
+    cwd         => $dotfiles,
+    logoutput   => true,
+    refreshonly => true,
+  }
 
   # Dependency for puppet-vim
   file { "${home}/.vimrc":
     ensure  => link,
     target  => "dotfiles/.vimrc",
-    require => Class['people::dcarley::dotfiles'],
+    require => Exec['install dotfiles'],
   }
 
   vim::bundle { 'rodjek/vim-puppet': }
