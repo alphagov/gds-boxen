@@ -9,6 +9,7 @@ class people::jabley {
   include dropbox
   include evernote
   include firefox
+  include flux
   include freeplane
   include gds-development
   include gds-resolver
