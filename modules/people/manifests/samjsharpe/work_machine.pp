@@ -17,11 +17,9 @@ class people::samjsharpe::work_machine {
       project_home => $personal_projects,
     }
     include chrome
-    include encfs
     include gds-resolver
     include gnupg
     include osx::finder::empty_trash_securely
     include stay
     include vagrant_no_vbox
-    osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
 }
