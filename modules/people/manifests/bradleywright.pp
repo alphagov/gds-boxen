@@ -138,6 +138,7 @@ class people::bradleywright {
   package {
     [
      'bash-completion',
+     'ctags-exuberant',
      'git',
      'go',
      'parallel',
