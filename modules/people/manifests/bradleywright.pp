@@ -18,6 +18,7 @@ class people::bradleywright {
   include slate
   include turn-off-dashboard
   include vmware_fusion
+  include x-dispatch
   include zeus
   include zsh
 
