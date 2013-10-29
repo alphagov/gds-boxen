@@ -15,6 +15,7 @@ class people::samjsharpe::common_machine {
   include mplayerx
   include ohmyzsh
   include openconnect
+  include packer
   include screen
   include spectacle
   include spf13vim3
