@@ -49,6 +49,7 @@ class people::bradleywright {
   include projects::private-utils
   include projects::puppet
   include projects::redirector
+  include projects::router
   include projects::rummager
   include projects::smokey
   include projects::static
