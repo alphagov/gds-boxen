@@ -140,8 +140,6 @@ class people::bradleywright {
   package {
     [
      'bash-completion',
-     'ctags-exuberant',
-     'git',
      'go',
      'parallel',
      'python',
@@ -160,6 +158,7 @@ class people::bradleywright {
   # Don't need latest versions
   package {
     [
+     'ctags',
      'ghostscript',
      'imagemagick',
      'mysql',
@@ -177,11 +176,6 @@ class people::bradleywright {
   file { '/var/govuk':
     ensure => link,
     target => "${boxen::config::srcdir}"
-  }
-
-  # Clobber boxen version of Git to use stock homebrew
-  Package <| title == "boxen/brews/git" |> {
-    ensure => "1.8.4"
   }
 
   # Use my own Git config, thanks.
