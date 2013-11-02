@@ -1,33 +1,24 @@
 class people::samjsharpe::common_machine {
 
-  include adium
   include alfred::two
-  include controlplane
   include dropbox
   include firefox
   include gds_vpn_profiles
-  include googledrive
   include hub
   include iterm2::stable
-  include macvim
-  include mou
-  include mou::themes
   include mplayerx
   include ohmyzsh
-  include openconnect
   include packer
-  include screen
   include spectacle
   include spf13vim3
-  include sublime_text_2
   include stay
   include turn-off-dashboard
   include unarchiver
   include vagrant
-  include vmware_fusion
+  include vagrant_no_vbox
+  include virtualbox
   include zsh
 
-  vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
   file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
@@ -44,22 +35,13 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
   package {
     [
       'autojump',
-      'brew-pip',
-      'brew-gem',
-      'colordiff',
       'ctags',
-      'fping',
-      'heroku-toolbelt',
       'htop-osx',
       'nmap',
       'ntfs-3g',
       'osxutils',
       'parallel',
       'rbenv-bundler',
-      's3cmd',
-      'ssh-copy-id',
-      'sslscan',
-      'tmux',
       'unrar',
       'wget',
       'zsh-completions',

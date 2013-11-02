@@ -17,9 +17,27 @@ class people::samjsharpe::work_machine {
       project_home => $personal_projects,
     }
     include chrome
+    include controlplane
     include gds-resolver
+    include googledrive
     include gnupg
+    include openconnect
     include osx::finder::empty_trash_securely
-    include stay
-    include vagrant_no_vbox
+    include screen
+    include sublime_text_2
+    vagrant::plugin { 'vagrant-cachier': }
+    package {
+      [
+        'brew-pip',
+        'brew-gem',
+        'colordiff',
+        'fping',
+        'heroku-toolbelt',
+        's3cmd',
+        'ssh-copy-id',
+        'sslscan',
+        'tmux',
+      ]:
+      ensure => present,
+    }
 }
