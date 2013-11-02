@@ -43,7 +43,6 @@ class people::carlmassa {
       'htop-osx',
       'nmap',
       'ntfs-3g',
-      'osxutils',
       'parallel',
       's3cmd',
       'ssh-copy-id',
