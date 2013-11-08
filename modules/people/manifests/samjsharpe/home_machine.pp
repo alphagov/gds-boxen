@@ -9,5 +9,4 @@ class people::samjsharpe::home_machine {
     }
     include chicken
     include vagrant_no_vbox
-    osx::recovery_message { 'If found, please call +44 (0) 7712 046 007': }
 }
