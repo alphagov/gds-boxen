@@ -35,6 +35,7 @@ class people::jabley {
   include projects::fabric-scripts
   include projects::frontend
   include projects::govuk_frontend_toolkit
+  include projects::govuk_content_api
   include projects::private-utils
   include projects::redirector
   include projects::router
@@ -48,6 +49,7 @@ class people::jabley {
   include teams::infrastructure
   include teams::trade-tariff
 
+  repo::alphagov { 'asset-manager': }
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'packager': }
