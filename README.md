@@ -89,6 +89,7 @@ The following are provided by default:
 * Ruby 1.8.7
 * Ruby 1.9.2
 * Ruby 1.9.3
+* Ruby 2.0.0
 * ack
 * Findutils
 * GNU tar
