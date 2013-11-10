@@ -21,6 +21,9 @@ class people::samjsharpe::work_machine {
     include gds-resolver
     include googledrive
     include gnupg
+    include macvim
+    include mou
+    include mou::themes
     include openconnect
     include osx::finder::empty_trash_securely
     include screen
@@ -40,4 +43,5 @@ class people::samjsharpe::work_machine {
       ]:
       ensure => present,
     }
+    osx::recovery_message { 'If found, please call +44 (0) 7788 947 401': }
 }

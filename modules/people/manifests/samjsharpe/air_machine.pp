@@ -24,4 +24,5 @@ class people::samjsharpe::air_machine {
       ]:
       ensure => present,
     }
+    osx::recovery_message { 'If found, please call +44 (0) 7712 046 007': }
 }
