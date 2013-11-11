@@ -15,6 +15,6 @@ end
 
 config.vm.provider :vmware_fusion do |v, override|
   v.vmx["memsize"] = "2048"
-  v.vmx["numvcpus"] = "1"
+  v.vmx["numvcpus"] = "2"
   config_my_puppet(override)
 end
