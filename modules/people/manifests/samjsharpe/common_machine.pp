@@ -36,6 +36,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     [
       'autojump',
       'ctags',
+      'dtrx',
       'htop-osx',
       'nmap',
       'ntfs-3g',
