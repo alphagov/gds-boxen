@@ -4,6 +4,7 @@ class teams::infrastructure {
   include projects::boxes
   include projects::boxgrinder-appliances
   include projects::boxmaker
+  include projects::ci-puppet
   include projects::development
   include projects::env-sync-and-backup
   include projects::fabric-scripts
