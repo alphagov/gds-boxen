@@ -40,7 +40,6 @@ class people::rjw1 {
 package {
     [
       'python',
-      'pwgen',
       'tmux',
       'bash-completion',
       'vim',
