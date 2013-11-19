@@ -3,6 +3,7 @@ class people::rjw1 {
   include firefox
   include encfs
   include gds_vpn_profiles
+  include openconnect
   include git
   include gnupg
   include iterm2::stable
