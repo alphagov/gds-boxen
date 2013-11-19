@@ -9,6 +9,7 @@ class teams::infrastructure {
   include projects::fabric-scripts
   include projects::ghtools
   include projects::govuk_mirror
+  include projects::govuk-provisioning
   include projects::machine-bootstrap
   include projects::opsmanual
   include projects::packages
