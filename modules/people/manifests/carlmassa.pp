@@ -20,7 +20,7 @@ class people::carlmassa {
   include virtualbox::latest
 
   # Projects accessible to everyone in Infrastructure
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
   # Projects only accessible to certain staff
   include projects::deployment
   include projects::deployment::creds

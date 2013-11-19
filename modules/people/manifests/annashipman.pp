@@ -11,7 +11,7 @@ class people::annashipman {
   include virtualbox
   include wget
 
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::deployment::creds
   include projects::redirector

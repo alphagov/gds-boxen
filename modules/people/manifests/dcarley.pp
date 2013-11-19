@@ -21,7 +21,7 @@ class people::dcarley {
   dock::size { 40: }
 
   # Projects accessible to everyone in Infrastructure
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
   include projects::router
 
   # Projects only accessible to certain staff

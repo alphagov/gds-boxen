@@ -46,7 +46,7 @@ class people::jabley {
 
   include teams::performance-platform
   include teams::efg
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
   include teams::trade-tariff
 
   repo::alphagov { 'asset-manager': }

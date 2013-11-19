@@ -8,7 +8,7 @@ class people::tombooth {
   include gds-resolver
   
   include teams::performance-platform
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
   
   include gds-development
   include ssh_config

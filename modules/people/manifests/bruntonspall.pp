@@ -88,7 +88,7 @@ class people::bruntonspall {
   #include zsh)
 
   ## See modules/teams/manifests for things you can include here
-  #include teams::infrastructure
+  #class { 'teams::infrastructure': manage_gitconfig => false }
 
   ## You can also include particular projects from modules/projects/manifests
   #include projects::deployment

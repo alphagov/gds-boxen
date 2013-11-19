@@ -10,7 +10,7 @@ class people::rjw1 {
   include vagrant
   include virtualbox
 
-  include teams::infrastructure
+  class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::deployment::creds
 
