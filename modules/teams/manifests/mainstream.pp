@@ -7,6 +7,7 @@ class teams::mainstream {
 
   # Frontend apps
   include projects::business-support-finder
+  include projects::calculators
   include projects::calendars
   include projects::frontend
   include projects::govuk_content_api
