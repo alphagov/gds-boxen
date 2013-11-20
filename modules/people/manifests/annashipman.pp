@@ -57,7 +57,6 @@ class people::annashipman {
 package {
     [
       'python',
-      'pwgen',
       'tmux',
     ]:
     ensure => present,
