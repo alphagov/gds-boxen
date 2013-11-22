@@ -20,6 +20,7 @@ class people::samjsharpe::common_machine {
   include zsh
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
+  vagrant::plugin { 'vagrant-global-status': }
 
   file {"/Users/${::luser}/.oh-my-zsh/custom/samsharpe.zsh-theme":
     content => 'ZSH_THEME_GIT_PROMPT_SUFFIX=""
