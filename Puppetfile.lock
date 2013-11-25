@@ -6,6 +6,11 @@ GIT
     concat (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-android
+  specs:
+    android (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.3.4)
@@ -422,6 +427,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.2.0)
+  android (= 1.0.0)
   antirsi (= 1.0.1)
   banshee (= 1.1.0)
   boxen (= 3.3.4)
