@@ -6,6 +6,7 @@ class people::samjsharpe::work_machine {
     $govuk_projects    = "${home_projects}/govuk"
     $gds_projects      = "${home_projects}/gds"
     $personal_projects = "${home_projects}/personal"
+    $hmrc_projects     = "${home_projects}/hmrc"
 
     class { 'people::samjsharpe::gds_repos':
       project_home => $gds_projects,
@@ -15,6 +16,9 @@ class people::samjsharpe::work_machine {
     }
     class { 'people::samjsharpe::personal_repos':
       project_home => $personal_projects,
+    }
+    class { 'people::samjsharpe::hmrc_repos':
+      project_home => $hmrc_projects,
     }
     include chrome
     include controlplane
