@@ -46,6 +46,14 @@ package {
     ]:
     ensure => present,
   }
+  # Python packages
+  package {
+    [
+      'Sphinx',
+    ]:
+    ensure => present,
+    provider => pip,
+  }
 
   vim::bundle { 'rodjek/vim-puppet': }
   vim::bundle { 'godlygeek/tabular': }
