@@ -15,7 +15,6 @@ class people::samjsharpe::common_machine {
   include turn-off-dashboard
   include unarchiver
   include vagrant
-  include vagrant_no_vbox
   include virtualbox
   include zsh
 
