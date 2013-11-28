@@ -48,6 +48,7 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
   repo::alphagov { 'limelight': }
   repo::alphagov { 'pp-development': }
+  repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'signonotron2': }
   repo::alphagov { 'spotlight': }
   repo::alphagov { 'stageprompt': }
