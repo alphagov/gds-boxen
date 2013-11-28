@@ -13,9 +13,11 @@ class teams::mainstream {
   include projects::govuk_content_api
   include projects::licence-finder
   include projects::smart-answers
+  include projects::support
   include projects::static
 
   # Backend apps
+  include projects::feedback
   include projects::imminence
   include projects::need-o-tron
   include projects::panopticon
