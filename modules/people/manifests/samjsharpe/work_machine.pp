@@ -32,7 +32,6 @@ class people::samjsharpe::work_machine {
     include osx::finder::empty_trash_securely
     include screen
     include sublime_text_2
-    vagrant::plugin { 'vagrant-cachier': }
     package {
       [
         'brew-pip',

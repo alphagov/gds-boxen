@@ -74,8 +74,4 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     value  => 'false',
   }
 
-  exec { 'Disable Gatekeeper':
-    command => 'spctl --master-disable',
-    unless  => 'spctl --status | grep disabled',
-  }
 }

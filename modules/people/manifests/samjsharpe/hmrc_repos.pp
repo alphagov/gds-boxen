@@ -17,11 +17,11 @@ class people::samjsharpe::hmrc_repos ($project_home){
     source  => 'hmrc/base-image-builder',
     require      => File[$project_home],
   }
-  repository { "${project_home}/hmrc-puppet":
+  repository { "${project_home}/puppet":
     source   => "git@github.gds:HMRC/puppet",
     require      => File[$project_home],
   }
-  repository { "${project_home}/hmrc-puppet-secrets":
+  repository { "${project_home}/puppet-secrets":
     source   => "git@github.gds:HMRC/puppet-secrets",
     require      => File[$project_home],
   }
