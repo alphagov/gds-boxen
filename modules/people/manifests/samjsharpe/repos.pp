@@ -35,9 +35,11 @@ class people::samjsharpe::repos {
     people::samjsharpe::repos::gh  {'alphagov/boxgrinder-appliances':}
     people::samjsharpe::repos::gh  {'alphagov/fabric-scripts':}
     people::samjsharpe::repos::gh  {'alphagov/machine-bootstrap':}
+    people::samjsharpe::repos::gh  {'alphagov/service-domain-checker':}
     people::samjsharpe::repos::gh  {'alphagov/ubuntu-1204-dev':}
     people::samjsharpe::repos::gh  {'alphagov/vcloud-tools':}
 
+    people::samjsharpe::repos::gh  {'samjsharpe/fgaas':}
     people::samjsharpe::repos::gh  {'samjsharpe/samjsharpe.github.com':}
     people::samjsharpe::repos::gh  {'samjsharpe/vagrant-centos':}
     people::samjsharpe::repos::gh  {'samjsharpe/vagrant-rackspace':}
