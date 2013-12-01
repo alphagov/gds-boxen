@@ -168,7 +168,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
-    onepassword (1.0.2)
+    onepassword (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -474,7 +474,7 @@ DEPENDENCIES
   nodejs (= 3.4.1)
   notational_velocity (= 1.1.1)
   ohmyzsh (= 1.0.0)
-  onepassword (= 1.0.2)
+  onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.0.0)
   packer (= 1.0.3)
