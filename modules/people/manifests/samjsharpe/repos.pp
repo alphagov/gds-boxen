@@ -4,7 +4,6 @@ class people::samjsharpe::repos {
     $home_projects     = "${home}/Projects"
 
     file {[
-        "${home_projects}/alphagov",
         "${home_projects}/gds",
         "${home_projects}/hmrc",
         "${home_projects}/samjsharpe",
