@@ -4,12 +4,14 @@ define people::samjsharpe::repos::gh {
     $repo = $dirs[1]
     # Account for alphagov not being gds
     if $dir == "alphagov" {
-        $dest = "gds/${repo}"
+        $parent = "gds"
+        $dest = "${parent}/${repo}"
     } else {
+        $parent = $dir
         $dest = $title
     }
     repository { "${people::samjsharpe::repos::home_projects}/${dest}":
         source  => "${title}",
-        require => File["${people::samjsharpe::repos::home_projects}/${dir}"],
+        require => File["${people::samjsharpe::repos::home_projects}/${parent}"],
     }
 }
