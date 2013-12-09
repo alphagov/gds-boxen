@@ -28,6 +28,7 @@ class people::samjsharpe::repos {
     people::samjsharpe::repos::gds {'gds/development':}
     people::samjsharpe::repos::gds {'gds/env-sync-and-backup':}
     people::samjsharpe::repos::gds {'gds/opsmanual':}
+    people::samjsharpe::repos::gds {'gds/private-utils':}
     people::samjsharpe::repos::gds {'gds/puppet':}
 
     people::samjsharpe::repos::gh  {'alphagov/ci-puppet':}
