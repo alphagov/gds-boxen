@@ -5,6 +5,7 @@ class people::samjsharpe::repos {
 
     file {[
         "${home_projects}/gds",
+        "${home_projects}/gds-operations",
         "${home_projects}/hmrc",
         "${home_projects}/samjsharpe",
     ]:
@@ -46,6 +47,21 @@ class people::samjsharpe::repos {
         'alphagov/vcloud-tools'
         ]:}
 
+    people::samjsharpe::repos::gh {[
+        'gds-operations/monitoring-inabox',
+        'gds-operations/open-source-guidelines',
+        'gds-operations/puppet-auditd',
+        'gds-operations/puppet-elasticsearch',
+        'gds-operations/puppet-graphite',
+        'gds-operations/puppet-hosts',
+        'gds-operations/puppet-module-skeleton',
+        'gds-operations/puppet-openconnect',
+        'gds-operations/puppet-rbenv',
+        'gds-operations/puppet-resolvconf',
+        'gds-operations/puppet-skeleton',
+        'gds-operations/puppet-syntax',
+        'gds-operations/puppet-updatemotd'
+        ]:}
 
     # Personal repos
     people::samjsharpe::repos::gh  {[
