@@ -31,6 +31,7 @@ class people::jabley {
   include turn-off-dashboard
 
   include projects::alphagov-deployment
+  include projects::calculators
   include projects::ci-deployment
   include projects::ci-puppet
   include projects::development
