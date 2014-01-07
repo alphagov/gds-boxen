@@ -16,13 +16,7 @@ class people::samjsharpe::repos {
     people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
 
     people::samjsharpe::repos::gds {[
-        'hmrc/deployment',
         'hmrc/firewall-rule-generator',
-        'hmrc/local-dev-vm',
-        'hmrc/opsmanual',
-        'hmrc/puppet',
-        'hmrc/puppet-secrets',
-        'hmrc/puppet-test',
         'hmrc/vcb',
         'hmrc/vcloud-config'
         ]:}
