@@ -5,7 +5,6 @@ class people::jcbashdown  {
   include vim
   include caffeine
   include alfred
-  include vlc
 
   # Dev VM
   include vagrant
