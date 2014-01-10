@@ -1,4 +1,4 @@
-class people::jacobashdown  {
+class people::jcbashdown  {
   include chrome
   include firefox
   include spotify
