@@ -54,6 +54,7 @@ class people::jabley {
 
   repo::alphagov { 'asset-manager': }
   repo::alphagov { 'government-service-design-manual': }
+  repo::alphagov { 'govuk_template': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-logstash': }
