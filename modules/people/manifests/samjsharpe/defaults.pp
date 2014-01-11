@@ -13,7 +13,7 @@ class people::samjsharpe::defaults {
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::no_network_dsstores
-  osx::recovery_message { 'If found, please call +44 (0) 7712 046 007': }
+  osx::recovery_message { 'If found please call 07712 046007': }
 
   boxen::osx_defaults { 'Put my Dock on the left':
     key    => 'orientation',
