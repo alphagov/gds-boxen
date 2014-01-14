@@ -81,6 +81,13 @@ define ruby::all::gem (
     require => Ruby::Version['1.9.3'],
     version => $version,
   }
+  ruby::gem {"${name}-2.0.0":
+    ensure => $ensure,
+    gem     => $name,
+    ruby    => '2.0.0',
+    require => Ruby::Version['2.0.0'],
+    version => $version,
+  }
 }
 
 node default {
