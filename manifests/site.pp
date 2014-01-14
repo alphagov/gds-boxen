@@ -64,21 +64,21 @@ define ruby::all::gem (
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.8.7',
-    require => Class['ruby::1_8_7'],
+    require => Ruby::Version['1.8.7'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.2":
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.2',
-    require => Class['ruby::1_9_2'],
+    require => Ruby::Version['1.9.2'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.3":
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.3',
-    require => Class['ruby::1_9_3'],
+    require => Ruby::Version['1.9.3'],
     version => $version,
   }
 }
