@@ -64,21 +64,21 @@ define ruby::all::gem (
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.8.7',
-    require => Class['ruby::1_8_7'],
+    require => Ruby::Version['1.8.7'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.2":
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.2',
-    require => Class['ruby::1_9_2'],
+    require => Ruby::Version['1.9.2'],
     version => $version,
   }
   ruby::gem {"${name}-1.9.3":
     ensure => $ensure,
     gem     => $name,
     ruby    => '1.9.3',
-    require => Class['ruby::1_9_3'],
+    require => Ruby::Version['1.9.3'],
     version => $version,
   }
 }
@@ -95,10 +95,10 @@ node default {
   }
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
+  ruby::version {'1.8.7': }
+  ruby::version {'1.9.2': }
+  ruby::version {'1.9.3': }
+  ruby::version {'2.0.0': }
 
   # common, useful packages
   package {

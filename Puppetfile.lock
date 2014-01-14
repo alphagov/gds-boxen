@@ -8,12 +8,12 @@ GIT
 GITHUBTARBALL
   remote: boxen/puppet-android
   specs:
-    android (1.0.0)
+    android (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.3.5)
+    boxen (3.3.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -43,7 +43,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (1.0.0)
+    dnsmasq (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
@@ -58,7 +58,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.1.5)
+    firefox (1.1.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-fitbit
@@ -83,7 +83,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.3.6)
+    git (1.3.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -108,12 +108,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.2.0)
+    hub (1.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-intellij
   specs:
-    intellij (1.3.0)
+    intellij (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-istatmenus4
@@ -123,12 +123,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.5)
+    iterm2 (1.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.1.2)
+    java (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-keyremap4macbook
@@ -178,7 +178,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.2.0)
+    osx (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-packer
@@ -198,7 +198,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
-    postgresql (2.2.2)
+    postgresql (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pycharm
@@ -208,7 +208,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-qt
   specs:
-    qt (1.1.0)
+    qt (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -218,7 +218,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.7.6)
+    ruby (7.1.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-rubymine
@@ -238,7 +238,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
-    skype (1.0.7)
+    skype (1.0.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-slate
@@ -288,7 +288,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.0)
+    vagrant (3.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-vim
@@ -338,7 +338,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-adium
   specs:
-    adium (1.2.0)
+    adium (1.3.0)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-controlplane
@@ -373,7 +373,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: glarizza/puppet-property_list_key
   specs:
-    property_list_key (0.1.0)
+    property_list_key (0.2.0)
 
 GITHUBTARBALL
   remote: jabley/puppet-banshee
@@ -411,6 +411,11 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 GITHUBTARBALL
+  remote: ripienaar/puppet-module-data
+  specs:
+    module-data (0.0.1)
+
+GITHUBTARBALL
   remote: samjsharpe/puppet-ohmyzsh
   specs:
     ohmyzsh (1.0.0)
@@ -426,11 +431,11 @@ GITHUBTARBALL
     propane (0.0.1)
 
 DEPENDENCIES
-  adium (= 1.2.0)
-  android (= 1.0.0)
+  adium (= 1.3.0)
+  android (= 1.1.0)
   antirsi (= 1.0.1)
   banshee (= 1.1.0)
-  boxen (= 3.3.5)
+  boxen (= 3.3.6)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.1.2)
@@ -439,33 +444,34 @@ DEPENDENCIES
   concat (= 1.0.0)
   controlplane (= 1.1.0)
   cord (= 1.0.0)
-  dnsmasq (= 1.0.0)
+  dnsmasq (= 1.0.1)
   dropbox (= 1.2.0)
   emacs (= 1.1.5)
   emacs-keybindings (= 1.0.0)
   evernote (= 2.0.4)
-  firefox (= 1.1.5)
+  firefox (= 1.1.7)
   fitbit (= 1.0.0)
   flux (= 1.0.0)
   foreman (= 1.1.0)
   gcc (= 2.0.99)
-  git (= 1.3.6)
+  git (= 1.3.7)
   github_for_mac (= 1.3.0)
   gitx (= 1.2.0)
   go (= 2.0.1)
   googledrive (= 1.0.2)
   heroku (= 2.1.1)
   homebrew (= 1.6.0)
-  hub (= 1.2.0)
+  hub (= 1.3.0)
   inifile (= 1.0.0)
-  intellij (= 1.3.0)
+  intellij (= 1.4.0)
   istatmenus4 (= 1.1.0)
-  iterm2 (= 1.0.5)
-  java (= 1.1.2)
+  iterm2 (= 1.0.6)
+  java (= 1.2.0)
   keyremap4macbook (= 1.2.1)
   launchbar (= 1.2.0)
   libreoffice (= 4.0.3)
   macvim (= 1.0.0)
+  module-data (= 0.0.1)
   monocle (= 1.0.0)
   mou (= 1.1.3)
   mplayerx (= 1.0.0)
@@ -476,21 +482,21 @@ DEPENDENCIES
   ohmyzsh (= 1.0.0)
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
-  osx (= 2.2.0)
+  osx (= 2.2.2)
   packer (= 1.1.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
-  postgresql (= 2.2.2)
+  postgresql (= 3.0.0)
   propane (= 0.0.1)
-  property_list_key (= 0.1.0)
+  property_list_key (= 0.2.0)
   pycharm (= 1.0.4)
-  qt (= 1.1.0)
+  qt (= 1.2.1)
   repository (= 2.2.0)
-  ruby (= 6.7.6)
+  ruby (= 7.1.3)
   rubymine (= 1.1.0)
   screen (= 1.0.0)
   sizeup (= 1.0.0)
-  skype (= 1.0.7)
+  skype (= 1.0.8)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
   spectacle (= 1.0.0)
@@ -504,7 +510,7 @@ DEPENDENCIES
   textmate (= 1.1.0)
   things (= 1.0.1)
   unarchiver (= 1.3.0)
-  vagrant (= 3.0.0)
+  vagrant (= 3.0.3)
   vim (= 1.0.5)
   vmware_fusion (= 1.1.0)
   wget (= 1.0.0)
