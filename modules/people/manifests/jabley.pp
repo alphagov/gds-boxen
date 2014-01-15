@@ -144,6 +144,7 @@ class people::jabley {
       'sdl_image',
       'sloccount',
       'ssh-copy-id',
+      'sslscan',
       'tarsnap',
       'the_silver_searcher',
       'tmux',
