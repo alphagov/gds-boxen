@@ -44,6 +44,7 @@ class people::robyoung {
       'mysql',
       'python',
       'redis',
+      'tmux',
       'zeromq',
       'zsh-completions',
       'zsh-lovers',
