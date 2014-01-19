@@ -59,6 +59,7 @@ class people::jabley {
   repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-logstash': }
   repo::alphagov { 'puppet-nginx': }
+  repo::alphagov { 'puppet-ssl': }
   repo::alphagov { 'service-domain-checker': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
