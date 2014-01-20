@@ -6,6 +6,6 @@
 class alfred::two {
   package { 'Alfred 2':
     provider => 'compressed_app',
-    source   => 'http://cachefly.alfredapp.com/Alfred_2.0.1_173.zip'
+    source   => 'http://cachefly.alfredapp.com/Alfred_2.1.1_227.zip'
   }
 }
