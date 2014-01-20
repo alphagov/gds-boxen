@@ -6,6 +6,7 @@ class people::daibach {
   include dropbox
   include gitx::dev
   include iterm2::stable
+  include java
   include mysql
   include onepassword
   include openconnect
@@ -22,5 +23,12 @@ class people::daibach {
 
   include teams::mainstream
 
+  package {
+    [
+      'mongodb',
+      'rabbitmq',
+    ]:
+    ensure => present,
+  }
 
 }
