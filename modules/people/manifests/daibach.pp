@@ -4,13 +4,15 @@ class people::daibach {
   include caffeine
   include chrome
   include dropbox
-  include gitx
+  include gitx::dev
+  include iterm2::stable
   include mysql
   include onepassword
   include openconnect
   include propane
   include remove-spotlight
   include spotify
+  include sublime_text_2
   include textmate
   include turn-off-dashboard
   include vagrant_gem
