@@ -1,6 +1,6 @@
 class people::alexmuller {
   # Mac apps
-  include alfred::two
+  include alfred
   include chrome
   include dropbox
   include firefox

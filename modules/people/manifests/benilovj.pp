@@ -5,7 +5,7 @@ class people::benilovj {
   class { 'intellij':
       edition => 'community',
   }
-  include alfred::two
+  include alfred
   include chrome
   include dropbox
   include libreoffice

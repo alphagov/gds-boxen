@@ -1,6 +1,6 @@
 class people::jabley {
   include adium
-  include alfred
+  include alfred::v1
   include android-file-transfer
   include android::sdk
   include banshee
@@ -66,7 +66,7 @@ class people::jabley {
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'licensify': }
   repo::gds      { 'transactions-visualisation': }
-  
+
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
   class { 'intellij':

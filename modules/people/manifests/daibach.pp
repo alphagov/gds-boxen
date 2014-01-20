@@ -1,6 +1,6 @@
 class people::daibach {
 
-  include alfred::two
+  include alfred
   include caffeine
   include chrome
   include dropbox
