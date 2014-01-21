@@ -94,10 +94,10 @@ class people::bradleywright {
     refreshonly => true,
   }
 
-  $emacs = "${home_projects}/emacs-d"
+  $emacs = "${home_projects}/emacs.d"
 
   repository { $emacs:
-    source  => 'bradleywright/emacs-d',
+    source  => 'bradleywright/emacs.d',
     require => File[$home_projects],
     notify  => Exec['bradleywright-make-emacs-d'],
   }
