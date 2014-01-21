@@ -323,7 +323,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: bradleywright/puppet-emacs
   specs:
-    emacs (1.1.5)
+    emacs (1.1.6)
 
 GITHUBTARBALL
   remote: bradleywright/puppet-emacs-keybindings
@@ -451,7 +451,7 @@ DEPENDENCIES
   cord (= 1.0.0)
   dnsmasq (= 1.0.1)
   dropbox (= 1.2.0)
-  emacs (= 1.1.5)
+  emacs (= 1.1.6)
   emacs-keybindings (= 1.0.0)
   evernote (= 2.0.4)
   firefox (= 1.1.7)
