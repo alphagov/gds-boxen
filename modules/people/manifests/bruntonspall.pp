@@ -1,5 +1,5 @@
 class people::bruntonspall {
-  include alfred::two
+  include alfred
   include antirsi
   include caffeine
   include chrome
@@ -64,7 +64,7 @@ class people::bruntonspall {
     ensure => present,
   }
 
-  
+
   ## Remove the # from any of the below to install that software
   #include nvm
   #include clojure

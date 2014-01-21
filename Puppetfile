@@ -58,6 +58,7 @@ github "xquartz",    "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "alfred",         "1.1.7"
 github "android",        "1.1.0"
 github "adium",          "1.3.0", :repo => "dieterdemeyer/puppet-adium"
 github "banshee",        "1.1.0", :repo => "jabley/puppet-banshee"

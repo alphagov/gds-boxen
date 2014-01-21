@@ -1,6 +1,6 @@
 class people::samjsharpe::packages {
 
-  include alfred::two
+  include alfred
   include chicken
   include chrome
   include dropbox

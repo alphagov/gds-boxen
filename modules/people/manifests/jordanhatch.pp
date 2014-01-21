@@ -1,6 +1,6 @@
 class people::jordanhatch {
   include adium
-  include alfred
+  include alfred::v1
   include chrome
   include dropbox
   include gitx
@@ -49,4 +49,3 @@ class people::jordanhatch {
    ensure => 'present',
   }
 }
-
