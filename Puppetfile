@@ -58,11 +58,11 @@ github "xquartz",    "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "adium",          "1.3.0", :repo => "dieterdemeyer/puppet-adium"
 github "alfred",         "1.1.7"
 github "android",        "1.1.0"
-github "adium",          "1.3.0", :repo => "dieterdemeyer/puppet-adium"
-github "banshee",        "1.1.0", :repo => "jabley/puppet-banshee"
 github "antirsi",        "1.0.1", :repo => "norm/puppet-antirsi"
+github "banshee",        "1.1.0", :repo => "jabley/puppet-banshee"
 github "caffeine",       "1.0.0"
 github "camino",         "1.0.1", :repo => "norm/puppet-camino"
 github "chrome",         "1.1.2"
