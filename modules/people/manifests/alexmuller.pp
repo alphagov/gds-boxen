@@ -1,6 +1,5 @@
 class people::alexmuller {
   # Mac apps
-  include alfred
   include chrome
   include dropbox
   include firefox
@@ -21,6 +20,11 @@ class people::alexmuller {
   include projects::deployment
   include projects::vagrant-govuk
   include projects::vcloud-templates
+  class { 'teams::infrastructure': manage_gitconfig => false }
+
+  # Repos
+  repo::alphagov { 'transformation-dashboard': }
+  repo::alphagov { 'government-service-design-manual': }
 
   # SSH
   class { 'gds-ssh-config': }
@@ -37,10 +41,11 @@ class people::alexmuller {
   git::config::global { 'user.email': value => 'alex.muller@digital.cabinet-office.gov.uk' }
 
   # Homebrew packages
-  # Remember to read the autojump caveats: brew info autojump
+  # Remember to read the post-install caveats
   package {
     [
       'autojump',
+      'bash-completion',
       'tree',
       'wget',
     ]:
@@ -52,6 +57,11 @@ class people::alexmuller {
   # Vim config
   file { "${home_directory}/.vimrc":
     source => 'puppet:///modules/people/alexmuller/vimrc',
+  }
+
+  # .bash_profile
+  file { "${home_directory}/.bash_profile":
+    source => 'puppet:///modules/people/alexmuller/bash_profile',
   }
 
   # Sublime Text 2 configuration
