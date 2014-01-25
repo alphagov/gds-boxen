@@ -8,7 +8,7 @@ GIT
 GITHUBTARBALL
   remote: alphagov/puppet-python
   specs:
-    python (1.1.1)
+    python (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-alfred
@@ -501,7 +501,7 @@ DEPENDENCIES
   propane (= 0.0.1)
   property_list_key (= 0.2.0)
   pycharm (= 1.0.4)
-  python (= 1.1.1)
+  python (= 1.1.2)
   qt (= 1.2.1)
   repository (= 2.2.0)
   ruby (= 7.1.3)
