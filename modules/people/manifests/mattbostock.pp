@@ -26,7 +26,7 @@ class people::mattbostock {
   include osx::global::disable_remote_control_ir_receiver
   include osx::dock::dim_hidden_apps
   include osx::dock::autohide
-  osx::recovery_message { 'If found, please call +44 0 7917 173573': }
+  osx::recovery_message { 'If found, please call 07917 173573': }
 
   boxen::osx_defaults { 'Disable reopen windows when logging back in':
     key    => 'TALLogoutSavesState',
