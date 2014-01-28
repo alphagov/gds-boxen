@@ -42,6 +42,7 @@ class people::robyoung {
       'mercurial',
       'mongodb',
       'mysql',
+      'pass',
       'python',
       'redis',
       'tmux',
