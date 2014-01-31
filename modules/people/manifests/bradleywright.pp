@@ -11,6 +11,7 @@ class people::bradleywright {
   include iterm2::dev
   include mailplane::beta
   include nginx
+  include nodejs::v0_10
   include omnifocus
   include openconnect
   include qt
