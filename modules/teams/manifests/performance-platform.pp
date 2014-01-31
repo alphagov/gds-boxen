@@ -12,9 +12,8 @@ class teams::performance-platform {
 
   # New Devops™ !!!!11!one!!!!
   include teams::performance-platform::puppet
-  repo::alphagov { 'puppet-google_credentials': }
 
-  # Old World Order
+  # Older World Order
   repo::gds      { 'datainsight': }
   repo::gds      { 'datainsight-akamai-scanner': }
   repo::alphagov { 'datainsight-everything-recorder': }
@@ -34,6 +33,9 @@ class teams::performance-platform {
   repo::alphagov { 'datainsight_logging': }
   repo::alphagov { 'datainsight_recorder': }
 
+  # Old Word Order
+  repo::alphagov { 'limelight': }
+
   # New World Order
   repo::gds      { 'google-dev-credentials': }
   repo::gds      { 'pp-manual': }
@@ -46,18 +48,25 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-ga-realtime-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
-  repo::alphagov { 'limelight': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'screenshot-as-a-service': }
-  repo::alphagov { 'signonotron2': }
   repo::alphagov { 'spotlight': }
   repo::alphagov { 'stageprompt': }
   repo::alphagov { 'transactions-explorer': }
 
+  # Shared GDS repos that we rely on
+  repo::alphagov { 'govuk_frontend_toolkit': }
+  repo::alphagov { 'govuk_frontend_toolkit_npm': }
+  repo::alphagov { 'govuk_template': }
+  repo::alphagov { 'govuk_template_mustache': }
+  repo::alphagov { 'signonotron2': }
+  repo::alphagov { 'slimmer': }
+  repo::alphagov { 'static': }
+
   # Documentation
   repo::alphagov { 'libretto': }
   repo::alphagov { 'performance-platform': }
-  
+
   # Office-y things
   repo::alphagov { 'fourth-wall': }
   repo::alphagov { 'showtime': }
