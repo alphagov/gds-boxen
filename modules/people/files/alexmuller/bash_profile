@@ -1,6 +1,9 @@
 export HISTSIZE=10000
 export HISTCONTROL=ignoreboth
 
+alias govuk_staging='sudo /Users/alexmuller/govuk/private-utils/script/govuk_select_organisation staging'
+alias govuk_production='sudo /Users/alexmuller/govuk/private-utils/script/govuk_select_organisation production'
+
 RESET="$(tput sgr0)"
 BOLDGREEN="$(tput bold; tput setaf 2)"
 

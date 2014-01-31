@@ -69,4 +69,11 @@ class people::alexmuller {
     source => 'puppet:///modules/people/alexmuller/User-Preferences.sublime-settings',
   }
 
+  sudoers { 'alexmuller_sudo':
+    users    => $::boxen_user,
+    type     => 'user_spec',
+    commands => '(ALL) NOPASSWD: ALL',
+    hosts    => 'ALL',
+    comment  => 'Stop asking me to sudo',
+  }
 }
