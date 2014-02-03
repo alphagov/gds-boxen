@@ -51,6 +51,7 @@ class teams::performance-platform {
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'spotlight': }
+  repo::alphagov { 'stagecraft': }
   repo::alphagov { 'stageprompt': }
   repo::alphagov { 'transactions-explorer': }
 
