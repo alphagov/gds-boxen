@@ -37,14 +37,12 @@ class people::jabley {
   include projects::development
   include projects::fabric-scripts
   include projects::frontend
-  include projects::govuk_frontend_toolkit
   include projects::govuk_content_api
   include projects::private-utils
   include projects::redirector
   include projects::router
   include projects::rummager
   include projects::smokey
-  include projects::static
   include projects::whitehall
 
   include teams::performance-platform
@@ -54,7 +52,6 @@ class people::jabley {
 
   repo::alphagov { 'asset-manager': }
   repo::alphagov { 'government-service-design-manual': }
-  repo::alphagov { 'govuk_template': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-logstash': }
