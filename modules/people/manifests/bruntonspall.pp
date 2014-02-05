@@ -8,6 +8,7 @@ class people::bruntonspall {
   include gds-resolver
   include java
   include intellij
+  include iterm2::dev
   include git
   include gnupg
   include gitx::dev
@@ -38,6 +39,14 @@ class people::bruntonspall {
   #  command     => "install.sh",
   #  refreshonly => true,
   #}
+
+  git::config::global { 'user.email':
+    value  => 'michael@brunton-spall.co.uk'
+  }
+
+  git::config::global { 'user.name':
+    value  => 'Michael Brunton-Spall'
+  }
 
   Boxen::Osx_defaults {
     user => $::luser,
