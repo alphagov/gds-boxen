@@ -52,6 +52,7 @@ class people::jabley {
   include teams::trade-tariff
 
   repo::alphagov { 'asset-manager': }
+  repo::alphagov { 'design-patterns': }
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'packager': }
