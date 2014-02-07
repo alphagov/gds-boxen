@@ -16,9 +16,7 @@ class people::samjsharpe::repos {
     people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
 
     people::samjsharpe::repos::gds {[
-        'hmrc/firewall-rule-generator',
         'hmrc/vcb',
-        'hmrc/vcloud-config'
         ]:}
 
     # GDS Repos
