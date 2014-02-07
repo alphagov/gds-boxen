@@ -1,5 +1,15 @@
 class gds_vpn_profiles {
-  $profile_dir = '/opt/cisco/anyconnect/profile'
+
+  $cisco_dir      = "/opt/cisco"
+  $anyconnect_dir = "${cisco_dir}/anyconnect"
+  $profile_dir    = "${anyconnect_dir}/profile"
+
+  file {[$cisco_dir,$anyconnect_dir]:
+    ensure => directory,
+    owner  => 'root',
+    group  => 'wheel',
+    notify => File[$profile_dir],
+  }
 
   file { $profile_dir:
     ensure  => directory,
