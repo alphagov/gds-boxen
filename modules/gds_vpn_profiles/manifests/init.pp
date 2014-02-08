@@ -16,6 +16,8 @@ class gds_vpn_profiles {
     source  => 'puppet:///modules/gds_vpn_profiles/profile',
     recurse => true,
     purge   => true,
+    owner   => 'root',
+    group   => 'wheel',
     notify  => Exec['restart/stop AnyConnect'],
   }
 
@@ -27,7 +29,7 @@ class gds_vpn_profiles {
   }
 
   exec { 'restart/stop AnyConnect':
-    command     => 'pkill -1 -f AnyConnect',
+    command     => 'pkill -1 -f AnyConnect || true',
     refreshonly => true,
   }
 }
