@@ -6,6 +6,7 @@
 
 class gds-resolver {
   osx_resolver::domain { 'gds':
-    content => 'nameserver 192.168.19.254',
+    content => 'nameserver 192.168.19.254
+',
   }
 }
