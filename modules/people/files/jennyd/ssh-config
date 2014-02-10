@@ -1,0 +1,15 @@
+
+
+# puppet development environment
+Host dev
+  User vagrant
+  ForwardAgent yes
+  IdentityFile ~/.vagrant.d/insecure_private_key
+  HostName 10.1.1.254
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+
+Host vm
+  User jennyduckett
+  ForwardAgent yes
