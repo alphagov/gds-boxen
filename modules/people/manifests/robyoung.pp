@@ -43,6 +43,7 @@ class people::robyoung {
       'mongodb',
       'mysql',
       'pass',
+      'homebrew/binary/packer',
       'python',
       'redis',
       'tmux',
