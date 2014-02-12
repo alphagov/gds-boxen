@@ -111,6 +111,7 @@ class people::jabley {
       'go',
       'groovy',
       'heroku-toolbelt',
+      'hg',
       'httperf',
       'id3tool',
       'jpeg',
