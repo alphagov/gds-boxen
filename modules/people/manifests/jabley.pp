@@ -70,6 +70,7 @@ class people::jabley {
 
   class { 'intellij':
       edition => 'community',
+      version => '13.0.2',
   }
 
   homebrew::tap { 'homebrew/science': }
