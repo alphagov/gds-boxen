@@ -36,7 +36,6 @@ class people::philandstuff {
   }
 
   vagrant::plugin { 'vagrant-cachier': }
-  vagrant::plugin { 'vagrant-dns': }
 
   class { 'gds-ssh-config': }
   ssh_config::fragment {'user':
