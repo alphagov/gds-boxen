@@ -33,7 +33,7 @@ class people::mattbostock {
     domain => 'com.apple.loginwindow',
     value  => 'false',
   }
-  dock::size { 40: }
+  class { 'osx::dock::icon_size': size => 40 }
 
   ## See modules/teams/manifests for things you can include here
   class { 'teams::infrastructure': manage_gitconfig => false }
