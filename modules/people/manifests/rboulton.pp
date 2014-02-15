@@ -31,7 +31,7 @@ class people::rboulton {
   #include xquartz
   #include zsh)
   include vagrant
-  include vagrant-dns
+  vagrant::plugin { 'vagrant-dns': }
   include virtualbox
 
   ## See modules/teams/manifests for things you can include here

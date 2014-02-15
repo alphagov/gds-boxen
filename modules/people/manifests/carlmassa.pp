@@ -14,9 +14,9 @@ class people::carlmassa {
   include openconnect
   include screen
   include unarchiver
-  include vagrant_gem
-  include vagrant-dns
-  include vagrant-vbguest
+  include vagrant
+  vagrant::plugin { 'vagrant-dns': }
+  vagrant::plugin { 'vagrant-vbguest': }
   include virtualbox::latest
 
   # Projects accessible to everyone in Infrastructure

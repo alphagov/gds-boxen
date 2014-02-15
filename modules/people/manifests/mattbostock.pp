@@ -13,7 +13,7 @@ class people::mattbostock {
   include mysql
   include screen
   include vagrant
-  include vagrant-dns
+  vagrant::plugin { 'vagrant-dns': }
   include virtualbox::latest
 
   include osx::disable_app_quarantine
