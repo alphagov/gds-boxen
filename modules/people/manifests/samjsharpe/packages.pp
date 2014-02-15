@@ -25,8 +25,9 @@ class people::samjsharpe::packages {
   include turn-off-dashboard
   include unarchiver
   include vagrant
-  vagrant::plugin { 'vagrant-vmware-fusion': }
+  vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-global-status': }
+  vagrant::plugin { 'vagrant-vmware-fusion': }
   include virtualbox
 
   # ZSH stuff
