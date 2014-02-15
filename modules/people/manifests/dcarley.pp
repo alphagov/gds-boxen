@@ -18,7 +18,7 @@ class people::dcarley {
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-zz-multiprovider-snap': }
 
-  dock::size { 40: }
+  class { 'osx::dock::icon_size': size => 40 }
 
   # Projects accessible to everyone in Infrastructure
   class { 'teams::infrastructure': manage_gitconfig => false }
