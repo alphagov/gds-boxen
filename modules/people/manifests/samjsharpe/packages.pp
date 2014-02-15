@@ -54,7 +54,6 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'heroku-toolbelt',
       'htop-osx',
       'nmap',
-      'ntfs-3g',
       'parallel',
       'rbenv-bundler',
       's3cmd',
@@ -67,11 +66,5 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     ]:
     ensure => present,
   }
-
-  # Python versions
-  include python::2_7_6
-  include python::3_3_3
-  python::package { 'virtualenv for python 2.7.6': package => 'virtualenv', python_version => '2.7.6', ensure => '1.11.2' }
-  python::package { 'virtualenv for python 3.3.3': package => 'virtualenv', python_version => '3.3.3', ensure => '1.11.2' }
 
 }
