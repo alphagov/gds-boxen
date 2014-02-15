@@ -16,8 +16,8 @@ class people::daibach {
   include sublime_text_2
   include textmate
   include turn-off-dashboard
-  include vagrant_gem
-  include vagrant-dns
+  include vagrant
+  vagrant::plugin { 'vagrant-dns': }
   include virtualbox
   include wget
 

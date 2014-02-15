@@ -2,11 +2,10 @@ class people::roc {
   include chrome
   include gds-resolver
   include git
-  # include vagrant
-  include vagrant_gem
-  include vagrant-dns
+  include vagrant
+  vagrant::plugin { 'vagrant-dns': }
   include virtualbox
-  include wget  
+  include wget
   include dropbox
   include firefox
   # include sublime_text_3
