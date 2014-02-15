@@ -1,7 +1,6 @@
 class people::samjsharpe::packages {
 
   include alfred
-  include chicken
   include chrome
   include dropbox
   include firefox
