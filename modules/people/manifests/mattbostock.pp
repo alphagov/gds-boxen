@@ -1,9 +1,8 @@
 class people::mattbostock {
-  # This gives you the tools and repos to make a development VM
-  include gds-development
 
+  include adium
+  include alfred
   include chrome
-  include github_for_mac
   include gds-development
   include gds-resolver
   include gds_vpn_profiles
@@ -11,11 +10,14 @@ class people::mattbostock {
   include gitx
   include gnupg
   include mysql
+  include openconnect
   include screen
   include vagrant
-  vagrant::plugin { 'vagrant-dns': }
   include virtualbox::latest
+  include zsh
+  include ohmyzsh
 
+  vagrant::plugin { 'vagrant-cachier': }
   include osx::disable_app_quarantine
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
@@ -26,6 +28,7 @@ class people::mattbostock {
   include osx::global::disable_remote_control_ir_receiver
   include osx::dock::dim_hidden_apps
   include osx::dock::autohide
+
   osx::recovery_message { 'If found, please call 07917 173573': }
 
   boxen::osx_defaults { 'Disable reopen windows when logging back in':
@@ -34,6 +37,14 @@ class people::mattbostock {
     value  => 'false',
   }
   class { 'osx::dock::icon_size': size => 40 }
+
+  class security inherits boxen::security {
+    Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
+      value  => 0,
+    }
+  }
+
+  include security
 
   ## See modules/teams/manifests for things you can include here
   class { 'teams::infrastructure': manage_gitconfig => false }
