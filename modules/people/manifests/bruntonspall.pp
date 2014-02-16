@@ -5,7 +5,7 @@ class people::bruntonspall {
   include chrome
   include dropbox
   include encfs
-  include gds-resolver
+  include gds_resolver
   include java
   include intellij
   include iterm2::dev

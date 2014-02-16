@@ -3,7 +3,7 @@ class people::robyoung {
   include chrome
   include dropbox
   include firefox
-  include gds-resolver
+  include gds_resolver
   include git
   include iterm2::stable
   include ohmyzsh

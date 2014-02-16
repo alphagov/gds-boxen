@@ -5,7 +5,7 @@ class people::samjsharpe::packages {
   include dropbox
   include firefox
   include gds_vpn_profiles
-  include gds-resolver
+  include gds_resolver
   include googledrive
   include gnupg
   include hub

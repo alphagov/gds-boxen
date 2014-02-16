@@ -2,7 +2,7 @@ class people::russellthorn {
   $vagrant_ip = '10.1.1.254'
 
   include gds_development
-  include gds-resolver
+  include gds_resolver
 
   class { 'gds-ssh-config': }
   ssh_config::fragment{'user':

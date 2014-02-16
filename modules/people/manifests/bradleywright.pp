@@ -6,7 +6,7 @@ class people::bradleywright {
   include emacs::head
   include emacs-keybindings
   include gds_vpn_profiles
-  include gds-resolver
+  include gds_resolver
   include flux
   include iterm2::dev
   include mailplane::beta

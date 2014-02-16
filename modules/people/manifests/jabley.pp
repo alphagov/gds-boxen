@@ -12,7 +12,7 @@ class people::jabley {
   include firefox
   include flux
   include freeplane
-  include gds-resolver
+  include gds_resolver
   include gds_vpn_profiles
   include git
   include gitx::dev

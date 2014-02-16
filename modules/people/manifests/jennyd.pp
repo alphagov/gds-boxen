@@ -3,7 +3,7 @@ class people::jennyd {
   include dropbox
   include encfs
   include gds_development
-  include gds-resolver
+  include gds_resolver
   include gds-ssh-config
   include gds_vpn_profiles
   include gnupg

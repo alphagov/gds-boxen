@@ -4,7 +4,7 @@ class people::mattbostock {
   include alfred
   include chrome
   include gds_development
-  include gds-resolver
+  include gds_resolver
   include gds_vpn_profiles
   include git
   include gitx
