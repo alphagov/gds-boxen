@@ -13,11 +13,12 @@ class people::mattbostock {
   include openconnect
   include screen
   include vagrant
-  include gds_virtualbox::42_latest
+  include virtualbox
   include zsh
   include ohmyzsh
 
   vagrant::plugin { 'vagrant-cachier': }
+  vagrant::plugin { 'vagrant-vbguest': }
   include osx::disable_app_quarantine
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
