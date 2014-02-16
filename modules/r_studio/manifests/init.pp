@@ -4,9 +4,9 @@
 #
 # Sample Usage:
 #
-#  include r-studio
+#  include r_studio
 #
-class r-studio {
+class r_studio {
   package { 'RStudio':
     provider => 'appdmg',
     source   => 'http://download1.rstudio.org/RStudio-0.97.551.dmg'

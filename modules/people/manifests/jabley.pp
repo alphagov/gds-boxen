@@ -23,7 +23,7 @@ class people::jabley {
   include onepassword::chrome
   include openconnect
   include paparazzi
-  include r-studio
+  include r_studio
   include sublime_text_2
   include travis
   include transmission
