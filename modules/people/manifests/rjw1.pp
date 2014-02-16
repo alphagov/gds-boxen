@@ -54,6 +54,11 @@ package {
     ensure => present,
     provider => pip,
   }
+  # Perl
+  class { 'perl::global':
+      version => '5.18.2'
+  }
+  perl::version { '5.18.2': }
 
   vim::bundle { 'rodjek/vim-puppet': }
   vim::bundle { 'godlygeek/tabular': }

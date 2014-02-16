@@ -11,6 +11,11 @@ GITHUBTARBALL
     python (1.1.2)
 
 GITHUBTARBALL
+  remote: boxelly/puppet-perl
+  specs:
+    perl (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
     alfred (1.1.7)
@@ -511,6 +516,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   osx (= 2.2.2)
   packer (= 1.1.0)
+  perl (= 1.1.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
   postgresql (= 3.0.1)
