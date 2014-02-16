@@ -1,7 +1,7 @@
 class people::jabley {
   include adium
   include alfred::v1
-  include android-file-transfer
+  include android_file_transfer
   include android::sdk
   include banshee
   include caffeine
