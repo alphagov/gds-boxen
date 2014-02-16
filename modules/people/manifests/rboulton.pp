@@ -1,6 +1,6 @@
 class people::rboulton {
   # This gives you the tools and repos to make a development VM
-  include gds-development
+  include gds_development
   include gds_vpn_profiles
 
   ## Remove the # from any of the below to install that software

@@ -5,11 +5,11 @@ class people::tombooth {
   include chrome
   include emacs::formacosx
   include flux
-  include gds-resolver
-  
+  include gds_resolver
+
   include teams::performance-platform
   class { 'teams::infrastructure': manage_gitconfig => false }
-  
-  include gds-development
+
+  include gds_development
   include ssh_config
 }

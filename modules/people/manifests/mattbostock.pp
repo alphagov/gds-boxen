@@ -3,8 +3,8 @@ class people::mattbostock {
   include adium
   include alfred
   include chrome
-  include gds-development
-  include gds-resolver
+  include gds_development
+  include gds_resolver
   include gds_vpn_profiles
   include git
   include gitx

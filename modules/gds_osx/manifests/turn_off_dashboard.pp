@@ -1,5 +1,5 @@
 # Turns off the OSX Dashboard feature
-class turn-off-dashboard {
+class gds_osx::turn_off_dashboard {
   include osx::dock
 
   boxen::osx_defaults { 'Disables Dashboard':

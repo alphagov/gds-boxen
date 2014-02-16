@@ -37,7 +37,7 @@ class people::philandstuff {
 
   vagrant::plugin { 'vagrant-cachier': }
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment {'user':
     content => '
 Host *

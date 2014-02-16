@@ -5,8 +5,10 @@ class people::bradleywright {
   include dropbox
   include emacs::head
   include emacs-keybindings
+  include gds_osx::remove_spotlight
+  include gds_osx::turn_off_dashboard
   include gds_vpn_profiles
-  include gds-resolver
+  include gds_resolver
   include flux
   include iterm2::dev
   include mailplane::beta
@@ -15,9 +17,7 @@ class people::bradleywright {
   include omnifocus
   include openconnect
   include qt
-  include remove-spotlight
   include slate
-  include turn-off-dashboard
   include vmware_fusion
   include x-dispatch
   include zeus
@@ -38,7 +38,7 @@ class people::bradleywright {
 
   $vagrant_ip = '10.1.1.254'
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment{'user':
     content => template('people/bradleywright/ssh_config'),
   }
@@ -65,7 +65,7 @@ class people::bradleywright {
     rate => 400
   }
 
-  include gds-development
+  include gds_development
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 

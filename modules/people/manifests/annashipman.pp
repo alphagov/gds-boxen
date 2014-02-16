@@ -1,12 +1,12 @@
 class people::annashipman {
   include chrome
   include encfs
+  include gds_osx::turn_off_dashboard
   include gds_vpn_profiles
   include git
   include gnupg
   include iterm2::stable
   include libreoffice
-  include turn-off-dashboard
   include vagrant
   include gds_virtualbox
   include wget

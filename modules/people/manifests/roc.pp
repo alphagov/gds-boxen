@@ -1,6 +1,6 @@
 class people::roc {
   include chrome
-  include gds-resolver
+  include gds_resolver
   include git
   include vagrant
   vagrant::plugin { 'vagrant-dns': }

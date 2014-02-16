@@ -2,7 +2,7 @@ class people::carlmassa {
   include chrome
   include dropbox
   include firefox
-  include gds-resolver
+  include gds_resolver
   include github_for_mac
   include gitx::dev
   include gnupg

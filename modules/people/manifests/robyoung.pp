@@ -3,7 +3,7 @@ class people::robyoung {
   include chrome
   include dropbox
   include firefox
-  include gds-resolver
+  include gds_resolver
   include git
   include iterm2::stable
   include ohmyzsh
@@ -20,7 +20,7 @@ class people::robyoung {
   include projects::vcloud-templates
 
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment{'performance-platform':
     content => template('teams/performance-platform/ssh-config'),
   }

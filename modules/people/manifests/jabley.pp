@@ -1,7 +1,7 @@
 class people::jabley {
   include adium
   include alfred::v1
-  include android-file-transfer
+  include android_file_transfer
   include android::sdk
   include banshee
   include caffeine
@@ -12,7 +12,8 @@ class people::jabley {
   include firefox
   include flux
   include freeplane
-  include gds-resolver
+  include gds_osx::turn_off_dashboard
+  include gds_resolver
   include gds_vpn_profiles
   include git
   include gitx::dev
@@ -23,11 +24,10 @@ class people::jabley {
   include onepassword::chrome
   include openconnect
   include paparazzi
-  include r-studio
+  include r_studio
   include sublime_text_2
   include travis
   include transmission
-  include turn-off-dashboard
   include vagrant
 
   include projects::alphagov-deployment

@@ -4,6 +4,8 @@ class people::daibach {
   include caffeine
   include chrome
   include dropbox
+  include gds_osx::remove_spotlight
+  include gds_osx::turn_off_dashboard
   include gitx::dev
   include iterm2::stable
   include java
@@ -11,11 +13,9 @@ class people::daibach {
   include onepassword
   include openconnect
   include propane
-  include remove-spotlight
   include spotify
   include sublime_text_2
   include textmate
-  include turn-off-dashboard
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
   include gds_virtualbox
