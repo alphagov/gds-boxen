@@ -301,6 +301,11 @@ GITHUBTARBALL
     things (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-transmission
+  specs:
+    transmission (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (3.0.4)
@@ -527,6 +532,7 @@ DEPENDENCIES
   sysctl (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.1)
+  transmission (= 1.1.0)
   unarchiver (= 1.3.0)
   vagrant (= 3.0.4)
   vim (= 1.0.5)
