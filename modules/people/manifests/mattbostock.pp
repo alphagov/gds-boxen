@@ -38,6 +38,14 @@ class people::mattbostock {
   }
   class { 'osx::dock::icon_size': size => 40 }
 
+  class security inherits boxen::security {
+    Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
+      value  => 0,
+    }
+  }
+
+  include security
+
   ## See modules/teams/manifests for things you can include here
   class { 'teams::infrastructure': manage_gitconfig => false }
 
