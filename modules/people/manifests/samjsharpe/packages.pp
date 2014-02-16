@@ -25,6 +25,7 @@ class people::samjsharpe::packages {
   include unarchiver
   include vagrant
   vagrant::plugin { 'vagrant-cachier': }
+  vagrant::plugin { 'vagrant-dns': }
   vagrant::plugin { 'vagrant-global-status': }
   vagrant::plugin { 'vagrant-vbguest': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
