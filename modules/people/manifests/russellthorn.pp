@@ -4,7 +4,7 @@ class people::russellthorn {
   include gds_development
   include gds_resolver
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment{'user':
     content => template('people/russellthorn/ssh_config'),
   }

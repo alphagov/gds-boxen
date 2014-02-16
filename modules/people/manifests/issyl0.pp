@@ -1,7 +1,7 @@
 class people::issyl0 {
   include gds_development
   include gds_resolver
-  include gds-ssh-config
+  include gds_ssh_config
   include skype
   include sublime_text_2
   include wget

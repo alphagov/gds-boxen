@@ -4,7 +4,7 @@ class people::jennyd {
   include encfs
   include gds_development
   include gds_resolver
-  include gds-ssh-config
+  include gds_ssh_config
   include gds_vpn_profiles
   include gnupg
   include iterm2::stable

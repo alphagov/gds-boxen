@@ -38,7 +38,7 @@ class people::bradleywright {
 
   $vagrant_ip = '10.1.1.254'
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment{'user':
     content => template('people/bradleywright/ssh_config'),
   }

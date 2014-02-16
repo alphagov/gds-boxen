@@ -20,7 +20,7 @@ class people::robyoung {
   include projects::vcloud-templates
 
 
-  class { 'gds-ssh-config': }
+  class { 'gds_ssh_config': }
   ssh_config::fragment{'performance-platform':
     content => template('teams/performance-platform/ssh-config'),
   }
