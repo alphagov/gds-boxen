@@ -1,5 +1,7 @@
 class people::mattbostock {
 
+  include adium
+  include alfred
   include chrome
   include github_for_mac
   include gds-development
@@ -9,10 +11,13 @@ class people::mattbostock {
   include gitx
   include gnupg
   include mysql
+  include openconnect
   include screen
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
   include virtualbox::latest
+  include zsh
+  include ohmyzsh
 
   include osx::disable_app_quarantine
   include osx::finder::empty_trash_securely
