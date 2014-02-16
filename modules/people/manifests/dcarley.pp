@@ -9,7 +9,7 @@ class people::dcarley {
   include turn-off-dashboard
   include vagrant
   include vim
-  include virtualbox
+  include gds_virtualbox
   include wget
 
   include zsh

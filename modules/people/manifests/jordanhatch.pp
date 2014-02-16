@@ -7,8 +7,7 @@ class people::jordanhatch {
   include iterm2::stable
   include spotify
   include unarchiver
-  include virtualbox
-  include virtualbox
+  include gds_virtualbox
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 

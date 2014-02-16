@@ -8,7 +8,7 @@ class people::rjw1 {
   include gnupg
   include iterm2::stable
   include vagrant
-  include virtualbox
+  include gds_virtualbox
 
   class { 'teams::infrastructure': manage_gitconfig => false }
 

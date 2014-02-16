@@ -15,7 +15,7 @@ class people::bruntonspall {
   include sublime_text_2
   include turn-off-dashboard
   include vagrant
-  include virtualbox
+  include gds_virtualbox
   include wget
 
 

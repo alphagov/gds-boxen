@@ -10,7 +10,7 @@ class gds-development {
 
   # Need Vagrant and Virtualbox
   include vagrant
-  include virtualbox
+  include gds_virtualbox
 
   # Dev uses the vagrant-dns plugin
   vagrant::plugin { 'vagrant-dns': }

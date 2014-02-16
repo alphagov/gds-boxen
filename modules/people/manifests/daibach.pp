@@ -18,7 +18,7 @@ class people::daibach {
   include turn-off-dashboard
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
-  include virtualbox
+  include gds_virtualbox
   include wget
 
   include teams::mainstream

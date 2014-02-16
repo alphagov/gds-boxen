@@ -8,7 +8,7 @@ class people::alexmuller {
 
   # Dev VM
   include vagrant
-  include virtualbox
+  include gds_virtualbox::recommended
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 
