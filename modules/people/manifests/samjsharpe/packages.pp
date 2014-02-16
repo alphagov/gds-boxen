@@ -4,8 +4,9 @@ class people::samjsharpe::packages {
   include chrome
   include dropbox
   include firefox
-  include gds_vpn_profiles
+  include gds_osx::turn_off_dashboard
   include gds_resolver
+  include gds_vpn_profiles
   include googledrive
   include gnupg
   include hub
@@ -21,7 +22,6 @@ class people::samjsharpe::packages {
   include spf13vim3
   include stay
   include sublime_text_2
-  include turn-off-dashboard
   include unarchiver
   include vagrant
   vagrant::plugin { 'vagrant-cachier': }

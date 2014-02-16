@@ -3,6 +3,7 @@ class people::jennyd {
   include dropbox
   include encfs
   include gds_development
+  include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_ssh_config
   include gds_vpn_profiles
@@ -10,7 +11,6 @@ class people::jennyd {
   include iterm2::stable
   include skype
   include sublime_text_2
-  include turn-off-dashboard
   include wget
 
   vagrant::plugin { 'vagrant-cachier': }

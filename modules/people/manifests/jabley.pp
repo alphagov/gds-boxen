@@ -12,6 +12,7 @@ class people::jabley {
   include firefox
   include flux
   include freeplane
+  include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_vpn_profiles
   include git
@@ -27,7 +28,6 @@ class people::jabley {
   include sublime_text_2
   include travis
   include transmission
-  include turn-off-dashboard
   include vagrant
 
   include projects::alphagov-deployment

@@ -5,6 +5,7 @@ class people::bruntonspall {
   include chrome
   include dropbox
   include encfs
+  include gds_osx::turn_off_dashboard
   include gds_resolver
   include java
   include intellij
@@ -13,7 +14,6 @@ class people::bruntonspall {
   include gnupg
   include gitx::dev
   include sublime_text_2
-  include turn-off-dashboard
   include vagrant
   include gds_virtualbox
   include wget

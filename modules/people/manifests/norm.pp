@@ -6,6 +6,7 @@ class people::norm {
   include chrome
   include dropbox
   include firefox
+  include gds_osx::turn_off_dashboard
   include gitx::dev
   include istatmenus4
   include launchbar
@@ -33,7 +34,6 @@ class people::norm {
   repo::alphagov { 'government-service-design-manual': }
 
   # preferenceses
-  include turn-off-dashboard
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
   include osx::disable_app_quarantine
