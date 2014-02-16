@@ -1,0 +1,9 @@
+# -*- mode: ruby; -*-
+config.vm.provider :virtualbox do |vb, override|
+  vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "2"]
+end
+
+config.vm.provider :vmware_fusion do |v, override|
+  v.vmx["memsize"] = "1024"
+  v.vmx["numvcpus"] = "2"
+end

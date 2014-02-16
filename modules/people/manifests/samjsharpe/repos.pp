@@ -29,6 +29,11 @@ class people::samjsharpe::repos {
         'gds/puppet'
         ]:}
 
+    file {"${boxen::config::srcdir}/gds/puppet/development/Vagrantfile.localconfig":
+      source => 'puppet:///modules/people/samjsharpe/Vagrantfile.localconfig',
+      require => People::Samjsharpe::Repos::Gds['gds/puppet']
+    }
+
     people::samjsharpe::repos::gh  {[
         'alphagov/ci-puppet',
         'alphagov/boxgrinder-appliances',
