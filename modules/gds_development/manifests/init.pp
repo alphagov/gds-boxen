@@ -2,9 +2,9 @@
 #
 # Example:
 #
-#  include gds-development
+#  include gds_development
 #
-class gds-development {
+class gds_development {
   # Puppet is used to make VMs
   include projects::puppet
 

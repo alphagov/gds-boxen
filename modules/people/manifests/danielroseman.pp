@@ -2,7 +2,7 @@ class people::danielroseman {
   include alfred
   include chrome
   include dropbox
-  include gds-development
+  include gds_development
   include gds_vpn_profiles
   include git
   include hub

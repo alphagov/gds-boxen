@@ -1,5 +1,5 @@
 class people::edwardhorsford{
-  include gds-development
+  include gds_development
   vagrant::plugin { 'vagrant-cachier': }
 
   include teams::performance-platform

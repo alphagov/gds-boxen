@@ -6,10 +6,10 @@ class people::tombooth {
   include emacs::formacosx
   include flux
   include gds-resolver
-  
+
   include teams::performance-platform
   class { 'teams::infrastructure': manage_gitconfig => false }
-  
-  include gds-development
+
+  include gds_development
   include ssh_config
 }

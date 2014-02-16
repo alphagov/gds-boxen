@@ -1,5 +1,5 @@
 class people::issyl0 {
-  include gds-development
+  include gds_development
   include gds-resolver
   include gds-ssh-config
   include skype
