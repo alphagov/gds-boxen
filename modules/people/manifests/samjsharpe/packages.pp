@@ -26,6 +26,7 @@ class people::samjsharpe::packages {
   include vagrant
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-global-status': }
+  vagrant::plugin { 'vagrant-vbguest': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
   include virtualbox
   include vmware_fusion
