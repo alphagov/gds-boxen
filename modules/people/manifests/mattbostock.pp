@@ -1,6 +1,4 @@
 class people::mattbostock {
-  # This gives you the tools and repos to make a development VM
-  include gds-development
 
   include chrome
   include github_for_mac
