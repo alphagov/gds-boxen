@@ -17,7 +17,6 @@ class people::mattbostock {
   include zsh
   include ohmyzsh
 
-  vagrant::plugin { 'vagrant-dns': }
   vagrant::plugin { 'vagrant-cachier': }
   include osx::disable_app_quarantine
   include osx::finder::empty_trash_securely
