@@ -27,7 +27,7 @@ class people::samjsharpe::packages {
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-global-status': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
-  include virtualbox
+  include gds_virtualbox
 
   # ZSH stuff
   include zsh

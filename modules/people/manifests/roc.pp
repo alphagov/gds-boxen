@@ -4,7 +4,7 @@ class people::roc {
   include git
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
-  include virtualbox
+  include gds_virtualbox
   include wget
   include dropbox
   include firefox

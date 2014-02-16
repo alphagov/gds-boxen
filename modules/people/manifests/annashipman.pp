@@ -8,7 +8,7 @@ class people::annashipman {
   include libreoffice
   include turn-off-dashboard
   include vagrant
-  include virtualbox
+  include gds_virtualbox
   include wget
 
   class { 'teams::infrastructure': manage_gitconfig => false }

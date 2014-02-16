@@ -13,7 +13,7 @@ class people::mattbostock {
   include openconnect
   include screen
   include vagrant
-  include virtualbox::latest
+  include gds_virtualbox::42_latest
   include zsh
   include ohmyzsh
 

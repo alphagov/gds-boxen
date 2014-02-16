@@ -12,7 +12,7 @@ class people::robyoung {
   include pycharm
   include rubymine
   include sublime_text_2
-  include virtualbox::latest
+  include gds_virtualbox::42_latest
   include zsh
 
   include teams::performance-platform

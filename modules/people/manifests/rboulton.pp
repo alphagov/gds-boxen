@@ -32,7 +32,7 @@ class people::rboulton {
   #include zsh)
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
-  include virtualbox
+  include gds_virtualbox
 
   ## See modules/teams/manifests for things you can include here
   include teams::mainstream

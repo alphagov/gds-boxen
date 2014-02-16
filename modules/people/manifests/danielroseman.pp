@@ -9,7 +9,7 @@ class people::danielroseman {
   include iterm2::stable
   include macvim
   include vagrant
-  include virtualbox
+  include gds_virtualbox
   include wget
   include xquartz
 
