@@ -58,6 +58,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'htop-osx',
       'nmap',
       'parallel',
+      'python',
       'rbenv-bundler',
       's3cmd',
       'ssh-copy-id',
@@ -68,6 +69,17 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'zsh-completions',
     ]:
     ensure => present,
+  }
+  package {'virtualenvwrapper':
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
+  file {"/Users/${::luser}/.oh-my-zsh/plugins/virtualenvwrapper/virtualenvwrapper.plugin.zsh":
+    ensure  => present,
+    source  => 'puppet:///modules/people/samjsharpe/virtualenvwrapper.plugin.zsh',
+    require => Class['ohmyzsh'],
   }
 
 }
