@@ -4,7 +4,6 @@ class people::samjsharpe::packages {
   include chrome
   include dropbox
   include firefox
-  include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_vpn_profiles
   include googledrive

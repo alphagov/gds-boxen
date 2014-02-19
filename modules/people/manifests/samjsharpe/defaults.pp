@@ -4,6 +4,9 @@ class people::samjsharpe::defaults {
     user => $::luser,
   }
 
+  # Settings from gds_osx
+  include gds_osx::remove_spotlight
+  include gds_osx::turn_off_dashboard
   # Settings from puppet-osx
   include osx::disable_app_quarantine
   include osx::dock::2d
