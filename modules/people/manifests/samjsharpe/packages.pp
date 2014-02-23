@@ -10,6 +10,8 @@ class people::samjsharpe::packages {
   include gnupg
   include hub
   include iterm2::stable
+  include libreoffice
+  include libreoffice::languagepack
   include macvim
   include mou
   include mou::themes
