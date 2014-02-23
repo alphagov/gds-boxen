@@ -13,6 +13,8 @@ class people::rjw1 {
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::deployment::creds
+  include projects::blinken
+  include projects::blinken-config
 
 
 
