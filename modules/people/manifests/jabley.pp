@@ -121,6 +121,7 @@ class people::jabley {
       'id3tool',
       'jpeg',
       'lame',
+      'leiningen',
       'logstalgia',
       'lynx',
       'maven',
