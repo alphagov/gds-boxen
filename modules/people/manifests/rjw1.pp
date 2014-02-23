@@ -44,6 +44,7 @@ package {
       'python',
       'tmux',
       'bash-completion',
+      'leiningen',
       'vim',
     ]:
     ensure => present,
