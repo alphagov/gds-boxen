@@ -6,6 +6,11 @@ GIT
     concat (1.0.0)
 
 GITHUBTARBALL
+  remote: alphagov/puppet-libreoffice
+  specs:
+    libreoffice (4.2.1)
+
+GITHUBTARBALL
   remote: alphagov/puppet-python
   specs:
     python (1.1.2)
@@ -411,11 +416,6 @@ GITHUBTARBALL
     banshee (1.1.0)
 
 GITHUBTARBALL
-  remote: jasonamyers/puppet-libreoffice
-  specs:
-    libreoffice (4.0.3)
-
-GITHUBTARBALL
   remote: norm/puppet-antirsi
   specs:
     antirsi (1.0.1)
@@ -500,7 +500,7 @@ DEPENDENCIES
   java (= 1.2.0)
   keyremap4macbook (= 1.2.1)
   launchbar (= 1.2.0)
-  libreoffice (= 4.0.3)
+  libreoffice (= 4.2.1)
   macvim (= 1.0.0)
   module-data (= 0.0.1)
   monocle (= 1.0.0)
