@@ -20,6 +20,8 @@ class people::jabley {
   include gnupg
   include googledrive
   include java
+  include libreoffice
+  include libreoffice::languagepack
   include onepassword
   include onepassword::chrome
   include openconnect
