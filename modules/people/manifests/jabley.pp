@@ -34,6 +34,8 @@ class people::jabley {
   include vagrant
 
   include projects::alphagov-deployment
+  include projects::blinken
+  include projects::blinken-config
   include projects::calculators
   include projects::ci-deployment
   include projects::ci-puppet
