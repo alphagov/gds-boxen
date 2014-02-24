@@ -32,6 +32,8 @@ class people::jabley {
   include travis
   include transmission
   include vagrant
+  include vmware_fusion
+
 
   include projects::alphagov-deployment
   include projects::blinken
