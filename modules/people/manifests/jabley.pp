@@ -22,6 +22,7 @@ class people::jabley {
   include java
   include libreoffice
   include libreoffice::languagepack
+  include nodejs::v0_10
   include onepassword
   include onepassword::chrome
   include openconnect
@@ -132,7 +133,6 @@ class people::jabley {
       'mongodb',
       'mysql',
       'nmap',
-      'node',
       'oniguruma',
       'p7zip',
       'parallel',
