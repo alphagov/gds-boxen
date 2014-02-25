@@ -145,6 +145,7 @@ class people::jabley {
       'pngcrush',
       'proctools',
       'protobuf',
+      'python',
       'pv',
       'R',
       'redis',
@@ -169,6 +170,13 @@ class people::jabley {
     ]:
     ensure => 'present',
   }
+
+  package {'virtualenvwrapper':
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
 
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
