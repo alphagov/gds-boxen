@@ -171,7 +171,7 @@ class people::jabley {
     ensure => 'present',
   }
 
-  package {'virtualenvwrapper':
+  package {'virtualenv':
     ensure   => present,
     provider => pip,
     require  => Package['python'],
