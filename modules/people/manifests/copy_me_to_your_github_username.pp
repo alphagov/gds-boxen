@@ -23,7 +23,7 @@ class people::copy_me_to_your_github_username {
   #include skype
   #include sparrow
   #include spotify
-  #include sublime_text_2
+  #include sublime_text_3
   #include textmate
   #include things
   #include wget
