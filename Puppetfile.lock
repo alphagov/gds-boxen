@@ -416,6 +416,11 @@ GITHUBTARBALL
     banshee (1.1.0)
 
 GITHUBTARBALL
+  remote: jozefizso/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.2)
+
+GITHUBTARBALL
   remote: norm/puppet-antirsi
   specs:
     antirsi (1.0.1)
@@ -539,6 +544,7 @@ DEPENDENCIES
   stay (= 1.0.0)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
+  sublime_text_3 (= 1.0.2)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   textmate (= 1.1.0)
