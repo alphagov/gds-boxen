@@ -8,7 +8,7 @@ class people::alexmuller {
 
   # Dev VM
   include vagrant
-  include gds_virtualbox::recommended
+  include gds_virtualbox::42_latest
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 
@@ -22,9 +22,14 @@ class people::alexmuller {
   include projects::vcloud-templates
   class { 'teams::infrastructure': manage_gitconfig => false }
 
-  # Repos
-  repo::alphagov { 'transformation-dashboard': }
+  # Other repos
+
+  repo::gds { 'interviews': }
+
+  repo::alphagov { 'design-principles': }
   repo::alphagov { 'government-service-design-manual': }
+  repo::alphagov { 'styleguides': }
+  repo::alphagov { 'transformation-dashboard': }
 
   # SSH
   class { 'gds_ssh_config': }
@@ -69,4 +74,11 @@ class people::alexmuller {
     source => 'puppet:///modules/people/alexmuller/User-Preferences.sublime-settings',
   }
 
+  sudoers { 'alexmuller_sudo':
+    users    => $::boxen_user,
+    type     => 'user_spec',
+    commands => '(ALL) NOPASSWD: ALL',
+    hosts    => 'ALL',
+    comment  => 'Stop asking me to sudo',
+  }
 }
