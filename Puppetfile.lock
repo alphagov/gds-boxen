@@ -51,16 +51,6 @@ GITHUBTARBALL
     clojure (1.2.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-colloquy
-  specs:
-    colloquy (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-cord
-  specs:
-    cord (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.1)
@@ -79,11 +69,6 @@ GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
     firefox (1.1.8)
-
-GITHUBTARBALL
-  remote: boxen/puppet-fitbit
-  specs:
-    fitbit (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-flux
@@ -114,11 +99,6 @@ GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
     go (2.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-heroku
-  specs:
-    heroku (2.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -219,11 +199,6 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-postgresql
-  specs:
-    postgresql (3.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-pycharm
@@ -406,11 +381,6 @@ GITHUBTARBALL
     mplayerx (1.0.0)
 
 GITHUBTARBALL
-  remote: glarizza/puppet-property_list_key
-  specs:
-    property_list_key (0.2.0)
-
-GITHUBTARBALL
   remote: jabley/puppet-banshee
   specs:
     banshee (1.1.0)
@@ -476,17 +446,14 @@ DEPENDENCIES
   camino (= 1.0.1)
   chrome (= 1.1.2)
   clojure (= 1.2.0)
-  colloquy (= 1.0.0)
   concat (= 1.0.0)
   controlplane (= 1.1.0)
-  cord (= 1.0.0)
   dnsmasq (= 1.0.1)
   dropbox (= 1.2.0)
   emacs (= 1.1.6)
   emacs-keybindings (= 1.0.0)
   evernote (= 2.0.5)
   firefox (= 1.1.8)
-  fitbit (= 1.0.0)
   flux (= 1.0.0)
   foreman (= 1.1.0)
   gcc (= 2.0.99)
@@ -495,7 +462,6 @@ DEPENDENCIES
   gitx (= 1.2.0)
   go (= 2.0.1)
   googledrive (= 1.0.2)
-  heroku (= 2.1.1)
   homebrew (= 1.6.0)
   hub (= 1.3.0)
   inifile (= 1.0.0)
@@ -524,9 +490,7 @@ DEPENDENCIES
   perl (= 1.1.0)
   phantomjs (= 2.1.0)
   pkgconfig (= 1.0.0)
-  postgresql (= 3.0.1)
   propane (= 0.0.1)
-  property_list_key (= 0.2.0)
   pycharm (= 1.0.4)
   python (= 1.1.2)
   qt (= 1.2.2)

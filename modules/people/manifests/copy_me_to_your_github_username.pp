@@ -8,9 +8,7 @@ class people::copy_me_to_your_github_username {
   #include caffeine
   #include chrome
   #include clojure
-  #include colloquy
   #include dropbox
-  #include fitbit
   #include gitx
   #include hub
   #include iterm2
