@@ -17,12 +17,10 @@ class people::samjsharpe::packages {
   include mou::themes
   include mplayerx
   include openconnect
-  include packer
   include screen
   include spectacle
   include spf13vim3
   include stay
-  include sublime_text_2
   include unarchiver
   include vagrant
   vagrant::plugin { 'vagrant-cachier': }
