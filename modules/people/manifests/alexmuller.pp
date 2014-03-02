@@ -65,6 +65,7 @@ class people::alexmuller {
   git::config::global { 'color.ui': value => 'true' }
   git::config::global { 'user.name': value => 'Alex Muller' }
   git::config::global { 'user.email': value => 'alex.muller@digital.cabinet-office.gov.uk' }
+  git::config::global { 'alias.master': value => '!git checkout master && git pull origin master' }
 
   # Homebrew packages
   # Remember to read the post-install caveats

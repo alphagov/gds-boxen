@@ -1,13 +1,15 @@
 export HISTSIZE=10000
 export HISTCONTROL=ignoreboth
 
+alias subl=subl3
+
 alias govuk_staging='sudo /Users/alexmuller/govuk/private-utils/script/govuk_select_organisation staging'
 alias govuk_production='sudo /Users/alexmuller/govuk/private-utils/script/govuk_select_organisation production'
 
 RESET="$(tput sgr0)"
 BOLDGREEN="$(tput bold; tput setaf 2)"
 
-PS1="\[$BOLDGREEN\][HOST]\[$RESET\] \w\$(__git_ps1) $ "
+PS1="\[$BOLDGREEN\][HOST]\[$RESET\] \t \w\$(__git_ps1) $ "
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
@@ -17,3 +19,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
   . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 fi
+
+reset_cisco_ssh() {
+    sudo ipfw -a list | awk '/deny ip from any to any$/ { print $1 }' | xargs sudo ipfw delete
+}
