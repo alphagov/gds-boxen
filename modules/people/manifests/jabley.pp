@@ -1,6 +1,6 @@
 class people::jabley {
   include adium
-  include alfred::v1
+  include alfred
   include android_file_transfer
   include android::sdk
   include banshee
