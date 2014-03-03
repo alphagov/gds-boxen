@@ -130,7 +130,6 @@ class people::jabley {
       'maven',
       'md5sha1sum',
       'mobile-shell',
-      'mongodb',
       'mysql',
       'nmap',
       'oniguruma',
