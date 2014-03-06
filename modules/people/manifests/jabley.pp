@@ -177,6 +177,8 @@ class people::jabley {
   }
 
 
+  nodejs::module { 'jsontool': node_version => 'v0.10' }
+
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"
 
