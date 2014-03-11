@@ -5,7 +5,10 @@ class people::edwardhorsford{
   package {
     [
       'node',
+      'sbt'
     ]:
     ensure => 'present',
   }
 }
+
+
