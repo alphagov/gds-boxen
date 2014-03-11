@@ -1,9 +1,11 @@
 class people::edwardhorsford{
   include gds_development
-  vagrant::plugin { 'vagrant-cachier': }
+  include nodejs::v0_10
 
-  include teams::performance-platform
-  repo::alphagov { 'static': }
-
-
+  package {
+    [
+      'node',
+    ]:
+    ensure => 'present',
+  }
 }
