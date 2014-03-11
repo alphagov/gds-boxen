@@ -1,11 +1,24 @@
 // This file is managed by Boxen
 {
-	"ensure_newline_at_eof_on_save": true,
-	"font_size": 13.0,
-	"ignored_packages":
-	[
-		"Vintage",
-		"JSLint"
-	],
-	"trim_trailing_white_space_on_save": true
+  "color_scheme": "Packages/User/Monokai (SL).tmTheme",
+  "draw_minimap_border": true,
+  "ensure_newline_at_eof_on_save": true,
+  "font_size": 16.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "hot_exit": false,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "remember_open_files": false,
+  "rulers":
+  [
+    100
+  ],
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }

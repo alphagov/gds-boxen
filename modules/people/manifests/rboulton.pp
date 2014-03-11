@@ -9,9 +9,7 @@ class people::rboulton {
   #include caffeine
   include chrome
   #include clojure
-  #include colloquy
   #include dropbox
-  #include fitbit
   include gitx
   #include hub
   #include iterm2

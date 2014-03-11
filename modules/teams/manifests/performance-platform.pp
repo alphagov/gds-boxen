@@ -49,6 +49,7 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
   repo::alphagov { 'pp-development': }
+  repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'spotlight': }
   repo::alphagov { 'stagecraft': }

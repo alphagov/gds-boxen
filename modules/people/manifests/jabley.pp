@@ -1,6 +1,6 @@
 class people::jabley {
   include adium
-  include alfred::v1
+  include alfred
   include android_file_transfer
   include android::sdk
   include banshee
@@ -22,6 +22,7 @@ class people::jabley {
   include java
   include libreoffice
   include libreoffice::languagepack
+  include nodejs::v0_10
   include onepassword
   include onepassword::chrome
   include openconnect
@@ -32,6 +33,8 @@ class people::jabley {
   include travis
   include transmission
   include vagrant
+  include vmware_fusion
+
 
   include projects::alphagov-deployment
   include projects::blinken
@@ -68,6 +71,7 @@ class people::jabley {
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::gds      { 'govuk_delivery': }
+  repo::gds      { 'interviews': }
   repo::gds      { 'licensify': }
   repo::gds      { 'transactions-visualisation': }
 
@@ -127,10 +131,8 @@ class people::jabley {
       'maven',
       'md5sha1sum',
       'mobile-shell',
-      'mongodb',
       'mysql',
       'nmap',
-      'node',
       'oniguruma',
       'p7zip',
       'parallel',
@@ -143,6 +145,7 @@ class people::jabley {
       'pngcrush',
       'proctools',
       'protobuf',
+      'python',
       'pv',
       'R',
       'redis',
@@ -167,6 +170,15 @@ class people::jabley {
     ]:
     ensure => 'present',
   }
+
+  package {'virtualenv':
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
+
+  nodejs::module { 'jsontool': node_version => 'v0.10' }
 
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"

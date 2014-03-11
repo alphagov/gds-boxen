@@ -77,8 +77,6 @@ class people::bruntonspall {
   ## Remove the # from any of the below to install that software
   #include nvm
   #include clojure
-  #include colloquy
-  #include fitbit
   #include hub
   #include iterm2
   #include macvim
