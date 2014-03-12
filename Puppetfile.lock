@@ -241,6 +241,11 @@ GITHUBTARBALL
     skype (1.0.8)
 
 GITHUBTARBALL
+  remote: boxen/puppet-slack
+  specs:
+    slack (1.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-slate
   specs:
     slate (1.0.0)
@@ -500,6 +505,7 @@ DEPENDENCIES
   screen (= 1.0.0)
   sizeup (= 1.0.0)
   skype (= 1.0.8)
+  slack (= 1.0.4)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
   spectacle (= 1.0.0)
