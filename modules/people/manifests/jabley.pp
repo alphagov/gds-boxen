@@ -29,6 +29,7 @@ class people::jabley {
   include packer
   include paparazzi
   include r_studio
+  include slack
   include sublime_text_2
   include travis
   include transmission
