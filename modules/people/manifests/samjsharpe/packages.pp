@@ -18,6 +18,7 @@ class people::samjsharpe::packages {
   include mplayerx
   include openconnect
   include screen
+  include skype
   include spectacle
   include spf13vim3
   include stay
