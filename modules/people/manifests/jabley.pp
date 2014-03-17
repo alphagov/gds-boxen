@@ -72,6 +72,7 @@ class people::jabley {
   repo::alphagov { 'service-domain-checker': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
+  repo::alphagov { 'vcloud-tools': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
   repo::gds      { 'licensify': }
