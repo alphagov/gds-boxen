@@ -92,7 +92,7 @@ class people::jabley {
   # want to delete it by accident.
   file {"${boxen::config::srcdir}/puppet/development/Vagrantfile.localconfig":
     source => 'puppet:///modules/people/jabley/Vagrantfile.localconfig',
-    require => Class['Projects::Development']
+    require => Class['Projects::Puppet']
   }
 
   file {"${boxen::config::srcdir}/pp-development/pp-development-1-Vagrantfile.localconfig":
