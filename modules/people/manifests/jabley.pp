@@ -97,7 +97,7 @@ class people::jabley {
 
   file {"${boxen::config::srcdir}/pp-development/pp-development-1-Vagrantfile.localconfig":
     source => 'puppet:///modules/people/jabley/pp-development-1-Vagrantfile.localconfig',
-    require => Class['Projects::Development']
+    require => Class['Teams::Performance-Platform']
   }
 
   # These are all Homebrew packages
