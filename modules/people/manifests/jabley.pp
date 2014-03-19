@@ -76,6 +76,7 @@ class people::jabley {
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
   repo::gds      { 'licensify': }
+  repo::gds      { 'router-data': }
   repo::gds      { 'transactions-visualisation': }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
