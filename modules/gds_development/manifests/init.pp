@@ -4,12 +4,14 @@
 #
 #  include gds_development
 #
-class gds_development {
+class gds_development($version = '1.4.2') {
   # Puppet is used to make VMs
   include projects::puppet
 
   # Need Vagrant and Virtualbox
-  include vagrant
+  class { 'vagrant':
+    version => $version,
+  }
   include gds_virtualbox
 
   # Dev uses the vagrant-dns plugin
