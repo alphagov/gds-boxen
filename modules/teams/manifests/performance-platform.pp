@@ -47,6 +47,7 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-collector': }
   repo::alphagov { 'backdrop-ga-collector': }
   repo::alphagov { 'backdrop-ga-realtime-collector': }
+  repo::alphagov { 'backdrop-ga-trending-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
   repo::alphagov { 'pp-development': }
