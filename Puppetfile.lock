@@ -298,7 +298,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.4)
+    vagrant (3.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-vim
@@ -521,7 +521,7 @@ DEPENDENCIES
   things (= 1.0.1)
   transmission (= 1.1.0)
   unarchiver (= 1.3.0)
-  vagrant (= 3.0.4)
+  vagrant (= 3.0.6)
   vim (= 1.0.5)
   virtualbox (= 1.0.10)
   vmware_fusion (= 1.1.0)
