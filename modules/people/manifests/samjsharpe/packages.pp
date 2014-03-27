@@ -76,7 +76,14 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     require  => Package['python'],
   }
 
-  file {"/Users/${::luser}/.oh-my-zsh/plugins/virtualenvwrapper/virtualenvwrapper.plugin.zsh":
+  $ohmyzshdir = "/Users/${::luser}/.oh-my-zsh"
+  $ohmyzshcustom = "${ohmyzshdir}/custom/plugins/"
+
+  file {[$ohmyzshcustom,"${ohmyzshcustom}/virtualenvwrapper"]:
+    ensure => directory,
+    notify => File["${ohmyzshcustom}/virtualenvwrapper/virtualenvwrapper.plugin.zsh"],
+  }
+  file {"${ohmyzshcustom}/virtualenvwrapper/virtualenvwrapper.plugin.zsh":
     ensure  => present,
     source  => 'puppet:///modules/people/samjsharpe/virtualenvwrapper.plugin.zsh',
     require => Class['ohmyzsh'],
