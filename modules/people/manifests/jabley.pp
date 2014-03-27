@@ -19,6 +19,8 @@ class people::jabley {
   include gitx::dev
   include gnupg
   include googledrive
+  include imagealpha
+  include imageoptim
   include java
   include libreoffice
   include libreoffice::languagepack
