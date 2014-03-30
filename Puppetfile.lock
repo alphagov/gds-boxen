@@ -101,6 +101,11 @@ GITHUBTARBALL
     go (2.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.6.0)
@@ -467,6 +472,7 @@ DEPENDENCIES
   gitx (= 1.2.0)
   go (= 2.0.1)
   googledrive (= 1.0.2)
+  handbrake (= 1.0.1)
   homebrew (= 1.6.0)
   hub (= 1.3.0)
   inifile (= 1.0.0)
