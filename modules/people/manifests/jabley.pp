@@ -19,6 +19,7 @@ class people::jabley {
   include gitx::dev
   include gnupg
   include googledrive
+  include handbrake
   include imagealpha
   include imageoptim
   include java
