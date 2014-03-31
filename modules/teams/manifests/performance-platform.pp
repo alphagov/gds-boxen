@@ -13,26 +13,6 @@ class teams::performance-platform {
   # New Devops™ !!!!11!one!!!!
   include teams::performance-platform::puppet
 
-  # Older World Order
-  repo::gds      { 'datainsight': }
-  repo::gds      { 'datainsight-akamai-scanner': }
-  repo::alphagov { 'datainsight-everything-recorder': }
-  repo::alphagov { 'datainsight-format-success-recorder': }
-  repo::alphagov { 'datainsight-frontend': }
-  repo::alphagov { 'datainsight-ga-collector': }
-  repo::alphagov { 'datainsight-ga-functional-test': }
-  repo::alphagov { 'datainsight-govuk-collector': }
-  repo::alphagov { 'datainsight-insidegov-collector': }
-  repo::alphagov { 'datainsight-insidegov-recorder': }
-  repo::alphagov { 'datainsight-narrative-recorder': }
-  repo::alphagov { 'datainsight-nongovuk-reach-collector': }
-  repo::gds      { 'datainsight-release-info': }
-  repo::alphagov { 'datainsight-todays-activity-recorder': }
-  repo::alphagov { 'datainsight-weekly-reach-recorder': }
-  repo::alphagov { 'datainsight_collector': }
-  repo::alphagov { 'datainsight_logging': }
-  repo::alphagov { 'datainsight_recorder': }
-
   # Old Word Order
   repo::alphagov { 'limelight': }
 
