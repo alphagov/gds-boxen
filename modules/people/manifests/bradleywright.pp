@@ -65,7 +65,9 @@ class people::bradleywright {
     rate => 400
   }
 
-  include gds_development
+  class { 'gds_development':
+    version => '1.5.1',
+  }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
