@@ -5,9 +5,9 @@ set -e
 
 # FIX: only sudo if gem home isn't writable
 
-(/usr/bin/gem list -i bundler -v '~> 1.3.0' > /dev/null) || {
+(/usr/bin/gem list -i bundler -v '~> 1.5.3' > /dev/null) || {
   /usr/bin/sudo -E -p "Need to install Bundler for system ruby, password for sudo: " \
-  /usr/bin/gem install bundler -v '~> 1.3.0' --no-rdoc --no-ri
+  /usr/bin/gem install bundler -v '~> 1.5.3' --no-rdoc --no-ri
 }
 
 # We don't want old config hanging around.
@@ -28,4 +28,4 @@ export PATH=$(pwd)/vendor/shims:$PATH
 /usr/bin/bundle install --binstubs bin --path .bundle --quiet "$@"
 
 # Fix the binstubs to use system ruby
-find bin -type f -print0 | xargs -0 sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
+find bin -not -path 'bin/\.*' -type f -print0 | xargs -0 /usr/bin/sed -i '' 's|/usr/bin/env ruby|/usr/bin/ruby|g'
