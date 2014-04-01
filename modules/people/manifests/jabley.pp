@@ -74,6 +74,7 @@ class people::jabley {
   repo::alphagov { 'puppet-ssl': }
   repo::alphagov { 'service-domain-checker': }
   repo::alphagov { 'servicechecker': }
+  repo::alphagov { 'styleguides': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::alphagov { 'vcloud-tools': }
