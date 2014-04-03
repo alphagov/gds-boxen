@@ -4,7 +4,7 @@ class people::bradleywright {
   include chrome
   include dropbox
   include emacs::head
-  include emacs-keybindings
+  include emacs_keybindings
   include gds_osx::remove_spotlight
   include gds_osx::turn_off_dashboard
   include gds_vpn_profiles
