@@ -8,7 +8,9 @@ class teams::performance-platform {
 
   # Devops™
   include projects::alphagov-deployment
+  include projects::ci-puppet
   include projects::puppet
+  include projects::smokey
 
   # New Devops™ !!!!11!one!!!!
   include teams::performance-platform::puppet
@@ -44,7 +46,6 @@ class teams::performance-platform {
   repo::alphagov { 'transactions-explorer': }
 
   # Shared GDS repos that we rely on
-  repo::alphagov { 'ci-puppet': }
   repo::alphagov { 'govuk_frontend_toolkit': }
   repo::alphagov { 'govuk_frontend_toolkit_npm': }
   repo::alphagov { 'govuk_template': }
@@ -52,7 +53,6 @@ class teams::performance-platform {
   repo::alphagov { 'release': }
   repo::alphagov { 'signonotron2': }
   repo::alphagov { 'slimmer': }
-  repo::alphagov { 'smokey': }
   repo::alphagov { 'static': }
   repo::alphagov { 'styleguides': }
 
