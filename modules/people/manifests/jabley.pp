@@ -45,7 +45,6 @@ class people::jabley {
   include projects::blinken-config
   include projects::calculators
   include projects::ci-deployment
-  include projects::ci-puppet
   include projects::development
   include projects::fabric-scripts
   include projects::frontend
@@ -55,7 +54,6 @@ class people::jabley {
   include projects::redirector
   include projects::router
   include projects::rummager
-  include projects::smokey
   include projects::whitehall
 
   include teams::performance-platform
@@ -74,7 +72,6 @@ class people::jabley {
   repo::alphagov { 'puppet-ssl': }
   repo::alphagov { 'service-domain-checker': }
   repo::alphagov { 'servicechecker': }
-  repo::alphagov { 'styleguides': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
   repo::alphagov { 'vcloud-tools': }
