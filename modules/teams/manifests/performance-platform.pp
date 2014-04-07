@@ -25,11 +25,16 @@ class teams::performance-platform {
   repo::alphagov { 'backdropsend': }
   repo::alphagov { 'backdrop-asset-request-collector': }
   repo::alphagov { 'backdrop-collector': }
+  repo::alphagov { 'backdrop-collector-plugins': }
+  repo::alphagov { 'backdrop-customer-satisfaction-collector': }
   repo::alphagov { 'backdrop-ga-collector': }
   repo::alphagov { 'backdrop-ga-realtime-collector': }
   repo::alphagov { 'backdrop-ga-trending-collector': }
   repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
+  repo::alphagov { 'backdrop-transactions-explorer-collector': }
+  repo::alphagov { 'cheapseats': }
+  repo::alphagov { 'gapy': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
@@ -39,13 +44,17 @@ class teams::performance-platform {
   repo::alphagov { 'transactions-explorer': }
 
   # Shared GDS repos that we rely on
+  repo::alphagov { 'ci-puppet': }
   repo::alphagov { 'govuk_frontend_toolkit': }
   repo::alphagov { 'govuk_frontend_toolkit_npm': }
   repo::alphagov { 'govuk_template': }
   repo::alphagov { 'govuk_template_mustache': }
+  repo::alphagov { 'release': }
   repo::alphagov { 'signonotron2': }
   repo::alphagov { 'slimmer': }
+  repo::alphagov { 'smokey': }
   repo::alphagov { 'static': }
+  repo::alphagov { 'styleguides': }
 
   # Documentation
   repo::alphagov { 'libretto': }
