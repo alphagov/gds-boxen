@@ -22,6 +22,7 @@ class people::dcarley {
 
   # Projects accessible to everyone in Infrastructure
   class { 'teams::infrastructure': manage_gitconfig => false }
+  include gds_ssh_config
   include projects::router
 
   # Projects only accessible to certain staff
