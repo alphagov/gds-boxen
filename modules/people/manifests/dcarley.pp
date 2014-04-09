@@ -29,6 +29,10 @@ class people::dcarley {
   include projects::deployment
   include projects::deployment::creds
 
+  # Other projects
+  include teams::performance-platform
+  include teams::performance-platform::ssh
+
   # These are all Homebrew packages
   package {
     [
