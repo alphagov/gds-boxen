@@ -54,7 +54,7 @@ class teams::performance-platform {
   repo::alphagov { 'signonotron2': }
   repo::alphagov { 'slimmer': }
   repo::alphagov { 'static': }
-  repo::alphagov { 'styleguides': }
+  include projects::styleguides
 
   # Documentation
   repo::alphagov { 'libretto': }

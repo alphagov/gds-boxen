@@ -49,7 +49,7 @@ class people::alexmuller {
 
   repo::alphagov { 'design-principles': }
   repo::alphagov { 'government-service-design-manual': }
-  repo::alphagov { 'styleguides': }
+  include projects::styleguides
   repo::alphagov { 'transformation-dashboard': }
 
   # SSH
