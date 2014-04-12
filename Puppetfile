@@ -79,7 +79,7 @@ mod    "concat",         "1.0.0",
 github "controlplane",   "1.1.0", :repo => "dieterdemeyer/puppet-controlplane"
 github "dropbox",        "1.2.0"
 github "emacs",          "1.1.6", :repo => "bradleywright/puppet-emacs"
-github "emacs-keybindings", "1.0.0", :repo => "bradleywright/puppet-emacs-keybindings"
+github "emacs_keybindings", "2.0.0", :repo => "bradleywright/puppet-emacs-keybindings"
 github "evernote",       "2.0.5"
 github "firefox",        "1.1.8"
 github "flux",           "1.0.0"
