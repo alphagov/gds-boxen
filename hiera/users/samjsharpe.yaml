@@ -1,0 +1,18 @@
+---
+ruby::rbenv_plugins:
+    rbenv-vars:
+        ensure: v1.2.0
+        source: sstephenson/rbenv-vars
+    ruby-build:
+        ensure: v20140408
+        source: sstephenson/ruby-build
+    rbenv-gem-rehash:
+        ensure: v1.0.0
+        source: sstephenson/rbenv-gem-rehash
+    rbenv-default-gems:
+        ensure: v1.0.0
+        source: sstephenson/rbenv-default-gems
+
+ruby::default_gems:
+    - 'bundler ~>1.5.1'
+    - 'deep_merge ~>1.0.1'
