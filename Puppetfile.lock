@@ -353,7 +353,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: bradleywright/puppet-x-dispatch
   specs:
-    x-dispatch (1.0.1)
+    x_dispatch (2.0.0)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-adium
@@ -532,7 +532,7 @@ DEPENDENCIES
   virtualbox (= 1.0.10)
   vmware_fusion (= 1.1.0)
   wget (= 1.0.1)
-  x-dispatch (= 1.0.1)
+  x_dispatch (= 2.0.0)
   xquartz (= 1.1.1)
   zsh (= 1.0.0)
 

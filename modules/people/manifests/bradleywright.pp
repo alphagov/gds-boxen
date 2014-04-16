@@ -20,7 +20,7 @@ class people::bradleywright {
   include qt
   include slate
   include vmware_fusion
-  include x-dispatch
+  include x_dispatch
   include zeus
   include zsh
 
