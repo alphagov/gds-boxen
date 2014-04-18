@@ -28,12 +28,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-android
   specs:
-    android (1.2.0)
+    android (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.5.0)
+    boxen (3.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -68,7 +68,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.1.8)
+    firefox (1.1.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-flux
@@ -108,7 +108,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.6.2)
+    homebrew (1.9.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -128,12 +128,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.7)
+    iterm2 (1.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.4.0)
+    java (1.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-keyremap4macbook
@@ -448,10 +448,10 @@ GITHUBTARBALL
 DEPENDENCIES
   adium (= 1.3.0)
   alfred (= 1.1.8)
-  android (= 1.2.0)
+  android (= 1.2.1)
   antirsi (= 1.0.1)
   banshee (= 1.1.0)
-  boxen (= 3.5.0)
+  boxen (= 3.6.0)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.1.2)
@@ -463,7 +463,7 @@ DEPENDENCIES
   emacs (= 1.1.6)
   emacs_keybindings (= 2.0.0)
   evernote (= 2.0.5)
-  firefox (= 1.1.8)
+  firefox (= 1.1.9)
   flux (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
@@ -473,13 +473,13 @@ DEPENDENCIES
   go (= 2.0.1)
   googledrive (= 1.0.2)
   handbrake (= 1.0.1)
-  homebrew (= 1.6.2)
+  homebrew (= 1.9.0)
   hub (= 1.3.0)
   inifile (= 1.0.3)
   intellij (= 1.5.1)
   istatmenus4 (= 1.1.0)
-  iterm2 (= 1.0.7)
-  java (= 1.4.0)
+  iterm2 (= 1.0.9)
+  java (= 1.5.0)
   keyremap4macbook (= 1.2.2)
   launchbar (= 1.2.0)
   libreoffice (= 4.2.1)
