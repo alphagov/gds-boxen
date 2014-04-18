@@ -45,6 +45,11 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     require => Class['ohmyzsh']
   }
 
+  # Clobber boxen version of Git to use stock homebrew
+  Package <| title == "boxen/brews/git" |> {
+    ensure => "1.9.2"
+  }
+
   # These are all Homebrew packages
   package {
     [
