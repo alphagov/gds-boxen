@@ -204,12 +204,5 @@ class people::jabley {
   include osx::no_network_dsstores
   osx::recovery_message { 'If found, please call +447827 880 857': }
 
-  class security inherits boxen::security {
-    Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
-      value  => 0,
-    }
-  }
-
-  include security
-
+  class {'boxen::security': screensaver_delay_sec => 0 }
 }
