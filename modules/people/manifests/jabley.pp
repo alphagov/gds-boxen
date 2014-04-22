@@ -124,6 +124,7 @@ class people::jabley {
       'gmp',
       'gnu-typist',
       'go',
+      'graphviz',
       'groovy',
       'heroku-toolbelt',
       'httperf',
