@@ -161,6 +161,7 @@ class people::jabley {
       'sdl',
       'sdl_image',
       'sloccount',
+      'smartmontools',
       'ssh-copy-id',
       'sslscan',
       'tarsnap',
