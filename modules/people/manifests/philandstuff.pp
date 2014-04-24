@@ -12,6 +12,11 @@ class people::philandstuff {
 
   include teams::infrastructure
 
+  include nodejs::v0_10
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
+
   package {
     [
       'bash-completion',
