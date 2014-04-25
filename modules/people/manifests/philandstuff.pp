@@ -50,6 +50,7 @@ class people::philandstuff {
 [[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/govuk
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 ',
   }
