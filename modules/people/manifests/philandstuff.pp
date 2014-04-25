@@ -42,13 +42,6 @@ class people::philandstuff {
 
   vagrant::plugin { 'vagrant-cachier': }
 
-  class { 'gds_ssh_config': }
-  ssh_config::fragment {'user':
-    content => '
-Host *
-  User ppotter
-'}
-
   $home = "/Users/${::luser}"
 
   file {"${home}/.bashrc":
