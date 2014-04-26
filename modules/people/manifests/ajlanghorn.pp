@@ -53,7 +53,6 @@ class people::ajlanghorn {
       'openssl',
       'swaks',
       'tmux',
-      'wget',
     ]:
     ensure => present,
   }
