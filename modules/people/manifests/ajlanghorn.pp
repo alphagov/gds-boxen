@@ -49,7 +49,6 @@ class people::ajlanghorn {
       'findutils',
       'git',
       'gnu-sed',
-      'gnupg',
       'graphviz',
       'openssl',
       'swaks',
