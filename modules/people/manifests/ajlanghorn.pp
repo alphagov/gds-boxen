@@ -42,7 +42,6 @@ class people::ajlanghorn {
   # These are all Homebrew packages
   package {
     [
-      'ack',
       'autojump',
       'automake',
       'bash-completion',
