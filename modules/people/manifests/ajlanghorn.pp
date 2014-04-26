@@ -71,11 +71,5 @@ class people::ajlanghorn {
     logoutput   => true,
     refreshonly => true,
   }
-  
-  boxen::osx_defaults { 'Do not create .DS_Store':
-    key         =>  'DSDontWriteNetworkStores',
-    domain      =>  'com.apple.dashboard',
-    value       =>  'true',
-  }
 
 }
