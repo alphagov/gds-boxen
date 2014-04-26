@@ -3,7 +3,7 @@ class people::ajlanghorn {
   include caffeine
   include chrome
   include encfs
-  include gds-resolver
+  include gds_resolver
   include gds_vpn_profiles
   include git
   include iterm2::stable
