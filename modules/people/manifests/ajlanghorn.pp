@@ -7,7 +7,6 @@ class people::ajlanghorn {
   include gds_vpn_profiles
   include git
   include iterm2::stable
-  include osx
   include spotify
   include turn-off-dashboard
   include vagrant
