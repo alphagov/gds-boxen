@@ -59,7 +59,7 @@ class people::ajlanghorn {
 
   $home               = "/Users/${::luser}"
   $projects           = "${home}/projects"
-  $projects_personal  = "${home}/personal
+  $projects_personal  = "${home}/personal"
 
   file { [$projects, $projects_personal]:
     ensure => directory,
