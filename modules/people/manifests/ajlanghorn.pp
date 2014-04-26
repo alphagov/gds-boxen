@@ -8,10 +8,10 @@ class people::ajlanghorn {
   include git
   include iterm2::stable
   include spotify
-  include turn-off-dashboard
+  include gds_osx::turn_off_dashboard
   include vagrant
   include vim
-  include virtualbox
+  include gds_virtualbox
   include wget
 
 # zsh is the shell
@@ -72,6 +72,12 @@ class people::ajlanghorn {
     cwd         => $dotfiles,
     logoutput   => true,
     refreshonly => true,
+  }
+  
+  boxen::osx_defaults { 'Do not create .DS_Store':
+    key         =>  'DSDontWriteNetworkStores',
+    domain      =>  'com.apple.dashboard',
+    value       =>  'true',
   }
 
 }
