@@ -45,7 +45,6 @@ class people::ajlanghorn {
       'autojump',
       'automake',
       'bash-completion',
-      'findutils',
       'git',
       'gnu-sed',
       'graphviz',
