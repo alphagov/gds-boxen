@@ -22,7 +22,6 @@ class people::samjsharpe::packages {
   include spectacle
   include spf13vim3
   include stay
-  include unarchiver
   include vagrant
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-dns': }
