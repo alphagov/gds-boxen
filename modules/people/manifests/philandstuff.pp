@@ -55,6 +55,10 @@ source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 ',
   }
 
+  file { "${home}/.lein/profiles.clj":
+    content => "{:user {:plugins [[lein-kibit \"0.0.8\"]]}}\n",
+  }
+
   repository { "${home}/.emacs.d":
     source => 'git@github.com:philandstuff/dot-emacs.git',
   }
