@@ -156,6 +156,7 @@ class people::jabley {
       'pv',
       'R',
       'redis',
+      's3cmd',
       'sbt',
       'scala',
       'sdl',
