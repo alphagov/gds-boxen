@@ -190,11 +190,5 @@ class people::bradleywright {
     value => "~/.gitignore"
   }
 
-  class security inherits boxen::security {
-    Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
-      value  => 0,
-    }
-  }
-
-  include security
+  class {'boxen::security': screensaver_delay_sec => 0 }
 }
