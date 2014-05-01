@@ -26,9 +26,7 @@ class people::kushalp {
   include osx::global::expand_save_dialog
   include osx::no_network_dsstores
 
-  class { 'gds_development':
-    version => '1.5.1',
-  }
+  class { 'gds_development': version => '1.5.1' }
 
   osx::recovery_message { 'If found, please call +44 7788 948 158': }
 
@@ -38,4 +36,12 @@ class people::kushalp {
   repository { "${home}/.emacs.d":
     source => 'git@github.com:kushalp/emacs-starter-kit.git',
   }
+
+  class security inherits boxen::security {
+    Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
+      value  => 0,
+    }
+  }
+
+  include security
 }
