@@ -170,6 +170,9 @@ class people::bradleywright {
      ]:
   }
 
+  homebrew::tap { 'homebrew/binary': }
+  package { 'packer': }
+
   file { '/usr/local/bin/pdfinfo':
     ensure  => link,
     target  => '/opt/boxen/homebrew/bin/pdfinfo',
