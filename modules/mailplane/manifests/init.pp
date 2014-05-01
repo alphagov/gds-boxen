@@ -7,6 +7,6 @@
 class mailplane {
   package { 'Mailplane 3':
     provider => 'compressed_app',
-    source   => 'http://update.mailplaneapp.com/mailplane_3.php'
+    source   => 'http://dist.mailplaneapp.com/builds/Mailplane_3_939.tbz',
   }
 }
