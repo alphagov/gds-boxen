@@ -11,7 +11,7 @@ class people::bradleywright {
   include gds_resolver
   include flux
   include iterm2::dev
-  include mailplane::beta
+  include mailplane
   include nginx
   include nodejs::v0_10
   include notational_velocity::nvalt
