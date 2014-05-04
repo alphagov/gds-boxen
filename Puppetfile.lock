@@ -33,7 +33,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.6.0)
+    boxen (3.6.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -193,7 +193,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-packer
   specs:
-    packer (1.2.0)
+    packer (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -248,7 +248,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-slack
   specs:
-    slack (1.0.4)
+    slack (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-slate
@@ -398,7 +398,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: jozefizso/puppet-sublime_text_3
   specs:
-    sublime_text_3 (1.0.2)
+    sublime_text_3 (1.0.3)
 
 GITHUBTARBALL
   remote: norm/puppet-antirsi
@@ -451,7 +451,7 @@ DEPENDENCIES
   android (= 1.2.1)
   antirsi (= 1.0.1)
   banshee (= 1.1.0)
-  boxen (= 3.6.0)
+  boxen (= 3.6.1)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.1.2)
@@ -497,7 +497,7 @@ DEPENDENCIES
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.2.2)
-  packer (= 1.2.0)
+  packer (= 1.2.1)
   perl (= 1.1.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
@@ -511,7 +511,7 @@ DEPENDENCIES
   screen (= 1.0.0)
   sizeup (= 1.0.0)
   skype (= 1.0.8)
-  slack (= 1.0.4)
+  slack (= 1.0.5)
   slate (= 1.0.0)
   sparrow (= 1.0.0)
   spectacle (= 1.0.0)
@@ -520,7 +520,7 @@ DEPENDENCIES
   stay (= 1.0.0)
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
-  sublime_text_3 (= 1.0.2)
+  sublime_text_3 (= 1.0.3)
   sudo (= 1.0.0)
   sysctl (= 1.0.1)
   textmate (= 1.1.0)

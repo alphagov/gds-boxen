@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.6.0"
+github "boxen", "3.6.1"
 
 # Support for default hiera data in modules
 
@@ -102,7 +102,7 @@ github "ohmyzsh",        "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
 github "omnifocus",      "1.0.1"
 github "onepassword",    "1.1.0"
 github "osx",            "2.2.2"
-github "packer",         "1.2.0"
+github "packer",         "1.2.1"
 github "perl",           "1.1.0", :repo => "boxelly/puppet-perl"
 github "propane",        "0.0.1", :repo => "technicalpickles/puppet-propane"
 github "pycharm",        "1.0.4"
@@ -111,7 +111,7 @@ github "qt",             "1.2.2"
 github "rubymine",       "1.1.0"
 github "screen",         "1.0.0"
 github "sizeup",         "1.0.0"
-github "slack",          "1.0.4"
+github "slack",          "1.0.5"
 github "skype",          "1.0.8"
 github "slate",          "1.0.0"
 github "sparrow",        "1.0.0"
@@ -120,7 +120,7 @@ github "spf13vim3",      "1.0.0", :repo => "samjsharpe/puppet-spf13vim3"
 github "spotify",        "1.0.1"
 github "stay",           "1.0.0", :repo => "bradleywright/puppet-stay"
 github "sublime_text_2", "1.1.2"
-github "sublime_text_3", "1.0.2", :repo => "jozefizso/puppet-sublime_text_3"
+github "sublime_text_3", "1.0.3", :repo => "jozefizso/puppet-sublime_text_3"
 github "sysctl",         "1.0.1"
 github "textmate",       "1.1.0"
 github "transmission",   "1.1.0"
