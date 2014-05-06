@@ -7,8 +7,8 @@ class people::bradleywright {
   include emacs_keybindings
   include gds_osx::remove_spotlight
   include gds_osx::turn_off_dashboard
-  include gds_vpn_profiles
   include gds_resolver
+  include gds_vpn_profiles
   include flux
   include iterm2::dev
   include mailplane
