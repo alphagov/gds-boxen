@@ -1,5 +1,6 @@
+
 # -*- mode: conf; -*-
-Host dev
+Host dev development
   User vagrant
   ForwardAgent yes
   IdentityFile ~/.vagrant.d/insecure_private_key
