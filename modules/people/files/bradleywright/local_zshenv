@@ -5,3 +5,5 @@
 
 # hub is too slow - this is aliased in opt/boxen/env.sh, so we need to undo it afterwards
 unalias git
+
+export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
