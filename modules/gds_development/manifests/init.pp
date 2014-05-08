@@ -4,7 +4,7 @@
 #
 #  include gds_development
 #
-class gds_development($version = '1.4.2') {
+class gds_development($version = '1.5.3') {
   # Puppet is used to make VMs
   include projects::puppet
 
