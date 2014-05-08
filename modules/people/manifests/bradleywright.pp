@@ -67,7 +67,7 @@ class people::bradleywright {
   }
 
   class { 'gds_development':
-    version => '1.5.1',
+    version => '1.5.3',
   }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
