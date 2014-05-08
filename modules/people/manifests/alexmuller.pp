@@ -62,10 +62,11 @@ class people::alexmuller {
   }
 
   # Git
+  git::config::global { 'alias.master': value => '!git checkout master && git pull origin master' }
   git::config::global { 'color.ui': value => 'true' }
   git::config::global { 'user.name': value => 'Alex Muller' }
   git::config::global { 'user.email': value => 'alex.muller@digital.cabinet-office.gov.uk' }
-  git::config::global { 'alias.master': value => '!git checkout master && git pull origin master' }
+  git::config::global { 'rebase.autosquash': value => 'true' }
 
   # Homebrew packages
   # Remember to read the post-install caveats
@@ -77,6 +78,11 @@ class people::alexmuller {
       'wget',
     ]:
     ensure => present,
+  }
+
+  # Ack config
+  file { "${home_directory}/.ackrc":
+    source => 'puppet:///modules/people/alexmuller/ackrc',
   }
 
   # Vim config
