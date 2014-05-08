@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/">
+  <ServerList>
+    <HostEntry>
+      <HostName>Carrenza - Secure</HostName>
+      <HostAddress>https://secure.carrenza.com</HostAddress>
+      <PrimaryProtocol>SSL</PrimaryProtocol>
+    </HostEntry>
+  </ServerList>
+</AnyConnectProfile>
