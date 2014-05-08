@@ -84,6 +84,13 @@ class people::jabley {
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
+  # All my SSH belong
+  class { 'gds_ssh_config': }
+  class { 'teams::performance-platform::ssh': }
+  ssh_config::fragment {"user":
+    content => template('people/jabley/ssh_config'),
+  }
+
   class { 'intellij':
       edition => 'community',
       version => '13.0.2',

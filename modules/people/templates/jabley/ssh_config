@@ -1,0 +1,56 @@
+
+# Try to maintain ssh sessions on OS X
+ServerAliveInterval 300
+
+Compression yes
+
+#
+# Cornerhost
+#
+Host va
+  HostName vanadium.sabren.com
+
+#
+# Github
+#
+Host github.com
+    User git
+    Hostname github.com
+    IdentityFile ~/.ssh/id_rsa
+
+#
+# BitBucket
+#
+Host bb
+  HostName bitbucket.org
+  User hg
+
+#
+# VMWare Fusion host
+#
+Host dev development
+  User vagrant
+  IdentityFile ~/.vagrant.d/insecure_private_key
+  HostName 10.221.199.8
+  ForwardAgent yes
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+#
+# AWS legacy (for EFG)
+#
+Host preview-frontend
+  Hostname ec2-46-51-151-203.eu-west-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/beta.pem
+
+Host production-frontend
+  Hostname ec2-176-34-209-225.eu-west-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/beta.pem
+
+#
+# Fallback
+#
+Host *
+  User jabley
