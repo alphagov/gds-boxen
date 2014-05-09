@@ -191,4 +191,26 @@ class people::bradleywright {
   }
 
   class {'boxen::security': screensaver_delay_sec => 0 }
+
+  # Keyboard hacks
+  include keyremap4macbook
+  include keyremap4macbook::login_item
+
+  # Tap Ctrl_l for <esc>, hold for <ctrl>
+  keyremap4macbook::remap{ 'controlL2controlL_escape': }
+  keyremap4macbook::set{ 'parameter.keyoverlaidmodifier_timeout':
+    value => '300'
+  }
+  keyremap4macbook::set{ 'repeat.keyoverlaidmodifier_initial_wait':
+    value => '400'
+  }
+
+  keyremap4macbook::private_xml{ 'private.xml':
+    source => 'puppet:///modules/people/bradleywright/private.xml'
+  }
+
+  keyremap4macbook::remap{ 'space_cadet.force_correct_shifts': }
+
+  # For external keyboard
+  keyremap4macbook::remap{ ['remap.pc_application2fn', 'remap.pc_printscreen_scrolllock_pause_to_volume_controls']: }
 }

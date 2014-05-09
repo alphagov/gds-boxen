@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Force yourself to use the correct shift keys.</name>
+    <identifier>space_cadet.force_correct_shifts</identifier>
+
+    <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+
+    <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+  </item>
+  <item>
+    <name>Tarmak transitional layout</name>
+    <!-- http://forum.colemak.com/viewtopic.php?pid=8786#p8786 -->
+    <item>
+      <name>Tarmak1(E) transitional layout (E&gt;K&gt;N&gt;J)</name>
+      <identifier>private.tarmak.tarmak_1_e</identifier>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::J</autogen>
+    </item>
+    <item>
+      <name>Tarmak2(ET) transitional layout (G&gt;T&gt;F&gt;E&gt;K&gt;N&gt;J)</name>
+      <identifier>private.tarmak.tarmak_2_et</identifier>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+    </item>
+    <item>
+      <name>Tarmak3(ETO) transitional layout (G&gt;T&gt;F&gt;E&gt;K&gt;N&gt;J&gt;Y&gt;O&gt;;)</name>
+      <identifier>private.tarmak.tarmak_3_eto</identifier>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::Y</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::O</autogen>
+    </item>
+    <item>
+      <name>Tarmak3(ETS) alternative transitional layout (R&gt;S&gt;D&gt;G&gt;T&gt;F&gt;E&gt;K&gt;N&gt;J)</name>
+      <identifier>private.tarmak.tarmak_3_ets</identifier>
+      <autogen>__KeyToKey__ KeyCode::R, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, KeyCode::R</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::S</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::D</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+    </item>
+    <item>
+      <name>Tarmak4(ETOI) transitional layout (G&gt;T&gt;F&gt;E&gt;K&gt;N&gt;J&gt;Y&gt;O&gt;; &amp; L&gt;U&gt;I)</name>
+      <identifier>private.tarmak.tarmak_4_etoi</identifier>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::Y</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::O</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, KeyCode::U</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, KeyCode::L</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, KeyCode::I</autogen>
+    </item>
+    <item>
+      <name>Tarmak4(ETSO) alternative transitional layout (Y&gt;O&gt;;&gt;P&gt;R&gt;S&gt;D&gt;G&gt;T&gt;F&gt;E&gt;K&gt;N&gt;J)</name>
+      <identifier>private.tarmak.tarmak_4_etso</identifier>
+      <autogen>__KeyToKey__ KeyCode::Y, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::Y</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::O</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, KeyCode::P</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, KeyCode::R</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::S</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::D</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::N</autogen>
+    </item>
+  </item>
+</root>
