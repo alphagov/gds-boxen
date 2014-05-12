@@ -3,7 +3,6 @@ class people::bradleywright {
   include alfred
   include chrome
   include dropbox
-  include emacs::head
   include emacs_keybindings
   include gds_osx::remove_spotlight
   include gds_osx::turn_off_dashboard
@@ -214,4 +213,27 @@ class people::bradleywright {
 
   # For external keyboard
   keyremap4macbook::remap { ['remap.pc_application2fn', 'remap.pc_printscreen_scrolllock_pause_to_volume_controls']: }
+
+  # Emacs
+  package { 'Emacs':
+    provider => 'appdmg',
+    source   => 'http://emacsformacosx.com/emacs-builds/Emacs-pretest-24.3.91-universal-10.6.8.dmg',
+    notify   => Exec['fix-emacs-termcap'],
+  }
+
+  # So ansi-term behaves itself: http://stackoverflow.com/a/8920373
+  exec { 'fix-emacs-termcap':
+    command     => 'tic -o \
+      ~/.terminfo \
+      /Applications/Emacs.app/Contents/Resources/etc/e/eterm-color.ti',
+    provider    => shell,
+    refreshonly => true,
+  }
+
+  file { "${boxen::config::envdir}/emacs-macosx.sh":
+    content => "export PATH=/Applications/Emacs.app/Contents/MacOS/bin:\$PATH
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs-10.7
+",
+    require => File[$boxen::config::envdir],
+  }
 }
