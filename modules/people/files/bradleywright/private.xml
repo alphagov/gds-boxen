@@ -1,41 +1,80 @@
 <?xml version="1.0"?>
 <root>
   <item>
-    <name>Force yourself to use the correct shift keys.</name>
-    <identifier>space_cadet.force_correct_shifts</identifier>
+    <name>Space Cadet Keyboard Hacks</name>
+    <item>
+      <name>Force yourself to use the correct shift keys.</name>
+      <identifier>space_cadet.force_correct_shifts</identifier>
 
-    <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
 
-    <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
-    <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    </item>
+
+    <item>
+      <name>Force yourself to use the correct command keys.</name>
+      <identifier>space_cadet.force_correct_commands</identifier>
+
+      <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::COMMAND_L, KeyCode::VK_NONE</autogen>
+
+      <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+      <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::COMMAND_R, KeyCode::VK_NONE</autogen>
+    </item>
   </item>
-  <item>
+ <item>
     <name>Tarmak transitional layout</name>
     <!-- http://forum.colemak.com/viewtopic.php?pid=8786#p8786 -->
     <item>

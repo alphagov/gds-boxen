@@ -197,20 +197,21 @@ class people::bradleywright {
   include keyremap4macbook::login_item
 
   # Tap Ctrl_l for <esc>, hold for <ctrl>
-  keyremap4macbook::remap{ 'controlL2controlL_escape': }
-  keyremap4macbook::set{ 'parameter.keyoverlaidmodifier_timeout':
+  keyremap4macbook::remap { 'controlL2controlL_escape': }
+  keyremap4macbook::set { 'parameter.keyoverlaidmodifier_timeout':
     value => '300'
   }
-  keyremap4macbook::set{ 'repeat.keyoverlaidmodifier_initial_wait':
+  keyremap4macbook::set { 'repeat.keyoverlaidmodifier_initial_wait':
     value => '400'
   }
 
-  keyremap4macbook::private_xml{ 'private.xml':
+  keyremap4macbook::private_xml { 'private.xml':
     source => 'puppet:///modules/people/bradleywright/private.xml'
   }
 
-  keyremap4macbook::remap{ 'space_cadet.force_correct_shifts': }
+  keyremap4macbook::remap { 'space_cadet.force_correct_shifts': }
+  keyremap4macbook::remap { 'space_cadet.force_correct_commands': }
 
   # For external keyboard
-  keyremap4macbook::remap{ ['remap.pc_application2fn', 'remap.pc_printscreen_scrolllock_pause_to_volume_controls']: }
+  keyremap4macbook::remap { ['remap.pc_application2fn', 'remap.pc_printscreen_scrolllock_pause_to_volume_controls']: }
 }
