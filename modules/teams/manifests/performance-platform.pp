@@ -57,7 +57,7 @@ class teams::performance-platform {
   include projects::styleguides
 
   # Documentation
-  repo::alphagov { 'libretto': }
+  repo::alphagov { 'performanceplatform-documentation': }
   repo::alphagov { 'performance-platform': }
 
   # Office-y things
