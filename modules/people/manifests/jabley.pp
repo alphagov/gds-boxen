@@ -37,7 +37,6 @@ class people::jabley {
   include sublime_text_2
   include travis
   include transmission
-  include vagrant
   include vmware_fusion
 
 
@@ -51,7 +50,6 @@ class people::jabley {
   include projects::frontend
   include projects::govuk_content_api
   include projects::private-utils
-  include projects::puppet
   include projects::redirector
   include projects::router
   include projects::rummager
@@ -89,6 +87,10 @@ class people::jabley {
   class { 'teams::performance-platform::ssh': }
   ssh_config::fragment {"user":
     content => template('people/jabley/ssh_config'),
+  }
+
+  class { 'gds_development':
+    version => '1.6.2',
   }
 
   class { 'intellij':
