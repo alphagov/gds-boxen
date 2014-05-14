@@ -21,11 +21,12 @@ class people::samjsharpe::packages {
   include spf13vim3
   include stay
   include vagrant
-  vagrant::plugin { 'vagrant-cachier': }
-  vagrant::plugin { 'vagrant-dns': }
-  vagrant::plugin { 'vagrant-global-status': }
-  vagrant::plugin { 'vagrant-vbguest': }
-  vagrant::plugin { 'vagrant-vmware-fusion': }
+  vagrant::plugin { 'cachier': }
+  vagrant::plugin { 'dns': }
+  vagrant::plugin { 'vmware-fusion': }
+  vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
+    ensure => absent,
+  }
   include virtualbox
   include vmware_fusion
 
