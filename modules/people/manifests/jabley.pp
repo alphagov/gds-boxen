@@ -8,6 +8,7 @@ class people::jabley {
   include clojure
   include chrome
   include dropbox
+  include encfs
   include evernote
   include firefox
   include flux
