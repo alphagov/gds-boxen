@@ -24,6 +24,7 @@ class people::samjsharpe::packages {
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'dns': }
   vagrant::plugin { 'vmware-fusion': }
+  vagrant::plugin { 'multiprovider-snap': }
   vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
     ensure => absent,
   }
