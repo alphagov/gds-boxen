@@ -15,8 +15,11 @@ class people::dcarley {
   include zsh
   include ohmyzsh
 
-  vagrant::plugin { 'vagrant-cachier': }
-  vagrant::plugin { 'vagrant-zz-multiprovider-snap': }
+  vagrant::plugin { 'cachier': }
+  vagrant::plugin { 'multiprovider-snap': }
+  vagrant::plugin { 'vagrant-zz-multiprovider-snap':
+    ensure => absent,
+  }
 
   class { 'osx::dock::icon_size': size => 40 }
 
