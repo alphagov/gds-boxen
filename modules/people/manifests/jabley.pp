@@ -55,6 +55,9 @@ class people::jabley {
   include projects::router
   include projects::rummager
   include projects::whitehall
+  include projects::vcloud-core
+  include projects::vcloud-walker
+  include projects::vcloudtools
 
   include teams::performance-platform
   include teams::efg
@@ -74,7 +77,6 @@ class people::jabley {
   repo::alphagov { 'servicechecker': }
   repo::alphagov { 'transition-stats': }
   repo::alphagov { 'transformation-dashboard': }
-  repo::alphagov { 'vcloud-tools': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
   repo::gds      { 'licensify': }
