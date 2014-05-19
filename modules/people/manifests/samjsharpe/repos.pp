@@ -21,12 +21,16 @@ class people::samjsharpe::repos {
 
     # GDS Repos
     people::samjsharpe::repos::gds {[
+        'gds/alphagov-deployment',
         'gds/deployment',
         'gds/development',
         'gds/env-sync-and-backup',
+        'gds/govuk-provisioning',
         'gds/opsmanual',
         'gds/private-utils',
-        'gds/puppet'
+        'gds/puppet',
+        'gds/vcloud-provisioner',
+        'gds/vcloud-templates'
         ]:}
 
     file {"${boxen::config::srcdir}/gds/puppet/development/Vagrantfile.localconfig":
@@ -35,13 +39,18 @@ class people::samjsharpe::repos {
     }
 
     people::samjsharpe::repos::gh  {[
-        'alphagov/ci-puppet',
-        'alphagov/boxgrinder-appliances',
+        'alphagov/boxes',
         'alphagov/fabric-scripts',
-        'alphagov/machine-bootstrap',
+        'alphagov/government-service-design-manual',
+        'alphagov/nagios-plugins',
         'alphagov/service-domain-checker',
-        'alphagov/ubuntu-1204-dev',
-        'alphagov/vcloud-tools'
+        'alphagov/smokey',
+        'alphagov/unicornherder',
+        'alphagov/vagrant-govuk',
+        'alphagov/vcloud-box-spinner',
+        'alphagov/vcloud-net-spinner',
+        'alphagov/vcloud-tools',
+        'alphagov/vcloud-walker'
         ]:}
 
     people::samjsharpe::repos::gh {[
