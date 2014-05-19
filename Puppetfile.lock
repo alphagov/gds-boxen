@@ -361,11 +361,6 @@ GITHUBTARBALL
     adium (1.3.0)
 
 GITHUBTARBALL
-  remote: dieterdemeyer/puppet-controlplane
-  specs:
-    controlplane (1.1.0)
-
-GITHUBTARBALL
   remote: dieterdemeyer/puppet-github_for_mac
   specs:
     github_for_mac (1.4.0)
@@ -457,7 +452,6 @@ DEPENDENCIES
   chrome (= 1.1.2)
   clojure (= 1.2.0)
   concat (= 1.0.0)
-  controlplane (= 1.1.0)
   dnsmasq (= 1.0.1)
   dropbox (= 1.2.0)
   emacs (= 1.1.6)

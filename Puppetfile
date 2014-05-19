@@ -76,7 +76,6 @@ github "clojure",        "1.2.0"
 mod    "concat",         "1.0.0",
   :git => "git://github.com/puppetlabs/puppetlabs-concat.git",
   :ref => '1.0.0'
-github "controlplane",   "1.1.0", :repo => "dieterdemeyer/puppet-controlplane"
 github "dropbox",        "1.2.0"
 github "emacs",          "1.1.6", :repo => "bradleywright/puppet-emacs"
 github "emacs_keybindings", "2.0.0", :repo => "bradleywright/puppet-emacs-keybindings"
