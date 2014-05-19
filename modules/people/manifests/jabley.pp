@@ -8,7 +8,6 @@ class people::jabley {
   include clojure
   include chrome
   include dropbox
-  include encfs
   include evernote
   include firefox
   include flux
@@ -16,9 +15,7 @@ class people::jabley {
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_vpn_profiles
-  include git
   include gitx::dev
-  include gnupg
   include googledrive
   include handbrake
   include imagealpha
@@ -46,6 +43,7 @@ class people::jabley {
   include projects::blinken-config
   include projects::calculators
   include projects::ci-deployment
+  include projects::deployment::creds
   include projects::development
   include projects::fabric-scripts
   include projects::frontend
