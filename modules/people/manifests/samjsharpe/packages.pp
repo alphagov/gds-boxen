@@ -56,6 +56,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'colordiff',
       'ctags',
       'dtrx',
+      'encfs',
       'fping',
       'gpg-agent',
       'heroku-toolbelt',
