@@ -37,6 +37,8 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-transactions-explorer-collector': }
   repo::alphagov { 'cheapseats': }
   repo::alphagov { 'gapy': }
+  repo::alphagov { 'performanceplatform-collector': }
+  repo::alphagov { 'performanceplatform-collector-config': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
