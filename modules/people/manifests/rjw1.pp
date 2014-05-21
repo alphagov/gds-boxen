@@ -1,11 +1,9 @@
 class people::rjw1 {
   include chrome
   include firefox
-  include encfs
   include gds_vpn_profiles
   include openconnect
   include git
-  include gnupg
   include iterm2::stable
   include vagrant
   include gds_virtualbox

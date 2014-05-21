@@ -4,14 +4,12 @@ class people::bruntonspall {
   include caffeine
   include chrome
   include dropbox
-  include encfs
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include java
   include intellij
   include iterm2::dev
   include git
-  include gnupg
   include gitx::dev
   include sublime_text_2
   include vagrant
@@ -61,6 +59,8 @@ class people::bruntonspall {
 
   package {
     [
+      'encfs',
+      'gnupg',
       'offline-imap',
       'app-engine-java-sdk',
       'mutt',

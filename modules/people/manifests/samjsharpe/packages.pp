@@ -7,7 +7,6 @@ class people::samjsharpe::packages {
   include gds_resolver
   include gds_vpn_profiles
   include googledrive
-  include gnupg
   include hub
   include iterm2::stable
   include macvim
@@ -59,6 +58,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'encfs',
       'fping',
       'gpg-agent',
+      'gnupg',
       'heroku-toolbelt',
       'htop-osx',
       'nmap',

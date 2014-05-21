@@ -2,7 +2,6 @@ class people::ajlanghorn {
   include adium
   include caffeine
   include chrome
-  include encfs
   include gds_resolver
   include gds_vpn_profiles
   include git

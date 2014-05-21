@@ -5,7 +5,6 @@ class people::carlmassa {
   include gds_resolver
   include github_for_mac
   include gitx::dev
-  include gnupg
   include googledrive
   include hub
   include iterm2::stable
