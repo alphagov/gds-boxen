@@ -223,7 +223,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (7.3.0)
+    ruby (8.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-rubymine
@@ -500,7 +500,7 @@ DEPENDENCIES
   python (= 1.1.2)
   qt (= 1.3.1)
   repository (= 2.3.0)
-  ruby (= 7.3.0)
+  ruby (= 8.0.3)
   rubymine (= 1.1.0)
   screen (= 1.0.0)
   sizeup (= 1.0.0)

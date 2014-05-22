@@ -1,3 +1,5 @@
 class zeus {
-  ruby::all::gem {'zeus': }
+  ruby_gem {'zeus':
+    ruby_version => '*',
+  }
 }

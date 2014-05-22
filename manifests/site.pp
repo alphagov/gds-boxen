@@ -56,40 +56,6 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
-define ruby::all::gem (
-    $version = undef,
-    $ensure = present
-  ){
-  ruby::gem {"${name}-1.8.7":
-    ensure => $ensure,
-    gem     => $name,
-    ruby    => '1.8.7',
-    require => Ruby::Version['1.8.7'],
-    version => $version,
-  }
-  ruby::gem {"${name}-1.9.2":
-    ensure => $ensure,
-    gem     => $name,
-    ruby    => '1.9.2',
-    require => Ruby::Version['1.9.2'],
-    version => $version,
-  }
-  ruby::gem {"${name}-1.9.3":
-    ensure => $ensure,
-    gem     => $name,
-    ruby    => '1.9.3',
-    require => Ruby::Version['1.9.3'],
-    version => $version,
-  }
-  ruby::gem {"${name}-2.0.0":
-    ensure => $ensure,
-    gem     => $name,
-    ruby    => '2.0.0',
-    require => Ruby::Version['2.0.0'],
-    version => $version,
-  }
-}
-
 node default {
   # core modules, needed for most things
   include git
@@ -108,6 +74,12 @@ node default {
   ruby::version {'2.0.0': }
   ruby::version {'2.1.0': }
   ruby::version {'2.1.1': }
+
+  ruby_gem { 'bundler for all rubies':
+    gem          => 'bundler',
+    version      => '~> 1.5.3',
+    ruby_version => '*',
+  }
 
   # common, useful packages
   package {
