@@ -219,4 +219,11 @@ class people::jabley {
   osx::recovery_message { 'If found, please call +447827 880 857': }
 
   class {'boxen::security': screensaver_delay_sec => 0 }
+
+  sysctl::set { 'kern.maxfiles':
+    value => '32000'
+  }
+  sysctl::set { 'kern.maxfilesperproc':
+    value => '28000'
+  }
 }
