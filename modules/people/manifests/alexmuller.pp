@@ -29,7 +29,7 @@ class people::alexmuller {
 
   # Dev VM
   include vagrant
-  include gds_virtualbox::42_latest
+  include gds_virtualbox::latest
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 

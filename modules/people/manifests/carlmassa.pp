@@ -17,7 +17,7 @@ class people::carlmassa {
   include vagrant
   vagrant::plugin { 'vagrant-dns': }
   vagrant::plugin { 'vagrant-vbguest': }
-  include gds_virtualbox::42_latest
+  include gds_virtualbox::latest
 
   # Projects accessible to everyone in Infrastructure
   class { 'teams::infrastructure': manage_gitconfig => false }
