@@ -1,6 +1,6 @@
 class people::benilovj {
   ## Remove the # from any of the below to install that software
-  include gds_virtualbox::42_latest
+  include gds_virtualbox::latest
 
   class { 'intellij':
       edition => 'community',
