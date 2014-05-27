@@ -8,7 +8,6 @@ class people::mattbostock {
   include gds_vpn_profiles
   include git
   include gitx
-  include gnupg
   include mysql
   include openconnect
   include screen
