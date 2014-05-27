@@ -18,7 +18,8 @@ class gds_development($version = '1.5.3') {
   vagrant::plugin { 'vagrant-dns': }
 
   # Make sure we remove the old gems
-  ruby::all::gem {'vagrant':
-    ensure => absent,
+  ruby_gem {'vagrant':
+    ensure       => absent,
+    ruby_version => '*',
   }
 }
