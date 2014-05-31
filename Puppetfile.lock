@@ -31,6 +31,11 @@ GITHUBTARBALL
     android (1.2.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-atom
+  specs:
+    atom (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.6.1)
@@ -445,6 +450,7 @@ DEPENDENCIES
   alfred (= 1.1.8)
   android (= 1.2.1)
   antirsi (= 1.0.1)
+  atom (= 1.0.0)
   banshee (= 1.1.0)
   boxen (= 3.6.1)
   caffeine (= 1.0.0)
