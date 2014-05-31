@@ -1,21 +1,46 @@
 class people::bruntonspall {
-  include alfred
-  include antirsi
-  include caffeine
-  include chrome
-  include dropbox
+# System stuff
   include gds_osx::turn_off_dashboard
+  include gds_osx::remove_spotlight
   include gds_resolver
-  include java
-  include intellij
+  include gds_development
+  include gds_vpn_profiles
+  include gds_resolver
+  include gds_virtualbox
+
+# Terminal apps
   include iterm2::dev
   include git
   include gitx::dev
-  include sublime_text_2
   include vagrant
-  include gds_virtualbox
+  include java
   include wget
 
+# Apps I use
+  include alfred
+  include antirsi
+  include atom
+  include caffeine
+  include chrome
+  include dropbox
+  include googledrive
+  include slack
+  include skype
+
+# Projects
+  include projects::deployment::creds
+  include projects::development
+  include projects::frontend
+  include projects::router
+  repo::alphagov { 'design-patterns': }
+  repo::alphagov { 'government-service-design-manual': }
+  repo::alphagov { 'service-domain-checker': }
+  repo::alphagov { 'servicechecker': }
+  repo::alphagov { 'transformation-dashboard': }
+
+  class { 'intellij':
+      edition => 'ultimate'
+  }
 
   $work = "${home}/work"
   $projects = "${home}/projects"
@@ -50,6 +75,7 @@ class people::bruntonspall {
     user => $::luser,
   }
 
+# Configure some osx settings
   include osx::no_network_dsstores
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
@@ -57,18 +83,30 @@ class people::bruntonspall {
 
 
 
+# Tools needed for my mutt/offlineimap mail setup
   package {
     [
-      'encfs',
-      'gnupg',
       'offline-imap',
-      'app-engine-java-sdk',
       'mutt',
       'urlview',
-      'links',
+      'links'
+    ]:
+    ensure => present,
+  }
+
+# Other brew packages
+  package {
+    [
       'htop-osx',
       'ssh-copy-id',
-      'bash-completion'
+      'bash-completion',
+      'scala',
+      'sbt',
+      'giter8',
+      'go',
+      'python',
+      'vim',
+      'bash-completion2'
     ]:
     ensure => present,
   }
