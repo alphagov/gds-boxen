@@ -68,7 +68,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.2.0)
+    firefox (1.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-flux
@@ -253,7 +253,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-slate
   specs:
-    slate (1.0.0)
+    slate (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sparrow
@@ -457,7 +457,7 @@ DEPENDENCIES
   emacs (= 1.1.6)
   emacs_keybindings (= 2.0.0)
   evernote (= 2.0.6)
-  firefox (= 1.2.0)
+  firefox (= 1.2.1)
   flux (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
@@ -506,7 +506,7 @@ DEPENDENCIES
   sizeup (= 1.0.0)
   skype (= 1.0.8)
   slack (= 1.0.5)
-  slate (= 1.0.0)
+  slate (= 1.0.1)
   sparrow (= 1.0.0)
   spectacle (= 1.0.0)
   spf13vim3 (= 1.0.0)
