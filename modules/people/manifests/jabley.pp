@@ -33,7 +33,6 @@ class people::jabley {
   include r_studio
   include slack
   include sublime_text_2
-  include travis
   include transmission
   include vmware_fusion
 
