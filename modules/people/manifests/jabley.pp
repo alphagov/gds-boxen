@@ -58,6 +58,7 @@ class people::jabley {
   include projects::vcloudtools
 
   include teams::performance-platform
+  include teams::performance-platform::experimental
   include teams::efg
   class { 'teams::infrastructure': manage_gitconfig => false }
   include teams::trade-tariff
