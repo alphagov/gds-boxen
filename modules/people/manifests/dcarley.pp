@@ -11,6 +11,7 @@ class people::dcarley {
   include vim
   include gds_virtualbox
   include wget
+  include wireshark
 
   include zsh
   include ohmyzsh
