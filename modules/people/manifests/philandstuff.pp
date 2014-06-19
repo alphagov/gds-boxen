@@ -57,7 +57,7 @@ source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
   }
 
   file { "${home}/.lein/profiles.clj":
-    content => "{:user {:plugins [[lein-kibit \"0.0.8\"]]}}\n",
+    source => 'puppet:///modules/people/philandstuff/lein-profiles.clj',
   }
 
   repository { "${home}/.emacs.d":
