@@ -26,6 +26,8 @@ class people::bruntonspall {
   include googledrive
   include slack
   include skype
+  include notational_velocity::nvalt
+
 
 # Projects
   include projects::deployment::creds
@@ -106,7 +108,8 @@ class people::bruntonspall {
       'go',
       'python',
       'vim',
-      'bash-completion2'
+      'bash-completion2',
+      'npm'
     ]:
     ensure => present,
   }
