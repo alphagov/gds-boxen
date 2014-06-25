@@ -58,6 +58,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'encfs',
       'fping',
       'gpg-agent',
+      'go',
       'gnupg',
       'heroku-toolbelt',
       'htop-osx',
