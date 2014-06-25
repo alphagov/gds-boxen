@@ -61,6 +61,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'go',
       'gnupg',
       'heroku-toolbelt',
+      'hg',
       'htop-osx',
       'nmap',
       'parallel',
