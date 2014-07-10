@@ -2,6 +2,7 @@ class people::jennyd {
   include chrome
   include dropbox
   include gds_development
+  include gds_virtualbox::42_latest
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_ssh_config
