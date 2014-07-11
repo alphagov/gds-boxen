@@ -31,11 +31,14 @@ class people::jennyd {
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::ci-deployment
+  include projects::deployment
   include projects::deployment::creds
   include projects::frontend
   include projects::gds-api-adapters
   include projects::gds-sso
   include projects::govuk_content_api
+  include projects::govuk_mirror-deployment
+  include projects::govuk_offsitebackups-puppet
   include projects::imminence
   include projects::transition-config
   include projects::release
