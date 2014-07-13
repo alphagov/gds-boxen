@@ -13,17 +13,18 @@ class people::mattbostock {
   include ohmyzsh
 
   vagrant::plugin { 'vagrant-cachier': }
+
   include osx::disable_app_quarantine
+  include osx::dock::autohide
+  include osx::dock::dim_hidden_apps
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
   include osx::finder::unhide_library
+  include osx::global::disable_remote_control_ir_receiver
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
-  include osx::no_network_dsstores
-  include osx::global::disable_remote_control_ir_receiver
-  include osx::dock::dim_hidden_apps
-  include osx::dock::autohide
   include osx::global::tap_to_click
+  include osx::no_network_dsstores
 
   osx::recovery_message { 'If found, please call 07917 173573': }
 
