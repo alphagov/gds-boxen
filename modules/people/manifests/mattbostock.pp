@@ -68,7 +68,4 @@ class people::mattbostock {
     ]:
     ensure => present,
   }
-
-  vim::bundle { 'rodjek/vim-puppet': }
-  vim::bundle { 'godlygeek/tabular': }
 }
