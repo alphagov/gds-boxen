@@ -416,6 +416,11 @@ GITHUBTARBALL
     monocle (1.0.0)
 
 GITHUBTARBALL
+  remote: phinze/puppet-brewcask
+  specs:
+    brewcask (0.0.4)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.0)
@@ -453,6 +458,7 @@ DEPENDENCIES
   atom (= 1.0.0)
   banshee (= 1.1.0)
   boxen (= 3.6.1)
+  brewcask (= 0.0.4)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.1.2)
