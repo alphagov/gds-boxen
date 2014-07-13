@@ -18,6 +18,7 @@ class people::mattbostock {
 
   include osx::disable_app_quarantine
   include osx::dock::autohide
+  include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
