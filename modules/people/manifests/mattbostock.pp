@@ -5,7 +5,6 @@ class people::mattbostock {
   include gds_resolver
   include gds_vpn_profiles
   include git
-  include gitx
   include mysql
   include openconnect
   include screen
