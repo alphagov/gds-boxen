@@ -65,7 +65,7 @@ class people::mattbostock {
       'bash-completion',
       'brew-cask',
       'wget',
-  ]:
+    ]:
     ensure => present,
   }
 
