@@ -28,6 +28,7 @@ class people::mattbostock {
   include osx::global::disable_remote_control_ir_receiver
   include osx::dock::dim_hidden_apps
   include osx::dock::autohide
+  include osx::global::tap_to_click
 
   osx::recovery_message { 'If found, please call 07917 173573': }
 
