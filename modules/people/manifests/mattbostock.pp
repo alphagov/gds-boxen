@@ -5,6 +5,8 @@ class people::mattbostock {
   include gds_resolver
   include gds_vpn_profiles
   include git
+  include iterm2::stable
+  include iterm2::colors::solarized_dark
   include openconnect
   include screen
   include vagrant
