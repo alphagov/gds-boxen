@@ -84,4 +84,17 @@ class people::mattbostock {
     ]:
     ensure => present,
   }
+
+  package {
+    [
+      'dropbox',
+      'firefox',
+      'gpgtools',
+      'mou',
+      'osxfuse',
+      'sequel-pro',
+    ]:
+    ensure   => present,
+    provider => 'brewcask',
+  }
 }
