@@ -13,7 +13,6 @@ class people::mattbostock {
   include ohmyzsh
 
   vagrant::plugin { 'vagrant-cachier': }
-  vagrant::plugin { 'vagrant-vbguest': }
   include osx::disable_app_quarantine
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
