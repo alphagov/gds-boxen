@@ -46,10 +46,6 @@ class people::mattbostock {
   ## See modules/teams/manifests for things you can include here
   class { 'teams::infrastructure': manage_gitconfig => false }
 
-  ## You can also include particular projects from modules/projects/manifests
-  include projects::deployment
-  include projects::deployment::creds
-
   repository { "/Users/${::boxen_user}/dotfiles":
     source  => "${::github_login}/dotfiles",
   }
