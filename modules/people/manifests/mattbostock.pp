@@ -1,6 +1,5 @@
 class people::mattbostock {
 
-  include adium
   include chrome
   include gds_development
   include gds_resolver
