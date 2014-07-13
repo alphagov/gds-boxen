@@ -27,6 +27,7 @@ class people::mattbostock {
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::tap_to_click
+  include osx::keyboard::capslock_to_control
   include osx::no_network_dsstores
 
   osx::recovery_message { 'If found, please call 07917 173573': }
