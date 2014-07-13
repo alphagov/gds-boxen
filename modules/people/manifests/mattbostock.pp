@@ -54,10 +54,9 @@ class people::mattbostock {
   include projects::deployment
   include projects::deployment::creds
 
-  ## Here's how to include a personal github project
-  #repository { "${boxen::config::srcdir}/dotfiles":
-  #  source  => 'yourusername/dotfiles',
-  #}
+  repository { "/Users/${::boxen_user}/dotfiles":
+    source  => "${::github_login}/dotfiles",
+  }
 
   ## This is how to install Homebrew packages
   ## You can get a list of your current packages with
