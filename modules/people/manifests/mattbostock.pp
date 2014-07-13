@@ -54,6 +54,8 @@ class people::mattbostock {
     source  => "${::github_login}/dotfiles",
   }
 
+  homebrew::tap { 'thoughtbot/formulae': }
+
   ## This is how to install Homebrew packages
   ## You can get a list of your current packages with
   ## `brew list`
@@ -64,6 +66,7 @@ class people::mattbostock {
       'automake',
       'bash-completion',
       'brew-cask',
+      'rcm',
       'wget',
     ]:
     ensure => present,
