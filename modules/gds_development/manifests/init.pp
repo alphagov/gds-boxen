@@ -11,6 +11,7 @@ class gds_development($version = '1.5.3') {
   # Need Vagrant and Virtualbox
   class { 'vagrant':
     version => $version,
+    completion => true,
   }
   include gds_virtualbox
 
