@@ -1,6 +1,5 @@
 class teams::infrastructure ($manage_gitconfig = true) {
   include projects::alphagov-deployment
-  include projects::box-templates
   include projects::boxes
   include projects::boxgrinder-appliances
   include projects::boxmaker
