@@ -29,7 +29,6 @@ class people::samjsharpe::repos {
         'gds/opsmanual',
         'gds/private-utils',
         'gds/puppet',
-        'gds/vcloud-templates'
         ]:}
 
     file {"${boxen::config::srcdir}/gds/puppet/development/Vagrantfile.localconfig":
