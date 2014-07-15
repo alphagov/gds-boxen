@@ -17,8 +17,6 @@ class people::robyoung {
 
   include teams::performance-platform
   include projects::deployment
-  include projects::vcloud-templates
-
 
   class { 'gds_ssh_config': }
   ssh_config::fragment{'performance-platform':
