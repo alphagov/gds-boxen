@@ -15,7 +15,6 @@ class teams::infrastructure ($manage_gitconfig = true) {
   include projects::puppet
   include projects::smokey
   include projects::vagrant-govuk
-  include projects::vcloudtools
 
   if $manage_gitconfig {
     git::config::global {
