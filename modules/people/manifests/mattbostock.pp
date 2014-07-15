@@ -74,6 +74,7 @@ class people::mattbostock {
       'htop-osx',
       'ipcalc',
       'jq',
+      'libxml2',
       'mercurial',
       'pandoc',
       'rcm',
