@@ -45,15 +45,7 @@ class people::philandstuff {
   $home = "/Users/${::luser}"
 
   file {"${home}/.bashrc":
-    content => '[[ -f /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
-
-[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/govuk
-export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
-export PATH=/usr/local/go/bin:$PATH
-source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
-',
+    source => 'puppet:///modules/people/philandstuff/bashrc',
   }
 
   file { "${home}/.lein/profiles.clj":
