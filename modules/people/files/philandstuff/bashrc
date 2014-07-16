@@ -10,6 +10,9 @@ source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 ### Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### oracle java 1.7
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home
+
 ## copied from https://github.gds/gds/ida-hub/wiki/Useful-bash-aliases
 workspaceDirectory=$HOME/govuk
 alias dcs="cd ${workspaceDirectory}/doc-checking"
@@ -28,3 +31,5 @@ alias util="cd ${workspaceDirectory}/ida-utils"
 alias web="cd ${workspaceDirectory}/ida-webops"
 alias sam="cd ${workspaceDirectory}/saml-lib"
 alias tok="cd ${workspaceDirectory}/token-service"
+
+alias gradle="./gradlew || /usr/bin/env gradle"
