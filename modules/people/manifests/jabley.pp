@@ -65,6 +65,7 @@ class people::jabley {
   repo::alphagov { 'asset-manager': }
   repo::alphagov { 'cdn-acceptance-tests': }
   repo::alphagov { 'design-patterns': }
+  repo::alphagov { 'external-link-tracker': }
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'govuk_crawler_worker': }
   repo::alphagov { 'passphrase_entropy': }
