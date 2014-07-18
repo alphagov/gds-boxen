@@ -21,8 +21,8 @@ class people::jabley {
   include imagealpha
   include imageoptim
   include java
-  include libreoffice
-  include libreoffice::languagepack
+  class { 'libreoffice': version => '4.2.5' }
+  class { 'libreoffice::languagepack': version => '4.2.5' }
   include nodejs::v0_10
   include onepassword
   include onepassword::chrome
