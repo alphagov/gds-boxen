@@ -49,6 +49,22 @@ Host production-frontend
   User ubuntu
   IdentityFile ~/.ssh/beta.pem
 
+# Jenkins things
+Host production-management
+  Hostname ec2-46-137-55-104.eu-west-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/beta.pem
+
+Host production-management-1
+  Hostname ec2-46-137-16-103.eu-west-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/beta.pem
+
+Host production-management-2
+  Hostname ec2-54-247-129-120.eu-west-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/beta.pem
+
 #
 # Fallback
 #
