@@ -54,7 +54,6 @@ class people::jabley {
   include projects::whitehall
   include projects::vcloud-core
   include projects::vcloud-walker
-  include projects::vcloudtools
 
   include teams::performance-platform
   include teams::performance-platform::experimental

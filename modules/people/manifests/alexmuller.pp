@@ -40,7 +40,6 @@ class people::alexmuller {
   include gds_vpn_profiles
   include projects::deployment
   include projects::vagrant-govuk
-  include projects::vcloud-templates
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   # Other repos
