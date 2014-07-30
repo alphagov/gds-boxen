@@ -8,6 +8,7 @@ class people::jabley {
   include clojure
   include chrome
   include dropbox
+  include emacs::formacosx
   include evernote
   include firefox
   include flux
@@ -128,7 +129,6 @@ class people::jabley {
       'cmake',
       'dos2unix',
       'ec2-api-tools',
-      'emacs',
       'faac',
       'ffmpeg',
       'gettext',
