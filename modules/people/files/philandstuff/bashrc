@@ -31,5 +31,3 @@ alias util="cd ${workspaceDirectory}/ida-utils"
 alias web="cd ${workspaceDirectory}/ida-webops"
 alias sam="cd ${workspaceDirectory}/saml-lib"
 alias tok="cd ${workspaceDirectory}/token-service"
-
-alias gradle="./gradlew || /usr/bin/env gradle"
