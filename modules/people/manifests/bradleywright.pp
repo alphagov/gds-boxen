@@ -20,7 +20,6 @@ class people::bradleywright {
   include slate
   include vmware_fusion
   include x_dispatch
-  include zeus
   include zsh
 
   osx_login_item { 'OmniFocus':
