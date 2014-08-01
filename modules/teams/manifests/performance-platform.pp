@@ -38,6 +38,7 @@ class teams::performance-platform {
   repo::alphagov { 'cheapseats': }
   repo::alphagov { 'gapy': }
   repo::alphagov { 'performanceplatform-admin': }
+  repo::alphagov { 'performanceplatform-client': }
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
   repo::alphagov { 'pp-development': }
