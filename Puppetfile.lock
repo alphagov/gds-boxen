@@ -311,6 +311,11 @@ GITHUBTARBALL
     vagrant (3.1.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant_manager
+  specs:
+    vagrant_manager (0.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-vim
   specs:
     vim (1.0.5)
@@ -534,6 +539,7 @@ DEPENDENCIES
   transmission (= 1.1.0)
   unarchiver (= 1.4.0)
   vagrant (= 3.1.1)
+  vagrant_manager (= 0.0.1)
   vim (= 1.0.5)
   virtualbox (= 1.0.10)
   vmware_fusion (= 1.1.0)

@@ -27,6 +27,7 @@ class people::samjsharpe::packages {
   vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
     ensure => absent,
   }
+  include vagrant_manager
   include virtualbox
   include vmware_fusion
 
@@ -45,7 +46,7 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
 
   # Clobber boxen version of Git to use stock homebrew
   Package <| title == "boxen/brews/git" |> {
-    ensure => "2.0.0"
+    ensure => "2.0.4"
   }
 
   # These are all Homebrew packages
@@ -61,8 +62,8 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
       'go',
       'gnupg',
       'heroku-toolbelt',
-      'hg',
       'htop-osx',
+      'mercurial',
       'nmap',
       'parallel',
       'python',
