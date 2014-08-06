@@ -2,7 +2,7 @@
 gds_ruby::versions:
     - '1.9.3'
     - '2.0.0'
-gds_ruby::deprecated:
+gds_ruby::uninstall_versions:
     - '1.8.7'
     - '1.9.2'
     - '2.1.0'

@@ -5,7 +5,7 @@
 #       gds_ruby::versions:
 #           - 1.9.3
 #           - 2.0.0
-#       gds_ruby::deprecated:
+#       gds_ruby::uninstall_versions:
 #           - 1.8.7
 #           - 2.1.1
 #           - 2.1.2
@@ -20,7 +20,7 @@
 #
 class gds_ruby (
   $versions   = ['1.8.7','1.9.3','2.0.0','2.1.0','2.1.2'],
-  $deprecated = ['2.1.1'],
+  $uninstall_versions = ['2.1.1'],
 ) {
 
   include ruby
@@ -30,8 +30,8 @@ class gds_ruby (
     ruby::version {$versions: }
   }
 
-  if !(empty($deprecated)) {
-    ruby::version {$deprecated: ensure => absent}
+  if !(empty($uninstall_versions)) {
+    ruby::version {$uninstall_versions: ensure => absent}
   }
 
   ruby_gem { 'bundler for all rubies':
