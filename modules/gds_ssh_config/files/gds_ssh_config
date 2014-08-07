@@ -1,3 +1,13 @@
+# CI
+# --
+Host ci-master.ci-govuk
+  HostName ci-new.alphagov.co.uk
+  ProxyCommand none
+
+Host *.ci-govuk
+  ProxyCommand ssh -A -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
+
+
 # Preview
 # -------
 Host jumpbox-1.management.preview
