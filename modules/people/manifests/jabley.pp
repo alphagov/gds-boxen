@@ -83,6 +83,7 @@ class people::jabley {
   repo::gds      { 'interviews': }
   repo::gds      { 'licensify': }
   repo::gds      { 'router-data': }
+  repo::gds      { 'saml-lib': }
   repo::gds      { 'transactions-visualisation': }
 
   vagrant::plugin { 'vagrant-vmware-fusion': }
@@ -94,8 +95,10 @@ class people::jabley {
     content => template('people/jabley/ssh_config'),
   }
 
+  ruby::version { '1.9.3-p484': }
+
   class { 'gds_development':
-    version => '1.6.2',
+    version => '1.6.3',
   }
 
   class { 'intellij':
