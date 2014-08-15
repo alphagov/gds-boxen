@@ -28,11 +28,6 @@ class teams::performance-platform {
   repo::alphagov { 'backdrop-asset-request-collector': }
   repo::alphagov { 'backdrop-collector': }
   repo::alphagov { 'backdrop-collector-plugins': }
-  repo::alphagov { 'backdrop-customer-satisfaction-collector': }
-  repo::alphagov { 'backdrop-ga-collector': }
-  repo::alphagov { 'backdrop-ga-realtime-collector': }
-  repo::alphagov { 'backdrop-ga-trending-collector': }
-  repo::alphagov { 'backdrop-pingdom-collector': }
   repo::alphagov { 'backdrop-google-spreadsheet-collector': }
   repo::alphagov { 'backdrop-transactions-explorer-collector': }
   repo::alphagov { 'cheapseats': }
@@ -41,6 +36,7 @@ class teams::performance-platform {
   repo::alphagov { 'performanceplatform-client': }
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
+  repo::alphagov { 'performanceplatform-notifier': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
