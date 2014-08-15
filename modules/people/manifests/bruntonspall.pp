@@ -30,7 +30,6 @@ class people::bruntonspall {
 
 
 # Projects
-  include projects::deployment::creds
   include projects::development
   include projects::frontend
   include projects::router
