@@ -37,6 +37,7 @@ class people::jabley(
   include sublime_text_2
   include transmission
   include vmware_fusion
+  include xbench
 
 
   include projects::alphagov-deployment
