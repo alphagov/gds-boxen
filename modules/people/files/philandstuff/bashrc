@@ -31,3 +31,9 @@ alias util="cd ${workspaceDirectory}/ida-utils"
 alias web="cd ${workspaceDirectory}/ida-webops"
 alias sam="cd ${workspaceDirectory}/saml-lib"
 alias tok="cd ${workspaceDirectory}/token-service"
+
+# Add GHC 7.8.3 to the PATH, via http://ghcformacosx.github.io/
+export GHC_DOT_APP="/Applications/GHC.app"
+if [ -d "$GHC_DOT_APP" ]; then
+    export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
