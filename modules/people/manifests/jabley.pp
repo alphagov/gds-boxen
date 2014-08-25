@@ -161,6 +161,7 @@ class people::jabley {
       'sdl_image',
       'sloccount',
       'smartmontools',
+      'tesseract',
       'unrar',
       'wget',
       'x264',
