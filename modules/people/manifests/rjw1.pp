@@ -44,6 +44,9 @@ package {
       'bash-completion',
       'leiningen',
       'vim',
+      'lesspipe',
+      'ipcalc',
+      'ipv6calc',
     ]:
     ensure => present,
   }
