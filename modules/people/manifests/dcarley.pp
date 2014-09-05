@@ -42,6 +42,7 @@ class people::dcarley {
     [
       'apg',
       'bash-completion',
+      'entr',
       'graphviz',
       'gnu-sed',
       'tmux'
