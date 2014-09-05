@@ -89,5 +89,6 @@ class people::dcarley {
 
   vim::bundle { 'rodjek/vim-puppet': }
   vim::bundle { 'godlygeek/tabular': }
+  vim::bundle { 'plasticboy/vim-markdown': }
   vim::bundle { 'jnwhiteh/vim-golang': }
 }
