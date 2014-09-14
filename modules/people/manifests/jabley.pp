@@ -139,6 +139,7 @@ class people::jabley {
       'gmp',
       'gnu-typist',
       'groovy',
+      'haskell-platform',
       'id3tool',
       'jpeg',
       'lame',
