@@ -163,6 +163,7 @@ class people::jabley {
       'smartmontools',
       'tesseract',
       'unrar',
+      'valgrind',
       'wget',
       'x264',
       'xvid',
