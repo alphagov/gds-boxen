@@ -11,7 +11,7 @@ class teams::infrastructure ($manage_gitconfig = true) {
   include projects::govuk_redirector-deployment
   include projects::govuk_redirector-puppet
   include projects::opsmanual
-  include projects::packages
+  include projects::packager
   include projects::private-utils
   include projects::puppet
   include projects::smokey
