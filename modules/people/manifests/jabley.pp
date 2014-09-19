@@ -69,7 +69,6 @@ class people::jabley {
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'govuk_crawler_worker': }
   repo::alphagov { 'passphrase_entropy': }
-  repo::alphagov { 'packager': }
   repo::alphagov { 'puppet-gstatsd': }
   repo::alphagov { 'puppet-logstash': }
   repo::alphagov { 'puppet-nginx': }
