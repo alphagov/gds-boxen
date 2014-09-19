@@ -1,4 +1,4 @@
 # Pulls the https://github.com/alphagov/packages repository
-class projects::packages {
-  repo::alphagov { 'packages': }
+class projects::packager {
+  repo::alphagov { 'packager': }
 }
