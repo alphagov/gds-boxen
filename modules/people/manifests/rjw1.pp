@@ -13,6 +13,8 @@ class people::rjw1 {
   include projects::deployment::creds
   include projects::blinken
   include projects::blinken-config
+  include projects::digitalmarketplace-puppet
+  include projects::digitalmarketplace-infra
 
 
 
