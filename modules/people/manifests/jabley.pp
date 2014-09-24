@@ -1,4 +1,7 @@
-class people::jabley {
+class people::jabley(
+  $libreoffice_version = '4.2.5',
+) {
+
   include adium
   include alfred
   include android_file_transfer
@@ -22,9 +25,9 @@ class people::jabley {
   include imagealpha
   include imageoptim
   include java
-  class { 'libreoffice': version => '4.2.5' }
-  class { 'libreoffice::languagepack': version => '4.2.5' }
   include nodejs::v0_10
+  class { 'libreoffice': version => $libreoffice_version }
+  class { 'libreoffice::languagepack': version => $libreoffice_version }
   include onepassword
   include onepassword::chrome
   include openconnect
