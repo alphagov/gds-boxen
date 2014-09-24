@@ -35,7 +35,6 @@ class people::jabley(
   include paparazzi
   include postgresql
   include r_studio
-  include slack
   include sublime_text_2
   include transmission
   include vmware_fusion
