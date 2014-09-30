@@ -142,6 +142,7 @@ class people::jabley(
       'groovy',
       'haskell-platform',
       'id3tool',
+      'iperf',
       'jpeg',
       'lame',
       'logstalgia',
