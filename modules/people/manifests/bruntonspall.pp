@@ -7,6 +7,7 @@ class people::bruntonspall {
   include gds_vpn_profiles
   include gds_resolver
   include gds_virtualbox
+  include openconnect
 
 # Terminal apps
   include iterm2::dev
