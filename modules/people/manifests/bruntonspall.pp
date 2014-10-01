@@ -25,7 +25,7 @@ class people::bruntonspall {
   include chrome
   include dropbox
   include googledrive
-  include slack
+#  include slack
   include skype
   include notational_velocity::nvalt
 
