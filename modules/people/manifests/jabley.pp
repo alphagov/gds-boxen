@@ -190,6 +190,7 @@ class people::jabley(
       'pngcrush',
       'python',
       'pv',
+      'pt',
       'R',
       's3cmd',
       'sbt',
