@@ -1,5 +1,4 @@
 class people::timmow {
-  include gds_development
   include dropbox
   include iterm2::stable
   include macvim
@@ -32,4 +31,15 @@ class people::timmow {
     content => template('people/timmow/ssh_config'),
   }
   homebrew::tap { 'caskroom/cask': }
+  include vagrant
+  vagrant::plugin { 'cachier': }
+  vagrant::plugin { 'dns': }
+  vagrant::plugin { 'vmware-fusion': }
+  vagrant::plugin { 'multiprovider-snap': }
+  vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
+    ensure => absent,
+  }
+  include vagrant_manager
+  include virtualbox
+  include vmware_fusion
 }
