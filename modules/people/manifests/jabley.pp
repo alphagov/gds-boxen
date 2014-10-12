@@ -33,7 +33,6 @@ class people::jabley(
   include openconnect
   include packer
   include paparazzi
-  include postgresql
   include r_studio
   include sublime_text_2
   include transmission
