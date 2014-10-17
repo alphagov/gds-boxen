@@ -25,9 +25,10 @@ class people::jabley(
   include imagealpha
   include imageoptim
   include java
-  include nodejs::v0_10
   class { 'libreoffice': version => $libreoffice_version }
   class { 'libreoffice::languagepack': version => $libreoffice_version }
+  include licecap
+  include nodejs::v0_10
   include onepassword
   include onepassword::chrome
   include openconnect
