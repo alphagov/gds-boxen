@@ -15,10 +15,6 @@ class teams::performance-platform {
   # New Devops™ !!!!11!one!!!!
   include teams::performance-platform::puppet
 
-  # Old Word Order
-  repo::alphagov { 'limelight': }
-
-  # New World Order
   repo::gds      { 'google-dev-credentials': }
   repo::gds      { 'pp-manual': }
   repo::gds      { 'pp-pilotis': }
@@ -52,8 +48,6 @@ class teams::performance-platform {
   repo::alphagov { 'govuk_template_mustache': }
   repo::alphagov { 'release': }
   repo::alphagov { 'signonotron2': }
-  repo::alphagov { 'slimmer': }
-  repo::alphagov { 'static': }
   include projects::styleguides
 
   # Documentation
