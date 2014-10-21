@@ -4,15 +4,27 @@
 # repo to our pull request monitor (currently named pulls.html) in
 # https://github.com/alphagov/performance-platform/tree/gh-pages
 class teams::performance-platform {
-  include projects::development
 
-  # Devops™
-  include projects::alphagov-deployment
-  include projects::ci-puppet
+  # GOV.UK development environment and smoke tests
+  include projects::development
   include projects::puppet
   include projects::smokey
 
-  # New Devops™ !!!!11!one!!!!
+  # GOV.UK: Transactions Explorer
+  include projects::alphagov-deployment
+  repo::alphagov { 'transactions-explorer': }
+
+  # Shared GDS repos that we rely on
+  include projects::ci-puppet
+  include projects::styleguides
+  repo::alphagov { 'govuk_frontend_toolkit': }
+  repo::alphagov { 'govuk_frontend_toolkit_npm': }
+  repo::alphagov { 'govuk_template': }
+  repo::alphagov { 'govuk_template_mustache': }
+  repo::alphagov { 'release': }
+  repo::alphagov { 'signonotron2': }
+
+  # Performance Platform specific stuff
   include teams::performance-platform::puppet
 
   repo::gds      { 'google-dev-credentials': }
@@ -39,16 +51,6 @@ class teams::performance-platform {
   repo::alphagov { 'spotlight': }
   repo::alphagov { 'stagecraft': }
   repo::alphagov { 'stageprompt': }
-  repo::alphagov { 'transactions-explorer': }
-
-  # Shared GDS repos that we rely on
-  repo::alphagov { 'govuk_frontend_toolkit': }
-  repo::alphagov { 'govuk_frontend_toolkit_npm': }
-  repo::alphagov { 'govuk_template': }
-  repo::alphagov { 'govuk_template_mustache': }
-  repo::alphagov { 'release': }
-  repo::alphagov { 'signonotron2': }
-  include projects::styleguides
 
   # Documentation
   repo::alphagov { 'performanceplatform-documentation': }
