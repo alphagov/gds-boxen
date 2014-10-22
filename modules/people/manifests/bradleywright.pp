@@ -194,6 +194,8 @@ class people::bradleywright {
   include karabiner
   include karabiner::login_item
 
+  karabiner::profile { 'Default': }
+
   # Tap Ctrl_l for <esc>, hold for <ctrl>
   karabiner::remap { 'controlL2controlL_escape': }
   karabiner::set { 'parameter.keyoverlaidmodifier_timeout':
