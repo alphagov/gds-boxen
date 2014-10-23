@@ -5,7 +5,7 @@
 
 
 def provision(config)
-  override.vm.provision "ansible" do |ansible|
+  config.vm.provision "ansible" do |ansible|
     ansible.playbook = "/Users/bradleywright/Projects/ansible/govuk_playbook.yml"
   end
 end
