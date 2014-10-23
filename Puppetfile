@@ -29,35 +29,35 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.6.1"
+github "boxen", "3.7.0"
 
 # Support for default hiera data in modules
 
-github "module-data", "0.0.4", :repo => "ripienaar/puppet-module-data"
+github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "dnsmasq",    "2.0.0"
-github "foreman",    "1.2.0"
-github "gcc",        "2.0.100"
-github "git",        "2.6.0"
-github "go",         "2.1.0"
-github "handbrake",  "1.0.1"
-github "homebrew",   "1.9.5"
-github "hub",        "1.3.0"
-github "inifile",    "1.1.3", :repo => "puppetlabs/puppetlabs-inifile"
-github "java",       "1.7.0"
-github "nginx",      "1.4.3"
-github "nodejs",     "3.8.2"
-github "openssl",    "1.0.0"
-github "phantomjs",  "2.3.0"
-github "pkgconfig",  "1.0.0"
-github "repository", "2.3.0"
-github "ruby",       "8.1.4"
-github "stdlib",     "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",       "1.0.0"
-github "xquartz",    "1.2.1"
+github "dnsmasq",     "2.0.0"
+github "foreman",     "1.2.0"
+github "gcc",         "2.2.0"
+github "git",         "2.6.0"
+github "go",          "2.1.0"
+github "handbrake",   "1.0.1"
+github "homebrew",    "1.9.5"
+github "hub",         "1.3.0"
+github "inifile",     "1.1.3", :repo => "puppetlabs/puppetlabs-inifile"
+github "java",        "1.7.0"
+github "nginx",       "1.4.3"
+github "nodejs",      "3.8.2"
+github "openssl",     "1.0.0"
+github "phantomjs",   "2.3.0"
+github "pkgconfig",   "1.0.0"
+github "repository",  "2.3.0"
+github "ruby",        "8.1.4"
+github "stdlib",      "4.3.2", :repo => "puppetlabs/puppetlabs-stdlib"
+github "sudo",        "1.0.0"
+github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
@@ -73,11 +73,7 @@ github "caffeine",       "1.0.0"
 github "camino",         "1.0.1", :repo => "norm/puppet-camino"
 github "chrome",         "1.2.0"
 github "clojure",        "1.3.0"
-# need to specify an exact ref for concat or librarian-puppet barfs
-# trying to parse the tag 1.0.0-rc1 into a version.
-mod    "concat",         "1.0.0",
-  :git => "git://github.com/puppetlabs/puppetlabs-concat.git",
-  :ref => '1.0.0'
+github "concat",         "1.0.0", :repo => "puppetlabs/puppetlabs-concat"
 github "dropbox",        "1.4.0"
 github "emacs",          "1.1.6", :repo => "bradleywright/puppet-emacs"
 github "emacs_keybindings", "2.0.0", :repo => "bradleywright/puppet-emacs-keybindings"
@@ -128,7 +124,6 @@ github "transmission",   "1.1.0"
 github "things",         "1.0.1"
 github "unarchiver",     "1.5.0", :repo => "dieterdemeyer/puppet-unarchiver"
 github "vagrant",        "3.2.0"
-github "vagrant_manager","0.0.1"
 github "vim",            "1.0.5"
 github "virtualbox",     "1.0.10"
 github "vmware_fusion",  "1.2.0"
