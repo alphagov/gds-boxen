@@ -34,6 +34,16 @@ class people::bruntonspall {
   include projects::development
   include projects::frontend
   include projects::router
+  include projects::frontend
+  include projects::govuk_frontend_toolkit
+  include projects::private-utils
+  include projects::redirector
+  include projects::router
+  include projects::rummager
+  include projects::smokey
+  include projects::static
+  include projects::whitehall
+
   repo::alphagov { 'design-patterns': }
   repo::alphagov { 'government-service-design-manual': }
   repo::alphagov { 'service-domain-checker': }
