@@ -1,5 +1,5 @@
 class people::jabley(
-  $libreoffice_version = '4.2.5',
+  $libreoffice_version = '4.2.6',
 ) {
 
   include adium
@@ -25,8 +25,14 @@ class people::jabley(
   include imagealpha
   include imageoptim
   include java
-  class { 'libreoffice': version => $libreoffice_version }
-  class { 'libreoffice::languagepack': version => $libreoffice_version }
+  package { 'LibreOffice':
+    provider => 'appdmg',
+    source   => "http://download.documentfoundation.org/libreoffice/stable/${libreoffice_version}/mac/x86/LibreOffice_${libreoffice_version}-secfix_MacOS_x86.dmg"
+  }
+  package { 'LibreOffice LanguagePack':
+    provider => 'appdmg',
+    source   => "http://download.documentfoundation.org/libreoffice/stable/${libreoffice_version}/mac/x86/LibreOffice_${libreoffice_version}-secfix_MacOS_x86_langpack_en-GB.dmg",
+  }
   include licecap
   include nodejs::v0_10
   include onepassword
