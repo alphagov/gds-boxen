@@ -44,6 +44,13 @@ class teams::performance-platform {
   repo::alphagov { 'performanceplatform-client': }
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
+
+  # You may wish to check out performance-datastore as well. This
+  # contains an example of the Write API, and thoughts around the
+  # future of the Read API. You should check this out to your GOPATH,
+  # so it isn't included here since it shouldn't be checked out to
+  # $HOME/govuk
+
   repo::alphagov { 'performanceplatform-notifier': }
   repo::alphagov { 'pp-development': }
   repo::alphagov { 'pp-smokey': }
