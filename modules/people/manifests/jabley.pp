@@ -190,6 +190,7 @@ class people::jabley(
 
   package {
     [
+      'ansible',
       'bash-completion',
       'go',
       'graphviz',
