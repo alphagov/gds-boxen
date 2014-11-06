@@ -229,6 +229,7 @@ class people::jabley(
   nodejs::module { [
     'jsontool',
     'grunt-cli',
+    'node-inspector',
     ]:
     node_version => 'v0.10'
   }
