@@ -145,8 +145,6 @@ class people::bradleywright {
      'parallel',
      'python',
      'reattach-to-user-namespace',
-     'sbt',
-     'scala',
      'the_silver_searcher',
      'tmux',
      'tree',
@@ -163,6 +161,8 @@ class people::bradleywright {
      'ghostscript',
      'imagemagick',
      'mysql',
+     'sbt',
+     'scala',
      'xpdf'
      ]:
   }
