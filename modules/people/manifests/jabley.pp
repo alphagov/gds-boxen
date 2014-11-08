@@ -230,6 +230,7 @@ class people::jabley(
     'jsontool',
     'grunt-cli',
     'node-inspector',
+    'stackvis',
     ]:
     node_version => 'v0.10'
   }
