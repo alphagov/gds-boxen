@@ -9,6 +9,7 @@ class people::bradleywright {
   include gds_vpn_profiles
   include flux
   include iterm2::dev
+  include iterm2::colors::solarized_dark
   include mailplane
   include nginx
   include nodejs::v0_10
