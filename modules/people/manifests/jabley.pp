@@ -231,6 +231,7 @@ class people::jabley(
     'grunt-cli',
     'node-inspector',
     'stackvis',
+    'tick',
     ]:
     node_version => 'v0.10'
   }
