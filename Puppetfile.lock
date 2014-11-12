@@ -171,7 +171,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-omnifocus
   specs:
-    omnifocus (1.0.1)
+    omnifocus (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -497,7 +497,7 @@ DEPENDENCIES
   nodejs (= 3.8.2)
   notational_velocity (= 1.1.2)
   ohmyzsh (= 1.0.0)
-  omnifocus (= 1.0.1)
+  omnifocus (= 1.1.0)
   onepassword (= 1.1.2)
   openssl (= 1.0.0)
   osx (= 2.7.1)
