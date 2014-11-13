@@ -68,6 +68,7 @@ class people::bradleywright {
     version => '1.5.3',
   }
 
+  vagrant::plugin { 'cachier': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
   $home     = "/Users/${::luser}"
