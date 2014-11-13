@@ -7,7 +7,6 @@ class people::dcarley {
   include gds_vpn_profiles
   include git
   include iterm2::stable
-  include vagrant
   include vim
   include gds_virtualbox
   include wget
@@ -16,6 +15,9 @@ class people::dcarley {
   include zsh
   include ohmyzsh
 
+  class { 'vagrant':
+    version => '1.6.5',
+  }
   vagrant::plugin { 'vagrant-vmware-fusion': }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'multiprovider-snap': }
