@@ -16,6 +16,7 @@ class people::dcarley {
   include zsh
   include ohmyzsh
 
+  vagrant::plugin { 'vagrant-vmware-fusion': }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'multiprovider-snap': }
   vagrant::plugin { 'vagrant-zz-multiprovider-snap':
