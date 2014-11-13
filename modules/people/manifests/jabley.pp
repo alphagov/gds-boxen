@@ -188,6 +188,13 @@ class people::jabley(
     ensure => 'present',
   }
 
+  package { 'wireshark':
+    ensure => present,
+    install_options => [
+      '--with-qt',
+    ],
+  }
+
   package {
     [
       'ansible',
