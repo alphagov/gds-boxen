@@ -186,6 +186,7 @@ class people::jabley(
       'yasm',
     ]:
     ensure => 'present',
+    provider => homebrew,
   }
 
   package { 'wireshark':
@@ -193,6 +194,7 @@ class people::jabley(
     install_options => [
       '--with-qt',
     ],
+    provider => homebrew,
   }
 
   package {
@@ -224,6 +226,7 @@ class people::jabley(
       'youtube-dl',
     ]:
     ensure => 'latest',
+    provider => homebrew,
   }
 
   package {'virtualenv':
