@@ -199,6 +199,7 @@ class people::jabley(
     [
       'ansible',
       'bash-completion',
+      'curl',
       'go',
       'graphviz',
       'heroku-toolbelt',
