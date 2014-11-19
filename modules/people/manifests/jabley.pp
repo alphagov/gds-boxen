@@ -212,6 +212,7 @@ class people::jabley(
       'nmap',
       'p7zip',
       'parallel',
+      'pbzip2',
       'pigz',
       'pngcrush',
       'pv',
