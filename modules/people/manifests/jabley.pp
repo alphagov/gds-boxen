@@ -98,6 +98,8 @@ class people::jabley(
   repo::gds      { 'saml-lib': }
   repo::gds      { 'transactions-visualisation': }
 
+  vagrant::plugin { 'vagrant-cachier': }
+  vagrant::plugin { 'vagrant-hostmanager': }
   vagrant::plugin { 'vagrant-vmware-fusion': }
 
   # All my SSH belong
