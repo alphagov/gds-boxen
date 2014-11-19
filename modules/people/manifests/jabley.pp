@@ -110,7 +110,7 @@ class people::jabley(
   ruby::version { '1.9.3-p484': }
 
   class { 'gds_development':
-    version => '1.6.3',
+    version => '1.6.5',
   }
 
   class { 'intellij':
