@@ -238,6 +238,7 @@ class people::jabley(
     require  => Package['python'],
   }
 
+  nodejs::version { 'v0.10.33': }
 
   nodejs::module { [
     'jsontool',
