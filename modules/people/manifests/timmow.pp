@@ -19,6 +19,8 @@ class people::timmow {
       'bash-completion',
       'pyenv',
       'gpg',
+      'ansible',
+      'hg',
     ]:
     ensure => present,
   }
@@ -31,7 +33,9 @@ class people::timmow {
     content => template('people/timmow/ssh_config'),
   }
   homebrew::tap { 'caskroom/cask': }
-  include vagrant
+  class { 'vagrant':
+      version => '1.6.5'
+  }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'dns': }
   vagrant::plugin { 'vmware-fusion': }
@@ -39,7 +43,7 @@ class people::timmow {
   vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
     ensure => absent,
   }
-  include vagrant_manager
   include virtualbox
   include vmware_fusion
+  include sourcecodepro
 }
