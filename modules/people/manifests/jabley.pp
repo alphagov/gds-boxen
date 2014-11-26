@@ -230,7 +230,7 @@ class people::jabley(
     ]:
     ensure => 'latest',
     provider => homebrew,
-  }
+  } ~> Exec['install_go_tools']
 
   package {'virtualenv':
     ensure   => present,
@@ -255,6 +255,11 @@ class people::jabley(
 
   file { [$projects]:
     ensure  => directory,
+  }
+
+  exec { 'install_go_tools':
+    environment => ["GOPATH=${home}/gocode"],
+    command => 'go get code.google.com/p/go.tools/cmd/godoc && go get code.google.com/p/go.tools/cmd/vet'
   }
 
   # Settings from puppet-osx
