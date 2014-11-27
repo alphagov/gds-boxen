@@ -5,6 +5,11 @@ class people::timmow {
   include zsh
   include slate
   include projects::deployment::creds
+  class { 'nodejs::global': version => 'v0.10.31' }
+  nodejs::module {
+    ['grunt-cli']:
+    node_version => 'v0.10.31'
+  }
 
   package {
     [
@@ -13,7 +18,6 @@ class people::timmow {
       'fasd',
       'python',
       'ssh-copy-id',
-      'npm',
       'tmux',
       'reattach-to-user-namespace',
       'bash-completion',
