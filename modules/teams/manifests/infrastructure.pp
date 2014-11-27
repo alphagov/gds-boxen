@@ -7,8 +7,8 @@ class teams::infrastructure ($manage_gitconfig = true) {
   include projects::fabric-scripts
   include projects::ghtools
   include projects::govuk_mirror
+  include projects::govuk_offsitebackups-puppet
   include projects::govuk-provisioning
-  include projects::govuk_redirector-deployment
   include projects::govuk_redirector-puppet
   include projects::opsmanual
   include projects::packager
