@@ -241,6 +241,7 @@ class people::jabley(
   nodejs::version { 'v0.10.33': }
 
   nodejs::module { [
+    'express-generator',
     'jsontool',
     'grunt-cli',
     'node-inspector',
