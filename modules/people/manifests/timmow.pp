@@ -5,6 +5,8 @@ class people::timmow {
   include zsh
   include slate
   include projects::deployment::creds
+  include teams::performance-platform
+  include teams::infrastructure
   class { 'nodejs::global': version => 'v0.10.31' }
   nodejs::module {
     ['grunt-cli']:
