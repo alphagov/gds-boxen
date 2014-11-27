@@ -27,6 +27,7 @@ class people::timmow {
       'gpg',
       'ansible',
       'hg',
+      'gnu-sed',
     ]:
     ensure => present,
   }
