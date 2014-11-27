@@ -32,6 +32,16 @@ class people::timmow {
     ensure => present,
   }
 
+  package {
+    [
+      'virtualenv',
+      'virtualenvwrapper',
+    ]:
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
   class { 'gds_ssh_config': }
   ssh_config::fragment{'performance-platform':
     content => template('teams/performance-platform/ssh-config'),
