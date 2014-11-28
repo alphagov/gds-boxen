@@ -260,7 +260,9 @@ class people::jabley(
 
   exec { 'install_go_tools':
     environment => ["GOPATH=${home}/gocode"],
-    command => 'go get code.google.com/p/go.tools/cmd/godoc && go get code.google.com/p/go.tools/cmd/vet'
+    command => 'go get code.google.com/p/go.tools/cmd/godoc \
+                && go get code.google.com/p/go.tools/cmd/vet \
+                && go get code.google.com/p/go.blog/blog'
   }
 
   # Settings from puppet-osx
