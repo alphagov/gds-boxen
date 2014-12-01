@@ -262,7 +262,8 @@ class people::jabley(
     environment => ["GOPATH=${home}/gocode"],
     command => 'go get code.google.com/p/go.tools/cmd/godoc \
                 && go get code.google.com/p/go.tools/cmd/vet \
-                && go get code.google.com/p/go.blog/blog'
+                && go get code.google.com/p/go.blog/blog \
+                && go get github.com/jabley/train/cmd/train'
   }
 
   # Settings from puppet-osx
