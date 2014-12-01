@@ -42,7 +42,8 @@ class teams::performance-platform {
   repo::alphagov { 'gapy': }
   repo::alphagov { 'performance-datastore': }
   repo::alphagov { 'performanceplatform-admin': }
-  repo::alphagov { 'performanceplatform-client': }
+  repo::alphagov { 'performanceplatform-client.js': }
+  repo::alphagov { 'performanceplatform-client.py': }
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
   repo::alphagov { 'performanceplatform-notifier': }
