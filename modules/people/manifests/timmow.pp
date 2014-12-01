@@ -63,4 +63,7 @@ class people::timmow {
   include virtualbox
   include vmware_fusion
   include sourcecodepro
+  class { 'osx::sound::interface_sound_effects':
+      enable => false
+  }
 }
