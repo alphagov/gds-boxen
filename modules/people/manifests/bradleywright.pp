@@ -143,7 +143,6 @@ class people::bradleywright {
   package {
     [
      'bash-completion',
-     'go',
      'parallel',
      'python',
      'reattach-to-user-namespace',
@@ -167,6 +166,20 @@ class people::bradleywright {
      'scala',
      'xpdf'
      ]:
+  }
+
+  # Go
+  package { 'go':
+    ensure   => latest,
+    provider => homebrew
+  } ~> Exec['install_go_tools']
+
+  exec { 'install_go_tools':
+    environment => ["GOPATH=${home}/go"],
+    command => 'go get code.google.com/p/go.tools/cmd/godoc \
+                && go get code.google.com/p/go.tools/cmd/vet \
+                && go get github.com/nsf/gocode'
+
   }
 
   homebrew::tap { 'homebrew/binary': }
