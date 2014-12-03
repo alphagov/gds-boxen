@@ -66,4 +66,11 @@ class people::timmow {
   class { 'osx::sound::interface_sound_effects':
       enable => false
   }
+  include osx::global::enable_keyboard_control_access
+  osx_login_item { 'Slate':
+     name    => 'Slate',
+     path    => '/Applications/Slate.app',
+     hidden  => true,
+     require => Class['Slate'],
+  }
 }
