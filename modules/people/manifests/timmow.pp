@@ -28,6 +28,7 @@ class people::timmow {
       'ansible',
       'hg',
       'gnu-sed',
+      'leiningen',
     ]:
     ensure => present,
   }
