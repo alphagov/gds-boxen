@@ -73,4 +73,6 @@ class people::timmow {
      hidden  => true,
      require => Class['Slate'],
   }
+  include projects::blinken
+  include projects::blinken-config
 }
