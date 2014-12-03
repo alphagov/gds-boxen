@@ -161,7 +161,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.8.2)
+    nodejs (4.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-notational_velocity
@@ -499,7 +499,7 @@ DEPENDENCIES
   mplayerx (= 1.0.0)
   mysql (= 1.2.2)
   nginx (= 1.4.3)
-  nodejs (= 3.8.2)
+  nodejs (= 4.0.0)
   notational_velocity (= 1.1.2)
   ohmyzsh (= 1.0.0)
   omnifocus (= 1.1.0)
