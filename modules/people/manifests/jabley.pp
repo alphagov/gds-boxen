@@ -34,7 +34,6 @@ class people::jabley(
     source   => "http://download.documentfoundation.org/libreoffice/stable/${libreoffice_version}/mac/x86/LibreOffice_${libreoffice_version}-secfix_MacOS_x86_langpack_en-GB.dmg",
   }
   include licecap
-  include nodejs::v0_10
   include onepassword
   include onepassword::chrome
   include openconnect
@@ -238,17 +237,18 @@ class people::jabley(
     require  => Package['python'],
   }
 
-  nodejs::version { 'v0.10.33': }
+  class { 'nodejs::global': version => 'v0.10.33' }
 
   nodejs::module { [
     'express-generator',
     'jsontool',
     'grunt-cli',
+    'keybase-installer',
     'node-inspector',
     'stackvis',
     'tick',
     ]:
-    node_version => 'v0.10'
+    node_version => 'v0.10.33'
   }
 
   $home = "/Users/${::luser}"
