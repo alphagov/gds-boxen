@@ -243,6 +243,7 @@ class people::jabley(
     'express-generator',
     'jsontool',
     'grunt-cli',
+    'gulp',
     'keybase-installer',
     'node-inspector',
     'stackvis',
