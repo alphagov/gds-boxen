@@ -92,6 +92,8 @@ class people::jabley(
   repo::alphagov { 'vcloud-walker': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
+  repo::gds      { 'ida-boxes': }
+  repo::gds      { 'ida-webops': }
   repo::gds      { 'licensify': }
   repo::gds      { 'router-data': }
   repo::gds      { 'saml-lib': }
