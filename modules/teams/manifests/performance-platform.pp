@@ -32,12 +32,6 @@ class teams::performance-platform {
   repo::gds      { 'pp-pilotis': }
   repo::gds      { 'pp-sync': }
   repo::alphagov { 'backdrop': }
-  repo::alphagov { 'backdropsend': }
-  repo::alphagov { 'backdrop-asset-request-collector': }
-  repo::alphagov { 'backdrop-collector': }
-  repo::alphagov { 'backdrop-collector-plugins': }
-  repo::alphagov { 'backdrop-google-spreadsheet-collector': }
-  repo::alphagov { 'backdrop-transactions-explorer-collector': }
   repo::alphagov { 'cheapseats': }
   repo::alphagov { 'gapy': }
   repo::alphagov { 'performance-datastore': }
@@ -47,7 +41,6 @@ class teams::performance-platform {
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
   repo::alphagov { 'performanceplatform-notifier': }
-  repo::alphagov { 'pp-development': }
   repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'spotlight': }
@@ -56,7 +49,6 @@ class teams::performance-platform {
 
   # Documentation
   repo::alphagov { 'performanceplatform-documentation': }
-  repo::alphagov { 'performance-platform': }
 
   # Office-y things
   repo::alphagov { 'fourth-wall': }
