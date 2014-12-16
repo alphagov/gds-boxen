@@ -1,3 +1,5 @@
+# -*- mode: sh -*-
+
 [[ -f /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
 
 [[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
@@ -19,6 +21,7 @@ alias dcs="cd ${workspaceDirectory}/doc-checking"
 alias log="cd ${workspaceDirectory}/dropwizard-logstash"
 alias box="cd ${workspaceDirectory}/ida-boxes"
 alias fabr="cd ${workspaceDirectory}/ida-fabric"
+alias fro="cd ${workspaceDirectory}/ida-frontend"
 alias gra="cd ${workspaceDirectory}/ida-gradle"
 alias hub="cd ${workspaceDirectory}/ida-hub"
 alias acc="cd ${workspaceDirectory}/ida-hub-acceptance-tests"
@@ -37,3 +40,5 @@ export GHC_DOT_APP="/Applications/GHC.app"
 if [ -d "$GHC_DOT_APP" ]; then
     export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
 fi
+
+export PS1='\h:\W$(__git_ps1) \u\$ '
