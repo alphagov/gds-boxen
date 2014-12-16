@@ -77,6 +77,7 @@ class people::jabley(
   repo::alphagov { 'govuk_crawler_worker': }
   repo::alphagov { 'passphrase_entropy': }
   repo::alphagov { 'puppet-gstatsd': }
+  repo::alphagov { 'puppet-heka': }
   repo::alphagov { 'puppet-logstash': }
   repo::alphagov { 'puppet-nginx': }
   repo::alphagov { 'puppet-ssl': }
