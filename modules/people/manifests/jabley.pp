@@ -149,6 +149,7 @@ class people::jabley(
       'ec2-api-tools',
       'faac',
       'ffmpeg',
+      'flow',
       'gettext',
       'glew',
       'glm',
