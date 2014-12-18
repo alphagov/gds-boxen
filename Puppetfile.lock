@@ -86,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.6.0)
+    git (2.7.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -476,7 +476,7 @@ DEPENDENCIES
   flux (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
-  git (= 2.6.0)
+  git (= 2.7.1)
   github_for_mac (= 1.4.0)
   gitx (= 1.2.0)
   go (= 2.1.0)
