@@ -13,7 +13,7 @@ class people::philandstuff {
 
   include teams::infrastructure
 
-  include nodejs::v0_10
+  nodejs::version { 'v0.10.31': }
   class { 'nodejs::global':
     version => 'v0.10'
   }
