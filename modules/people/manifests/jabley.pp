@@ -278,9 +278,9 @@ class people::jabley(
   osx::recovery_message { 'If found, please call +447827 880 857': }
 
   sysctl::set { 'kern.maxfiles':
-    value => '32000'
+    value => '16384'
   }
   sysctl::set { 'kern.maxfilesperproc':
-    value => '28000'
+    value => '16384'
   }
 }
