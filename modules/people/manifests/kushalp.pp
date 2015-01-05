@@ -36,6 +36,18 @@ class people::kushalp {
     source => 'git@github.com:kushalp/emacs.d.git',
   }
 
+  $dotfiles = "${::boxen_srcdir}/dotfiles"
+  repository { $dotfiles:
+    source  => 'KushalP/dotfiles',
+    require => File[$::boxen_srcdir],
+    notify  => Exec['kushalp-make-dotfiles'],
+  }
+
+  exec { 'kushalp-make-dotfiles':
+    command     => "cd ${dotfiles} && make",
+    refreshonly => true,
+  }
+
   class security inherits boxen::security {
     Boxen::Osx_defaults['short delay for password dialog on screensaver'] {
       value  => 0,
