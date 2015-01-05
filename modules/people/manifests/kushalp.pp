@@ -32,9 +32,8 @@ class people::kushalp {
 
   vagrant::plugin { ['vagrant-vmware-fusion', 'vagrant-cachier']: }
 
-  $home = "/Users/${::luser}"
-  repository { "${home}/.emacs.d":
-    source => 'git@github.com:kushalp/emacs-starter-kit.git',
+  repository { "/Users/${::luser}/.emacs.d":
+    source => 'git@github.com:kushalp/emacs.d.git',
   }
 
   class security inherits boxen::security {
