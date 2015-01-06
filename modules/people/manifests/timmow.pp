@@ -76,4 +76,18 @@ class people::timmow {
   }
   include projects::blinken
   include projects::blinken-config
+  include karabiner
+
+  # launch and add login-item
+  include karabiner::login_item
+  class {'modern_space_cadet':
+    shifts_to_parens     => false,
+    force_correct_shifts => false
+  }
+  karabiner::set{ 'repeat.initial_wait':
+    value => '100'
+  }
+  karabiner::set{ 'repeat.wait':
+    value => '20'
+  }
 }
