@@ -34,6 +34,11 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-brewcask
+  specs:
+    brewcask (0.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-caffeine
   specs:
     caffeine (1.0.0)
@@ -407,11 +412,6 @@ GITHUBTARBALL
   remote: norm/puppet-monocle
   specs:
     monocle (1.0.0)
-
-GITHUBTARBALL
-  remote: phinze/puppet-brewcask
-  specs:
-    brewcask (0.0.4)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-concat
