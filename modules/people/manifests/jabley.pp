@@ -259,11 +259,11 @@ class people::jabley(
 
   exec { 'install_go_tools':
     environment => ["GOPATH=${home}/gocode"],
-    command => 'go get golang.org/x/tools/cmd/godoc \
-                && go get golang.org/x/tools/cmd/vet \
-                && go get code.google.com/p/go.blog/blog \
-                && go get github.com/jabley/train/cmd/train \
-                && go get github.com/alphagov/gds-present'
+    command => 'go get -u golang.org/x/tools/cmd/godoc \
+                && go get -u golang.org/x/tools/cmd/vet \
+                && go get -u code.google.com/p/go.blog/blog \
+                && go get -u github.com/jabley/train/cmd/train \
+                && go get -u github.com/alphagov/gds-present'
   }
 
   # Settings from puppet-osx
