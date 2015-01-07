@@ -262,7 +262,8 @@ class people::jabley(
     command => 'go get golang.org/x/tools/cmd/godoc \
                 && go get golang.org/x/tools/cmd/vet \
                 && go get code.google.com/p/go.blog/blog \
-                && go get github.com/jabley/train/cmd/train'
+                && go get github.com/jabley/train/cmd/train \
+                && go get github.com/alphagov/gds-present'
   }
 
   # Settings from puppet-osx
