@@ -14,7 +14,6 @@ class people::bazbremner {
   include osx::finder::show_external_hard_drives_on_desktop
   include osx::finder::unhide_library
   include sizeup
-  include vagrant
   include xquartz
 
   include gds_development
