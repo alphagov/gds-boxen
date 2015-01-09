@@ -25,6 +25,7 @@ class people::bazbremner {
       'cask',
       'emacs',
       'gpg',
+      'leiningen'
       'jq',
       'sipcalc',
       'the_silver_searcher',
