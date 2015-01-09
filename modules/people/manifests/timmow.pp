@@ -29,6 +29,7 @@ class people::timmow {
       'hg',
       'gnu-sed',
       'leiningen',
+      'postgres',
     ]:
     ensure => present,
   }
@@ -82,7 +83,8 @@ class people::timmow {
   include karabiner::login_item
   class {'modern_space_cadet':
     shifts_to_parens     => false,
-    force_correct_shifts => false
+    force_correct_shifts => false,
+    fix_opt_arrows       => false,
   }
   karabiner::set{ 'repeat.initial_wait':
     value => '100'
@@ -90,4 +92,5 @@ class people::timmow {
   karabiner::set{ 'repeat.wait':
     value => '20'
   }
+  ruby::version { '1.9.3-p484': }
 }
