@@ -41,6 +41,7 @@ class teams::performance-platform {
   repo::alphagov { 'performanceplatform-collector': }
   repo::alphagov { 'performanceplatform-collector-config': }
   repo::alphagov { 'performanceplatform-notifier': }
+  repo::alphagov { 'performanceplatform-organisation-api': }
   repo::alphagov { 'pp-smokey': }
   repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'spotlight': }
