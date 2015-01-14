@@ -2,7 +2,6 @@
 # --
 Host ci-master.ci-govuk
   HostName ci-new.alphagov.co.uk
-  ProxyCommand none
 
 Host *.ci-govuk
   ProxyCommand ssh -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
@@ -12,12 +11,10 @@ Host *.ci-govuk
 # -------
 Host jumpbox-1.management.preview
   Hostname jumpbox.preview.alphagov.co.uk
-  ProxyCommand none
 
 Host jumpbox-2.management.preview
   Hostname jumpbox.preview.alphagov.co.uk
   Port     1022
-  ProxyCommand none
 
 Host *.preview
   ProxyCommand ssh -e none %r@jumpbox-1.management.preview -W $(echo %h | sed 's/\.preview$//'):%p
@@ -27,12 +24,10 @@ Host *.preview
 # -------
 Host jumpbox-1.management.staging
   Hostname jumpbox.staging.alphagov.co.uk
-  ProxyCommand none
 
 Host jumpbox-2.management.staging
   Hostname jumpbox.staging.alphagov.co.uk
   Port     1022
-  ProxyCommand none
 
 Host *.staging
   ProxyCommand ssh -e none %r@jumpbox-1.management.staging -W $(echo %h | sed 's/\.staging$//'):%p
@@ -42,12 +37,10 @@ Host *.staging
 # ----------
 Host jumpbox-1.management.production
   Hostname jumpbox.production.alphagov.co.uk
-  ProxyCommand none
 
 Host jumpbox-2.management.production
   Hostname jumpbox.production.alphagov.co.uk
   Port 1022
-  ProxyCommand none
 
 Host *.production
   ProxyCommand ssh -e none %r@jumpbox-1.management.production -W $(echo %h | sed 's/\.production$//'):%p
