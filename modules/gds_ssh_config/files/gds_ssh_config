@@ -5,7 +5,7 @@ Host ci-master.ci-govuk
   ProxyCommand none
 
 Host *.ci-govuk
-  ProxyCommand ssh -A -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
+  ProxyCommand ssh -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
 
 
 # Preview
