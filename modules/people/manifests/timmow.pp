@@ -9,7 +9,10 @@ class people::timmow {
   include teams::infrastructure
   class { 'nodejs::global': version => 'v0.10.31' }
   nodejs::module {
-    ['grunt-cli']:
+    [
+      'grunt-cli',
+      'gulp',
+    ]:
     node_version => 'v0.10.31'
   }
 
@@ -30,6 +33,7 @@ class people::timmow {
       'gnu-sed',
       'leiningen',
       'postgres',
+      'tig',
     ]:
     ensure => present,
   }
