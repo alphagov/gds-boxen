@@ -52,9 +52,12 @@ class people::mattbostock {
 
   repository { "/Users/${::boxen_user}/.dotfiles":
     source  => "${::github_login}/dotfiles",
-  }
-
-  homebrew::tap { 'thoughtbot/formulae': }
+  } ->
+  exec { 'create dotfiles symlinks':
+    command => 'rcup',
+    cwd     => "/Users/${::boxen_user}",
+    environment => ["USER=${::boxen_user}"],
+  } -> Package <| |>
 
   ## This is how to install Homebrew packages
   ## You can get a list of your current packages with
@@ -84,7 +87,9 @@ class people::mattbostock {
       'xz',
     ]:
     ensure => present,
-  }
+  } ->
+  homebrew::tap { 'thoughtbot/formulae': }
+
 
   package {
     [
