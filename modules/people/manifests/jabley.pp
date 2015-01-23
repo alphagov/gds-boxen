@@ -261,6 +261,7 @@ class people::jabley(
     environment => ["GOPATH=${home}/gocode"],
     command => 'go get -u golang.org/x/tools/cmd/godoc \
                 && go get -u golang.org/x/tools/cmd/vet \
+                && go get -u golang.org/x/tools/cmd/goimports \
                 && go get -u code.google.com/p/go.blog/blog \
                 && go get -u github.com/jabley/train/cmd/train \
                 && go get -u github.com/alphagov/gds-present'
