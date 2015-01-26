@@ -48,7 +48,8 @@ class people::dcarley {
       'entr',
       'graphviz',
       'gnu-sed',
-      'tmux'
+      'tig',
+      'tmux',
     ]:
     ensure => present,
   }
