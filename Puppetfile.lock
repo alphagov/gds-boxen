@@ -246,7 +246,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-seil
   specs:
-    seil (1.0.2)
+    seil (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -529,7 +529,7 @@ DEPENDENCIES
   ruby (= 8.1.4)
   rubymine (= 1.1.0)
   screen (= 1.0.0)
-  seil (= 1.0.2)
+  seil (= 1.0.3)
   sizeup (= 1.0.0)
   skype (= 1.0.9)
   slack (= 1.0.6)
