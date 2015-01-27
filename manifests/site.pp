@@ -69,6 +69,9 @@ node default {
   # Installs our default ruby versions
   include gds_ruby
 
+  # Checkout any alphagov repos declared in hiera
+  include alphagov
+
   # common, useful packages
   package {
     [

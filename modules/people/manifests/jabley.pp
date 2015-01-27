@@ -62,29 +62,6 @@ class people::jabley(
   class { 'teams::infrastructure': manage_gitconfig => false }
   include teams::trade-tariff
 
-  repo::alphagov { 'asset-manager': }
-  repo::alphagov { 'architecture-public': }
-  repo::alphagov { 'cdn-acceptance-tests': }
-  repo::alphagov { 'design-patterns': }
-  repo::alphagov { 'external-link-tracker': }
-  repo::alphagov { 'government-service-design-manual': }
-  repo::alphagov { 'govuk_crawler_worker': }
-  repo::alphagov { 'passphrase_entropy': }
-  repo::alphagov { 'puppet-gstatsd': }
-  repo::alphagov { 'puppet-heka': }
-  repo::alphagov { 'puppet-logstash': }
-  repo::alphagov { 'puppet-nginx': }
-  repo::alphagov { 'puppet-ssl': }
-  repo::alphagov { 'sensu-community-plugins': }
-  repo::alphagov { 'service-domain-checker': }
-  repo::alphagov { 'servicechecker': }
-  repo::alphagov { 'transition-stats': }
-  repo::alphagov { 'transformation-dashboard': }
-  repo::alphagov { 'vcloud-core': }
-  repo::alphagov { 'vcloud-edge_gateway': }
-  repo::alphagov { 'vcloud-launcher': }
-  repo::alphagov { 'vcloud-net_launcher': }
-  repo::alphagov { 'vcloud-walker': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
   repo::gds      { 'ida-boxes': }
