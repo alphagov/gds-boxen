@@ -20,6 +20,7 @@ alphagov::repos:
     - 'cdn-acceptance-tests'
     - 'design-patterns'
     - 'external-link-tracker'
+    - 'event-store'
     - 'government-service-design-manual'
     - 'govuk_crawler_worker'
     - 'metadata-api'
