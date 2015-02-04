@@ -21,6 +21,7 @@ class people::bazbremner {
   package {
     [
       'ansible',
+      'aspell',
       'bash-completion',
       'cask',
       'emacs',
