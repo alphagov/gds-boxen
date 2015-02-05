@@ -1,25 +1,28 @@
 class people::daibach {
+# System stuff
+  include gds_osx::turn_off_dashboard
+  include gds_osx::remove_spotlight
+  include gds_virtualbox
+  include openconnect
 
+# Terminal apps
+  include iterm2::stable
+  include git
+  include gitx::dev
+  include vagrant
+  include java
+  include mysql
+  include wget
+
+# Apps I use
   include alfred
   include caffeine
   include chrome
   include dropbox
-  include gds_osx::remove_spotlight
-  include gds_osx::turn_off_dashboard
-  include gitx::dev
-  include iterm2::stable
-  include java
-  include mysql
   include onepassword
-  include openconnect
-  include propane
   include spotify
   include sublime_text_2
   include textmate
-  include vagrant
-  vagrant::plugin { 'vagrant-dns': }
-  include gds_virtualbox
-  include wget
 
   include teams::mainstream
 
