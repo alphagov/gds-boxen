@@ -7,6 +7,7 @@ class people::danielroseman {
   include git
   include hub
   include iterm2::stable
+  include iterm2::colors::solarized_dark
   include macvim
   include vagrant
   include gds_virtualbox
@@ -21,6 +22,12 @@ class people::danielroseman {
   file { $home_projects:
     ensure => directory,
   }
+
+  # Git
+  git::config::global { 'color.ui': value => 'true' }
+  git::config::global { 'user.name': value => 'Daniel Roseman' }
+  git::config::global { 'user.email': value => 'daniel.roseman@digital.cabinet-office.gov.uk' }
+  git::config::global { 'core.editor': value => 'vim' }
 
   repository { "${home}/.vim/bundle/vundle":
     source => 'gmarik/vundle',
@@ -43,13 +50,23 @@ class people::danielroseman {
     [
       'tmux',
       'ctags',
+      'python',
+      'the_silver_searcher',
     ]:
     ensure => present,
   }
 
-  include python::2_7_6
-  python::package { 'virtualenv for python 2.7.6': package => 'virtualenv', python_version => '2.7.6' }
+  package { 'go':
+    ensure          => present,
+    install_options => '--cross-compile-common',
+  }
 
+  package {
+    ['virtualenv', 'virtualenvwrapper']:
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
 }
 
 
