@@ -6,14 +6,12 @@ class people::daibach {
   include gds_development
   include gds_vpn_profiles
   include gds_virtualbox
-  include openconnect
 
 # Terminal apps
   include iterm2::stable
   include git
   include gitx::dev
   include vagrant
-  include java
   include mysql
   include wget
 
@@ -27,7 +25,6 @@ class people::daibach {
   include firefox
   include googledrive
   include onepassword
-  include slack
   include spotify
   include sublime_text_2
   include textmate
@@ -37,7 +34,7 @@ class people::daibach {
   include osx::global::tap_to_click
   include osx::dock::autohide
   include osx::finder::empty_trash_securely
-  include osx::finder::show_all_filename_extensions
+#  include osx::finder::show_all_filename_extensions
 
   include teams::mainstream
 
