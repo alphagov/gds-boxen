@@ -259,11 +259,6 @@ GITHUBTARBALL
     skype (1.0.9)
 
 GITHUBTARBALL
-  remote: boxen/puppet-slack
-  specs:
-    slack (1.0.6)
-
-GITHUBTARBALL
   remote: boxen/puppet-slate
   specs:
     slate (1.0.1)
@@ -532,7 +527,6 @@ DEPENDENCIES
   seil (= 1.0.3)
   sizeup (= 1.0.0)
   skype (= 1.0.9)
-  slack (= 1.0.6)
   slate (= 1.0.1)
   sourcecodepro (= 1.0.0)
   sparrow (= 1.0.0)
