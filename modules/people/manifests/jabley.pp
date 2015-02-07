@@ -62,6 +62,7 @@ class people::jabley(
   class { 'teams::infrastructure': manage_gitconfig => false }
   include teams::trade-tariff
 
+  repo::gds      { 'ertp': }
   repo::gds      { 'govuk_delivery': }
   repo::gds      { 'interviews': }
   repo::gds      { 'ida-boxes': }
