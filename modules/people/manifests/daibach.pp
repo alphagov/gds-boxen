@@ -24,6 +24,7 @@ class people::daibach {
   include evernote
   include firefox
   include googledrive
+  include omnigraffle::pro
   include onepassword
   include spotify
   include sublime_text_2
