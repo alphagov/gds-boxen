@@ -12,7 +12,6 @@ class people::bradleywright {
   include iterm2::colors::solarized_dark
   include mailplane
   include nginx
-  include nodejs::v0_10
   include notational_velocity::nvalt
   include omnifocus
   include openconnect
@@ -21,6 +20,8 @@ class people::bradleywright {
   include vmware_fusion
   include x_dispatch
   include zsh
+
+  class { 'nodejs::global': version => 'v0.10.33' }
 
   osx_login_item { 'OmniFocus':
     name    => 'OmniFocus',
