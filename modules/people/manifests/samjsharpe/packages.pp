@@ -24,7 +24,8 @@ class people::samjsharpe::packages {
   vagrant::plugin { 'dns': }
   vagrant::plugin { 'vmware-fusion': }
   vagrant::plugin { 'multiprovider-snap': }
-  vagrant::plugin { ['vagrant-global-status','vagrant-vbguest']:
+  vagrant::plugin { 'vagrant-vbguest': }
+  vagrant::plugin { ['vagrant-global-status']:
     ensure => absent,
   }
   include virtualbox
