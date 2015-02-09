@@ -233,7 +233,7 @@ class people::bradleywright {
   # Emacs
   package { 'Emacs':
     provider => 'appdmg',
-    source   => 'http://emacsformacosx.com/emacs-builds/Emacs-pretest-24.3.91-universal-10.6.8.dmg',
+    source   => 'http://emacsformacosx.com/emacs-builds/Emacs-24.4-universal.dmg',
     notify   => Exec['fix-emacs-termcap'],
   }
 
@@ -248,7 +248,7 @@ class people::bradleywright {
 
   file { "${boxen::config::envdir}/emacs-macosx.sh":
     content => "export PATH=/Applications/Emacs.app/Contents/MacOS/bin:\$PATH
-alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs-10.7
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 ",
     require => File[$boxen::config::envdir],
   }
