@@ -1,10 +1,7 @@
 # CI
 # --
-Host ci-master.ci-govuk
-  HostName ci-new.alphagov.co.uk
-
 Host *.ci-govuk
-  ProxyCommand ssh -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
+  ProxyCommand ssh -e none %r@ci-new.alphagov.co.uk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
 
 
 # Preview
