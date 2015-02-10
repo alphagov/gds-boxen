@@ -215,6 +215,8 @@ class people::jabley(
 
   class { 'nodejs::global': version => 'v0.10.33' }
 
+  nodejs::version { 'v0.12.0': }
+
   nodejs::module { [
     'express-generator',
     'jsontool',
