@@ -14,7 +14,7 @@ Host jumpbox-2.management.preview
   Port     1022
 
 Host *.preview
-  ProxyCommand ssh %r@jumpbox-1.management.preview -W $(echo %h | sed 's/\.preview$//'):%p
+  ProxyCommand ssh %r@jumpbox.preview.alphagov.co.uk -W $(echo %h | sed 's/\.preview$//'):%p
 
 
 # Staging
@@ -27,7 +27,7 @@ Host jumpbox-2.management.staging
   Port     1022
 
 Host *.staging
-  ProxyCommand ssh %r@jumpbox-1.management.staging -W $(echo %h | sed 's/\.staging$//'):%p
+  ProxyCommand ssh %r@jumpbox.staging.alphagov.co.uk -W $(echo %h | sed 's/\.staging$//'):%p
 
 
 # Production
@@ -40,4 +40,4 @@ Host jumpbox-2.management.production
   Port 1022
 
 Host *.production
-  ProxyCommand ssh %r@jumpbox-1.management.production -W $(echo %h | sed 's/\.production$//'):%p
+  ProxyCommand ssh %r@jumpbox.production.alphagov.co.uk -W $(echo %h | sed 's/\.production$//'):%p
