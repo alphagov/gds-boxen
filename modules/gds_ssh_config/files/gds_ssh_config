@@ -6,11 +6,7 @@ Host *.ci-govuk
 
 # Preview
 # -------
-Host jumpbox-1.management.preview
-  Hostname jumpbox.preview.alphagov.co.uk
-
 Host jumpbox-2.management.preview
-  Hostname jumpbox.preview.alphagov.co.uk
   Port     1022
 
 Host *.preview
@@ -19,11 +15,7 @@ Host *.preview
 
 # Staging
 # -------
-Host jumpbox-1.management.staging
-  Hostname jumpbox.staging.alphagov.co.uk
-
 Host jumpbox-2.management.staging
-  Hostname jumpbox.staging.alphagov.co.uk
   Port     1022
 
 Host *.staging
@@ -32,11 +24,7 @@ Host *.staging
 
 # Production
 # ----------
-Host jumpbox-1.management.production
-  Hostname jumpbox.production.alphagov.co.uk
-
 Host jumpbox-2.management.production
-  Hostname jumpbox.production.alphagov.co.uk
   Port 1022
 
 Host *.production
