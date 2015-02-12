@@ -28,15 +28,31 @@ class people::timmow {
       'bash-completion',
       'pyenv',
       'gpg',
+      'gpg-agent',
       'ansible',
       'hg',
       'gnu-sed',
       'leiningen',
       'postgres',
       'tig',
+      'jq',
+      'brew-cask',
+      'graphviz',
     ]:
     ensure => present,
   }
+
+  package {
+    [
+      'alfred',
+      'gephi',
+    ]:
+    ensure   => present,
+    provider => 'brewcask',
+    require  => Package['brew-cask'],
+  }
+
+  include python::3_3_0
 
   package {
     [
