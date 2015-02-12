@@ -180,6 +180,7 @@ class people::jabley(
       'bash-completion',
       'curl',
       'go',
+      'gpg-agent',
       'graphviz',
       'heroku-toolbelt',
       'httperf',
