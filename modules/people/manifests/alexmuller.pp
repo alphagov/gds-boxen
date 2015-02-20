@@ -69,10 +69,13 @@ class people::alexmuller {
 
   # Homebrew packages
   # Remember to read the post-install caveats
+  homebrew::tap { 'pivotal/tap': }
+
   package {
     [
       'autojump',
       'bash-completion',
+      'cloudfoundry-cli',
       'tree',
       'wget',
     ]:
