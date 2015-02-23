@@ -97,6 +97,12 @@ class people::alexmuller {
     source => 'puppet:///modules/people/alexmuller/bash_profile',
   }
 
+  # Install pre-commit hooks everywhere
+  file { "${home_directory}/govuk-pre-commit-hooks":
+    source => 'puppet:///modules/people/alexmuller/govuk-pre-commit-hooks',
+    mode   => 0755,
+  } -> exec { "${home_directory}/govuk-pre-commit-hooks": }
+
   sudoers { 'alexmuller_sudo':
     users    => $::boxen_user,
     type     => 'user_spec',
