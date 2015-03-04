@@ -38,6 +38,7 @@ class people::timmow {
       'jq',
       'brew-cask',
       'graphviz',
+      'siege',
     ]:
     ensure => present,
   }
@@ -46,6 +47,7 @@ class people::timmow {
     [
       'alfred',
       'gephi',
+      'flux',
     ]:
     ensure   => present,
     provider => 'brewcask',
