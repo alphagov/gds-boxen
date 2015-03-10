@@ -26,6 +26,7 @@ class teams::performance-platform {
 
   # Performance Platform specific stuff
   include teams::performance-platform::puppet
+  include teams::performance-platform::ssh
 
   repo::gds      { 'google-dev-credentials': }
   repo::gds      { 'pp-manual': }
