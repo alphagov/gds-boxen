@@ -1,5 +1,5 @@
 class people::jabley(
-  $libreoffice_version = '4.3.5',
+  $libreoffice_version = '4.3.6',
 ) {
 
   include adium
