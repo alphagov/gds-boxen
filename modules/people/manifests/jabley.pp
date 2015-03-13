@@ -78,7 +78,6 @@ class people::jabley(
 
   # All my SSH belong
   class { 'gds_ssh_config': }
-  class { 'teams::performance-platform::ssh': }
   ssh_config::fragment {"user":
     content => template('people/jabley/ssh_config'),
   }
