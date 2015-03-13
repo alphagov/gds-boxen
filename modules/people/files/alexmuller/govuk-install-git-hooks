@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for dir in /Users/alexmuller/govuk/*
+  do
+    # If this is a git repository which does not contain a hooks.old directory,
+    # attempt to install git-hooks in this repo.
+    if [[ -d $dir/.git ]] && [[ ! -d $dir/.git/hooks.old ]]
+      then
+        cd "$dir" && /opt/boxen/bin/git-hooks --install
+    fi
+done

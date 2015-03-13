@@ -97,11 +97,27 @@ class people::alexmuller {
     source => 'puppet:///modules/people/alexmuller/bash_profile',
   }
 
-  # Install pre-commit hooks everywhere
-  file { "${home_directory}/govuk-pre-commit-hooks":
-    source => 'puppet:///modules/people/alexmuller/govuk-pre-commit-hooks',
-    mode   => 0755,
-  } -> exec { "${home_directory}/govuk-pre-commit-hooks": }
+  # Git hooks
+  file { "${boxen::config::bindir}/git-hooks":
+    source => 'puppet:///modules/people/alexmuller/git-hooks',
+    mode   => '0755',
+  }
+  ->
+  file { "${boxen::config::bindir}/govuk-install-git-hooks":
+    source => 'puppet:///modules/people/alexmuller/govuk-install-git-hooks',
+    mode   => '0755',
+  }
+  ->
+  exec { "${boxen::config::bindir}/govuk-install-git-hooks": }
+
+  file { ["${home_directory}/.git_hooks", "${home_directory}/.git_hooks/pre-commit"]:
+    ensure => 'directory',
+  }
+
+  file { "${home_directory}/.git_hooks/pre-commit/secrets":
+    source => 'puppet:///modules/people/alexmuller/git-hook-secrets',
+    mode   => '0755',
+  }
 
   sudoers { 'alexmuller_sudo':
     users    => $::boxen_user,
