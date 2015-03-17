@@ -45,6 +45,7 @@ class teams::performance-platform {
   repo::alphagov { 'performanceplatform-notifier': }
   repo::alphagov { 'performanceplatform-organisation-api': }
   repo::alphagov { 'pp-smokey': }
+  repo::alphagov { 'pp-deploy-lag-radiator': }
   repo::alphagov { 'screenshot-as-a-service': }
   repo::alphagov { 'spotlight': }
   repo::alphagov { 'stagecraft': }
