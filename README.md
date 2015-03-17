@@ -1,9 +1,7 @@
 ## Getting started with Boxen
 
 - Make sure you are running Mac OS X 10.8 (Mountain Lion)
-- Install the full Xcode from the Mac App Store, and then explicitly install the Command Line Tools (Open Xcode -> Preferences -> Downloads -> Install Command Line Tools). You may instead be able to use the [standalone Xcode Command Line Tools][xcode-cli] rather than installing it through the full Xcode, but this has caused some issues and [Boxen's README][boxen-readme] recommends using the full Xcode. If you are using the standalone version, you may also need to run `sudo xcode-select --switch /path/to/xcode`.
-[xcode-cli]: https://developer.apple.com/downloads/index.action
-[boxen-readme]: https://github.com/boxen/our-boxen/blob/master/README.md#getting-started
+- Install the full Xcode from the Mac App Store, and then explicitly install the Command Line Tools by running `xcode-select --install`
 - Follow [these instructions][github-ssh-key] to generate an SSH key so that you can clone our repositories. You'll need to add your key to both github.com and github.gds, our GitHub Enterprise instance.
 [github-ssh-key]: https://help.github.com/articles/generating-ssh-keys
 ### The following instructions will work for a fresh build or for an already set-up Mac.
