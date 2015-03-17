@@ -4,7 +4,8 @@
 - Install the full Xcode from the Mac App Store, and then explicitly install the Command Line Tools (Open Xcode -> Preferences -> Downloads -> Install Command Line Tools). You may instead be able to use the [standalone Xcode Command Line Tools][xcode-cli] rather than installing it through the full Xcode, but this has caused some issues and [Boxen's README][boxen-readme] recommends using the full Xcode. If you are using the standalone version, you may also need to run `sudo xcode-select --switch /path/to/xcode`.
 [xcode-cli]: https://developer.apple.com/downloads/index.action
 [boxen-readme]: https://github.com/boxen/our-boxen/blob/master/README.md#getting-started
-
+- Follow [these instructions][github-ssh-key] to generate an SSH key so that you can clone our repositories. You'll need to add your key to both github.com and github.gds, our GitHub Enterprise instance.
+[github-ssh-key]: https://help.github.com/articles/generating-ssh-keys
 ### The following instructions will work for a fresh build or for an already set-up Mac.
 
     sudo mkdir -p /opt/boxen
@@ -23,7 +24,12 @@
     echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.zshrc
 
 It should run successfully, and should tell you to source a shell script
-in your environment.
+in your environment. If it does not run successfully, and gives you
+errors about unable to resolve `github.gds`, make sure you're on any of
+the internal staff WiFi networks and can access `github.gds` in a web
+browser. You will probably also need to `ssh git@github.gds` first, accept the
+host key, and enter your SSH key's password.
+
 For users without a bash or zsh config or a `~/.profile` file,
 Boxen will create a shim for you that will work correctly.
 If you do have a `~/.bashrc` or `~/.zshrc`, your shell will not use
