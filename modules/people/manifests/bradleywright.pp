@@ -50,7 +50,7 @@ class people::bradleywright {
   include projects::govuk_frontend_toolkit
   include projects::private-utils
   include projects::puppet
-  include projects::redirector
+  include projects::transition-config
   include projects::router
   include projects::rummager
   include projects::smokey

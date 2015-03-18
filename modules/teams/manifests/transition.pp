@@ -1,7 +1,7 @@
 class teams::transition {
   # Apps
   include projects::bouncer
-  include projects::redirector
+  include projects::transition-config
   include projects::side-by-side-browser
   include projects::transition
 
