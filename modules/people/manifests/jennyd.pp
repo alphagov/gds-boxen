@@ -29,7 +29,7 @@ class people::jennyd {
   include projects::opsmanual
   include projects::private-utils
   include projects::puppet
-  include projects::redirector
+  include projects::transition-config
   include projects::release
   include projects::rummager
   include projects::signonotron2
