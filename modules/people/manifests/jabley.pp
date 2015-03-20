@@ -15,7 +15,6 @@ class people::jabley(
   include evernote
   include firefox
   include flux
-  include freeplane
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_vpn_profiles
@@ -112,7 +111,6 @@ class people::jabley(
     [
       'ascii',
       'boost',
-      'bsdmake',
       'cdrtools',
       'cloc',
       'cmake',
@@ -148,7 +146,6 @@ class people::jabley(
       'protobuf',
       'pt',
       'python',
-      'redis',
       'sdl',
       'sdl_image',
       'sloccount',
@@ -192,7 +189,6 @@ class people::jabley(
       'pngcrush',
       'pv',
       'R',
-      's3cmd',
       'sbt',
       'scala',
       'ssh-copy-id',
