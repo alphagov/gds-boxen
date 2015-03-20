@@ -167,7 +167,6 @@ class people::jabley(
       'pigz',
       'pngcrush',
       'pv',
-      'R',
       'sbt',
       'scala',
       'ssh-copy-id',
