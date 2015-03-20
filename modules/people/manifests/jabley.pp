@@ -20,7 +20,6 @@ class people::jabley(
   include gds_vpn_profiles
   include gitx::dev
   include googledrive
-  include handbrake
   include imagealpha
   include imageoptim
   include java
@@ -34,7 +33,6 @@ class people::jabley(
   include paparazzi
   include r_studio
   include sublime_text_2
-  include transmission
   include vmware_fusion
   include xbench
 
@@ -87,11 +85,6 @@ class people::jabley(
     version => '1.6.5',
   }
 
-  class { 'intellij':
-      edition => 'community',
-      version => '13.0.2',
-  }
-
   homebrew::tap { 'homebrew/science': }
 
   # version control this file, since it's in another repo and I don't really
@@ -120,7 +113,6 @@ class people::jabley(
       'gmp',
       'gnu-typist',
       'groovy',
-      'haskell-platform',
       'id3tool',
       'iperf',
       'jpeg',
