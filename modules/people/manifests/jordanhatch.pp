@@ -11,8 +11,6 @@ class people::jordanhatch {
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 
-  include teams::mainstream
-
   $home = "/Users/${::luser}"
   $src = "${home}/src"
 
