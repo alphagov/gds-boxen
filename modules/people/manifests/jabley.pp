@@ -149,14 +149,6 @@ class people::jabley(
     provider => homebrew,
   }
 
-  package { 'wireshark':
-    ensure => present,
-    install_options => [
-      '--with-qt',
-    ],
-    provider => homebrew,
-  }
-
   package {
     [
       'ansible',
