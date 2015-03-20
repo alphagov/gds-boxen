@@ -181,12 +181,6 @@ class people::jabley(
     provider => homebrew,
   } ~> Exec['install_go_tools']
 
-  package {'virtualenv':
-    ensure   => present,
-    provider => pip,
-    require  => Package['python'],
-  }
-
   class { 'nodejs::global': version => 'v0.10.33' }
 
   nodejs::version { 'v0.12.0': }
