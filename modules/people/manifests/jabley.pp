@@ -5,10 +5,8 @@ class people::jabley(
   include adium
   include alfred
   include android_file_transfer
-  include android::sdk
   include banshee
   include caffeine
-  include clojure
   include chrome
   include dropbox
   include emacs::formacosx
@@ -22,7 +20,6 @@ class people::jabley(
   include googledrive
   include imagealpha
   include imageoptim
-  include java
   class { 'libreoffice': version => $libreoffice_version }
   class { 'libreoffice::languagepack': version => $libreoffice_version }
   include licecap
