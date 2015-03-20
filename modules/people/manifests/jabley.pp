@@ -28,7 +28,6 @@ class people::jabley(
   include openconnect
   include packer
   include paparazzi
-  include r_studio
   include sublime_text_2
   include vmware_fusion
   include xbench
