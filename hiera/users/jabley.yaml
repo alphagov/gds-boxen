@@ -25,6 +25,7 @@ alphagov::repos:
     - 'govuk_crawler_worker'
     - 'metadata-api'
     - 'passphrase_entropy'
+    - 'pp-deploy-lag-radiator'
     - 'puppet-gstatsd'
     - 'puppet-heka'
     - 'puppet-logstash'
