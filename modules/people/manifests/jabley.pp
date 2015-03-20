@@ -195,11 +195,37 @@ class people::jabley(
   }
 
   $home = "/Users/${::luser}"
-  $projects = "${home}/Projects"
+  $home_projects = "${home}/Projects"
 
-  file { [$projects]:
-    ensure  => directory,
+  file { $home_projects:
+    ensure => directory,
   }
+
+  $dotfiles = "${home_projects}/homedir"
+
+  repository { $dotfiles:
+    source  => 'jabley/homedir',
+    require => File[$home_projects],
+    notify  => Exec['jabley-make-homedir'],
+  }
+
+  exec { 'jabley-make-homedir':
+    command     => "cd ${dotfiles} && make",
+    refreshonly => true,
+  }
+
+#  $emacs = "${home_projects}/emacs-d"
+#
+#  repository { $emacs:
+#    source  => 'jabley/emacs-d',
+#    require => File[$home_projects],
+#    notify  => Exec['jabley-make-emacs-d'],
+#  }
+#
+#  exec { 'jabley-make-emacs-d':
+#    command     => "cd ${emacs} && make",
+#    refreshonly => true,
+#  }
 
   exec { 'install_go_tools':
     environment => ["GOPATH=${home}/gocode"],
