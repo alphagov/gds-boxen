@@ -94,15 +94,11 @@ class people::jabley(
   package {
     [
       'ascii',
-      'boost',
       'cdrtools',
       'cloc',
       'cmake',
       'dos2unix',
       'ec2-api-tools',
-      'faac',
-      'ffmpeg',
-      'flow',
       'gettext',
       'glew',
       'glm',
@@ -121,7 +117,6 @@ class people::jabley(
       'mysql',
       'oniguruma',
       'pcre',
-      'phantomjs',
       'pidof',
       'pkg-config',
       'play22',
