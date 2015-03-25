@@ -114,7 +114,6 @@ class people::jabley(
       'md5sha1sum',
       'mercurial',
       'mobile-shell',
-      'mysql',
       'oniguruma',
       'pcre',
       'pidof',
