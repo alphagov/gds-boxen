@@ -1,5 +1,6 @@
 class people::jabley(
   $libreoffice_version = '4.3.6',
+  $node_version = 'v0.10.33',
 ) {
 
   include adium
@@ -171,7 +172,7 @@ class people::jabley(
     provider => homebrew,
   } ~> Exec['install_go_tools']
 
-  class { 'nodejs::global': version => 'v0.10.33' }
+  class { 'nodejs::global': version => $node_version }
 
   nodejs::version { 'v0.12.0': }
 
@@ -185,7 +186,7 @@ class people::jabley(
     'stackvis',
     'tick',
     ]:
-    node_version => 'v0.10.33'
+    node_version => $node_version,
   }
 
   $home = "/Users/${::luser}"
