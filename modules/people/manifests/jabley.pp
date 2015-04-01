@@ -209,6 +209,8 @@ class people::jabley(
     refreshonly => true,
   }
 
+  include people::jabley::repos
+
 #  $emacs = "${home_projects}/emacs-d"
 #
 #  repository { $emacs:
