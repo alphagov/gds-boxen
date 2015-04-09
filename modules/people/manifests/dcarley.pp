@@ -1,5 +1,4 @@
 class people::dcarley {
-  include adium
   include caffeine
   include chrome
   include gds_osx::turn_off_dashboard
@@ -10,7 +9,6 @@ class people::dcarley {
   include vim
   include gds_virtualbox
   include wget
-  include wireshark
 
   include zsh
   include ohmyzsh
@@ -21,9 +19,6 @@ class people::dcarley {
   vagrant::plugin { 'vagrant-vmware-fusion': }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'multiprovider-snap': }
-  vagrant::plugin { 'vagrant-zz-multiprovider-snap':
-    ensure => absent,
-  }
 
   class { 'osx::dock::icon_size': size => 40 }
 
@@ -36,17 +31,11 @@ class people::dcarley {
   include projects::deployment
   include projects::deployment::creds
 
-  # Other projects
-  include teams::performance-platform
-  include teams::performance-platform::ssh
-
   # These are all Homebrew packages
   package {
     [
       'apg',
-      'bash-completion',
       'entr',
-      'graphviz',
       'gnu-sed',
       'tig',
       'tmux',
