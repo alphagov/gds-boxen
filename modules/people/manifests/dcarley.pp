@@ -20,7 +20,25 @@ class people::dcarley {
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'multiprovider-snap': }
 
+  include osx::global::tap_to_click
+  include osx::keyboard::capslock_to_control
+  include osx::dock::clear_dock
   class { 'osx::dock::icon_size': size => 40 }
+  boxen::osx_defaults { 'enable trackpad three-finger drag':
+    ensure => present,
+    domain => 'com.apple.driver.AppleBluetoothMultitouch.trackpad',
+    key    => 'TrackpadThreeFingerDrag',
+    value  => '1',
+    user   => $::boxen_user,
+  }
+  boxen::osx_defaults { 'show battery percentage remaining':
+    ensure => present,
+    domain => 'com.apple.menuextra.battery',
+    key    => 'ShowPercent',
+    type   => 'string',
+    value  => 'YES',
+    user   => $::boxen_user,
+  }
 
   # Projects accessible to everyone in Infrastructure
   class { 'teams::infrastructure': manage_gitconfig => false }
