@@ -6,6 +6,7 @@ class people::dcarley {
   include gds_vpn_profiles
   include git
   include iterm2::stable
+  include iterm2::colors::solarized_dark
   include vim
   include gds_virtualbox
   include wget
