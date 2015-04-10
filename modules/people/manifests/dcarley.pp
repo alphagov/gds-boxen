@@ -64,6 +64,17 @@ class people::dcarley {
     ensure => present,
   }
 
+  package { 'python':
+    ensure => present,
+  } ->
+  package { [
+    'virtualenv',
+    'virtualenvwrapper',
+  ]:
+    ensure   => present,
+    provider => 'pip',
+  }
+
   package { 'go':
     ensure          => present,
     install_options => '--cross-compile-common',
