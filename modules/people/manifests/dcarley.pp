@@ -48,11 +48,6 @@ class people::dcarley {
     install_options => '--cross-compile-common',
   }
 
-  package { 'lice':
-    ensure   => present,
-    provider => 'pip',
-  }
-
   $home              = "/Users/${::luser}"
   $projects          = "${home}/projects"
   $projects_personal = "${projects}/personal"
