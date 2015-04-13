@@ -58,6 +58,7 @@ class people::dcarley {
       'docker',
       'entr',
       'gnu-sed',
+      'terraform',
       'tig',
       'tmux',
     ]:
