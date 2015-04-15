@@ -82,6 +82,10 @@ class people::jabley(
     version => '1.6.5',
   }
 
+  class { 'gds_printers':
+    ldap_username => 'jamesabley',
+  }
+
   homebrew::tap { 'homebrew/science': }
 
   # version control this file, since it's in another repo and I don't really
