@@ -4,6 +4,8 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
+forge "https://forge.puppetlabs.com"
+
 # Shortcut for a module from GitHub's boxen organization
 def github(name, *args)
   options ||= if args.last.is_a? Hash
@@ -61,6 +63,8 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+mod    "mosen/cups",     "1.4.1"
 
 github "adium",          "1.4.0", :repo => "dieterdemeyer/puppet-adium"
 github "alfred",         "1.4.0"
