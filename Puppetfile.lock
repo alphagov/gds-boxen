@@ -1,3 +1,8 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    mosen-cups (1.4.1)
+
 GITHUBTARBALL
   remote: alphagov/puppet-libreoffice
   specs:
@@ -506,6 +511,7 @@ DEPENDENCIES
   modern_space_cadet (= 1.0.7)
   module_data (= 0.0.4)
   monocle (= 1.0.0)
+  mosen-cups (= 1.4.1)
   mou (= 1.1.3)
   mplayerx (= 1.0.0)
   mysql (= 1.99.91)

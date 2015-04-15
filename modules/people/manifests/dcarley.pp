@@ -14,6 +14,10 @@ class people::dcarley {
   include zsh
   include ohmyzsh
 
+  class { 'gds_printers':
+    ldap_username => 'dancarley',
+  }
+
   class { 'vagrant':
     version => '1.7.2',
   }
