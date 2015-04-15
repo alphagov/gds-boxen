@@ -69,4 +69,8 @@ class people::daibach {
     ensure => present,
   }
 
+  class { 'gds_printers':
+    ldap_username => 'daivaughan',
+  }
+
 }
