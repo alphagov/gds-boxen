@@ -69,7 +69,7 @@ class people::dcarley {
     ensure => present,
   }
 
-  homebrew::tap { 'tsuru/homebrew-tsuru': } ->
+  homebrew::tap { 'tsuru/tsuru': } ->
   package { [
     'tsuru',
     'tsuru-admin',
