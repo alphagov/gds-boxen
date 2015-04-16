@@ -17,4 +17,17 @@ class gds_printers (
       'Option1' => 'True', # Duplexer
     },
   }
+
+  printer { '3rd_Floor_IL0_Printer':
+    ensure      => present,
+    description => '3rd Floor IL0 Printer',
+    location    => '3rd floor, Aviation House',
+    uri         => "lpd://${ldap_username}@192.168.9.47/FollowPrint",
+    model       => 'drv:///sample.drv/generic.ppd',
+    page_size   => 'A4',
+    ppd_options => {
+      'Option1' => 'True', # Duplexer
+    },
+  }
+
 }
