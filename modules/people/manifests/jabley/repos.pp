@@ -9,6 +9,7 @@ class people::jabley::repos {
     "${people::jabley::home_projects}/applicake",
     "${people::jabley::home_projects}/archiloque",
     "${people::jabley::home_projects}/capistrano",
+    "${people::jabley::home_projects}/camlistore",
     "${people::jabley::home_projects}/clojure",
     "${people::jabley::home_projects}/coreos",
     "${people::jabley::home_projects}/django",
@@ -91,7 +92,6 @@ class people::jabley::repos {
   }
 
   github {[
-    # camlistore
     'BerlinVagrant/vagrant-dns',
     'ChrisWeiss/vagrant-ubuntu-precise-32-desktop',
     'JordanHatch/bowler',
@@ -99,6 +99,7 @@ class people::jabley::repos {
     'TalentBox/sequel-rails',
     'applicake/doorkeeper',
     'archiloque/rest-client',
+    'camlistore/camlistore',
     'capistrano/capistrano',
     'clojure/clojure',
     'coreos/coreos-vagrant',
