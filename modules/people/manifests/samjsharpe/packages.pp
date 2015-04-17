@@ -1,6 +1,32 @@
 class people::samjsharpe::packages {
 
   include alfred
+  include atom
+  atom::package{[
+      'atom-beautify',
+      'autocomplete-paths',
+      'autocomplete-plus',
+      'git-plus',
+      'language-puppet',
+      'linter',
+      'linter-puppet',
+      'linter-puppet-lint',
+      'linter-puppet-parse',
+      'linter-python-pep8',
+      'linter-python-pyflakes',
+      'script',
+      'term2',
+      'vim-mode'
+    ]:
+    ensure => present,
+  }
+  file { "/Users/${::luser}/.atom":
+    ensure => directory,
+  }
+  file { "/Users/${::luser}/.atom/config.cson":
+    ensure => present,
+    source => 'puppet:///modules/people/samjsharpe/atom/config.cson',
+  }
   include chrome
   include dropbox
   include firefox

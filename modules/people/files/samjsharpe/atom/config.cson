@@ -1,0 +1,36 @@
+"*":
+  "exception-reporting":
+    userId: "2232e134-ca3c-8386-3829-cb35c1bd0c45"
+  welcome:
+    showOnStartup: false
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: false
+    softWrap: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    projectHome: "/Users/sam/Projects"
+    disabledPackages: [
+      "deprecation-cop"
+    ]
+  metrics:
+    userId: "2a8b387d75f223dfbdbd41a86bdb5f79650ee2ec"
+  "linter-pylint": {}
+  "linter-puppet-lint": {}
+  "linter-puppet-parse": {}
+  "atom-beautify": {}
+  "atom-lint": {}
+  "autocomplete-plus": {}
+  linter: {}
+  "git-plus": {}
+  "git-blame": {}
+  "git-log": {}
+  "ruby-test": {}
+  "run-command": {}
+  "run-in-terminal": {}
+  term2:
+    colors: {}
