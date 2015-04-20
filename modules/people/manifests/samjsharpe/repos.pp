@@ -13,7 +13,7 @@ class people::samjsharpe::repos {
     }
 
     # HMRC repos
-    people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
+    # people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
 
     # people::samjsharpe::repos::gds {[
     #   'hmrc/vcb',
