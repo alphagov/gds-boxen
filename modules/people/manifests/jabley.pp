@@ -38,7 +38,6 @@ class people::jabley(
   include projects::blinken-config
   include projects::calculators
   include projects::ci-deployment
-  include projects::deployment::creds
   include projects::development
   include projects::fabric-scripts
   include projects::frontend
