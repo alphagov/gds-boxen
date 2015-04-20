@@ -175,6 +175,11 @@ class people::jabley(
     provider => homebrew,
   } ~> Exec['install_go_tools']
 
+  package { 'vlc':
+    provider => 'appdmg',
+    source   => "http://get.videolan.org/vlc/2.2.1/macosx/vlc-2.2.1.dmg",
+  }
+
   class { 'nodejs::global': version => $node_version }
 
   nodejs::version { 'v0.12.0': }
