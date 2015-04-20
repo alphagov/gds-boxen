@@ -182,7 +182,7 @@ class people::jabley(
 
   class { 'nodejs::global': version => $node_version }
 
-  nodejs::version { 'v0.12.0': }
+  nodejs::version { 'v0.12.2': }
 
   nodejs::module { [
     'express-generator',
