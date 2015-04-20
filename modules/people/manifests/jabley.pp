@@ -246,6 +246,10 @@ class people::jabley(
   # Settings from puppet-osx
   include osx::disable_app_quarantine
   include osx::dock::2d
+  include osx::dock::autohide
+  class { 'osx::dock::position':
+    position => 'left'
+    }
   include osx::finder::empty_trash_securely
   include osx::finder::show_all_on_desktop
   include osx::finder::show_hidden_files
