@@ -15,16 +15,14 @@ class people::samjsharpe::repos {
     # HMRC repos
     people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
 
-    people::samjsharpe::repos::gds {[
-        'hmrc/vcb',
-        ]:}
+    # people::samjsharpe::repos::gds {[
+    #   'hmrc/vcb',
+    # ]:}
 
     # GDS Repos
     people::samjsharpe::repos::gds {[
         'gds/alphagov-deployment',
         'gds/deployment',
-        'gds/development',
-        'gds/env-sync-and-backup',
         'gds/govuk-provisioning',
         'gds/opsmanual',
         'gds/private-utils',
@@ -37,42 +35,16 @@ class people::samjsharpe::repos {
     }
 
     people::samjsharpe::repos::gh  {[
-        'alphagov/boxes',
         'alphagov/fabric-scripts',
-        'alphagov/government-service-design-manual',
-        'alphagov/nagios-plugins',
-        'alphagov/service-domain-checker',
-        'alphagov/smokey',
-        'alphagov/unicornherder',
         'alphagov/vagrant-govuk',
-        'alphagov/vcloud-box-spinner',
-        'alphagov/vcloud-net-spinner',
-        'alphagov/vcloud-tools',
-        'alphagov/vcloud-walker'
         ]:}
 
-    people::samjsharpe::repos::gh {[
-        'gds-operations/monitoring-inabox',
-        'gds-operations/open-source-guidelines',
-        'gds-operations/puppet-auditd',
-        'gds-operations/puppet-elasticsearch',
-        'gds-operations/puppet-graphite',
-        'gds-operations/puppet-hosts',
-        'gds-operations/puppet-module-skeleton',
-        'gds-operations/puppet-openconnect',
-        'gds-operations/puppet-rbenv',
-        'gds-operations/puppet-resolvconf',
-        'gds-operations/puppet-skeleton',
-        'gds-operations/puppet-syntax',
-        'gds-operations/puppet-updatemotd'
-        ]:}
+    # people::samjsharpe::repos::gh {[
+    # ]:}
 
     # Personal repos
     people::samjsharpe::repos::gh  {[
-        'samjsharpe/fgaas',
-        'samjsharpe/samjsharpe.github.com',
         'samjsharpe/vagrant-centos',
-        'samjsharpe/vagrant-rackspace',
         'samjsharpe/vagrant-ubuntu'
         ]:}
 
