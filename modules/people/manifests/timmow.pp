@@ -75,7 +75,7 @@ class people::timmow {
   }
   homebrew::tap { 'caskroom/cask': }
   class { 'vagrant':
-      version => '1.6.5'
+      version => '1.7.2'
   }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'dns': }
