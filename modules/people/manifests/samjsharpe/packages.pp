@@ -105,6 +105,12 @@ PROMPT=\'$(virtualenv_prompt_info)%{$reset_color%}[%{$fg[cyan]%}%2d$(git_prompt_
     require  => Package['python'],
   }
 
+  package {['pep8','pyflakes']:
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
   $ohmyzshdir = "/Users/${::luser}/.oh-my-zsh"
   $ohmyzshcustom = "${ohmyzshdir}/custom/plugins/"
 

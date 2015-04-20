@@ -35,3 +35,7 @@
   term2:
     colors: {}
   "merge-conflicts": {}
+  "linter-python-pyflakes":
+    pyflakesDirToExecutable: "/opt/boxen/homebrew/bin"
+  "linter-python-pep8":
+    pep8DirToExecutable: "/opt/boxen/homebrew/bin"

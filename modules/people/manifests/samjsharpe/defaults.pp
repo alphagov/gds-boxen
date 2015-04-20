@@ -4,6 +4,11 @@ class people::samjsharpe::defaults {
     user => $::luser,
   }
 
+  # Use my own Git config, thanks.
+  Git::Config::Global <| title == "core.excludesfile" |> {
+    value => "~/.gitignore"
+  }
+
   # Settings from gds_osx
   include gds_osx::remove_spotlight
   include gds_osx::turn_off_dashboard
