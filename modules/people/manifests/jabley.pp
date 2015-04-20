@@ -27,7 +27,6 @@ class people::jabley(
 #  include onepassword
 #  include onepassword::chrome
   include openconnect
-  include packer
   include paparazzi
   include sublime_text_2
   include vmware_fusion
