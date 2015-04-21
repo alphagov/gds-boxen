@@ -126,7 +126,6 @@ class people::jabley(
       'proctools',
       'protobuf',
       'pt',
-      'python',
       'sdl',
       'sdl_image',
       'sloccount',
