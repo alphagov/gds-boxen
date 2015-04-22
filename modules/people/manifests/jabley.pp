@@ -78,7 +78,7 @@ class people::jabley(
   ruby::version { '1.9.3-p484': }
 
   class { 'gds_development':
-    version => '1.6.5',
+    version => '1.7.2',
   }
 
   class { 'gds_printers':
