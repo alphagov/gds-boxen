@@ -126,6 +126,7 @@ class people::jabley::repos {
     'jabley/fpinscala-exercises',
     'jabley/gmail-britta',
     'jabley/gojsonschema',
+    'jabley/golang-challenge-1',
     'jabley/gom',
     'jabley/homebrew',
     'jabley/jargone',
