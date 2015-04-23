@@ -239,6 +239,7 @@ class people::jabley(
                 && go get -u code.google.com/p/go.blog/blog \
                 && go get -u github.com/jabley/train/cmd/train \
                 && go get -u github.com/alphagov/gds-present \
+                && go get -u github.com/golang/lint/golint \
                 && go get -u rsc.io/grind'
   }
 
