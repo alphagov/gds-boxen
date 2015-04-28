@@ -168,6 +168,7 @@ class people::jabley(
       'tree',
       'the_silver_searcher',
       'tmux',
+      'vegeta',
       'youtube-dl',
     ]:
     ensure => 'latest',
