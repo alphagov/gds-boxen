@@ -132,6 +132,7 @@ class people::jabley::repos {
     'jabley/jargone',
     'jabley/markdown',
     'jabley/netty',
+    'jabley/performance-node-frontend',
     'jabley/progfun',
     'jabley/puppet-shelf',
     'jabley/puppet',
