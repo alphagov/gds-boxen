@@ -5,19 +5,10 @@ class people::samjsharpe::repos {
 
     file {[
         "${home_projects}/gds",
-        "${home_projects}/gds-operations",
-        "${home_projects}/hmrc",
         "${home_projects}/samjsharpe",
     ]:
         ensure => directory
     }
-
-    # HMRC repos
-    # people::samjsharpe::repos::gh  {'hmrc/base-image-builder':}
-
-    # people::samjsharpe::repos::gds {[
-    #   'hmrc/vcb',
-    # ]:}
 
     # GDS Repos
     people::samjsharpe::repos::gds {[
@@ -37,13 +28,6 @@ class people::samjsharpe::repos {
     people::samjsharpe::repos::gh  {[
         'alphagov/fabric-scripts',
         'alphagov/vagrant-govuk',
-        ]:}
-
-    # people::samjsharpe::repos::gh {[
-    # ]:}
-
-    # Personal repos
-    people::samjsharpe::repos::gh  {[
         'samjsharpe/vagrant-centos',
         'samjsharpe/vagrant-ubuntu'
         ]:}
