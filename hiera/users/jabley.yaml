@@ -19,6 +19,7 @@ alphagov::repos:
     - 'architecture-public'
     - 'cdn-acceptance-tests'
     - 'design-patterns'
+    - 'design-principles'
     - 'external-link-tracker'
     - 'event-store'
     - 'government-service-design-manual'
