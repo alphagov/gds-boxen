@@ -17,7 +17,6 @@ gds_ruby::uninstall_versions:
 alphagov::repos:
     - 'asset-manager'
     - 'architecture-public'
-    - 'cdn-acceptance-tests'
     - 'design-patterns'
     - 'design-principles'
     - 'external-link-tracker'
