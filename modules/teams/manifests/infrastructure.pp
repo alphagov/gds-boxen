@@ -16,6 +16,8 @@ class teams::infrastructure ($manage_gitconfig = true) {
   include projects::puppet
   include projects::smokey
   include projects::vagrant-govuk
+  repo::alphagov { 'nagios-plugins': }
+  repo::alphagov { 'cdn-acceptance-tests': }
 
   if $manage_gitconfig {
     git::config::global {
