@@ -3,10 +3,14 @@ class people::samjsharpe::packages {
   include alfred
   include atom
   atom::package{[
+      'ansible-snippets',
       'atom-beautify',
       'autocomplete-paths',
       'autocomplete-plus',
+      'available-snippets',
+      'erb-snippets',
       'git-plus',
+      'language-ansible',
       'language-puppet',
       'linter',
       'linter-puppet',
@@ -14,6 +18,8 @@ class people::samjsharpe::packages {
       'linter-puppet-parse',
       'linter-python-pep8',
       'linter-python-pyflakes',
+      'merge-conflicts',
+      'minimap',
       'script',
       'term2',
       'vim-mode'
