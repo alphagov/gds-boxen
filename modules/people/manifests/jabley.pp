@@ -98,12 +98,14 @@ class people::jabley(
   package {
     [
       'ascii',
+      'cabal-install',
       'cdrtools',
       'cloc',
       'cmake',
       'dos2unix',
       'ec2-api-tools',
       'gettext',
+      'ghc',
       'glew',
       'glm',
       'gmp',
