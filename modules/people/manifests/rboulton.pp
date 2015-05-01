@@ -33,7 +33,6 @@ class people::rboulton {
   include gds_virtualbox
 
   ## See modules/teams/manifests for things you can include here
-  include teams::mainstream
   #  class { 'teams::infrastructure': manage_gitconfig => false }
 
   ## You can also include particular projects from modules/projects/manifests
