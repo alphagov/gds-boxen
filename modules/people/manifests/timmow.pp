@@ -48,6 +48,7 @@ class people::timmow {
       'alfred',
       'gephi',
       'flux',
+      'limechat',
     ]:
     ensure   => present,
     provider => 'brewcask',
