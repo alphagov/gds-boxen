@@ -19,6 +19,27 @@ class people::johnstrudwick {
 
   include osx::finder::empty_trash_securely
 
+  $home = "/Users/${::luser}"
+  $projects = "${home}/projects"
+
+  file { $projects:
+    ensure  => directory,
+  }
+
+  $dotfiles = "${projects}/dotfiles"
+
+  repository { $dotfiles:
+    source  => 'johnstrudwick/dotfiles',
+    require => File[$projects],
+    notify  => Exec['make-dotfiles'],
+  }
+
+  exec { 'make-dotfiles':
+    cwd         => $dotfiles,
+    command     => "make",
+    refreshonly => true,
+  }
+
   package {
     [
       'bash-completion',
