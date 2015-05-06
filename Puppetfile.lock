@@ -1,8 +1,3 @@
-FORGE
-  remote: https://forge.puppetlabs.com
-  specs:
-    mosen-cups (1.4.1)
-
 GITHUBTARBALL
   remote: alphagov/puppet-libreoffice
   specs:
@@ -41,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.5)
+    brewcask (0.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -91,12 +86,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.2.0)
+    gcc (2.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.7.3)
+    git (2.7.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -121,7 +116,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.0)
+    hub (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-intellij
@@ -141,12 +136,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.8.0)
+    java (1.8.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-karabiner
   specs:
-    karabiner (1.0.6)
+    karabiner (1.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-macvim
@@ -166,7 +161,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
-    mysql (1.99.91)
+    mysql (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -176,7 +171,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (4.0.0)
+    nodejs (4.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-notational_velocity
@@ -216,7 +211,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
-    phantomjs (2.3.0)
+    phantomjs (2.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -236,12 +231,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
-    repository (2.3.0)
+    repository (2.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.3.1)
+    ruby (8.5.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-rubymine
@@ -321,7 +316,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.2.2)
+    vagrant (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vim
@@ -414,6 +409,11 @@ GITHUBTARBALL
     sublime_text_3 (1.0.3)
 
 GITHUBTARBALL
+  remote: mosen/puppet-cups
+  specs:
+    cups (1.4.1)
+
+GITHUBTARBALL
   remote: norm/puppet-antirsi
   specs:
     antirsi (1.0.1)
@@ -431,7 +431,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-concat
   specs:
-    concat (1.2.0)
+    concat (1.2.1)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -441,7 +441,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.5.1)
+    stdlib (4.6.0)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -476,12 +476,13 @@ DEPENDENCIES
   atom (= 1.2.0)
   banshee (= 1.1.0)
   boxen (= 3.9.1)
-  brewcask (= 0.0.5)
+  brewcask (= 0.0.6)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
   chrome (= 1.2.0)
   clojure (= 1.3.0)
-  concat (= 1.2.0)
+  concat (= 1.2.1)
+  cups (= 1.4.1)
   dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
   emacs (= 2.0.0)
@@ -490,33 +491,32 @@ DEPENDENCIES
   firefox (= 1.2.3)
   flux (= 1.0.1)
   foreman (= 1.2.0)
-  gcc (= 2.2.0)
-  git (= 2.7.3)
+  gcc (= 2.2.1)
+  git (= 2.7.9)
   github_for_mac (= 1.4.0)
   gitx (= 1.2.0)
   go (= 2.1.0)
   googledrive (= 1.0.2)
   handbrake (= 1.0.1)
   homebrew (= 1.11.6)
-  hub (= 1.4.0)
+  hub (= 1.4.1)
   inifile (= 1.2.0)
   intellij (= 1.5.1)
   istatmenus4 (= 1.1.0)
   iterm2 (= 1.2.4)
-  java (= 1.8.0)
-  karabiner (= 1.0.6)
+  java (= 1.8.2)
+  karabiner (= 1.0.7)
   launchbar (= 1.2.0)
   libreoffice (= 4.2.1)
   macvim (= 1.0.0)
   modern_space_cadet (= 1.0.7)
   module_data (= 0.0.4)
   monocle (= 1.0.0)
-  mosen-cups (= 1.4.1)
   mou (= 1.1.3)
   mplayerx (= 1.0.0)
-  mysql (= 1.99.91)
+  mysql (= 2.0.1)
   nginx (= 1.4.5)
-  nodejs (= 4.0.0)
+  nodejs (= 4.0.1)
   notational_velocity (= 1.1.2)
   ohmyzsh (= 1.0.0)
   omnifocus (= 1.1.0)
@@ -526,14 +526,14 @@ DEPENDENCIES
   osx (= 2.8.0)
   packer (= 1.3.0)
   perl (= 1.1.0)
-  phantomjs (= 2.3.0)
+  phantomjs (= 2.4.0)
   pkgconfig (= 1.0.0)
   propane (= 0.0.1)
   pycharm (= 1.0.4)
   python (= 1.1.2)
   qt (= 1.4.0.pre2)
-  repository (= 2.3.0)
-  ruby (= 8.3.1)
+  repository (= 2.4.1)
+  ruby (= 8.5.2)
   rubymine (= 1.1.0)
   screen (= 1.0.0)
   seil (= 1.0.3)
@@ -546,7 +546,7 @@ DEPENDENCIES
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.2)
   stay (= 1.0.0)
-  stdlib (= 4.5.1)
+  stdlib (= 4.6.0)
   sublime_text_2 (= 1.1.2)
   sublime_text_3 (= 1.0.3)
   sudo (= 1.0.0)
@@ -555,7 +555,7 @@ DEPENDENCIES
   things (= 1.0.1)
   transmission (= 1.1.0)
   unarchiver (= 1.5.0)
-  vagrant (= 3.2.2)
+  vagrant (= 3.3.0)
   vim (= 1.0.5)
   virtualbox (= 1.0.10)
   vmware_fusion (= 1.2.0)
