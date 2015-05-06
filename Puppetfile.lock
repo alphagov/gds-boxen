@@ -64,6 +64,11 @@ GITHUBTARBALL
     dropbox (1.4.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-eclipse
+  specs:
+    eclipse (2.5.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-evernote
   specs:
     evernote (2.0.7)
@@ -485,6 +490,7 @@ DEPENDENCIES
   cups (= 1.4.1)
   dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
+  eclipse (= 2.5.0)
   emacs (= 2.0.0)
   emacs_keybindings (= 2.0.0)
   evernote (= 2.0.7)
