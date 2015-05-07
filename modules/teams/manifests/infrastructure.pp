@@ -24,4 +24,12 @@ class teams::infrastructure ($manage_gitconfig = true) {
       'alias.st':     value => "status -bs";
     }
   }
+
+  package {
+    [
+      'ssh-copy-id',
+    ]:
+    ensure => present,
+  }
+
 }
