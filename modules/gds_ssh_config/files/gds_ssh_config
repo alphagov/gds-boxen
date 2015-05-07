@@ -25,7 +25,7 @@ Host *.preview
 # Preview Draft
 # -------------
 Host jumpbox-1.management.preview-draft
-  Hostname jumpbox.draft.preview.alphagov.co.uk
+  Hostname jumpbox.draft.preview.publishing.service.gov.uk
   ProxyCommand none
 
 Host *.preview-draft
@@ -48,7 +48,7 @@ Host *.staging
 # Staging Draft
 # -------------
 Host jumpbox-1.management.staging-draft
-  Hostname jumpbox.draft.staging.alphagov.co.uk
+  Hostname jumpbox.draft.staging.publishing.service.gov.uk
   ProxyCommand none
 
 Host *.staging-draft
@@ -71,7 +71,7 @@ Host *.production
 # Production Draft
 # ----------------
 Host jumpbox-1.management.production-draft
-  Hostname jumpbox.draft.production.alphagov.co.uk
+  Hostname jumpbox.draft.production.publishing.service.gov.uk
   ProxyCommand none
 
 Host *.production-draft
