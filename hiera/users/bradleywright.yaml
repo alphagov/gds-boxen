@@ -7,3 +7,4 @@ gds_ruby::uninstall_versions:
     - '2.1.0'
     - '2.1.1'
     - '1.9.2-p320'
+hub::alias_hub_to_git: false

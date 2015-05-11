@@ -1,8 +1,5 @@
 # -*- mode: sh; -*-
 [[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
 
-# hub is too slow - this is aliased in opt/boxen/env.sh, so we need to undo it afterwards
-unalias git
-
 export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
 export VAGRANT_GOVUK_NFS=no
