@@ -87,6 +87,9 @@ class people::jabley(
 
   homebrew::tap { 'homebrew/science': }
 
+  homebrew::tap { 'homebrew/binary': }
+  package { 'packer': }
+
   # version control this file, since it's in another repo and I don't really
   # want to delete it by accident.
   file {"${boxen::config::srcdir}/puppet/development/Vagrantfile.localconfig":
