@@ -203,8 +203,6 @@ class people::bradleywright {
     value => "~/.gitignore"
   }
 
-  class {'boxen::security': screensaver_delay_sec => 0 }
-
   # Keyboard hacks
   include karabiner
   include karabiner::login_item
