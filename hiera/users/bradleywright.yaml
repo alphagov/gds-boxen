@@ -1,0 +1,9 @@
+---
+gds_ruby::versions:
+    - '1.9.3'
+    - '2.0.0'
+    - '2.1.2'
+gds_ruby::uninstall_versions:
+    - '2.1.0'
+    - '2.1.1'
+    - '1.9.2-p320'
