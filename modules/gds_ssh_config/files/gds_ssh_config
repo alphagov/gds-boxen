@@ -24,12 +24,12 @@ Host *.preview
 
 # Preview Draft
 # -------------
-Host jumpbox-1.management.preview-draft
+Host jumpbox-1.management.draft-preview
   Hostname jumpbox.draft.preview.publishing.service.gov.uk
   ProxyCommand none
 
-Host *.preview-draft
-  ProxyCommand ssh -e none %r@jumpbox-1.management.preview-draft -W $(echo %h | sed 's/\.preview-draft$//'):%p
+Host *.draft-preview
+  ProxyCommand ssh -e none %r@jumpbox-1.management.draft-preview -W $(echo %h | sed 's/\.draft-preview$//'):%p
 
 # Staging
 # -------
@@ -47,12 +47,12 @@ Host *.staging
 
 # Staging Draft
 # -------------
-Host jumpbox-1.management.staging-draft
+Host jumpbox-1.management.draft-staging
   Hostname jumpbox.draft.staging.publishing.service.gov.uk
   ProxyCommand none
 
-Host *.staging-draft
-  ProxyCommand ssh -e none %r@jumpbox-1.management.staging-draft -W $(echo %h | sed 's/\.staging-draft$//'):%p
+Host *.draft-staging
+  ProxyCommand ssh -e none %r@jumpbox-1.management.draft-staging -W $(echo %h | sed 's/\.draft-staging$//'):%p
 
 # Production
 # ----------
@@ -70,9 +70,9 @@ Host *.production
 
 # Production Draft
 # ----------------
-Host jumpbox-1.management.production-draft
+Host jumpbox-1.management.draft-production
   Hostname jumpbox.draft.production.publishing.service.gov.uk
   ProxyCommand none
 
-Host *.production-draft
-  ProxyCommand ssh -e none %r@jumpbox-1.management.production-draft -W $(echo %h | sed 's/\.production-draft$//'):%p
+Host *.draft-production
+  ProxyCommand ssh -e none %r@jumpbox-1.management.draft-production -W $(echo %h | sed 's/\.draft-production$//'):%p
