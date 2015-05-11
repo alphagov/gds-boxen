@@ -5,3 +5,4 @@
 unalias git
 
 export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
+export VAGRANT_GOVUK_NFS=no
