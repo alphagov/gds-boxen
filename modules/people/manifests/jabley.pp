@@ -162,7 +162,6 @@ class people::jabley(
       'pv',
       'sbt',
       'scala',
-      'ssh-copy-id',
       'sslscan',
       'tarsnap',
       'tree',

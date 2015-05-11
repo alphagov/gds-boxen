@@ -5,7 +5,6 @@ gds_ruby::versions:
     - '1.9.3'
     - '2.1.2'
 gds_ruby::uninstall_versions:
-    - '1.8.7'
     - '1.9.2'
     - '2.0.0'
     - '2.0.0-p451'
@@ -25,7 +24,6 @@ alphagov::repos:
     - 'govuk_crawler_worker'
     - 'metadata-api'
     - 'passphrase_entropy'
-    - 'pp-deploy-lag-radiator'
     - 'puppet-gstatsd'
     - 'puppet-heka'
     - 'puppet-logstash'
