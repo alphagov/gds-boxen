@@ -65,7 +65,7 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 
 github "adium",          "1.4.0", :repo => "dieterdemeyer/puppet-adium"
-github "alfred",         "1.4.0"
+github "alfred",         "1.4.1", :repo => "heathd/puppet-alfred"
 github "android",        "1.4.0"
 github "antirsi",        "1.0.1", :repo => "norm/puppet-antirsi"
 github "atom",           "1.2.0"

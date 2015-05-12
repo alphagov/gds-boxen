@@ -14,11 +14,6 @@ GITHUBTARBALL
     perl (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-alfred
-  specs:
-    alfred (1.4.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-android
   specs:
     android (1.4.0)
@@ -404,6 +399,11 @@ GITHUBTARBALL
     mplayerx (1.0.0)
 
 GITHUBTARBALL
+  remote: heathd/puppet-alfred
+  specs:
+    alfred (1.4.1)
+
+GITHUBTARBALL
   remote: jabley/puppet-banshee
   specs:
     banshee (1.1.0)
@@ -475,7 +475,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.4.0)
-  alfred (= 1.4.0)
+  alfred (= 1.4.1)
   android (= 1.4.0)
   antirsi (= 1.0.1)
   atom (= 1.2.0)
