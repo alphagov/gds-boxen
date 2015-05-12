@@ -15,7 +15,6 @@ class people::heathd {
 
   include slate
   include things
-  include gds_development
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_ssh_config
