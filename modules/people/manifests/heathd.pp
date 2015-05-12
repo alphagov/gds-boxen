@@ -9,7 +9,7 @@ class people::heathd {
   include sublime_text_3
   include sublime_text_3::package_control
 
-  file {"/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User/Installed Packages/Default (OSX).sublime-keymap":
+  file {"/Users/${::boxen_user}/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap":
     content => '[{ "keys": ["ctrl+command+r"], "command": "reveal_in_side_bar"} ]'
   }
 
