@@ -65,6 +65,7 @@ class people::dcarley {
       'terraform',
       'tig',
       'tmux',
+      'watch',
     ]:
     ensure => present,
   }
