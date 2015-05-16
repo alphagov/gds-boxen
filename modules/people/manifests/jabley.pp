@@ -168,6 +168,7 @@ class people::jabley(
       'pigz',
       'pngcrush',
       'pv',
+      'rust',
       'sbt',
       'scala',
       'sslscan',
