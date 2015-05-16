@@ -161,6 +161,7 @@ class people::jabley(
       'httperf',
       'lynx',
       'nmap',
+      'ocaml',
       'p7zip',
       'parallel',
       'pbzip2',
