@@ -73,7 +73,9 @@ class people::heathd {
   package {
     [
       'python',
+      'mongodb',
       'tmux',
+      'wget'
     ]:
     ensure => present,
   }
