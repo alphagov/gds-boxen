@@ -5,7 +5,7 @@ Host dev
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile /Users/davidheath/.vagrant.d/insecure_private_key
+  IdentityFile /Users/davidheath/alphagov/puppet/development/.vagrant/machines/default/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
   ForwardAgent yes

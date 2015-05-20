@@ -18,6 +18,11 @@ class people::heathd {
   include gds_osx::turn_off_dashboard
   include gds_resolver
   include gds_ssh_config
+
+  ssh_config::fragment { 'heathd':
+    source => 'puppet:///modules/people/heathd/ssh-config',
+  }
+
   include gds_vpn_profiles
 
   vagrant::plugin { 'vagrant-cachier': }
