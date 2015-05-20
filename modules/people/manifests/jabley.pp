@@ -137,6 +137,7 @@ class people::jabley(
       'shellcheck',
       'sloccount',
       'smartmontools',
+      'terraform',
       'tesseract',
       'unrar',
       'valgrind',
