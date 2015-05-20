@@ -5,10 +5,18 @@ gds_ruby::versions:
     - '2.0.0'
     - '2.1.2'
     - '2.1.5'
+    - '2.1'
 gds_ruby::uninstall_versions:
     - '2.1.0'
     - '2.1.1'
     - '1.9.2-p320'
+ruby::version::alias:
+    '2.1': '2.1.5'
+
 hub::alias_hub_to_git: false
 gds_virtualbox::version: '4.3.26'
 alfred::version: '2.7.1_387'
+ruby::rbenv::plugins:
+    rbenv-aliases:
+        ensure: present
+        source: tpope/rbenv-aliases
