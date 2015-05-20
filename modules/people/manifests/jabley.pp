@@ -154,6 +154,7 @@ class people::jabley(
     [
       'ansible',
       'bash-completion',
+      'boot2docker',
       'curl',
       'go',
       'gpg-agent',
