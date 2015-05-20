@@ -172,7 +172,6 @@ class people::jabley(
       'rust',
       'sbt',
       'scala',
-      'sslscan',
       'tarsnap',
       'tree',
       'the_silver_searcher',
