@@ -4,7 +4,8 @@
   welcome:
     showOnStartup: false
   editor:
-    invisibles: {}
+    invisibles:
+      {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: false
     softWrap: false
@@ -19,22 +20,39 @@
     ]
   metrics:
     userId: "2a8b387d75f223dfbdbd41a86bdb5f79650ee2ec"
-  "linter-pylint": {}
-  "linter-puppet-lint": {}
-  "linter-puppet-parse": {}
-  "atom-beautify": {}
-  "atom-lint": {}
-  "autocomplete-plus": {}
-  linter: {}
-  "git-plus": {}
-  "git-blame": {}
-  "git-log": {}
-  "ruby-test": {}
-  "run-command": {}
-  "run-in-terminal": {}
+  "linter-pylint":
+    executable: "/opt/boxen/homebrew/bin/pylint"
+  "linter-puppet-lint":
+    {}
+  "linter-puppet-parse":
+    {}
+  "atom-beautify":
+    {}
+  "atom-lint":
+    {}
+  "autocomplete-plus":
+    {}
+  linter:
+    subtleLinterErrors: [
+      "pylint"
+    ]
+  "git-plus":
+    {}
+  "git-blame":
+    {}
+  "git-log":
+    {}
+  "ruby-test":
+    {}
+  "run-command":
+    {}
+  "run-in-terminal":
+    {}
   term2:
-    colors: {}
-  "merge-conflicts": {}
+    colors:
+      {}
+  "merge-conflicts":
+    {}
   "linter-python-pyflakes":
     pyflakesDirToExecutable: "/opt/boxen/homebrew/bin"
   "linter-python-pep8":
