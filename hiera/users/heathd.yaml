@@ -13,6 +13,7 @@ gds_ruby::uninstall_versions:
     - '1.9.2-p320'
 ruby::version::alias:
     '2.1': '2.1.5'
+    '2.1.4': '2.1.5'
 
 hub::alias_hub_to_git: false
 gds_virtualbox::version: '4.3.26'
