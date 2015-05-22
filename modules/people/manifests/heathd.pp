@@ -3,6 +3,7 @@ class people::heathd {
 
   include alfred
   include chrome
+  include dash
   include gitx
   include mysql
   include onepassword
