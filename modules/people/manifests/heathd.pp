@@ -24,6 +24,7 @@ class people::heathd {
   }
 
   include gds_vpn_profiles
+  include postgresql
 
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-zz-multiprovider-snap': }

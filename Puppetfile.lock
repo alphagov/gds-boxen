@@ -224,6 +224,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-postgresql
+  specs:
+    postgresql (3.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-pycharm
   specs:
     pycharm (1.0.4)
@@ -534,6 +539,7 @@ DEPENDENCIES
   perl (= 1.1.0)
   phantomjs (= 2.4.0)
   pkgconfig (= 1.0.0)
+  postgresql (= 3.0.3)
   propane (= 0.0.1)
   pycharm (= 1.0.4)
   python (= 1.1.2)
