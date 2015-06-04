@@ -214,6 +214,12 @@ class people::jabley(
     ensure => directory,
   }
 
+  file { "${::luser}-fabricrc":
+    path    => "$home/.fabricrc",
+    ensure  => 'file',
+    content => 'user = jabley',
+  }
+
   $dotfiles = "${home_projects}/homedir"
 
   repository { $dotfiles:
