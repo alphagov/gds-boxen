@@ -9,6 +9,7 @@
     sudo mkdir -p /opt/boxen
     sudo chown ${USER}:admin /opt/boxen
     # For a fresh build you will need to add your ssh config
+    # You will also need to ssh to git@github.gds and accept the host key
     git clone git@github.com:alphagov/gds-boxen.git /opt/boxen/repo
     cd /opt/boxen/repo
 
@@ -25,8 +26,7 @@ It should run successfully, and should tell you to source a shell script
 in your environment. If it does not run successfully, and gives you
 errors about unable to resolve `github.gds`, make sure you're on any of
 the internal staff WiFi networks and can access `github.gds` in a web
-browser. You will probably also need to `ssh git@github.gds` first, accept the
-host key, and enter your SSH key's password.
+browser and that you've sshed to `github.gds` as described above.
 
 For users without a bash or zsh config or a `~/.profile` file,
 Boxen will create a shim for you that will work correctly.
