@@ -15,7 +15,6 @@ class people::annashipman {
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::deployment::creds
-  include projects::transition-config
 
   $home = "/Users/${::luser}"
   $projects = "${home}/projects"
@@ -44,8 +43,11 @@ class people::annashipman {
 
 package {
     [
+      'ansible',
+      'gpg-agent',
       'python',
       'tmux',
+      'tree',
     ]:
     ensure => present,
   }
