@@ -39,19 +39,6 @@ class people::annashipman {
     user => $::luser,
   }
 
-  boxen::osx_defaults { "Disable 'natural scrolling'":
-    key    => 'com.apple.swipescrolldirection',
-    domain => 'NSGlobalDomain',
-    value  => 'false',
-    type   => 'bool',
-  }
-
-  boxen::osx_defaults { 'Do not create .DS_Store':
-    key    => 'DSDontWriteNetworkStores',
-    domain => 'com.apple.dashboard',
-    value  => 'true',
-  }
-
 package {
     [
       'python',
@@ -62,5 +49,7 @@ package {
 
   include osx::dock::autohide
   include osx::disable_app_quarantine
+  include osx::global::natural_mouse_scrolling
+  include osx::no_network_dsstore
 }
 
