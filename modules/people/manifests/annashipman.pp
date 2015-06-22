@@ -47,9 +47,15 @@ package {
     ensure => present,
   }
 
+  include osx::no_network_dsstores
   include osx::dock::autohide
   include osx::disable_app_quarantine
   include osx::global::natural_mouse_scrolling
   include osx::no_network_dsstore
+
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => false
+  }
+
 }
 
