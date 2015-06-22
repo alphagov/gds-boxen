@@ -4,10 +4,13 @@ class people::annashipman {
   include gds_vpn_profiles
   include git
   include iterm2::stable
-  include libreoffice
   include vagrant
   include gds_virtualbox
   include wget
+
+  class { 'libreoffice':
+    version => '4.3.7'
+  }
 
   class { 'teams::infrastructure': manage_gitconfig => false }
 
