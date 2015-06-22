@@ -49,9 +49,11 @@ package {
 
   include osx::no_network_dsstores
   include osx::dock::autohide
+  include osx::dock::clear_dock
   include osx::disable_app_quarantine
-  include osx::global::natural_mouse_scrolling
-  include osx::no_network_dsstore
+  include osx::global::disable_autocorrect
+  include osx::global::tap_to_click
+  include osx::keyboard::capslock_to_control
 
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false
