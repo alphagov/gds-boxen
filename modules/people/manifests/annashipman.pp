@@ -1,7 +1,9 @@
 class people::annashipman {
   include chrome
+  include dropbox
   include gds_osx::turn_off_dashboard
   include gds_vpn_profiles
+  include gds_printers
   include git
   include iterm2::stable
   include vagrant
@@ -44,6 +46,7 @@ class people::annashipman {
 package {
     [
       'ansible',
+      'go',
       'gpg-agent',
       'python',
       'tmux',
