@@ -24,8 +24,8 @@ class people::jabley(
   class { 'libreoffice': version => $libreoffice_version }
   class { 'libreoffice::languagepack': version => $libreoffice_version }
   include licecap
-#  include onepassword
-#  include onepassword::chrome
+  include onepassword
+  include onepassword::chrome
   include openconnect
   include paparazzi
   include sublime_text_2
