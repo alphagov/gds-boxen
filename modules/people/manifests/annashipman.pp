@@ -5,6 +5,7 @@ class people::annashipman {
   include gds_vpn_profiles
   include gds_printers
   include git
+  include onepassword
   include iterm2::stable
   include vagrant
   include gds_virtualbox
