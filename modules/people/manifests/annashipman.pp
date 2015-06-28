@@ -21,12 +21,13 @@ class people::annashipman {
 
   $home = "/Users/${::luser}"
   $projects = "${home}/projects"
+  $projects_personal = "${projects}/personal"
+  $dotfiles = "${projects}/dotfiles"
 
-  file { $projects:
+  file { [$projects, $projects_personal]:
     ensure  => directory,
   }
 
-  $dotfiles = "${projects}/dotfiles"
 
   repository { $dotfiles:
     source  => 'annashipman/dotfiles',
