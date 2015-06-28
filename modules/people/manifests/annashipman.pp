@@ -58,7 +58,6 @@ package {
 
   include osx::no_network_dsstores
   include osx::dock::autohide
-  include osx::dock::clear_dock
   include osx::disable_app_quarantine
   include osx::global::disable_autocorrect
   include osx::global::tap_to_click
