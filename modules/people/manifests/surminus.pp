@@ -9,6 +9,7 @@ class people::surminus {
   include git
   include googledrive 
   include hub
+  include keepassx
   include iterm2::stable
   #include openconnect # doesn't play ball with Yosemite
   include screen
