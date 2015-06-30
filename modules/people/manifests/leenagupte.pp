@@ -2,31 +2,11 @@
 class people::leenagupte {
   # This gives you the tools and repos to make a development VM
   ## Remove the # from any of the below to install that software
-  #include nvm
-  #include alfred
-  #include caffeine
-  #include chrome
-  #include clojure
-  #include dropbox
-  #include gitx
-  #include hub
-  #include iterm2
-  #include macvim
-  #include mysql
-  #include onepassword
-  #include osx
-  include pycharm
-  #include qt
-  #include screen
-  #include skype
-  #include sparrow
-  #include spotify
-  include sublime_text_3
+  include chrome
+  include onepassword
+  include sublime_text_2
   include textmate
-  #include things
-  #include wget
-  #include xquartz
-  #include zsh)
+  include zsh
  
   class { 'vagrant':
       version => '1.7.1'
@@ -43,6 +23,8 @@ class people::leenagupte {
 
   include teams::performance-platform
   include teams::performance-platform::ssh
+
+  class { 'gds_ssh_config': }
 
   class { 'nodejs::global': version => 'v0.10.31' }
   nodejs::module {
@@ -69,5 +51,15 @@ class people::leenagupte {
   #    'automake',
     ]:
     ensure => present,
+  }
+
+  # Python packages
+  package {
+    [
+      'virtualenv',
+      'virtualenvwrapper',
+    ]:
+    ensure => present,
+    provider => pip,
   }
 }
