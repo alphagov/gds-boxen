@@ -1,4 +1,4 @@
-## Paul Martin boxen config ^_^ 
+## Paul Martin boxen config :3 
 class people::surminus {
   include alfred
   include caffeine
@@ -7,11 +7,13 @@ class people::surminus {
   include gds_resolver
   include gds_vpn_profiles
   include git
+  include gitx
   include googledrive 
   include hub
-  include keepassx
   include iterm2::stable
-  #include openconnect # doesn't play ball with Yosemite
+  include keepassx
+  include macvim
+#include openconnect # doesn't play ball with Yosemite
   include screen
   include spotify
   include vagrant
@@ -23,9 +25,37 @@ class people::surminus {
 
   osx::recovery_message { 'If this Mac is found, please call 07780 225 281': } 
 
+  $home    = "/Users/${::luser}"
+  $mystuff = "${home}/surminus"
+  
   ## dotfiles
-  repository { "${boxen::config::srcdir}/dotfiles":
+  repository { "${mystuff}/dotfiles":
     source  => 'surminus/dotfiles',
+  }
+
+  $vimrc = "${mystuff}/dotfiles/vimrc" 
+  $zshrc = "${mystuff}/dotfiles/zshrc"
+
+  file { "${home}/.vimrc": 
+    ensure => 'link', 
+    target => "${mystuff}/dotfiles/vimrc",
+  }
+
+  file { "${home}/.zshrc": 
+    ensure => 'link', 
+    target => "${mystuff}/dotfiles/zshrc",
+  }
+
+  file { [ "${mystuff}", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]: 
+    ensure => directory, 
+  }
+
+  repository { "${home}/.vim/bundle/nerdtree": 
+    source => 'scrooloose/nerdtree', 
+  }
+
+  exec { "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim": 
+    unless => "ls ${home}/.vim/autoload/pathogen.vim"
   }
 
   ## projects
