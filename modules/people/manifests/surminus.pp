@@ -33,6 +33,11 @@ class people::surminus {
     source  => 'surminus/dotfiles',
   }
 
+  # junk scripts
+  repository { "${mystuff}/scripts": 
+    source => 'surminus/scripts', 
+  }
+
   $vimrc = "${mystuff}/dotfiles/vimrc" 
   $zshrc = "${mystuff}/dotfiles/zshrc"
 
@@ -46,7 +51,12 @@ class people::surminus {
     target => "${mystuff}/dotfiles/zshrc",
   }
 
-  file { [ "${mystuff}", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]: 
+  file { "${home}/Scripts/keepass-merge": 
+    ensure => 'link', 
+    target => "${mystuff}/scripts/keepass-merge",
+  }
+
+  file { [ "${mystuff}", "${home}/Scripts", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]: 
     ensure => directory, 
   }
 
