@@ -161,6 +161,7 @@ class people::jabley(
       'graphviz',
       'heroku-toolbelt',
       'httperf',
+      'leiningen',
       'lynx',
       'nmap',
       'ocaml',
