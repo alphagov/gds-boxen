@@ -259,7 +259,7 @@ class people::jabley(
                 && go get -u github.com/jabley/train/cmd/train \
                 && go get -u github.com/alphagov/gds-present \
                 && go get -u github.com/golang/lint/golint \
-                && go get -u rsc.io/grind'
+                '
   }
 
   # Settings from puppet-osx
