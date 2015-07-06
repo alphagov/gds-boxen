@@ -7,6 +7,7 @@ class people::dcarley {
   include git
   include iterm2::stable
   include iterm2::colors::solarized_dark
+  include java
   include vim
   include gds_virtualbox
   include wget
