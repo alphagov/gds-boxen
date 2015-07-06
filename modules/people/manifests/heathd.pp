@@ -6,7 +6,6 @@ class people::heathd {
   include dash
   include gitx
   include mysql
-  include onepassword
   include sublime_text_3
   include sublime_text_3::package_control
 
