@@ -149,6 +149,11 @@ GITHUBTARBALL
     karabiner (1.0.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-keepassx
+  specs:
+    keepassx (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -517,6 +522,7 @@ DEPENDENCIES
   iterm2 (= 1.2.4)
   java (= 1.8.2)
   karabiner (= 1.0.7)
+  keepassx (= 1.0.0)
   launchbar (= 1.2.0)
   libreoffice (= 4.2.1)
   macvim (= 1.0.0)
