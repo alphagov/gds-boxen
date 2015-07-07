@@ -119,6 +119,7 @@ class people::jabley(
       'jpeg',
       'lame',
       'logstalgia',
+      'luajit',
       'maven',
       'md5sha1sum',
       'mercurial',
