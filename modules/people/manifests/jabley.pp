@@ -125,7 +125,7 @@ class people::jabley(
       'md5sha1sum',
       'mercurial',
       'mobile-shell',
-      'ocaml',
+      'objective-caml',
       'oniguruma',
       'pandoc',
       'pcre',
