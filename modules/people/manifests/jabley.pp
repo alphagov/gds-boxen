@@ -101,6 +101,7 @@ class people::jabley(
   package {
     [
       'ascii',
+      'brew-cask',
       'cabal-install',
       'cdrtools',
       'cloc',
@@ -190,6 +191,14 @@ class people::jabley(
   package { 'vlc':
     provider => 'appdmg',
     source   => "http://get.videolan.org/vlc/2.2.1/macosx/vlc-2.2.1.dmg",
+  }
+
+  package { [
+    'torbrowser',
+    ]:
+    ensure   => present,
+    provider => 'brewcask',
+    require  => Package['brew-cask'],
   }
 
   class { 'nodejs::global': version => $node_version }
