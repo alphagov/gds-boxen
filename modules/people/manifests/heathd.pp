@@ -4,8 +4,10 @@ class people::heathd {
   include alfred
   include chrome
   include dash
+  include dropbox
   include gitx
   include mysql
+  include notational_velocity
   include sublime_text_3
   include sublime_text_3::package_control
 
