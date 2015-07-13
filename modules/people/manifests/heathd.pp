@@ -1,6 +1,7 @@
 class people::heathd {
   include gds_development
 
+  include adium
   include alfred
   include chrome
   include dash
