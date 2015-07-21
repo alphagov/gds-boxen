@@ -39,6 +39,9 @@ class people::timmow {
       'brew-cask',
       'graphviz',
       'siege',
+      'ipcalc',
+      'percona-toolkit',
+      'cairo',
     ]:
     ensure => present,
   }
