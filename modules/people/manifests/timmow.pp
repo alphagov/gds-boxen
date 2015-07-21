@@ -116,4 +116,26 @@ class people::timmow {
     value => '20'
   }
   ruby::version { '1.9.3-p484': }
+
+  sudo::alias{'VAGRANT_EXPORTS_ADD':
+    ensure     => present,
+    sudo_alias => 'Cmnd_Alias',
+    items      => '/usr/bin/tee -a /etc/exports'
+  }
+  sudo::alias{'VAGRANT_NFSD':
+    ensure     => present,
+    sudo_alias => 'Cmnd_Alias',
+    items      => '/sbin/nfsd restart'
+  }
+  sudo::alias{'VAGRANT_EXPORTS_REMOVE':
+    ensure     => present,
+    sudo_alias => 'Cmnd_Alias',
+    items      => '/usr/bin/sed -E -e /*/ d -ibak /etc/exports'
+  }
+  sudo::spec { 'vagrant':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => '(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE',
+  }
+
 }
