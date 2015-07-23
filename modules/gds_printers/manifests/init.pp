@@ -23,7 +23,7 @@ class gds_printers (
     description => '3rd Floor IL0 Printer',
     location    => '3rd floor, Aviation House',
     uri         => "lpd://${ldap_username}@192.168.9.47/FollowPrint",
-    model       => 'drv:///sample.drv/generic.ppd',
+    model       => '/Library/Printers/PPDs/Contents/Resources/Xerox WorkCentre 7855.gz',
     page_size   => 'A4',
     ppd_options => {
       'Option1' => 'True', # Duplexer
