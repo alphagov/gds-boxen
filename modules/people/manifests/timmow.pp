@@ -23,7 +23,6 @@ class people::timmow {
       'ag',
       'fasd',
       'python',
-      'ssh-copy-id',
       'tmux',
       'reattach-to-user-namespace',
       'bash-completion',
