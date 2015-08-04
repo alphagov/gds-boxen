@@ -12,6 +12,7 @@ class people::timmow {
     [
       'grunt-cli',
       'gulp',
+      'jshint',
     ]:
     node_version => 'v0.10.31'
   }
