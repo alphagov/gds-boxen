@@ -26,11 +26,11 @@ Host *.preview
 # Staging
 # -------
 Host jumpbox-1.management.staging
-  Hostname jumpbox.staging.alphagov.co.uk
+  Hostname jumpbox.staging.publishing.service.gov.uk
   ProxyCommand none
 
 Host jumpbox-2.management.staging
-  Hostname jumpbox.staging.alphagov.co.uk
+  Hostname jumpbox.staging.publishing.service.gov.uk
   Port     1022
   ProxyCommand none
 
