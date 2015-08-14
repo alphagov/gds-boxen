@@ -160,12 +160,6 @@ class people::bradleywright {
   package {
     [
      'ctags',
-     'ghostscript',
-     'imagemagick',
-     'mysql',
-     'sbt',
-     'scala',
-     'xpdf'
      ]:
   }
 
