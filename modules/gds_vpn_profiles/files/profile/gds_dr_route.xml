@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/">
+  <ServerList>
+    <HostEntry>
+      <HostName>GDS (DR) - Default Route</HostName>
+      <HostAddress>vpndr.digital.cabinet-office.gov.uk</HostAddress>
+      <UserGroup>ah</UserGroup>
+      <PrimaryProtocol>SSL</PrimaryProtocol>
+    </HostEntry>
+  </ServerList>
+</AnyConnectProfile>
