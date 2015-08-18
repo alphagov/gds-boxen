@@ -4,6 +4,7 @@
 # from your local login username.
 #
 class gds_printers (
+  $driver_3_il0 = 'drv:///sample.drv/generic.ppd',
   $ldap_username = $::boxen_user,
 ) {
   printer { 'Secure_Printer_4':
@@ -23,7 +24,7 @@ class gds_printers (
     description => '3rd Floor IL0 Printer',
     location    => '3rd floor, Aviation House',
     uri         => "lpd://${ldap_username}@192.168.9.47/FollowPrint",
-    model       => 'drv:///sample.drv/generic.ppd',
+    model       => $driver_3_il0,
     page_size   => 'A4',
     ppd_options => {
       'Option1' => 'True', # Duplexer
