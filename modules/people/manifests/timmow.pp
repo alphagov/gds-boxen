@@ -42,6 +42,10 @@ class people::timmow {
       'ipcalc',
       'percona-toolkit',
       'cairo',
+      'netcat',
+      'nmap',
+      'openconnect',
+      'gcal',
     ]:
     ensure => present,
   }
@@ -137,5 +141,7 @@ class people::timmow {
     hosts    => 'ALL',
     commands => '(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE',
   }
+
+  include gds_resolver
 
 }
