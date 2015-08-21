@@ -194,6 +194,7 @@ class people::jabley(
   }
 
   package { [
+    'scala-ide',
     'torbrowser',
     ]:
     ensure   => present,
