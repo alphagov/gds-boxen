@@ -159,6 +159,8 @@ class people::jabley(
       'bash-completion',
       'boot2docker',
       'curl',
+      'docker',
+      'docker-machine',
       'go',
       'gpg-agent',
       'graphviz',
