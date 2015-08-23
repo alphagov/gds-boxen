@@ -82,6 +82,7 @@ class people::jennyd {
     [
       'python',
       'tmux',
+      'node'
     ]:
     ensure => present,
   }
