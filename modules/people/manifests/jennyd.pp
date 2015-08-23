@@ -119,4 +119,6 @@ class people::jennyd {
     logoutput   => true,
   }
 
+  # I have git 2.5.0 from XCode - don't try to downgrade to 2.4.3:
+  class { 'git': version => '2.5.0' }
 }
