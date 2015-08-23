@@ -101,6 +101,10 @@ class people::jennyd {
     source => 'puppet:///modules/people/jennyd/ssh-config',
   }
 
+  git::config::global { 'user.email':
+    value => 'jenny.duckett@digital.cabinet-office.gov.uk'
+  }
+
   $home     = "/Users/${::luser}"
   $dotfiles = "${home}/dotfiles"
 
