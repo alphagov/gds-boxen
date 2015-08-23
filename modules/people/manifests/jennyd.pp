@@ -28,28 +28,20 @@ class people::jennyd {
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-zz-multiprovider-snap': }
 
-  include projects::alphagov-deployment
+  class { 'teams::infrastructure': manage_gitconfig => false }
+
   include projects::ci-deployment
-  include projects::ci-puppet
   include projects::deployment::creds
-  include projects::development
-  include projects::fabric-scripts
   include projects::frontend
   include projects::gds-api-adapters
   include projects::gds-sso
   include projects::govuk_content_api
-  include projects::govuk_mirror
   include projects::imminence
-  include projects::opsmanual
-  include projects::private-utils
-  include projects::puppet
   include projects::transition-config
   include projects::release
   include projects::rummager
   include projects::signonotron2
-  include projects::smokey
   include projects::static
-  include projects::vagrant-govuk
   include projects::whitehall
 
   Boxen::Osx_defaults {
