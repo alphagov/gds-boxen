@@ -8,6 +8,7 @@ class people::jennyd {
   include gds_ssh_config
   include gds_vpn_profiles
   include iterm2::stable
+  include openconnect
   include skype
   include sublime_text_2
   include wget
