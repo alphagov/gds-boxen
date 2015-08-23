@@ -72,7 +72,8 @@ class people::jennyd {
   package {
     [
       'virtualenv',
-      'virtualenvwrapper'
+      'virtualenvwrapper',
+      'httpie',
     ]:
     ensure => present,
     provider => pip,
