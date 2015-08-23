@@ -52,21 +52,32 @@ class people::jennyd {
   }
 
   include osx::disable_app_quarantine
+  include osx::no_network_dsstores
+
   include osx::dock::autohide
+  include osx::dock::dim_hidden_apps
+
   include osx::finder::show_hidden_files
   include osx::finder::unhide_library
+
   include osx::global::disable_autocorrect
   include osx::global::enable_keyboard_control_access
-  include osx::global::key_repeat_delay
-  include osx::global::key_repeat_rate
-  include osx::no_network_dsstores
+  include osx::global::tap_to_click
+
+  class { 'osx::dock::position':
+    position => 'left'
+  }
 
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false
   }
 
-  class { 'osx::dock::position':
-    position => 'left'
+  class { 'osx::mouse::button_mode':
+    mode => 2
+  }
+
+  class { 'osx::sound::interface_sound_effects':
+    enable => false
   }
 
   package {
