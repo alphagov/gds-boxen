@@ -10,8 +10,20 @@ class people::jennyd {
   include iterm2::stable
   include openconnect
   include skype
-  include sublime_text_2
+  include sublime_text_3
+  include sublime_text_3::package_control
   include wget
+
+  sublime_text_3::package { 'Awk': source => 'JohnNilsson/awk-sublime' }
+  sublime_text_3::package { 'Cucumber': source => 'drewda/cucumber-sublime-bundle' }
+  sublime_text_3::package { 'Cucumber Step Finder': source => 'danielfrey/sublime-cucumber-step-finder' }
+  sublime_text_3::package { 'GitGutter': source => 'jisaacks/GitGutter' }
+  sublime_text_3::package { 'Pretty JSON': source => 'dzhibas/SublimePrettyJson' }
+  sublime_text_3::package { 'Puppet': source => 'russCloak/SublimePuppet' }
+  sublime_text_3::package { 'SublimeLinter': source => 'SublimeLinter/SublimeLinter3' }
+  sublime_text_3::package { 'SublimeLinter-jshint': source => 'SublimeLinter/SublimeLinter-jshint' }
+  sublime_text_3::package { 'SublimeLinter-pylint': source => 'SublimeLinter/SublimeLinter-pylint' }
+  sublime_text_3::package { 'SublimeLinter-ruby': source => 'SublimeLinter/SublimeLinter-ruby' }
 
   vagrant::plugin { 'vagrant-cachier': }
   vagrant::plugin { 'vagrant-zz-multiprovider-snap': }
