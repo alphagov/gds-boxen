@@ -12,7 +12,6 @@ class people::jennyd {
   include skype
   include sublime_text_3
   include sublime_text_3::package_control
-  include wget
 
   sublime_text_3::package { 'Awk': source => 'JohnNilsson/awk-sublime' }
   sublime_text_3::package { 'Cucumber': source => 'drewda/cucumber-sublime-bundle' }
@@ -40,7 +39,6 @@ class people::jennyd {
   include projects::govuk_mirror-deployment
   include projects::govuk_offsitebackups-puppet
   include projects::imminence
-  include projects::transition-config
   include projects::release
   include projects::rummager
   include projects::signonotron2
