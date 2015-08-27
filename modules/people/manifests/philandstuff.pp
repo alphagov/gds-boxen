@@ -26,6 +26,10 @@ class people::philandstuff {
     provider => pip,
   }
 
+  class {'git':
+    version => '2.4.6';
+  }
+
   git::config::global {
     'color.ui':     value => "true";
     'push.default': value => "simple";
