@@ -23,7 +23,7 @@ Host *.preview
   ProxyCommand ssh -e none %r@jumpbox-1.management.preview -W $(echo %h | sed 's/\.preview$//'):%p
 
 
-# Staging
+# Staging ( Skyscape )
 # -------
 Host jumpbox-1.management.staging
   Hostname jumpbox.staging.publishing.service.gov.uk
@@ -38,7 +38,7 @@ Host *.staging
   ProxyCommand ssh -e none %r@jumpbox-1.management.staging -W $(echo %h | sed 's/\.staging$//'):%p
 
 
-# Production
+# Production ( Skyscape )
 # ----------
 Host jumpbox-1.management.production
   Hostname jumpbox.production.alphagov.co.uk
@@ -51,3 +51,17 @@ Host jumpbox-2.management.production
 
 Host *.production
   ProxyCommand ssh -e none %r@jumpbox-1.management.production -W $(echo %h | sed 's/\.production$//'):%p
+
+
+# Carrenza Migration ( Staging + Production )
+Host jumpbox.staging.publishing.service.gov.uk
+  ProxyCommand none
+
+Host *.staging.publishing.service.gov.uk
+  ProxyCommand ssh -e none %r@jumpbox.staging.publishing.service.gov.uk -W %h:%p
+
+Host jumpbox.publishing.service.gov.uk
+  ProxyCommand none
+
+Host *.publishing.service.gov.uk
+  ProxyCommand ssh -e none %r@jumpbox.publishing.service.gov.uk -W %h:%p
