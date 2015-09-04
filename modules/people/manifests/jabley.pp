@@ -100,6 +100,7 @@ class people::jabley(
   # These are all Homebrew packages
   package {
     [
+      'android-sdk',
       'ascii',
       'brew-cask',
       'cabal-install',
