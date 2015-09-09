@@ -1,4 +1,4 @@
-class people::bradleywright {
+class people::bradwright {
   include adium
   include alfred
   include chrome
@@ -179,18 +179,6 @@ class people::bradleywright {
 
   homebrew::tap { 'homebrew/binary': }
   package { 'packer': }
-
-  file { '/usr/local/bin/pdfinfo':
-    ensure  => link,
-    target  => '/opt/boxen/homebrew/bin/pdfinfo',
-    require => Package['xpdf'],
-    owner   => root,
-  }
-  # set up Sass source maps correctly
-  file { '/var/govuk':
-    ensure => link,
-    target => "${boxen::config::srcdir}"
-  }
 
   # Use my own Git config, thanks.
   Git::Config::Global <| title == "core.excludesfile" |> {
