@@ -42,3 +42,5 @@ if [ -d "$GHC_DOT_APP" ]; then
 fi
 
 export PS1='\h:\W$(__git_ps1) \u\$ '
+
+export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
