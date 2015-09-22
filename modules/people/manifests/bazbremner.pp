@@ -37,7 +37,6 @@ class people::bazbremner {
       'gpg',
       'leiningen',
       'jq',
-      'python',
       'sipcalc',
       'the_silver_searcher',
       'tree',
@@ -53,9 +52,12 @@ class people::bazbremner {
      ensure => present,
   }
 
-  package {
-    ['virtualenv','virtualenvwrapper']:
+  package { 'python':
     ensure => present,
+  } ->
+  package {
+    ['virtualenv', 'virtualenvwrapper']:
+    ensure   => present,
     provider => pip,
   }
 
