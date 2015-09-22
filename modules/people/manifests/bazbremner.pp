@@ -31,7 +31,6 @@ class people::bazbremner {
 
   package {
     [
-      'ansible',
       'aspell',
       'bash-completion',
       'cask',
@@ -50,7 +49,8 @@ class people::bazbremner {
 
   package {
     [
-      'wget',
+     'ansible',
+     'wget',
      ]:
      ensure => present,
   }
