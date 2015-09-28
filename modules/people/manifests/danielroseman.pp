@@ -22,6 +22,7 @@ class people::danielroseman {
   file { $home_projects:
     ensure => directory,
   }
+  class { 'gds_ssh_config': }
 
   # Git
   git::config::global { 'color.ui': value => 'true' }
