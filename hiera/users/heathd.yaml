@@ -1,5 +1,6 @@
 ---
 boxen::security::screensaver_delay_sec: '0'
+ruby::build::ensure: "v20150928"
 gds_ruby::versions:
     - '1.9.3'
     - '2.0.0'
@@ -9,6 +10,7 @@ gds_ruby::versions:
     - '2.1.6'
     - '2.1'
     - '2.2.2'
+    - '2.2.3'
 gds_ruby::uninstall_versions:
     - '2.1.0'
     - '2.1.1'
