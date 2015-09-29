@@ -32,6 +32,7 @@ class people::bazbremner {
   package {
     [
      'aspell',
+     'awscli',
      'bash-completion',
      'cask',
      'docker',
