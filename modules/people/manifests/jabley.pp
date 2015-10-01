@@ -133,6 +133,7 @@ class people::jabley(
       'pidof',
       'pkg-config',
       'play22',
+      'potrace',
       'proctools',
       'protobuf',
       'rust',
