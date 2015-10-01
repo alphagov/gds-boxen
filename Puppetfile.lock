@@ -364,22 +364,22 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
-  remote: bradleywright/puppet-emacs
+  remote: bradwright/puppet-emacs
   specs:
     emacs (2.0.0)
 
 GITHUBTARBALL
-  remote: bradleywright/puppet-emacs-keybindings
+  remote: bradwright/puppet-emacs-keybindings
   specs:
     emacs_keybindings (2.0.0)
 
 GITHUBTARBALL
-  remote: bradleywright/puppet-stay
+  remote: bradwright/puppet-stay
   specs:
     stay (1.0.0)
 
 GITHUBTARBALL
-  remote: bradleywright/puppet-x-dispatch
+  remote: bradwright/puppet-x-dispatch
   specs:
     x_dispatch (2.0.0)
 
