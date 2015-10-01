@@ -31,7 +31,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.9.1)
+    boxen (3.11.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
@@ -91,7 +91,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.2.1)
+    gcc (3.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
@@ -109,14 +109,9 @@ GITHUBTARBALL
     go (2.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-handbrake
-  specs:
-    handbrake (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.11.6)
+    homebrew (1.13.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -137,11 +132,6 @@ GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.2.4)
-
-GITHUBTARBALL
-  remote: boxen/puppet-java
-  specs:
-    java (1.8.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-karabiner
@@ -176,12 +166,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.5)
+    nginx (1.4.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (4.0.1)
+    nodejs (5.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-notational_velocity
@@ -221,7 +211,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
-    phantomjs (2.4.0)
+    phantomjs (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -451,12 +441,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.2.0)
+    inifile (1.4.1)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.6.0)
+    stdlib (4.7.0)
 
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
@@ -490,7 +480,8 @@ DEPENDENCIES
   antirsi (= 1.0.1)
   atom (= 1.2.0)
   banshee (= 1.1.0)
-  boxen (= 3.9.1)
+  boxen (= 3.11.0)
+  brewcask (= 0.0.6)
   brewcask (= 0.0.6)
   caffeine (= 1.0.0)
   camino (= 1.0.1)
@@ -507,20 +498,18 @@ DEPENDENCIES
   firefox (= 1.2.3)
   flux (= 1.0.1)
   foreman (= 1.2.0)
-  gcc (= 2.2.1)
+  gcc (= 3.0.2)
   git (= 2.7.92)
   github_for_mac (= 1.4.0)
   gitx (= 1.2.0)
   go (= 2.1.0)
   googledrive (= 1.0.2)
-  handbrake (= 1.0.1)
-  homebrew (= 1.11.6)
+  homebrew (= 1.13.0)
   hub (= 1.4.1)
-  inifile (= 1.2.0)
+  inifile (= 1.4.1)
   intellij (= 1.5.1)
   istatmenus4 (= 1.1.0)
   iterm2 (= 1.2.4)
-  java (= 1.8.2)
   karabiner (= 1.0.7)
   keepassx (= 1.0.0)
   launchbar (= 1.2.0)
@@ -532,8 +521,8 @@ DEPENDENCIES
   mou (= 1.1.3)
   mplayerx (= 1.0.0)
   mysql (= 2.0.1)
-  nginx (= 1.4.5)
-  nodejs (= 4.0.1)
+  nginx (= 1.4.6)
+  nodejs (= 5.0.0)
   notational_velocity (= 1.1.2)
   ohmyzsh (= 1.0.0)
   omnifocus (= 1.1.0)
@@ -543,7 +532,7 @@ DEPENDENCIES
   osx (= 2.8.0)
   packer (= 1.3.0)
   perl (= 1.1.0)
-  phantomjs (= 2.4.0)
+  phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
   postgresql (= 3.0.3)
   propane (= 0.0.1)
@@ -564,7 +553,7 @@ DEPENDENCIES
   spf13vim3 (= 1.0.0)
   spotify (= 1.0.2)
   stay (= 1.0.0)
-  stdlib (= 4.6.0)
+  stdlib (= 4.7.0)
   sublime_text_2 (= 1.1.2)
   sublime_text_3 (= 1.0.3)
   sudo (= 1.0.0)
