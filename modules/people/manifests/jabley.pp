@@ -44,6 +44,7 @@ class people::jabley(
   include projects::frontend
   include projects::govuk_content_api
   include projects::private-utils
+  include projects::static
   include projects::transition-config
   include projects::router
   include projects::rummager
