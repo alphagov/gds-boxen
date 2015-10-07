@@ -25,6 +25,7 @@ alphagov::repos:
     - 'government-service-design-manual'
     - 'govuk_crawler_worker'
     - 'metadata-api'
+    - 'notify-api'
     - 'passphrase_entropy'
     - 'puppet-gstatsd'
     - 'puppet-heka'
