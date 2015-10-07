@@ -163,6 +163,7 @@ class people::jabley(
       'boot2docker',
       'curl',
       'docker',
+      'docker-compose',
       'docker-machine',
       'go',
       'gpg-agent',
