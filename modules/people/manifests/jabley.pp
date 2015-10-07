@@ -76,8 +76,6 @@ class people::jabley(
     content => template('people/jabley/ssh_config'),
   }
 
-  ruby::version { '1.9.3-p484': }
-
   class { 'gds_development':
     version => '1.7.2',
   }

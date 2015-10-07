@@ -3,7 +3,9 @@ boxen::security::screensaver_delay_sec: '0'
 
 gds_ruby::versions:
     - '1.9.3'
+    - '1.9.3-p484'
     - '2.1.2'
+    - '2.1.4'
 gds_ruby::uninstall_versions:
     - '1.9.2'
     - '2.0.0'
