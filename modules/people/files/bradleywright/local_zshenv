@@ -1,4 +1,6 @@
 # -*- mode: sh; -*-
+setopt no_global_rcs
+
 [[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
 
 export VAGRANT_DEFAULT_PROVIDER=vmware_fusion
