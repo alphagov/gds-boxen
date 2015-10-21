@@ -35,6 +35,8 @@ alphagov::repos:
     - 'sensu-community-plugins'
     - 'service-domain-checker'
     - 'servicechecker'
+    - 'situation-room'
+    - 'situation-room-dashboard'
     - 'transition-stats'
     - 'transformation-dashboard'
     - 'vcloud-core'
