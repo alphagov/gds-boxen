@@ -14,14 +14,13 @@ class people::bradwright {
   include nginx
   include notational_velocity::nvalt
   include omnifocus
-  include openconnect
   include qt
   include slate
   include vmware_fusion
   include x_dispatch
   include zsh
 
-  class { 'nodejs::global': version => 'v0.10.33' }
+  class { 'nodejs::global': version => '0.10.33' }
 
   osx_login_item { 'OmniFocus':
     name    => 'OmniFocus',
