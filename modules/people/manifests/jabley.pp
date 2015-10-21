@@ -1,6 +1,6 @@
 class people::jabley(
   $libreoffice_version = '4.3.6',
-  $node_version = 'v0.10.36',
+  $node_version = '0.10.36',
 ) {
 
   include adium
@@ -210,20 +210,20 @@ class people::jabley(
 
   class { 'nodejs::global': version => $node_version }
 
-  nodejs::version { 'v0.12.2': }
+  nodejs::version { '0.12.0': }
 
-  nodejs::module { [
-    'express-generator',
-    'jsontool',
-    'grunt-cli',
-    'gulp',
-    'keybase-installer',
-    'node-inspector',
-    'stackvis',
-    'tick',
-    ]:
-    node_version => $node_version,
-  }
+#  npm_module { [
+#    'express-generator',
+#    'jsontool',
+#    'grunt-cli',
+#    'gulp',
+#    'keybase-installer',
+#    'node-inspector',
+#    'stackvis',
+#    'tick',
+#    ]:
+#    node_version => $node_version,
+#  }
 
   $home = "/Users/${::luser}"
   $home_projects = "${home}/Projects"
