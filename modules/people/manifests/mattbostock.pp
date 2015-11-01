@@ -95,6 +95,7 @@ class people::mattbostock {
       'pandoc',
       'phantomjs',
       'php54',
+      'pinentry',
       'rcm',
       'selenium-server-standalone',
       'sqlite',
