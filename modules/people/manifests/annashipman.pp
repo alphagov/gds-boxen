@@ -11,10 +11,6 @@ class people::annashipman {
   include gds_virtualbox
   include wget
 
-  class { 'libreoffice':
-    version => '4.3.7'
-  }
-
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   include projects::deployment::creds
