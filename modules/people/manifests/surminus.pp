@@ -11,9 +11,7 @@ class people::surminus {
   include googledrive
   include hub
   include iterm2::stable
-  include keepassx
   include macvim
-  #include openconnect # doesn't play ball with Yosemite
   include screen
   include spotify
   include vagrant
@@ -95,6 +93,7 @@ class people::surminus {
       'htop-osx',
       'libxml2',
       'packer',
+      'pass',
       'wget',
     ]:
     ensure => present,
