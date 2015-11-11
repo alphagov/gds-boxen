@@ -7,6 +7,9 @@ Host ci-master.ci-govuk
 Host *.ci-govuk
   ProxyCommand ssh -e none %r@ci-master.ci-govuk -W $(echo %h | sed 's/\.ci-govuk$//'):%p
 
+Host ci.dev.publishing.service.gov.uk
+  ProxyCommand none
+
 
 # Preview
 # -------
