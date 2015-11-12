@@ -65,6 +65,15 @@ Host production-management-2
   User ubuntu
   IdentityFile ~/.ssh/beta.pem
 
+# Hosts for situation-room applications
+Host ah-mrt-d-01
+  Hostname 192.168.8.161
+  User jamesa
+
+Host ah-mrt-d-02
+  Hostname 192.168.8.162
+  User jamesa
+
 #
 # Fallback
 #
