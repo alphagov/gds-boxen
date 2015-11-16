@@ -91,6 +91,3 @@ DEPENDENCIES
   puppetlabs_spec_helper (= 0.4.1)
   rake (= 10.3.2)
   rspec-puppet (= 1.0.1)
-
-BUNDLED WITH
-   1.10.6
