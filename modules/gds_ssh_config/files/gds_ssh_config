@@ -25,6 +25,26 @@ Host jumpbox-2.management.preview
 Host *.preview
   ProxyCommand ssh -e none %r@jumpbox-1.management.preview -W $(echo %h | sed 's/\.preview$//'):%p
 
+# Integration
+# -------
+Host jumpbox.integration.publishing.service.gov.uk
+  ProxyCommand none
+
+Host *.integration.publishing.service.gov.uk
+  ProxyCommand ssh -e none %r@jumpbox.integration.publishing.service.gov.uk -W %h:%p
+
+Host jumpbox-1.management.integration
+  Hostname jumpbox.integration.publishing.service.gov.uk
+  ProxyCommand none
+
+Host jumpbox-2.management.integration
+  Hostname jumpbox.integration.publishing.service.gov.uk
+  Port     1022
+  ProxyCommand none
+
+Host *.integration
+  ProxyCommand ssh -e none %r@jumpbox-1.management.integration -W $(echo %h | sed 's/\.integration$//'):%p
+
 # Staging
 # -------
 Host jumpbox.staging.publishing.service.gov.uk
