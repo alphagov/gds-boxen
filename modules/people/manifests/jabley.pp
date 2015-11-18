@@ -77,7 +77,7 @@ class people::jabley(
   }
 
   class { 'gds_development':
-    version => '1.7.2',
+    version => '1.7.4',
   }
 
   class { 'gds_printers':
