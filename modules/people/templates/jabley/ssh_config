@@ -74,6 +74,10 @@ Host ah-mrt-d-02
   Hostname 192.168.8.162
   User jamesa
 
+# Added host for Dokku local vagrant testing
+Host dokku.me
+  Port 22
+
 #
 # Fallback
 #
