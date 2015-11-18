@@ -80,6 +80,8 @@ class people::jabley(
     version => '1.7.4',
   }
 
+  class { 'git': version => '2.6.3' }
+
   class { 'gds_printers':
     ldap_username => 'jamesabley',
   }
