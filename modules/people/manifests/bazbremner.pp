@@ -23,7 +23,7 @@ class people::bazbremner {
   include osx::finder::show_external_hard_drives_on_desktop
   include osx::finder::unhide_library
 
-  class { 'nodejs::global': version => 'v0.12.7' }
+  class { 'nodejs::global': version => '0.12.7' }
 
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false
