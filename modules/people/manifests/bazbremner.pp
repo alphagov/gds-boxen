@@ -43,10 +43,11 @@ class people::bazbremner {
      'jq',
      'leiningen',
      'maven',
+     'pass',
      'sipcalc',
      'the_silver_searcher',
-     'tree',
      'tmux',
+     'tree',
      ]:
      ensure => latest,
   }
