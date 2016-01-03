@@ -1,11 +1,10 @@
 ---
 hub::alias_hub_to_git: false
 
-ruby::build::ensure: "v20141225"
+ruby::build::ensure: "v20151230"
 
 gds_ruby::versions:
-  - '1.8.7-p358'
-  - '2.1.5'
+  - '2.3.0'
 gds_ruby::uninstall_versions:
   - '1.9.2'
   - '1.9.3'
@@ -13,6 +12,8 @@ gds_ruby::uninstall_versions:
   - '2.1.0'
   - '2.1.1'
   - '2.1.2'
+  - '2.1.5'
+  - '1.8.7-p358'
   - '1.9.2-p320'
   - '1.9.3-p545'
   - '2.0.0-p451'
