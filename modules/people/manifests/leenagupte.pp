@@ -22,7 +22,6 @@ class people::leenagupte {
   #include projects::deployment
 
   include teams::performance-platform
-  include teams::performance-platform::ssh
 
   class { 'gds_ssh_config': }
 

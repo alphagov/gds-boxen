@@ -1,4 +1,4 @@
-Host *.preview
+Host *.integration
   User timothymower
 Host *.staging
   User timothymower

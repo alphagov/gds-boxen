@@ -1,4 +1,4 @@
-# Pulls the https://github.gds/gds/puppet repository
+# Pulls the Puppet repository
 class projects::puppet {
-  repo::gds { 'puppet': }
+  repo::alphagov { 'govuk-puppet': }
 }

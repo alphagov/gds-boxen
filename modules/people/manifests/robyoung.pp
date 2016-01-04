@@ -19,9 +19,6 @@ class people::robyoung {
   include projects::deployment
 
   class { 'gds_ssh_config': }
-  ssh_config::fragment{'performance-platform':
-    content => template('teams/performance-platform/ssh-config'),
-  }
 
   $home = "/Users/${::luser}"
   $projects = "${home}/Projects"

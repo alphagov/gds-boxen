@@ -57,9 +57,6 @@ class people::carolinegreen {
   }
 
   class { 'gds_ssh_config': }
-  ssh_config::fragment{'performance-platform':
-    content => template('teams/performance-platform/ssh-config'),
-  }
   #ssh_config::fragment {"user":
   #  content => template('people/carolinegreen/ssh_config'),
   #}
