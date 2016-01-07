@@ -11,18 +11,19 @@ class people::surminus {
   include googledrive
   include hub
   include iterm2::stable
+  include iterm2::colors::solarized_dark
   include macvim
+  include ohmyzsh
+  include projects::deployment::creds
   include screen
   include spotify
   include vagrant
   include virtualbox
   include zsh
-  include ohmyzsh
-  include projects::deployment::creds
 
   ## osx stuff
 
-  osx::recovery_message { 'If this Mac is found, please call 07780 225 281': }
+  osx::recovery_message { 'If this Mac is found, please call 07870 300 659': }
 
   $home    = "/Users/${::luser}"
   $mystuff = "${home}/surminus"
@@ -50,26 +51,12 @@ class people::surminus {
     target => "${mystuff}/dotfiles/zshrc",
   }
 
-  file { "${home}/.ackrc":
-    ensure => 'link',
-    target => "${mystuff}/dotfiles/ackrc",
-  }
-
   file { "${home}/Scripts/keepass-merge":
-    ensure => 'link',
-    target => "${mystuff}/scripts/keepass-merge",
+    ensure => absent,
   }
 
-  file { [ "${mystuff}", "${home}/Scripts", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]:
+  file { [ "${mystuff}", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]:
     ensure => directory,
-  }
-
-  repository { "${home}/.vim/bundle/nerdtree":
-    source => 'scrooloose/nerdtree',
-  }
-
-  exec { "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim":
-    unless => "ls ${home}/.vim/autoload/pathogen.vim"
   }
 
   ## projects
