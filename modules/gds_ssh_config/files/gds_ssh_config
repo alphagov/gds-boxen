@@ -1,3 +1,6 @@
+Host *
+  UseRoaming no
+
 # CI
 # --
 Host ci-master.ci-govuk
