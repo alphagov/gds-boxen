@@ -13,6 +13,7 @@ class people::deanwilson {
     [
       'gpg',
       'gpg-agent',
+      'the_silver_searcher',
     ]:
   }
 
