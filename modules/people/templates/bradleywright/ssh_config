@@ -1,4 +1,3 @@
-
 # -*- mode: conf; -*-
 Host dev development
   User vagrant
@@ -7,6 +6,15 @@ Host dev development
   HostName <%= @vagrant_ip %>
   StrictHostKeyChecking no
   UserKnownHostsFile=/dev/null
+
+Host *.publishing.service.gov.uk *.integration *.staging *.production
+  IdentityFile ~/.ssh/govuk_rsa
+
+Host github.com
+  IdentityFile ~/.ssh/github.com_rsa
+
+Host github.gds
+  IdentityFile ~/.ssh/github.gds_rsa
 
 Host *
   User bradleyw
