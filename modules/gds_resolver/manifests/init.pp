@@ -5,8 +5,7 @@
 #   include gds_resolver
 
 class gds_resolver {
-  osx_resolver::domain { 'gds':
-    content => 'nameserver 192.168.19.254
-',
+  file {'/etc/resolver/gds':
+    ensure => absent;
   }
 }
