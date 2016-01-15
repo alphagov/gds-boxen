@@ -8,8 +8,6 @@ class people::philandstuff {
   include sizeup
   include vagrant
 
-  class { 'nodejs::global': version => 'v0.12.7' }
-
   package {
     [
       'bash-completion',
