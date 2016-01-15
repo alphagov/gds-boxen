@@ -5,7 +5,6 @@ class people::bradwright {
   include dropbox
   include emacs_keybindings
   include gds_osx::turn_off_dashboard
-  include gds_resolver
   include gds_vpn_profiles
   include flux
   include iterm2::dev
