@@ -24,5 +24,3 @@ alias elasticsearch_prod="ssh elasticsearch-1.backend.production -L 9200:127.1:9
 reset_cisco_ssh() {
     sudo ipfw -a list | awk '/deny ip from any to any$/ { print $1 }' | xargs sudo ipfw delete
 }
-
-setopt global_rcs
