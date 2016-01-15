@@ -43,4 +43,15 @@ fi
 
 export PS1='\h:\W$(__git_ps1) \u\$ '
 
-export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+# use gpg-agent settings
+. $HOME/.gpg-agent-info
+
+# Load the custom .*-pass I have
+
+for i in ~/.*-pass; do
+    [ -e $i/.load.bash ] && . $i/.load.bash
+done
+
+# add nix to PATH
+export PATH="$HOME/.nix-profile/bin:$PATH"
+
