@@ -139,7 +139,7 @@ class people::bradwright {
     value => "${home}/.local_gitconfig",
   }
 
-  file {"${boxen::config::srcdir}/puppet/development/Vagrantfile.localconfig":
+  file {"${boxen::config::srcdir}/govuk-puppet/development/Vagrantfile.localconfig":
     source => 'puppet:///modules/people/bradleywright/Vagrantfile.localconfig',
     require => Class['Projects::Development']
   }
