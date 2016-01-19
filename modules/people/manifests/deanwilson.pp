@@ -9,10 +9,13 @@ class people::deanwilson {
   # git repos
   include projects::vagrant-govuk
 
+  class { 'gds_ssh_config': }
+
   package {
     [
       'gpg',
       'gpg-agent',
+      'packer',
       'the_silver_searcher',
     ]:
   }
