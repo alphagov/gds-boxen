@@ -59,8 +59,8 @@ class people::dcarley {
   package {
     [
       'apg',
-      'boot2docker',
       'docker',
+      'docker-machine',
       'entr',
       'gnu-sed',
       'terraform',
