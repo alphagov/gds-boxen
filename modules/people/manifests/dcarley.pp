@@ -20,7 +20,7 @@ class people::dcarley {
   }
 
   class { 'vagrant':
-    version => '1.7.2',
+    version => '1.8.1',
   }
   vagrant::plugin { 'vagrant-vmware-fusion': }
   vagrant::plugin { 'cachier': }
