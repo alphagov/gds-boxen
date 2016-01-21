@@ -170,15 +170,17 @@ class people::bradwright {
   # Go
   package { 'go':
     ensure   => latest,
-    provider => homebrew
-  } ~> Exec['install_go_tools']
+    provider => homebrew,
+    notify   => Exec['install_go_tools'],
+  }
 
   exec { 'install_go_tools':
     environment => ["GOPATH=${home}/go"],
     command => 'go get golang.org/x/tools/cmd/godoc \
                 && go get golang.org/x/tools/cmd/vet \
-                && go get github.com/nsf/gocode'
-
+                && go get github.com/nsf/gocode',
+    provider    => shell,
+    refreshonly => true,
   }
 
   homebrew::tap { 'homebrew/binary': }
