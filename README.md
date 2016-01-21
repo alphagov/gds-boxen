@@ -60,6 +60,10 @@ If that runs cleanly, you're in good shape.
 
         /usr/local/bin/brew list
 
+- To uninstall your homebrew you can run the following uninstall script:
+
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+
 - You can list the brews installed by Boxen with:
 
         /opt/boxen/homebrew/bin/brew list
