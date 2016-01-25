@@ -5,12 +5,12 @@ class people::issyl0 {
   include gds_osx::turn_off_dashboard
   include chrome
   include spotify
-  include sublime_text_2
+  include atom
   include wget
-  include skype
-  include iterm2::stable
   include dropbox
   include onepassword
   include caffeine
-  include vagrant
+
+  # I couldn't make vagrant or VirtualBox install cleanly on 10.11, so
+  # I'm installing them outside of Boxen.
 }
