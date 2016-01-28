@@ -1,10 +1,8 @@
 ## Paul Martin boxen config :3
 class people::surminus {
   include alfred
-  include caffeine
   include chrome
   include firefox
-  include gds_resolver
   include gds_vpn_profiles
   include git
   include gitx
@@ -12,9 +10,7 @@ class people::surminus {
   include hub
   include iterm2::stable
   include iterm2::colors::solarized_dark
-  include macvim
   include ohmyzsh
-  include projects::deployment::creds
   include screen
   include spotify
   include vagrant
@@ -59,9 +55,6 @@ class people::surminus {
     ensure => directory,
   }
 
-  ## projects
-  # include projects::all
-
   class { 'gds_printers':
     ldap_username => 'paulmartin',
   }
@@ -86,12 +79,20 @@ class people::surminus {
     ensure => present,
   }
 
+  # I only want gpgtools installed
+  package { 'gpg':
+   ensure => absent,
+  }
+
 package {
     [
       'osxfuse',
       'xscreensaver',
+      'gpgtools',
+      'reeddit',
     ]:
     ensure   => present,
     provider => 'brewcask',
   }
+
 }
