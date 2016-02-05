@@ -80,7 +80,7 @@ class people::timmow {
   }
   homebrew::tap { 'caskroom/cask': }
   class { 'vagrant':
-      version => '1.7.2'
+      version => '1.8.1'
   }
   vagrant::plugin { 'cachier': }
   vagrant::plugin { 'dns': }
