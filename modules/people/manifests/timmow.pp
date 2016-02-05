@@ -8,7 +8,7 @@ class people::timmow {
   include teams::performance-platform
   include teams::infrastructure
   class { 'nodejs::global': version => 'v0.10.31' }
-  nodejs::module {
+  npm_module {
     [
       'grunt-cli',
       'gulp',
