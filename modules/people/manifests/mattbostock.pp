@@ -4,6 +4,7 @@ class people::mattbostock {
   include gds_development
   include gds_resolver
   include gds_vpn_profiles
+  include gds_osx::turn_off_dashboard
   include git
   include iterm2::stable
   include iterm2::colors::solarized_dark
