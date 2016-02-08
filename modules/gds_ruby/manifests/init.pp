@@ -19,8 +19,8 @@
 #           1.8.7: 1.9.3-p545
 #
 class gds_ruby (
-  $versions   = ['1.8.7','1.9.3','2.0.0','2.1.0','2.1.2'],
-  $uninstall_versions = ['2.1.1'],
+  $versions   = ['1.9.3','2.0.0','2.1.8','2.2.4', '2.3.0'],
+  $uninstall_versions = ['2.1.0', '2.1.2'],
 ) {
 
   include ruby
