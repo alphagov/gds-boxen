@@ -46,6 +46,9 @@ class people::timmow {
       'nmap',
       'openconnect',
       'gcal',
+      'golang',
+      'npm',
+      'coreutils',
     ]:
     ensure => present,
   }
