@@ -140,6 +140,4 @@ class people::timmow {
     commands => '(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE',
   }
 
-  include gds_resolver
-
 }
