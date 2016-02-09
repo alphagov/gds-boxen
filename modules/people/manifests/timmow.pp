@@ -62,8 +62,6 @@ class people::timmow {
     require  => Package['brew-cask'],
   }
 
-  include python::3_3_0
-
   package {
     [
       'virtualenv',
