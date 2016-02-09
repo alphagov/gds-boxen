@@ -114,7 +114,7 @@ class people::timmow {
     fix_opt_arrows       => false,
   }
   karabiner::set{ 'repeat.initial_wait':
-    value => '100'
+    value => '200'
   }
   karabiner::set{ 'repeat.wait':
     value => '20'
