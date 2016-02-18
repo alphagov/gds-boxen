@@ -21,4 +21,19 @@ class people::deanwilson {
   }
 
 
+  ## python stuff ##
+  package {
+    [
+      'python',
+    ]:
+  }
+
+  package {
+    [ 'virtualenv', 'virtualenvwrapper' ]:
+    ensure   => present,
+    provider => pip,
+    require  => Package['python'],
+  }
+
+  ####
 }
