@@ -16,7 +16,7 @@
     # If your project directory is not /Users/$USER/govuk/ then use
     # PATH=... script/boxen --srcdir=/path/to/project/directory
     # For a fresh build, you will need to create /project/directory
-    PATH=/usr/bin:/bin:/usr/sbin:/sbin script/boxen --srcdir=/Users/${USER}/govuk
+    PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin script/boxen --srcdir=/Users/${USER}/govuk
     # add boxen to your shell config, at the end, eg.
     echo '[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh' >> ~/.bashrc
     # or if you use ZSH
