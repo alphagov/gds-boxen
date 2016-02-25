@@ -13,9 +13,11 @@ class people::deanwilson {
 
   package {
     [
+      'aspell',
       'gpg',
       'gpg-agent',
       'packer',
+      'pass',
       'the_silver_searcher',
     ]:
   }
