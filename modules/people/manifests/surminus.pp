@@ -74,6 +74,8 @@ class people::surminus {
       'libxml2',
       'packer',
       'pass',
+      'sl',
+      'terraform',
       'wget',
     ]:
     ensure => present,
