@@ -56,7 +56,7 @@ class people::surminus {
   }
 
   class { 'gds_printers':
-    ldap_username => 'paulmartin',
+    ldap_username => "${::luser}",
   }
 
   ## homebrew
@@ -69,6 +69,7 @@ class people::surminus {
       'cmake',
       'coreutils',
       'docker',
+      'encfs',
       'go',
       'htop-osx',
       'libxml2',
@@ -81,17 +82,12 @@ class people::surminus {
     ensure => present,
   }
 
-  # I only want gpgtools installed
-  package { 'gpg':
-   ensure => absent,
-  }
-
 package {
     [
-      'osxfuse',
-      'xscreensaver',
       'gpgtools',
+      'osxfuse',
       'reeddit',
+      'xscreensaver',
     ]:
     ensure   => present,
     provider => 'brewcask',
