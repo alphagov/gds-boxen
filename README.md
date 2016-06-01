@@ -1,3 +1,7 @@
+# GDS Boxen
+
+Manage Mac development boxes with Puppet. It installs things like Homebrew, Git and Ruby along with others for us on our local machines (not within the VM).
+
 ## Getting started with Boxen
 
 - Make sure you are running at least Mac OS X 10.8 (Mountain Lion)
