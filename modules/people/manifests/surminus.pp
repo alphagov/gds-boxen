@@ -29,27 +29,19 @@ class people::surminus {
     source  => 'surminus/dotfiles',
   }
 
-  # junk scripts
-  repository { "${mystuff}/scripts":
-    source => 'surminus/scripts',
+  define createDotfile {
+    file { "${home}/.${name}":
+      ensure => 'link',
+      target => "${mystuff}/dotfiles/${name}",
+    }
   }
 
-  $vimrc = "${mystuff}/dotfiles/vimrc"
-  $zshrc = "${mystuff}/dotfiles/zshrc"
-
-  file { "${home}/.vimrc":
-    ensure => 'link',
-    target => "${mystuff}/dotfiles/vimrc",
-  }
-
-  file { "${home}/.zshrc":
-    ensure => 'link',
-    target => "${mystuff}/dotfiles/zshrc",
-  }
-
-  file { "${home}/Scripts/keepass-merge":
-    ensure => absent,
-  }
+  $dotfiles = [
+                'vimrc',
+                'zshrc',
+                'gitconfig'
+              ]
+  createDotfile { $dotfiles: }
 
   file { [ "${mystuff}", "${home}/.vim", "${home}/.vim/bundle", "${home}/.vim/autoload"]:
     ensure => directory,
@@ -77,6 +69,7 @@ class people::surminus {
       'pass',
       'sl',
       'terraform',
+      'vim',
       'wget',
     ]:
     ensure => present,
@@ -86,7 +79,6 @@ package {
     [
       'gpgtools',
       'osxfuse',
-      'reeddit',
       'xscreensaver',
     ]:
     ensure   => present,
