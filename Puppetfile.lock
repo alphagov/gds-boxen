@@ -436,7 +436,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-concat
   specs:
-    concat (1.2.1)
+    concat (2.1.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -487,7 +487,7 @@ DEPENDENCIES
   camino (= 1.0.1)
   chrome (= 1.2.0)
   clojure (= 1.3.0)
-  concat (= 1.2.1)
+  concat (= 2.1.0)
   cups (= 1.4.1)
   dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
