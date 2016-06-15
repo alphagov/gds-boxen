@@ -35,24 +35,13 @@ class people::russellbate {
   vagrant::plugin { 'vagrant-dns': }
   include projects::puppet
 
-  # PP
-  include teams::performance-platform
-
   # Infrastructure and ops
   include gds_vpn_profiles
   include projects::deployment
   include projects::vagrant-govuk
   class { 'teams::infrastructure': manage_gitconfig => false }
 
-  # Other repos
-
-  repo::gds { 'interviews': }
-
-  repo::alphagov { 'design-principles': }
-  repo::alphagov { 'government-service-design-manual': }
   include projects::styleguides
-  repo::alphagov { 'transformation-dashboard': }
-
 
   # Git
   git::config::global { 'alias.master': value => '!git checkout master && git pull origin master' }
