@@ -1,4 +1,4 @@
-class people::russellbate {
+class people::rjbate {
 #Forked from alexmuller
 
   $home_directory = '/Users/russellbate'
@@ -28,6 +28,8 @@ class people::russellbate {
   file { "${home_directory}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings":
     source => 'puppet:///modules/people/alexmuller/User-Preferences.sublime-settings',
   }
+
+  class { 'gds_ssh_config': }
 
   # Dev VM
   include vagrant
