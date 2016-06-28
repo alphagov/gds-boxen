@@ -31,8 +31,6 @@ class people::rjbate {
 
   class { 'gds_ssh_config': }
 
-  notify { 'hello': } 
-
   # Dev VM
   include vagrant
   include gds_virtualbox::42_latest
