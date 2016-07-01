@@ -106,7 +106,6 @@ github "onepassword",    "1.1.5"
 github "omnigraffle",    "1.3.1"
 github "osx",            "2.8.0"
 github "packer",         "1.3.0"
-github "perl",           "1.1.0", :repo => "boxelly/puppet-perl"
 github "postgresql",     "3.0.3"                      # Note: this version installs postgresql 9.3.2
 github "propane",        "0.0.1", :repo => "technicalpickles/puppet-propane"
 github "pycharm",        "1.0.4"
