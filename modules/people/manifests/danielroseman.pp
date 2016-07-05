@@ -29,6 +29,8 @@ class people::danielroseman {
   git::config::global { 'user.name': value => 'Daniel Roseman' }
   git::config::global { 'user.email': value => 'daniel.roseman@digital.cabinet-office.gov.uk' }
   git::config::global { 'core.editor': value => 'vim' }
+  git::config::global { 'commit.verbose': value => '1' }
+  git::config::global { 'diff.compactionHeuristic': value => '1' }
 
   repository { "${home}/.vim/bundle/vundle":
     source => 'gmarik/vundle',
