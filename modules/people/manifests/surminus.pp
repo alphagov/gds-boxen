@@ -26,7 +26,7 @@ class people::surminus {
 
   ## dotfiles
   repository { "${mystuff}/dotfiles":
-    source  => 'surminus/dotfiles',
+    source => 'surminus/dotfiles',
   }
 
   define createDotfile {
@@ -62,6 +62,7 @@ class people::surminus {
       'coreutils',
       'docker',
       'encfs',
+      'fzf',
       'go',
       'htop-osx',
       'libxml2',
