@@ -33,6 +33,7 @@ class people::bazbremner {
     [
      'aspell',
      'awscli',
+     'aws-shell',
      'bash-completion',
      'cask',
      'docker',
