@@ -1,4 +1,4 @@
-## Paul Martin boxen config :3
+## Laura Martin boxen config
 class people::surminus {
   include alfred
   include chrome
@@ -76,6 +76,9 @@ class people::surminus {
     ensure => present,
   }
 
+# Sometimes these do not install properly because they require sudo. If they fail,
+# run `sudo ls` or something to gain a sudo session for a time before running
+# boxen.
 package {
     [
       'gpgtools',
