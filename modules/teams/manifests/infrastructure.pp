@@ -1,4 +1,4 @@
-class teams::infrastructure ($manage_gitconfig = true) {
+class teams::infrastructure ($manage_gitconfig = false) {
   include projects::alphagov-deployment
   include projects::boxes
   include projects::ci-puppet
