@@ -4,9 +4,19 @@ GITHUBTARBALL
     libreoffice (4.2.1)
 
 GITHUBTARBALL
+  remote: alphagov/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
+GITHUBTARBALL
   remote: alphagov/puppet-python
   specs:
     python (1.1.2)
+
+GITHUBTARBALL
+  remote: alphagov/puppet-spf13vim3
+  specs:
+    spf13vim3 (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-alfred
@@ -399,6 +409,11 @@ GITHUBTARBALL
     mplayerx (1.0.0)
 
 GITHUBTARBALL
+  remote: hugo/puppet-sourcecodepro
+  specs:
+    sourcecodepro (1.0.0)
+
+GITHUBTARBALL
   remote: jabley/puppet-banshee
   specs:
     banshee (1.1.0)
@@ -449,28 +464,25 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 GITHUBTARBALL
-  remote: samjsharpe/puppet-ohmyzsh
-  specs:
-    ohmyzsh (1.0.0)
-
-GITHUBTARBALL
-  remote: samjsharpe/puppet-spf13vim3
-  specs:
-    spf13vim3 (1.0.0)
-
-GITHUBTARBALL
   remote: technicalpickles/puppet-propane
   specs:
     propane (0.0.1)
 
-GITHUBTARBALL
-  remote: thisishugo/puppet-sourcecodepro
-  specs:
-    sourcecodepro (1.0.0)
-
 DEPENDENCIES
+  adium (= 1.4.0)
+  alfred (= 1.4.0)
+  android (= 1.4.0)
+  antirsi (= 1.0.1)
+  atom (= 1.2.0)
+  banshee (= 1.1.0)
   boxen (= 3.11.1)
   brewcask (= 0.0.7)
+  caffeine (= 1.0.0)
+  camino (= 1.0.1)
+  chrome (= 1.2.0)
+  clojure (= 1.3.0)
+  concat (= 2.1.0)
+  cups (= 1.4.1)
   dnsmasq (= 2.0.1)
   dropbox (= 1.4.1)
   eclipse (= 2.5.0)
@@ -482,7 +494,10 @@ DEPENDENCIES
   foreman (= 1.2.0)
   gcc (= 3.0.2)
   git (= 2.9.0)
+  github_for_mac (= 1.4.0)
+  gitx (= 1.2.0)
   go (= 2.1.0)
+  googledrive (= 1.0.2)
   homebrew (= 2.0.2)
   hub (= 1.4.3)
   inifile (= 1.4.1)
@@ -496,6 +511,10 @@ DEPENDENCIES
   macvim (= 1.0.0)
   modern_space_cadet (= 1.0.7)
   module_data (= 0.0.4)
+  monocle (= 1.0.0)
+  mou (= 1.1.3)
+  mplayerx (= 1.0.0)
+  mysql (= 2.0.1)
   nginx (= 1.7.0)
   nodejs (= 5.0.0)
   notational_velocity (= 1.1.2)
@@ -515,6 +534,18 @@ DEPENDENCIES
   qt (= 1.4.0.pre2)
   repository (= 2.4.1)
   ruby (= 8.5.4)
+  rubymine (= 1.1.0)
+  screen (= 1.0.0)
+  seil (= 1.0.3)
+  sizeup (= 1.0.0)
+  skype (= 1.1.0)
+  slate (= 1.0.1)
+  sourcecodepro (= 1.0.0)
+  sparrow (= 1.0.0)
+  spectacle (= 1.0.0)
+  spf13vim3 (= 1.0.0)
+  spotify (= 1.0.2)
+  stay (= 1.0.0)
   stdlib (= 4.7.0)
   sublime_text_2 (= 1.1.2)
   sublime_text_3 (= 1.0.3)
@@ -531,3 +562,5 @@ DEPENDENCIES
   wget (= 1.0.1)
   x_dispatch (= 2.0.0)
   xquartz (= 1.2.1)
+  zsh (= 1.0.0)
+
