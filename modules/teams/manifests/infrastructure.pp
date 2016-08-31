@@ -12,12 +12,17 @@ class teams::infrastructure ($manage_gitconfig = false) {
   include projects::govuk_redirector-puppet
   include projects::opsmanual
   include projects::packager
-  include projects::private-utils
-  include projects::puppet
   include projects::smokey
-  include projects::vagrant-govuk
-  repo::alphagov { 'nagios-plugins': }
-  repo::alphagov { 'cdn-acceptance-tests': }
+
+  $alphagov_repos = [
+    'nagios-plugins',
+    'cdn-acceptance-tests',
+    'govuk-puppet',
+    'govuk-app-deployment',
+    'govuk-terraform-provisioning',
+  ]
+
+  repo::alphagov { $alphagov_repos: }
 
   if $manage_gitconfig {
     git::config::global {
