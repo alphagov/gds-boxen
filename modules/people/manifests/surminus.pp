@@ -1,5 +1,8 @@
 ## Laura Martin boxen config
 class people::surminus {
+  # Include Infrastructure class
+  include teams::infrastructure
+
   include alfred
   include chrome
   include firefox
