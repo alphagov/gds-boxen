@@ -4,7 +4,7 @@ class people::philandstuff {
   include emacs_keybindings
   include flux
   include iterm2::stable
-  include openconnect
+  # include openconnect
   include sizeup
   include vagrant
 
@@ -27,7 +27,7 @@ class people::philandstuff {
   }
 
   class {'git':
-    version => '2.4.6';
+    version => '2.9.0';
   }
 
   git::config::global {

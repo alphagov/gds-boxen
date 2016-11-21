@@ -55,3 +55,7 @@ done
 # add nix to PATH
 export PATH="$HOME/.nix-profile/bin:$PATH"
 
+complete -C aws_completer aws
+
+export PATH="$HOME/bin:$PATH"
+export GOPATH="$HOME/gocode"
