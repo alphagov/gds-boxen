@@ -39,7 +39,6 @@ class people::alexmuller {
   # Infrastructure and ops
   include gds_vpn_profiles
   include projects::deployment
-  include projects::vagrant-govuk
   class { 'teams::infrastructure': manage_gitconfig => false }
 
   # Other repos

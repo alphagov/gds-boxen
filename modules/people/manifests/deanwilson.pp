@@ -6,9 +6,6 @@ class people::deanwilson {
 
   class { 'teams::infrastructure': manage_gitconfig => false }
 
-  # git repos
-  include projects::vagrant-govuk
-
   class { 'gds_ssh_config': }
 
   package {
