@@ -1,5 +1,4 @@
 class people::johnstrudwick {
-  include gds_resolver
   include gds_development
   include gds_vpn_profiles
   include gds_virtualbox

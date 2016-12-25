@@ -2,10 +2,8 @@ class people::bruntonspall {
 # System stuff
   include gds_osx::turn_off_dashboard
   include gds_osx::remove_spotlight
-  include gds_resolver
   include gds_development
   include gds_vpn_profiles
-  include gds_resolver
   include gds_virtualbox
   include openconnect
 

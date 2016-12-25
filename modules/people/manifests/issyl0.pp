@@ -1,6 +1,5 @@
 class people::issyl0 {
   include gds_development
-  include gds_resolver
   include gds_ssh_config
   include gds_osx::turn_off_dashboard
   include chrome
