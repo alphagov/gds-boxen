@@ -2,10 +2,8 @@ class people::bruntonspall {
 # System stuff
   include gds_osx::turn_off_dashboard
   include gds_osx::remove_spotlight
-  include gds_resolver
   include gds_development
   include gds_vpn_profiles
-  include gds_resolver
   include gds_virtualbox
   include openconnect
 
@@ -35,7 +33,6 @@ class people::bruntonspall {
   include projects::router
   include projects::frontend
   include projects::govuk_frontend_toolkit
-  include projects::private-utils
   include projects::transition-config
   include projects::router
   include projects::rummager

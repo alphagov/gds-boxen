@@ -2,9 +2,8 @@ class people::jennyd {
   include chrome
   include dropbox
   include gds_development
-  include gds_virtualbox::42_latest
+  class { 'gds_virtualbox': version => '4.2.22' }
   include gds_osx::turn_off_dashboard
-  include gds_resolver
   include gds_ssh_config
   include gds_vpn_profiles
   include iterm2::stable

@@ -19,7 +19,6 @@ class people::heathd {
   include slate
   include things
   include gds_osx::turn_off_dashboard
-  include gds_resolver
   include gds_ssh_config
 
   ssh_config::fragment { 'heathd':
@@ -44,14 +43,12 @@ class people::heathd {
   include projects::govuk_content_api
   include projects::govuk_mirror
   include projects::opsmanual
-  include projects::private-utils
   include projects::puppet
   include projects::transition-config
   include projects::rummager
   include projects::signonotron2
   include projects::smokey
   include projects::static
-  include projects::vagrant-govuk
   include projects::whitehall
 
   include osx::disable_app_quarantine
