@@ -1,8 +1,7 @@
 ---
 hub::alias_hub_to_git: false
 
-ruby::build::ensure: "v20141225"
-
 gds_ruby::versions:
   - '1.8.7-p358'
   - '2.1.5'
+  - '2.3.0'
