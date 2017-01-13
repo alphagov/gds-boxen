@@ -4,38 +4,18 @@ class people::philandstuff {
   include emacs_keybindings
   include flux
   include iterm2::stable
-  # include openconnect
   include sizeup
   include vagrant
 
   package {
     [
       'bash-completion',
-      'fakeroot',
-      'leiningen',
       'markdown',
       'python',
       'tmux',
     ]:
     ensure => present,
   }
-
-  package {
-    ['virtualenv','virtualenvwrapper']:
-    ensure => present,
-    provider => pip,
-  }
-
-  class {'git':
-    version => '2.9.0';
-  }
-
-  git::config::global {
-    'color.ui':     value => "true";
-    'push.default': value => "simple";
-  }
-
-  vagrant::plugin { 'vagrant-cachier': }
 
   $home = "/Users/${::luser}"
 
