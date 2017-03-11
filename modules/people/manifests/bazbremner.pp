@@ -12,8 +12,6 @@ class people::bazbremner {
   include sizeup
   include xquartz
 
-  include gds_development
-
   include osx::global::disable_autocorrect
   include osx::global::tap_to_click
   include osx::global::enable_keyboard_control_access
