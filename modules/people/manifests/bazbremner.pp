@@ -68,11 +68,6 @@ class people::bazbremner {
     provider => pip,
   }
 
-  package { 'dockdev':
-    ensure   => present,
-    provider => pip,
-  }
-
   $home = "/Users/${::luser}"
   $code = "${home}/code"
   $work = "${home}/gds"
