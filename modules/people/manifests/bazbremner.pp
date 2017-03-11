@@ -3,7 +3,6 @@ class people::bazbremner {
   include caffeine
   include chrome
   include dropbox
-  include emacs::formacosx
   include flux
   include gitx::dev
   include iterm2::colors::solarized_dark
