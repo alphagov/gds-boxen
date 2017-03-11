@@ -42,7 +42,6 @@ class people::bazbremner {
      'emacs',
      'gpg',
      'jq',
-     'leiningen',
      'maven',
      'pass',
      'sipcalc',
@@ -55,7 +54,6 @@ class people::bazbremner {
 
   package {
     [
-     'ansible',
      'wget',
      ]:
      ensure => present,
