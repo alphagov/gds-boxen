@@ -36,7 +36,7 @@ class gds_ruby (
 
   ruby_gem { 'bundler for all rubies':
     gem          => 'bundler',
-    version      => '~> 1.5.3',
+    version      => '~> 1.14.5',
     ruby_version => '*',
   }
 }
