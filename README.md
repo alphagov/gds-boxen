@@ -6,8 +6,8 @@ Manage Mac development boxes with Puppet. It installs things like Homebrew, Git 
 
 - Make sure you are running at least Mac OS X 10.8 (Mountain Lion)
 - Install the full Xcode from the Mac App Store, and then explicitly install the Command Line Tools by running `xcode-select --install`
-- Follow [these instructions][github-ssh-key] to generate an SSH key so that you can clone our repositories. You'll need to add your key to both github.com and github.gds, our GitHub Enterprise instance.
-[github-ssh-key]: https://help.github.com/articles/generating-ssh-keys
+- Follow [these instructions](https://help.github.com/articles/generating-ssh-keys) to generate an SSH key so that you can clone our repositories. You'll need to add your key to both github.com and github.gds, our GitHub Enterprise instance.
+
 ### The following instructions will work for a fresh build or for an already set-up Mac.
 
     sudo mkdir -p /opt/boxen
