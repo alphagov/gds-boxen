@@ -40,7 +40,6 @@ class people::heathd {
   include projects::frontend
   include projects::gds-api-adapters
   include projects::gds-sso
-  include projects::govuk_content_api
   include projects::govuk_mirror
   include projects::opsmanual
   include projects::puppet
