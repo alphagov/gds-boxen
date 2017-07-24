@@ -1,5 +1,0 @@
----
-gds_ruby::uninstall_versions:
-    - '1.9.2'
-ruby::version::alias:
-    1.9.2: 1.9.3-p545
