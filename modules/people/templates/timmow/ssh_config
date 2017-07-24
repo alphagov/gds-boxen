@@ -1,8 +1,0 @@
-Host *.integration
-  User timothymower
-Host *.staging
-  User timothymower
-Host *.production
-  User timothymower
-Host *
-  User tmower
