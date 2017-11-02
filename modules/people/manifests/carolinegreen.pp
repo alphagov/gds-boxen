@@ -4,7 +4,6 @@ class people::carolinegreen {
   include zsh
   include slate
   #include projects::deployment::creds
-  include teams::performance-platform
 
   package {
     [
