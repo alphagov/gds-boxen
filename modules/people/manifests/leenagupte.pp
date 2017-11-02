@@ -7,7 +7,7 @@ class people::leenagupte {
   include sublime_text_2
   include textmate
   include zsh
- 
+
   class { 'vagrant':
       version => '1.7.1'
   }
@@ -21,8 +21,6 @@ class people::leenagupte {
   ## You can also include particular projects from modules/projects/manifests
   #include projects::deployment
 
-  include teams::performance-platform
-
   class { 'gds_ssh_config': }
 
   class { 'nodejs::global': version => 'v0.10.31' }
@@ -33,7 +31,7 @@ class people::leenagupte {
     ]:
     node_version => 'v0.10.31'
   }
-  
+
   ## Here's how to include a personal github project
   #repository { "${boxen::config::srcdir}/dotfiles":
   #  source  => 'yourusername/dotfiles',
